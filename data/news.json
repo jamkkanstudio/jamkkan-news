@@ -1,23 +1,13 @@
 [
   {
-    "title": "코스피, 외국인 매도에 하락",
-    "summary": "외국인 투자자의 매도세가 이어지며 국내 증시가 약세를 보였습니다.",
-    "reason": "환율과 투자 심리에 영향을 줄 수 있는 흐름입니다.",
-    "source": "연합뉴스",
-    "url": "https://example.com"
-  },
-  {
-    "title": "한국은행, 기준금리 동결",
-    "summary": "한국은행이 물가와 경기 상황을 고려해 기준금리를 유지했습니다.",
-    "reason": "대출금리와 부동산 시장에 직접 영향을 줄 수 있습니다.",
-    "source": "한국경제",
-    "url": "https://example.com"
-  },
-  {
-    "title": "삼성전자, 반도체 실적 개선",
-    "summary": "반도체 업황 회복으로 삼성전자의 실적이 개선됐습니다.",
-    "reason": "국내 증시와 반도체 산업 전반의 투자심리에 영향을 줄 수 있습니다.",
-    "source": "연합뉴스",
-    "url": "https://example.com"
+    "id": "7c397ac9-e69a-46d3-9a24-e5d58ba389e0",
+    "title": "코스피 만 돌파!",
+    "summary": "대단함",
+    "reason": "한국 경제 호황!!",
+    "source": "매일경제",
+    "url": "http://www.naver.com",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-07-14T06:12:22"
   }
 ]
