@@ -1,6 +1,8 @@
 import json
 from pathlib import Path
 
+from services.auth_service import require_admin
+
 
 INTEREST_FILE = Path("data/interest.json")
 
@@ -34,6 +36,7 @@ def load_interests() -> list[str]:
 
 def save_interests(interests: list[str]) -> bool:
     """관심 분야를 JSON에 저장하고 Supabase 미러링 결과를 반환합니다."""
+    require_admin()
     INTEREST_FILE.parent.mkdir(parents=True, exist_ok=True)
 
     data = {

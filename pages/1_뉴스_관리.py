@@ -1,5 +1,7 @@
 import streamlit as st
 
+from services.auth_service import require_admin_page
+
 from services.news_service import (
     add_news,
     delete_news,
@@ -23,6 +25,8 @@ st.set_page_config(
     page_icon="✍️",
     layout="centered",
 )
+
+require_admin_page()
 
 st.title("뉴스 관리")
 st.caption("잠깐. 아침 브리핑에 표시할 기사를 관리합니다.")

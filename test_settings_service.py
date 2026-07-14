@@ -17,6 +17,7 @@ class SaveDailyGoalSecondsTest(unittest.TestCase):
                     "services.settings_service.SETTINGS_FILE",
                     settings_file,
                 ),
+                patch("services.settings_service.require_admin"),
                 patch(
                     "services.settings_service.save_setting_to_supabase",
                     return_value=True,

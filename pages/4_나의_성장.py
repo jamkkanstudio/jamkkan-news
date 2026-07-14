@@ -3,6 +3,8 @@ from datetime import date
 
 import streamlit as st
 
+from services.auth_service import render_auth_sidebar
+
 from services.growth_service import load_growth
 from services.time_service import current_week_dates, today_kst
 
@@ -34,6 +36,8 @@ st.set_page_config(
     page_icon="🌱",
     layout="centered",
 )
+
+render_auth_sidebar()
 
 st.title("🌱 나의 성장")
 st.caption("매일 잠깐의 투자가 쌓이고 있습니다.")

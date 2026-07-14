@@ -1,5 +1,7 @@
 import streamlit as st
 
+from services.auth_service import render_auth_sidebar
+
 from components.completion_banner import render_completion_banner
 from components.growth_banner import render_growth_banner
 from components.news_card import render_news_card
@@ -15,6 +17,8 @@ st.set_page_config(
     page_icon="🌱",
     layout="centered",
 )
+
+render_auth_sidebar()
 
 
 def calculate_personal_score(

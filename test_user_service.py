@@ -14,6 +14,7 @@ class SaveInterestsTest(unittest.TestCase):
 
             with (
                 patch("services.user_service.INTEREST_FILE", interest_file),
+                patch("services.user_service.require_admin"),
                 patch(
                     "services.user_service.save_interests_to_supabase",
                     return_value=True,

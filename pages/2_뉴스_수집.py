@@ -3,6 +3,8 @@ import re
 
 import streamlit as st
 
+from services.auth_service import require_admin_page
+
 from services.news_service import add_news, load_news
 from services.rss_service import RSS_FEEDS, fetch_rss_news
 from services.summarizer import create_brief, create_reason
@@ -21,6 +23,8 @@ registration_result = st.session_state.pop(
     "registration_result",
     None,
 )
+
+require_admin_page()
 
 if registration_result:
     message_type, message = registration_result
@@ -70,8 +74,8 @@ if st.button(
         st.session_state["rss_news_list"] = news_list
         st.success(f"{len(news_list)}개의 기사를 가져왔습니다.")
 
-    except Exception as error:
-        st.error(f"기사 수집에 실패했습니다: {error}")
+    except Exception:
+        st.error("기사 수집에 실패했습니다. 잠시 후 다시 시도해 주세요.")
 
 
 news_list = st.session_state.get("rss_news_list", [])

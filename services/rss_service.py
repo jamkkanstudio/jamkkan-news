@@ -5,11 +5,11 @@ import feedparser
 
 
 RSS_FEEDS = {
-    "최신": "http://www.yonhapnewstv.co.kr/browse/feed/",
-    "정치": "http://www.yonhapnewstv.co.kr/category/news/politics/feed/",
-    "경제": "http://www.yonhapnewstv.co.kr/category/news/economy/feed/",
-    "사회": "http://www.yonhapnewstv.co.kr/category/news/society/feed/",
-    "국제": "http://www.yonhapnewstv.co.kr/category/news/international/feed/",
+    "최신": "https://www.yonhapnewstv.co.kr/browse/feed/",
+    "정치": "https://www.yonhapnewstv.co.kr/category/news/politics/feed/",
+    "경제": "https://www.yonhapnewstv.co.kr/category/news/economy/feed/",
+    "사회": "https://www.yonhapnewstv.co.kr/category/news/society/feed/",
+    "국제": "https://www.yonhapnewstv.co.kr/category/news/international/feed/",
 }
 
 

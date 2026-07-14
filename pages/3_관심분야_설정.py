@@ -1,5 +1,7 @@
 import streamlit as st
 
+from services.auth_service import require_admin_page
+
 from services.settings_service import (
     get_daily_goal_seconds,
     save_daily_goal_seconds,
@@ -39,6 +41,8 @@ st.set_page_config(
     page_icon="⚙️",
     layout="centered",
 )
+
+require_admin_page()
 
 st.title("설정")
 st.caption("나에게 맞는 잠깐의 시간을 설정합니다.")

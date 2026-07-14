@@ -1,5 +1,7 @@
 import streamlit as st
 
+from services.auth_service import render_auth_sidebar
+
 from services.analytics_service import (
     get_article_read_events,
     get_category_statistics,
@@ -63,6 +65,8 @@ st.set_page_config(
     page_icon="📊",
     layout="centered",
 )
+
+render_auth_sidebar()
 
 st.title("📊 나의 분석")
 st.caption("내가 어떤 분야에 시간을 투자했는지 확인합니다.")

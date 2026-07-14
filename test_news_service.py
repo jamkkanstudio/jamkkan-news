@@ -4,10 +4,23 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
+from services.auth_service import AuthorizationError
 from services.news_service import add_news, delete_news, update_news
 
 
 class AddNewsTest(unittest.TestCase):
+    def test_add_news_denies_write_before_loading_data(self) -> None:
+        with (
+            patch(
+                "services.news_service.require_admin",
+                side_effect=AuthorizationError,
+            ),
+            patch("services.news_service.load_news") as load_news,
+        ):
+            with self.assertRaises(AuthorizationError):
+                add_news({})
+        load_news.assert_not_called()
+
     def test_add_news_saves_same_news_to_json_and_supabase(self) -> None:
         news = {
             "title": "테스트 뉴스",
@@ -24,6 +37,7 @@ class AddNewsTest(unittest.TestCase):
 
             with (
                 patch("services.news_service.DATA_FILE", data_file),
+                patch("services.news_service.require_admin"),
                 patch(
                     "services.news_service.save_news_to_supabase",
                     return_value=True,
@@ -71,6 +85,7 @@ class UpdateNewsTest(unittest.TestCase):
 
             with (
                 patch("services.news_service.DATA_FILE", data_file),
+                patch("services.news_service.require_admin"),
                 patch(
                     "services.news_service.save_news_to_supabase",
                     return_value=True,
@@ -104,6 +119,7 @@ class DeleteNewsTest(unittest.TestCase):
 
             with (
                 patch("services.news_service.DATA_FILE", data_file),
+                patch("services.news_service.require_admin"),
                 patch(
                     "services.news_service.delete_news_from_supabase",
                     return_value=True,
@@ -125,6 +141,7 @@ class DeleteNewsTest(unittest.TestCase):
 
             with (
                 patch("services.news_service.DATA_FILE", data_file),
+                patch("services.news_service.require_admin"),
                 patch(
                     "services.news_service.delete_news_from_supabase"
                 ) as delete_supabase,

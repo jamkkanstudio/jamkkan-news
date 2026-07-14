@@ -3,6 +3,8 @@ from datetime import datetime
 from pathlib import Path
 from uuid import uuid4
 
+from services.auth_service import require_admin
+
 
 DATA_FILE = Path("data/news.json")
 
@@ -48,6 +50,7 @@ def save_news(news_list: list[dict]) -> None:
 
 def add_news(news: dict) -> bool:
     """새 뉴스를 JSON에 추가하고 Supabase 미러링 결과를 반환합니다."""
+    require_admin()
     news_list = load_news()
 
     new_news = {
@@ -69,6 +72,7 @@ def add_news(news: dict) -> bool:
 
 def delete_news(news_id: str) -> bool | None:
     """뉴스를 JSON에서 삭제하고 Supabase 삭제 결과를 반환합니다."""
+    require_admin()
     news_list = load_news()
 
     updated_news = [
@@ -85,6 +89,7 @@ def delete_news(news_id: str) -> bool | None:
 
 def update_news(news_id: str, updated_data: dict) -> bool | None:
     """뉴스를 JSON에서 수정하고 Supabase 미러링 결과를 반환합니다."""
+    require_admin()
     news_list = load_news()
 
     for news in news_list:

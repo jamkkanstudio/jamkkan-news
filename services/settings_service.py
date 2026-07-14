@@ -1,6 +1,8 @@
 import json
 from pathlib import Path
 
+from services.auth_service import require_admin
+
 
 SETTINGS_FILE = Path("data/settings.json")
 DEFAULT_DAILY_GOAL_SECONDS = 180
@@ -71,6 +73,7 @@ def get_daily_goal_seconds() -> int:
 
 def save_daily_goal_seconds(seconds: int) -> bool:
     """목표 시간을 JSON에 저장하고 Supabase 미러링 결과를 반환합니다."""
+    require_admin()
     settings = load_settings()
     settings["daily_goal_seconds"] = max(int(seconds), 30)
     save_settings(settings)
