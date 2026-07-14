@@ -24,7 +24,7 @@
 
 🌍 **Live Demo**
 
-https://(배포주소).streamlit.app
+https://jamkkan-news.streamlit.app/
 
 </div>
 

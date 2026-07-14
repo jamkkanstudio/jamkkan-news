@@ -1,6 +1,13 @@
 import streamlit as st
 
-from services.user_service import load_interests, save_interests
+from services.settings_service import (
+    get_daily_goal_seconds,
+    save_daily_goal_seconds,
+)
+from services.user_service import (
+    load_interests,
+    save_interests,
+)
 
 
 INTEREST_OPTIONS = [
@@ -18,20 +25,31 @@ INTEREST_OPTIONS = [
     "사회",
 ]
 
+GOAL_OPTIONS = {
+    "30초": 30,
+    "1분": 60,
+    "2분": 120,
+    "3분": 180,
+    "5분": 300,
+}
+
 
 st.set_page_config(
-    page_title="관심 분야 설정 | 잠깐.",
+    page_title="설정 | 잠깐.",
     page_icon="⚙️",
     layout="centered",
 )
 
-st.title("관심 분야 설정")
-st.caption("나의 TOP5에 반영할 관심 분야를 최대 5개까지 선택하세요.")
+st.title("설정")
+st.caption("나에게 맞는 잠깐의 시간을 설정합니다.")
 
 current_interests = load_interests()
+current_goal_seconds = get_daily_goal_seconds()
+
+st.subheader("관심 분야")
 
 selected_interests = st.multiselect(
-    "관심 분야",
+    "나의 TOP5에 반영할 분야",
     options=INTEREST_OPTIONS,
     default=[
         interest
@@ -41,9 +59,34 @@ selected_interests = st.multiselect(
     max_selections=5,
 )
 
+st.divider()
+st.subheader("오늘의 목표")
+st.caption("하루에 나에게 투자할 시간을 선택하세요.")
+
+goal_labels = list(GOAL_OPTIONS.keys())
+current_goal_label = next(
+    (
+        label
+        for label, seconds in GOAL_OPTIONS.items()
+        if seconds == current_goal_seconds
+    ),
+    "3분",
+)
+
+selected_goal_label = st.radio(
+    "목표 시간",
+    options=goal_labels,
+    index=goal_labels.index(current_goal_label),
+    horizontal=True,
+)
+
 if st.button(
-    "관심 분야 저장",
+    "설정 저장",
     use_container_width=True,
 ):
     save_interests(selected_interests)
-    st.success("관심 분야가 저장되었습니다.")
+    save_daily_goal_seconds(
+        GOAL_OPTIONS[selected_goal_label]
+    )
+
+    st.success("설정이 저장되었습니다.")
