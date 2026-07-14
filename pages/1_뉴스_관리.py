@@ -104,9 +104,15 @@ if submitted:
             "importance": importance,
         }
 
-        add_news(new_news)
-        st.success("뉴스가 추가되었습니다.")
-        st.rerun()
+        mirrored = add_news(new_news)
+
+        if mirrored:
+            st.success("뉴스가 JSON과 Supabase에 추가되었습니다.")
+        else:
+            st.warning(
+                "뉴스는 JSON에 추가됐지만 Supabase 저장에 실패했습니다. "
+                "서버 로그를 확인해 주세요."
+            )
 
 
 # 등록된 뉴스

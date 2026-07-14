@@ -10,6 +10,13 @@
 
 ## ✨ Added
 
+### News Storage
+
+- 신규 뉴스 JSON·Supabase 병행 저장
+- 동일 UUID를 사용하는 Supabase upsert
+- 병행 저장 성공·실패 자동 테스트
+- 배포 환경 실제 저장 검증
+
 ### Growth
 
 - 오늘의 목표(Daily Goal)
@@ -34,6 +41,8 @@
 - PostgreSQL 데이터베이스 구축
 - Streamlit ↔ Supabase 연결
 - 데이터베이스 연결 테스트 완료
+- Streamlit 운영용 Supabase secret 키 교체
+- 운영용 DB 테스트 페이지 제거
 - 서비스 클라우드 전환 준비
 
 ---

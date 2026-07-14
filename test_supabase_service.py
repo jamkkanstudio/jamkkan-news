@@ -26,13 +26,17 @@ class UpsertNewsTest(unittest.TestCase):
             RuntimeError("Supabase unavailable")
         )
 
-        with patch(
-            "services.supabase_service.get_supabase_client",
-            return_value=client,
+        with (
+            patch(
+                "services.supabase_service.get_supabase_client",
+                return_value=client,
+            ),
+            patch("services.supabase_service.logger.exception") as log_error,
         ):
             result = upsert_news({"id": "news-id"})
 
         self.assertFalse(result)
+        log_error.assert_called_once()
 
 
 if __name__ == "__main__":

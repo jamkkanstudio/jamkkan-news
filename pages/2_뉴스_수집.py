@@ -17,6 +17,19 @@ st.set_page_config(
 st.title("뉴스 수집")
 st.caption("RSS에서 기사 후보를 가져와 오늘의 뉴스로 등록합니다.")
 
+registration_result = st.session_state.pop(
+    "registration_result",
+    None,
+)
+
+if registration_result:
+    message_type, message = registration_result
+
+    if message_type == "success":
+        st.success(message)
+    else:
+        st.warning(message)
+
 
 def clean_summary(summary: str) -> str:
     """RSS 요약에서 HTML 태그와 특수문자를 제거합니다."""
@@ -126,6 +139,7 @@ if news_list:
 
         else:
             added_count = 0
+            mirrored_count = 0
 
             for index in selected_indices:
                 rss_news = news_list[index]
@@ -157,12 +171,24 @@ if news_list:
                     "importance": 50,
                 }
 
-                add_news(new_news)
+                if add_news(new_news):
+                    mirrored_count += 1
+
                 added_count += 1
 
-            st.success(
-                f"{added_count}개의 기사가 뉴스 관리 목록에 등록되었습니다."
-            )
+            if mirrored_count == added_count:
+                registration_result = (
+                    "success",
+                    f"{added_count}개의 기사가 JSON과 Supabase에 "
+                    "등록되었습니다.",
+                )
+            else:
+                registration_result = (
+                    "warning",
+                    f"{added_count}개 기사는 JSON에 등록됐지만, "
+                    f"Supabase에는 {mirrored_count}개만 저장됐습니다.",
+                )
 
+            st.session_state["registration_result"] = registration_result
             st.session_state.pop("rss_news_list", None)
             st.rerun()

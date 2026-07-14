@@ -39,8 +39,8 @@ def save_news(news_list: list[dict]) -> None:
         )
 
 
-def add_news(news: dict) -> None:
-    """새 뉴스를 추가합니다."""
+def add_news(news: dict) -> bool:
+    """새 뉴스를 JSON에 추가하고 Supabase 미러링 결과를 반환합니다."""
     news_list = load_news()
 
     new_news = {
@@ -57,7 +57,7 @@ def add_news(news: dict) -> None:
 
     news_list.append(new_news)
     save_news(news_list)
-    save_news_to_supabase(new_news)
+    return save_news_to_supabase(new_news)
 
 
 def delete_news(news_id: str) -> bool:

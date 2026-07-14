@@ -26,15 +26,17 @@ class AddNewsTest(unittest.TestCase):
                 patch("services.news_service.DATA_FILE", data_file),
                 patch(
                     "services.news_service.save_news_to_supabase",
+                    return_value=True,
                 ) as save_supabase,
             ):
-                add_news(news)
+                mirrored = add_news(news)
 
             with data_file.open("r", encoding="utf-8") as file:
                 saved_news_list = json.load(file)
 
             self.assertEqual(len(saved_news_list), 1)
             save_supabase.assert_called_once_with(saved_news_list[0])
+            self.assertIs(mirrored, True)
 
 
 if __name__ == "__main__":

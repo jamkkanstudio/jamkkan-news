@@ -134,26 +134,6 @@ RSS를 통해
 
 ---
 
-# 📱 Screenshots
-
-## 🏠 Home
-
-(스크린샷)
-
----
-
-## 🌱 Growth
-
-(스크린샷)
-
----
-
-## 📰 News
-
-(스크린샷)
-
----
-
 # 🛠 Tech Stack
 
 ### Frontend
@@ -166,9 +146,10 @@ RSS를 통해
 
 ### Storage
 
-- JSON
+- JSON (현재 기본 저장소)
+- Supabase (신규 뉴스 병행 저장)
 
-(향후 Supabase)
+> 뉴스 수정·삭제와 사용자 성장 데이터는 아직 JSON에만 저장됩니다.
 
 ### Version Control
 
@@ -181,26 +162,13 @@ RSS를 통해
 
 ```text
 jamkkan-news/
-
-app.py
-
-pages/
-
-components/
-
-services/
-
-data/
-
-README.md
-
-BRAND.md
-
-PRINCIPLES.md
-
-IDEAS.md
-
-ROADMAP.md
+├── app.py
+├── pages/          # 뉴스 관리·수집, 설정, 성장, 분석
+├── components/     # 공통 UI 컴포넌트
+├── services/       # 뉴스·RSS·성장·분석·Supabase 로직
+├── data/           # 현재 JSON 데이터
+├── test_*.py       # 자동 단위 테스트
+└── *.md            # 제품 원칙, 로드맵, 변경 기록
 ```
 
 ---
@@ -229,12 +197,14 @@ streamlit run app.py
 
 ---
 
-## v0.2
+## v0.2 (진행 중)
 
-- Supabase
+- ✅ Analytics
+- ✅ Daily Goal
+- ✅ 신규 뉴스 Supabase 병행 저장
+- Supabase 전체 데이터 마이그레이션
 - Google Login
-- Analytics
-- Daily Goal
+- 사용자 데이터 영구 저장
 
 ---
 

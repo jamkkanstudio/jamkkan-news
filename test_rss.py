@@ -1,13 +1,36 @@
+import unittest
+from types import SimpleNamespace
+from unittest.mock import patch
+
 from services.rss_service import fetch_rss_news
 
 
-try:
-    news_list = fetch_rss_news(category="최신", limit=5)
+class FetchRssNewsTest(unittest.TestCase):
+    def test_fetch_rss_news_normalizes_feed_entry(self) -> None:
+        feed = SimpleNamespace(
+            bozo=False,
+            entries=[
+                {
+                    "title": " 테스트 기사 ",
+                    "link": " https://example.com/news ",
+                    "summary": "테스트 요약",
+                    "published": "Wed, 15 Jul 2026 09:00:00 +0900",
+                }
+            ],
+        )
 
-    for index, news in enumerate(news_list, start=1):
-        print(f"\n{index}. {news['title']}")
-        print(news["url"])
-        print(news["published_at"])
+        with patch("services.rss_service.feedparser.parse", return_value=feed):
+            news_list = fetch_rss_news(category="경제", limit=1)
 
-except Exception as error:
-    print(f"RSS 가져오기 실패: {error}")
+        self.assertEqual(len(news_list), 1)
+        self.assertEqual(news_list[0]["title"], "테스트 기사")
+        self.assertEqual(news_list[0]["url"], "https://example.com/news")
+        self.assertEqual(news_list[0]["category"], "경제")
+
+    def test_fetch_rss_news_rejects_unknown_category(self) -> None:
+        with self.assertRaises(ValueError):
+            fetch_rss_news(category="지원하지 않음")
+
+
+if __name__ == "__main__":
+    unittest.main()
