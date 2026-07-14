@@ -1,29 +1,38 @@
 import streamlit as st
 
-from services.news_service import load_news
-from services.user_service import load_interests
-from services.ranking_service import sort_news_by_importance
-
-from components.news_card import render_news_card
+from components.completion_banner import render_completion_banner
 from components.growth_banner import render_growth_banner
+from components.news_card import render_news_card
+
+from services.growth_service import is_today_brief_completed
+from services.news_service import load_news
+from services.ranking_service import sort_news_by_importance
+from services.user_service import load_interests
 
 
 st.set_page_config(
     page_title="잠깐.",
-    page_icon="📰",
+    page_icon="🌱",
     layout="centered",
 )
 
 
-def calculate_personal_score(news: dict, interests: list[str]) -> int:
-    """뉴스 중요도에 관심 분야 일치 점수를 더합니다."""
+def calculate_personal_score(
+    news: dict,
+    interests: list[str],
+) -> int:
+    """기본 중요도에 관심 분야 일치 점수를 더합니다."""
+
     score = int(news.get("importance", 50))
 
-    title = news.get("title", "").lower()
-    summary = news.get("summary", "").lower()
-    category = news.get("category", "").lower()
-
-    searchable_text = f"{title} {summary} {category}"
+    searchable_text = " ".join(
+        [
+            news.get("title", ""),
+            news.get("summary", ""),
+            news.get("reason", ""),
+            news.get("category", ""),
+        ]
+    ).lower()
 
     for interest in interests:
         if interest.lower() in searchable_text:
@@ -32,7 +41,28 @@ def calculate_personal_score(news: dict, interests: list[str]) -> int:
     return score
 
 
+def get_personal_top5(
+    news_list: list[dict],
+    interests: list[str],
+) -> list[dict]:
+    """관심 분야 점수를 기준으로 나의 TOP5를 반환합니다."""
+
+    if not interests:
+        return []
+
+    return sorted(
+        news_list,
+        key=lambda news: calculate_personal_score(
+            news,
+            interests,
+        ),
+        reverse=True,
+    )[:5]
+
+
+# 상단 브랜드 영역
 st.title("잠깐.")
+
 st.markdown(
     """
     ### 30초면,  
@@ -44,19 +74,41 @@ render_growth_banner()
 
 st.divider()
 
+
+# 데이터 불러오기
 news_list = load_news()
 interests = load_interests()
+
 
 if not news_list:
     st.info("등록된 뉴스가 없습니다.")
 
+    st.caption(
+        "뉴스 수집 페이지에서 오늘의 브리핑을 등록해 주세요."
+    )
+
 else:
-    today_top5 = sort_news_by_importance(news_list)[:5]
+    # 오늘의 TOP5
+    ranked_news = sort_news_by_importance(news_list)
+    today_top5 = ranked_news[:5]
 
-    st.subheader("🌍 오늘의 TOP5")
-    st.caption("오늘 모두가 알아야 할 뉴스")
+    brief_completed = is_today_brief_completed(today_top5)
 
-    for rank, news in enumerate(today_top5, start=1):
+    if brief_completed:
+        render_completion_banner()
+
+        st.divider()
+        st.subheader("🌍 오늘 읽은 브리핑")
+        st.caption("필요한 내용을 다시 확인할 수 있습니다.")
+
+    else:
+        st.subheader("🌍 오늘의 TOP5")
+        st.caption("오늘 모두가 알아야 할 뉴스")
+
+    for rank, news in enumerate(
+        today_top5,
+        start=1,
+    ):
         render_news_card(
             news=news,
             rank=rank,
@@ -65,6 +117,7 @@ else:
 
     st.divider()
 
+    # 나의 TOP5
     st.subheader("👤 나의 TOP5")
     st.caption("내 관심사를 반영한 뉴스")
 
@@ -75,25 +128,23 @@ else:
             "관심 분야 설정하기",
             use_container_width=True,
         ):
-            st.switch_page("pages/3_관심분야_설정.py")
+            st.switch_page(
+                "pages/3_관심분야_설정.py"
+            )
 
     else:
-        personal_ranked_news = sorted(
+        personal_top5 = get_personal_top5(
             news_list,
-            key=lambda news: calculate_personal_score(
-                news,
-                interests,
-            ),
-            reverse=True,
-        )[:5]
+            interests,
+        )
 
         st.caption(
-            "관심 분야: "
+            "관심 분야 · "
             + ", ".join(interests)
         )
 
         for rank, news in enumerate(
-            personal_ranked_news,
+            personal_top5,
             start=1,
         ):
             personal_score = calculate_personal_score(
@@ -105,11 +156,13 @@ else:
                 news=news,
                 rank=rank,
                 personal_score=personal_score,
-                section="personal"
+                section="personal",
             )
 
         if st.button(
             "관심 분야 변경",
             use_container_width=True,
         ):
-            st.switch_page("pages/3_관심분야_설정.py")
+            st.switch_page(
+                "pages/3_관심분야_설정.py"
+            )

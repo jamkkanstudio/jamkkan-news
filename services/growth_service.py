@@ -142,3 +142,33 @@ def get_growth_summary() -> dict:
         "total_seconds": growth.get("total_seconds", 0),
         "current_streak": growth.get("current_streak", 0),
     }
+
+
+def is_today_brief_completed(news_list: list[dict]) -> bool:
+    """
+    오늘의 브리핑을 모두 완료했는지 확인합니다.
+    """
+
+    growth = load_growth()
+
+    today = date.today().isoformat()
+
+    today_data = growth["daily"].get(today, {})
+
+    read_news_ids = set(
+        today_data.get("read_news_ids", [])
+    )
+
+    if not news_list:
+        return False
+
+    today_news_ids = {
+        news.get("id")
+        for news in news_list
+        if news.get("id")
+    }
+
+    return (
+        len(today_news_ids) > 0
+        and today_news_ids.issubset(read_news_ids)
+    )
