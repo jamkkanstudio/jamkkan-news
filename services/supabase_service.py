@@ -84,3 +84,18 @@ def upsert_setting(setting_key: str, setting_value: object) -> bool:
             setting_key,
         )
         return False
+
+
+def upsert_growth_daily(growth_day: dict) -> bool:
+    """Supabase에 일별 성장 기록을 추가하거나 갱신합니다."""
+    try:
+        get_supabase_client().table("growth_daily").upsert(
+            growth_day
+        ).execute()
+        return True
+    except Exception:
+        logger.exception(
+            "Supabase 일별 성장 기록 저장에 실패했습니다: %s",
+            growth_day.get("activity_date"),
+        )
+        return False

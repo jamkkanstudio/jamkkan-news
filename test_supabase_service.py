@@ -4,6 +4,7 @@ from unittest.mock import MagicMock, patch
 from services.supabase_service import (
     delete_news,
     replace_interests,
+    upsert_growth_daily,
     upsert_setting,
     upsert_news,
 )
@@ -140,6 +141,27 @@ class UpsertSettingTest(unittest.TestCase):
                 "setting_value": 300,
             }
         )
+        self.assertTrue(result)
+
+
+class UpsertGrowthDailyTest(unittest.TestCase):
+    def test_upsert_growth_daily_writes_daily_record(self) -> None:
+        growth_day = {
+            "activity_date": "2026-07-15",
+            "articles": 2,
+            "seconds": 60,
+            "read_news_ids": ["00000000-0000-0000-0000-000000000001"],
+        }
+        client = MagicMock()
+
+        with patch(
+            "services.supabase_service.get_supabase_client",
+            return_value=client,
+        ):
+            result = upsert_growth_daily(growth_day)
+
+        client.table.assert_called_once_with("growth_daily")
+        client.table.return_value.upsert.assert_called_once_with(growth_day)
         self.assertTrue(result)
 
 if __name__ == "__main__":

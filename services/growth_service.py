@@ -6,6 +6,13 @@ from pathlib import Path
 GROWTH_FILE = Path("data/growth.json")
 
 
+def save_growth_to_supabase(growth_day: dict) -> bool:
+    """일별 성장 기록을 Supabase에 저장합니다."""
+    from services.supabase_service import upsert_growth_daily
+
+    return upsert_growth_daily(growth_day)
+
+
 def _default_growth_data() -> dict:
     """성장 기록의 기본값을 반환합니다."""
     return {
@@ -65,12 +72,12 @@ def is_read_today(news_id: str) -> bool:
 def record_article_read(
     news_id: str,
     seconds: int = 30,
-) -> bool:
+) -> bool | None:
     """
     기사 읽기 기록을 저장합니다.
 
-    오늘 이미 기록된 기사라면 False,
-    새롭게 기록했다면 True를 반환합니다.
+    오늘 이미 기록된 기사라면 False, JSON과 Supabase에 저장하면 True,
+    JSON만 저장하고 Supabase 저장에 실패하면 None을 반환합니다.
     """
     growth = load_growth()
 
@@ -118,8 +125,16 @@ def record_article_read(
     growth["last_active_date"] = today_string
 
     save_growth(growth)
+    mirrored = save_growth_to_supabase(
+        {
+            "activity_date": today_string,
+            "articles": today_data["articles"],
+            "seconds": today_data["seconds"],
+            "read_news_ids": today_data["read_news_ids"],
+        }
+    )
 
-    return True
+    return True if mirrored else None
 
 
 def get_growth_summary() -> dict:
