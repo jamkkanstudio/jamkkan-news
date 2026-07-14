@@ -254,9 +254,17 @@ else:
             ):
                 deleted = delete_news(news_id)
 
-                if deleted:
-                    st.success("뉴스가 삭제되었습니다.")
+                if deleted is True:
+                    st.success(
+                        "뉴스가 JSON과 Supabase에서 삭제되었습니다."
+                    )
                     st.rerun()
+
+                elif deleted is False:
+                    st.warning(
+                        "뉴스는 JSON에서 삭제됐지만 Supabase 삭제에 "
+                        "실패했습니다. 서버 로그를 확인해 주세요."
+                    )
 
                 else:
                     st.error("삭제할 뉴스를 찾지 못했습니다.")

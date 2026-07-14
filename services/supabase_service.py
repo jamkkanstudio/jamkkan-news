@@ -30,3 +30,22 @@ def upsert_news(news: dict) -> bool:
             news.get("id"),
         )
         return False
+
+
+def delete_news(news_id: str) -> bool:
+    """Supabase에서 id가 일치하는 뉴스 한 건을 삭제합니다."""
+    try:
+        (
+            get_supabase_client()
+            .table("news")
+            .delete()
+            .eq("id", news_id)
+            .execute()
+        )
+        return True
+    except Exception:
+        logger.exception(
+            "Supabase 뉴스 삭제에 실패했습니다: %s",
+            news_id,
+        )
+        return False

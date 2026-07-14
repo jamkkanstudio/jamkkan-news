@@ -14,6 +14,13 @@ def save_news_to_supabase(news: dict) -> bool:
     return upsert_news(news)
 
 
+def delete_news_from_supabase(news_id: str) -> bool:
+    """Supabase에서 뉴스 한 건을 삭제합니다."""
+    from services.supabase_service import delete_news
+
+    return delete_news(news_id)
+
+
 def load_news() -> list[dict]:
     """news.json에서 뉴스 목록을 불러옵니다."""
     if not DATA_FILE.exists():
@@ -60,8 +67,8 @@ def add_news(news: dict) -> bool:
     return save_news_to_supabase(new_news)
 
 
-def delete_news(news_id: str) -> bool:
-    """id가 일치하는 뉴스를 삭제합니다."""
+def delete_news(news_id: str) -> bool | None:
+    """뉴스를 JSON에서 삭제하고 Supabase 삭제 결과를 반환합니다."""
     news_list = load_news()
 
     updated_news = [
@@ -70,10 +77,10 @@ def delete_news(news_id: str) -> bool:
     ]
 
     if len(updated_news) == len(news_list):
-        return False
+        return None
 
     save_news(updated_news)
-    return True
+    return delete_news_from_supabase(news_id)
 
 
 def update_news(news_id: str, updated_data: dict) -> bool | None:
