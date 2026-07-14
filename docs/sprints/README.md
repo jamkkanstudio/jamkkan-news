@@ -11,6 +11,7 @@ Jamkkan의 Sprint 목표, 결정, 구현 결과와 검증 기록을 보관합니
 | 01 | MVP와 성장 기반 구축 | 완료 | [01-mvp.md](01-mvp.md) |
 | 02 | Supabase 신규 뉴스 병행 저장 | 완료 | [02-supabase-news-mirror.md](02-supabase-news-mirror.md) |
 | 03 | 뉴스 수정·삭제 동기화 | 완료 | [03-news-update-delete-sync.md](03-news-update-delete-sync.md) |
+| 04 | 사용자 상태 Supabase 마이그레이션 | 배포 검증 대기 | [04-user-state-supabase-migration.md](04-user-state-supabase-migration.md) |
 
 ## 운영 원칙
 
