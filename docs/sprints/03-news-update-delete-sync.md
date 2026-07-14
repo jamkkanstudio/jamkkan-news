@@ -37,7 +37,8 @@
 - 수정 시 JSON·Supabase에 동일 UUID 레코드를 전달하는지 확인
 - 삭제 시 JSON의 다른 뉴스를 보존하고 Supabase에 대상 UUID만 전달하는지 확인
 - Supabase 예외와 존재하지 않는 삭제 대상 처리 확인
-- Streamlit 배포 앱 검증 예정
+- Streamlit 배포 앱 정상 기동과 뉴스 관리 화면 렌더링 확인
+- 운영 JSON 뉴스 3건 보존 확인(운영 데이터 수정·삭제 미실행)
 
 ## 주요 Git 기록
 
