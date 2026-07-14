@@ -34,7 +34,7 @@ Released
 - ✅ 읽기 통계
 - ✅ Supabase 프로젝트 및 연결
 - ✅ 신규 뉴스 JSON·Supabase 병행 저장
-- ⏳ 뉴스 수정·삭제 Supabase 동기화
+- ✅ 뉴스 수정·삭제 Supabase 동기화
 - ⏳ 성장·관심 분야·설정 데이터 마이그레이션
 - ⏳ Google 로그인
 - ⏳ 사용자별 데이터 분리 및 영구 저장

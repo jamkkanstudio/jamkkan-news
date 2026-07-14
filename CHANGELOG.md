@@ -16,6 +16,9 @@
 - 동일 UUID를 사용하는 Supabase upsert
 - 병행 저장 성공·실패 자동 테스트
 - 배포 환경 실제 저장 검증
+- 뉴스 수정 JSON·Supabase 동기화
+- 뉴스 삭제 JSON·Supabase 동기화
+- 수정·삭제 동기화 성공·실패 자동 테스트
 
 ### Growth
 

@@ -147,9 +147,9 @@ RSS를 통해
 ### Storage
 
 - JSON (현재 기본 저장소)
-- Supabase (신규 뉴스 병행 저장)
+- Supabase (뉴스 추가·수정·삭제 병행 저장)
 
-> 뉴스 수정·삭제와 사용자 성장 데이터는 아직 JSON에만 저장됩니다.
+> 사용자 성장·관심 분야·설정 데이터는 아직 JSON에만 저장됩니다.
 
 ### Version Control
 
@@ -205,6 +205,7 @@ streamlit run app.py
 - ✅ Analytics
 - ✅ Daily Goal
 - ✅ 신규 뉴스 Supabase 병행 저장
+- ✅ 뉴스 수정·삭제 Supabase 동기화
 - Supabase 전체 데이터 마이그레이션
 - Google Login
 - 사용자 데이터 영구 저장
