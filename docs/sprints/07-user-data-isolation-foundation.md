@@ -40,8 +40,8 @@ Google OIDC 다음 보안 경계인 개인 데이터 소유권을 정의하고, 
 ## 개발 프로세스 개선
 
 - `AGENTS.md`에 선택적 코드 탐색, 최소 테스트 후 최종 전체 테스트 1회, 작은 커밋, 배포 전 완료 표시 금지를 명문화했습니다.
-- 문서 역할을 분리했습니다. README는 설정·운영, ROADMAP은 결과 상태, CHANGELOG는 release-relevant 변경, PROJECT_CONTEXT는 장기 결정, Sprint 기록은 작업 근거와 증거만 담당합니다.
-- README의 브랜드·비전·로드맵 중복을 제거하고 기존 `BRAND.md`, `PRINCIPLES.md`, `ROADMAP.md`로 연결했습니다.
+- 문서 역할을 분리했습니다. README는 짧은 사용자용 브랜드 소개와 설정·운영, ROADMAP은 결과 상태, CHANGELOG는 release-relevant 변경, PROJECT_CONTEXT는 장기 결정, Sprint 기록은 작업 근거와 증거만 담당합니다.
+- README의 감성적인 첫인상과 핵심 경험은 유지하되 전체 비전·원칙·로드맵의 반복은 제거하고 `BRAND.md`, `PRINCIPLES.md`, `ROADMAP.md`로 연결했습니다.
 - Sprint archive에 상태 정의와 간결한 기록 템플릿을 추가해 다음 Sprint의 중복 작성과 조기 완료 표시를 방지했습니다.
 
 ## 기존 데이터 호환성

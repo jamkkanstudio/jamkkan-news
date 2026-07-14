@@ -1,12 +1,38 @@
-# 잠깐. (Jamkkan)
+<div align="center">
 
-30초 뉴스 브리핑과 성장 기록을 제공하는 Streamlit 앱입니다.
+# 🌱 잠깐.
 
-- Live: https://jamkkan-news.streamlit.app/
-- Python: 3.12 권장
-- Storage: JSON 운영 기준선 + Supabase 병행 저장
+### 30초를, 나에게 투자하는 시간으로.
 
-제품 방향은 [BRAND.md](BRAND.md)와 [PRINCIPLES.md](PRINCIPLES.md), 우선순위는 [ROADMAP.md](ROADMAP.md), 변경 이력은 [CHANGELOG.md](CHANGELOG.md)를 확인하세요.
+![Version](https://img.shields.io/badge/version-v0.1.0-2E8B57)
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-Live-FF4B4B?logo=streamlit&logoColor=white)
+
+**사람은 시간이 없어서 성장하지 못하는 것이 아니라,<br>
+성장을 너무 거창하게 생각해서 시작하지 못한다고 믿습니다.**
+
+[잠깐. 시작하기](https://jamkkan-news.streamlit.app/)
+
+</div>
+
+잠깐.은 출근 전, 커피를 기다리는 동안, 엘리베이터 안에서 생기는 짧은 시간을 나에게 투자하는 시간으로 바꾸는 서비스입니다.
+
+우리는 뉴스를 많이 보여주지 않습니다. 오늘 꼭 알아야 할 뉴스와 나에게 중요한 뉴스만 짧게 전하고, 투자한 30초가 성장 기록으로 쌓이게 합니다.
+
+## 잠깐.의 경험
+
+- 🌍 **오늘의 TOP5** — 오늘 놓치지 말아야 할 뉴스
+- 👤 **나의 TOP5** — 관심 분야를 반영한 개인 브리핑
+- ✍ **30초 브리핑** — 핵심 내용과 중요한 이유
+- 🌱 **성장 기록** — 읽은 기사, 투자 시간, 연속 성장
+- 📊 **나의 분석** — 주간 기록과 관심 분야 흐름
+
+> 우리는 사용자를 오래 붙잡지 않습니다.<br>
+> 오늘 충분히 성장했다면 기꺼이 보내드립니다.
+
+> **오늘은 충분합니다. 내일 다시 잠깐.**
+
+제품의 전체 방향은 [BRAND.md](BRAND.md)와 [PRINCIPLES.md](PRINCIPLES.md), 우선순위는 [ROADMAP.md](ROADMAP.md), 변경 이력은 [CHANGELOG.md](CHANGELOG.md)를 확인하세요.
 
 ## Local setup
 

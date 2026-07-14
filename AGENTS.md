@@ -31,7 +31,7 @@
 
 Update a document only when its role changed, and link instead of repeating detail.
 
-- `README.md`: setup, secrets, local run, tests, deployment, and operation only.
+- `README.md`: a concise user-facing brand introduction followed by setup, secrets, local run, tests, deployment, and operation. Link to `BRAND.md` and `PRINCIPLES.md` instead of duplicating their full narrative.
 - `ROADMAP.md`: ordered outcomes and status only; no implementation narrative.
 - `CHANGELOG.md`: release-relevant user, security, or operational changes only.
 - `docs/PROJECT_CONTEXT.md`: durable product invariants and architecture decisions only.
