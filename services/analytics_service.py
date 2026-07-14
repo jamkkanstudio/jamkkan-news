@@ -10,6 +10,13 @@ EVENTS_FILE = Path("data/events.json")
 KOREA_TIMEZONE = ZoneInfo("Asia/Seoul")
 
 
+def save_event_to_supabase(event: dict) -> bool:
+    """분석 이벤트 한 건을 Supabase에 저장합니다."""
+    from services.supabase_service import insert_event
+
+    return insert_event(event)
+
+
 def load_events() -> list[dict]:
     """저장된 사용자 행동 기록을 불러옵니다."""
     if not EVENTS_FILE.exists():
@@ -46,8 +53,8 @@ def record_article_read_event(
     category: str,
     title: str,
     seconds: int = 30,
-) -> None:
-    """기사 투자 완료 이벤트를 저장합니다."""
+) -> bool:
+    """이벤트를 JSON에 저장하고 Supabase 미러링 결과를 반환합니다."""
     events = load_events()
 
     event = {
@@ -64,6 +71,7 @@ def record_article_read_event(
 
     events.append(event)
     save_events(events)
+    return save_event_to_supabase(event)
 
 
 def _get_event_date(event: dict) -> date | None:
