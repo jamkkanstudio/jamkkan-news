@@ -33,11 +33,13 @@
 - `python -m compileall -q app.py components pages services scripts`와 workflow YAML 파싱 통과
 - 로컬 Streamlit `/_stcore/health`와 `/` — HTTP 200
 - `git diff --check`와 credential 패턴 검사 통과
-- `events.json`, `growth.json`, `interest.json`, `news.json`, `settings.json`의 SHA-256이 Sprint 시작 기준과 일치하고 data diff가 없습니다.
+- 구현·푸시 전 `events.json`, `growth.json`, `interest.json`, `news.json`, `settings.json`의 SHA-256이 Sprint 시작 기준과 일치했습니다.
+- 운영 수동 dispatch 2회가 각각 42초와 41초에 성공했고 새 기사 5건씩을 추가했습니다. 자동 커밋 `3b4b2f5`, `920dba8`은 `data/news.json`만 변경했으며 13건의 기사 ID와 URL은 모두 고유합니다.
+- 배포 앱에서 최신 자동 수집 뉴스 노출, 익명 홈 읽기, 익명 관리 페이지 차단과 브라우저 콘솔 오류 0건을 확인했습니다.
 
 ## 배포 상태
 
-코드 구현이 완료됐고 배포 검증 대기입니다. GitHub Actions Repository secrets 네 개의 안전한 UI 설정, 수동 dispatch, 예약 실행, 최신 뉴스 노출, 익명 읽기와 관리자 경계를 확인한 뒤 완료로 전환합니다.
+코드와 운영 Secret 이름 네 개의 안전한 UI 설정, 수동 dispatch, 최신 뉴스 노출, 익명 읽기와 관리자 경계 검증은 완료했습니다. 워크플로는 GitHub API에서 `active`이고 수동 실행은 성공하지만 2026-07-15 07:44 KST까지 `schedule` 이벤트는 0건입니다. 07:33 KST에 한 차례 비활성화·재활성화해 예약 등록을 갱신했으며 코드·Secret·데이터는 변경하지 않았습니다. GitHub 예약 실행이 실제로 생성되고 성공하는 것을 확인할 때까지 Sprint 상태를 배포 검증 대기로 유지합니다.
 
 ## 다음 경계
 
