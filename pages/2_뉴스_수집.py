@@ -1,5 +1,9 @@
+import html
+import re
+
 import streamlit as st
 
+from services.news_service import add_news, load_news
 from services.rss_service import RSS_FEEDS, fetch_rss_news
 
 
@@ -10,7 +14,17 @@ st.set_page_config(
 )
 
 st.title("뉴스 수집")
-st.caption("RSS에서 최신 기사 후보를 가져옵니다.")
+st.caption("RSS에서 기사 후보를 가져와 오늘의 뉴스로 등록합니다.")
+
+
+def clean_summary(summary: str) -> str:
+    """RSS 요약에서 HTML 태그와 특수문자를 제거합니다."""
+    if not summary:
+        return ""
+
+    text = re.sub(r"<[^>]+>", "", summary)
+    return html.unescape(text).strip()
+
 
 category = st.selectbox(
     "카테고리",
@@ -48,21 +62,92 @@ news_list = st.session_state.get("rss_news_list", [])
 if news_list:
     st.divider()
     st.subheader("수집된 기사")
+    st.caption("오늘의 뉴스로 등록할 기사를 최대 5개 선택하세요.")
 
-    for index, news in enumerate(news_list, start=1):
-        with st.container(border=True):
-            st.markdown(f"**{index}. {news['title']}**")
+    existing_news = load_news()
+    existing_urls = {
+        news.get("url")
+        for news in existing_news
+        if news.get("url")
+    }
 
-            st.caption(
-                f"{news['source']} · "
-                f"{news['category']} · "
-                f"{news['published_at']}"
+    with st.form("select_rss_news"):
+        selected_indices = []
+
+        for index, news in enumerate(news_list):
+            already_registered = news["url"] in existing_urls
+
+            with st.container(border=True):
+                selected = st.checkbox(
+                    news["title"],
+                    key=f"select_{index}_{news['url']}",
+                    disabled=already_registered,
+                )
+
+                st.caption(
+                    f"{news['source']} · "
+                    f"{news['category']} · "
+                    f"{news['published_at']}"
+                )
+
+                summary = clean_summary(news.get("summary", ""))
+
+                if summary:
+                    st.write(summary)
+
+                if already_registered:
+                    st.info("이미 등록된 기사입니다.")
+
+                st.link_button(
+                    "원문 보기",
+                    news["url"],
+                )
+
+                if selected:
+                    selected_indices.append(index)
+
+        submitted = st.form_submit_button(
+            "선택한 기사 등록",
+            use_container_width=True,
+        )
+
+    if submitted:
+        if not selected_indices:
+            st.warning("등록할 기사를 선택해 주세요.")
+
+        elif len(selected_indices) > 5:
+            st.error("기사는 최대 5개까지 선택할 수 있습니다.")
+
+        else:
+            added_count = 0
+
+            for index in selected_indices:
+                rss_news = news_list[index]
+                summary = clean_summary(
+                    rss_news.get("summary", "")
+                )
+
+                news_category = rss_news.get("category", "기타")
+
+                if news_category == "최신":
+                    news_category = "기타"
+
+                new_news = {
+                    "title": rss_news["title"],
+                    "summary": summary or "기사 요약을 작성해 주세요.",
+                    "reason": "이 기사가 중요한 이유를 작성해 주세요.",
+                    "source": rss_news["source"],
+                    "url": rss_news["url"],
+                    "category": news_category,
+                    "importance": 50,
+                }
+
+                add_news(new_news)
+                added_count += 1
+
+            st.success(
+                f"{added_count}개의 기사가 뉴스 관리 목록에 등록되었습니다."
             )
 
-            if news.get("summary"):
-                st.write(news["summary"])
-
-            st.link_button(
-                "원문 보기",
-                news["url"],
-            )
+            st.session_state.pop("rss_news_list", None)
+            st.rerun()
