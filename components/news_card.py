@@ -1,5 +1,8 @@
 import streamlit as st
 
+from services.analytics_service import (
+    record_article_read_event,
+)
 from services.growth_service import (
     is_read_today,
     record_article_read,
@@ -99,6 +102,13 @@ def render_news_card(
                         )
 
                         if recorded:
+                            record_article_read_event(
+                                news_id=news_id,
+                                category=category,
+                                title=title,
+                                seconds=30,
+                            )
+
                             st.success(
                                 "30초를 나에게 투자했습니다."
                             )

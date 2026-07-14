@@ -1,8 +1,8 @@
 {
-  "total_articles": 7,
-  "total_seconds": 210,
-  "current_streak": 1,
-  "last_active_date": "2026-07-14",
+  "total_articles": 8,
+  "total_seconds": 240,
+  "current_streak": 2,
+  "last_active_date": "2026-07-15",
   "daily": {
     "2026-07-14": {
       "articles": 7,
@@ -15,6 +15,13 @@
         "8f388a5b-4728-4a5b-a7f0-31f5caaf923e",
         "317ac8f5-54d9-413f-9303-7dc3238394e2",
         "fd4dfcea-a6e1-4d4e-8aa8-ea7256fb95bf"
+      ]
+    },
+    "2026-07-15": {
+      "articles": 1,
+      "seconds": 30,
+      "read_news_ids": [
+        "14a187ae-006b-46b6-8ca7-0b68062866bb"
       ]
     }
   }
