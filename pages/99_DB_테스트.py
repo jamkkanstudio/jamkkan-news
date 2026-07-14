@@ -1,6 +1,6 @@
 import streamlit as st
 
-from services.supabase_service import supabase
+from services.supabase_service import get_supabase_client
 
 
 st.set_page_config(
@@ -17,7 +17,7 @@ if st.button(
 ):
     try:
         response = (
-            supabase
+            get_supabase_client()
             .table("news")
             .select("id, title")
             .limit(5)

@@ -7,6 +7,13 @@ from uuid import uuid4
 DATA_FILE = Path("data/news.json")
 
 
+def save_news_to_supabase(news: dict) -> bool:
+    """뉴스 한 건을 Supabase에 저장합니다."""
+    from services.supabase_service import upsert_news
+
+    return upsert_news(news)
+
+
 def load_news() -> list[dict]:
     """news.json에서 뉴스 목록을 불러옵니다."""
     if not DATA_FILE.exists():
@@ -50,6 +57,7 @@ def add_news(news: dict) -> None:
 
     news_list.append(new_news)
     save_news(news_list)
+    save_news_to_supabase(new_news)
 
 
 def delete_news(news_id: str) -> bool:

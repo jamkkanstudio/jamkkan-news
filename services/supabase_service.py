@@ -1,5 +1,10 @@
+import logging
+
 import streamlit as st
 from supabase import Client, create_client
+
+
+logger = logging.getLogger(__name__)
 
 
 @st.cache_resource
@@ -14,4 +19,14 @@ def get_supabase_client() -> Client:
     )
 
 
-supabase = get_supabase_client()
+def upsert_news(news: dict) -> bool:
+    """뉴스 한 건을 Supabase에 추가하거나 갱신합니다."""
+    try:
+        get_supabase_client().table("news").upsert(news).execute()
+        return True
+    except Exception:
+        logger.exception(
+            "Supabase 뉴스 저장에 실패했습니다: %s",
+            news.get("id"),
+        )
+        return False
