@@ -1,11 +1,13 @@
 import json
 from collections import defaultdict
-from datetime import datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from uuid import uuid4
+from zoneinfo import ZoneInfo
 
 
 EVENTS_FILE = Path("data/events.json")
+KOREA_TIMEZONE = ZoneInfo("Asia/Seoul")
 
 
 def load_events() -> list[dict]:
@@ -55,18 +57,56 @@ def record_article_read_event(
         "category": category or "기타",
         "title": title,
         "seconds": max(int(seconds), 0),
-        "created_at": datetime.now().isoformat(
-            timespec="seconds"
-        ),
+        "created_at": datetime.now(
+            KOREA_TIMEZONE
+        ).isoformat(timespec="seconds"),
     }
 
     events.append(event)
     save_events(events)
 
 
-def get_category_statistics() -> list[dict]:
-    """카테고리별 읽은 기사 수와 투자 시간을 계산합니다."""
-    events = load_events()
+def _get_event_date(event: dict) -> date | None:
+    """이벤트 날짜를 한국 시간 기준으로 반환합니다."""
+    created_at = event.get("created_at", "")
+
+    if not created_at:
+        return None
+
+    try:
+        event_datetime = datetime.fromisoformat(created_at)
+
+        if event_datetime.tzinfo is None:
+            event_datetime = event_datetime.replace(
+                tzinfo=KOREA_TIMEZONE
+            )
+        else:
+            event_datetime = event_datetime.astimezone(
+                KOREA_TIMEZONE
+            )
+
+        return event_datetime.date()
+
+    except (TypeError, ValueError):
+        return None
+
+
+def get_article_read_events() -> list[dict]:
+    """기사 읽기 이벤트만 반환합니다."""
+    return [
+        event
+        for event in load_events()
+        if event.get("event_type") == "article_read"
+    ]
+
+
+def get_category_statistics(
+    events: list[dict] | None = None,
+) -> list[dict]:
+    """카테고리별 기사 수와 투자 시간을 계산합니다."""
+    if events is None:
+        events = get_article_read_events()
+
     category_data = defaultdict(
         lambda: {
             "articles": 0,
@@ -75,10 +115,8 @@ def get_category_statistics() -> list[dict]:
     )
 
     for event in events:
-        if event.get("event_type") != "article_read":
-            continue
-
         category = event.get("category", "기타")
+
         category_data[category]["articles"] += 1
         category_data[category]["seconds"] += int(
             event.get("seconds", 0)
@@ -98,3 +136,54 @@ def get_category_statistics() -> list[dict]:
         key=lambda item: item["seconds"],
         reverse=True,
     )
+
+
+def get_current_week_events() -> list[dict]:
+    """이번 주 월요일부터 오늘까지의 이벤트를 반환합니다."""
+    today = datetime.now(KOREA_TIMEZONE).date()
+    monday = today - timedelta(days=today.weekday())
+
+    weekly_events = []
+
+    for event in get_article_read_events():
+        event_date = _get_event_date(event)
+
+        if event_date and monday <= event_date <= today:
+            weekly_events.append(event)
+
+    return weekly_events
+
+
+def get_current_week_daily_statistics() -> list[dict]:
+    """이번 주 월요일부터 일요일까지 일별 기록을 반환합니다."""
+    today = datetime.now(KOREA_TIMEZONE).date()
+    monday = today - timedelta(days=today.weekday())
+
+    daily_data = {
+        monday + timedelta(days=offset): {
+            "articles": 0,
+            "seconds": 0,
+        }
+        for offset in range(7)
+    }
+
+    for event in get_current_week_events():
+        event_date = _get_event_date(event)
+
+        if event_date in daily_data:
+            daily_data[event_date]["articles"] += 1
+            daily_data[event_date]["seconds"] += int(
+                event.get("seconds", 0)
+            )
+
+    day_names = ["월", "화", "수", "목", "금", "토", "일"]
+
+    return [
+        {
+            "date": day.isoformat(),
+            "day": day_names[index],
+            "articles": daily_data[day]["articles"],
+            "seconds": daily_data[day]["seconds"],
+        }
+        for index, day in enumerate(daily_data.keys())
+    ]
