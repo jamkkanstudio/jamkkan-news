@@ -4,6 +4,7 @@ from unittest.mock import MagicMock, patch
 from services.supabase_service import (
     delete_news,
     replace_interests,
+    upsert_setting,
     upsert_news,
 )
 
@@ -114,10 +115,32 @@ class ReplaceInterestsTest(unittest.TestCase):
         ):
             result = replace_interests([])
 
-        table.delete.return_value.neq.return_value.execute.assert_called_once_with()
+        (
+            table.delete.return_value.neq.return_value.execute
+            .assert_called_once_with()
+        )
         table.insert.assert_not_called()
         self.assertTrue(result)
 
+
+class UpsertSettingTest(unittest.TestCase):
+    def test_upsert_setting_writes_key_and_json_value(self) -> None:
+        client = MagicMock()
+
+        with patch(
+            "services.supabase_service.get_supabase_client",
+            return_value=client,
+        ):
+            result = upsert_setting("daily_goal_seconds", 300)
+
+        client.table.assert_called_once_with("settings")
+        client.table.return_value.upsert.assert_called_once_with(
+            {
+                "setting_key": "daily_goal_seconds",
+                "setting_value": 300,
+            }
+        )
+        self.assertTrue(result)
 
 if __name__ == "__main__":
     unittest.main()

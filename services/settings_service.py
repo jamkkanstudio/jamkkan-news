@@ -6,6 +6,16 @@ SETTINGS_FILE = Path("data/settings.json")
 DEFAULT_DAILY_GOAL_SECONDS = 180
 
 
+def save_setting_to_supabase(
+    setting_key: str,
+    setting_value: object,
+) -> bool:
+    """설정 한 건을 Supabase에 저장합니다."""
+    from services.supabase_service import upsert_setting
+
+    return upsert_setting(setting_key, setting_value)
+
+
 def load_settings() -> dict:
     """사용자 설정을 불러옵니다."""
     default_settings = {
@@ -59,8 +69,12 @@ def get_daily_goal_seconds() -> int:
     return max(goal_seconds, 30)
 
 
-def save_daily_goal_seconds(seconds: int) -> None:
-    """오늘의 목표 시간을 저장합니다."""
+def save_daily_goal_seconds(seconds: int) -> bool:
+    """목표 시간을 JSON에 저장하고 Supabase 미러링 결과를 반환합니다."""
     settings = load_settings()
     settings["daily_goal_seconds"] = max(int(seconds), 30)
     save_settings(settings)
+    return save_setting_to_supabase(
+        "daily_goal_seconds",
+        settings["daily_goal_seconds"],
+    )

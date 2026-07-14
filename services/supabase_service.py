@@ -66,3 +66,21 @@ def replace_interests(interests: list[str]) -> bool:
     except Exception:
         logger.exception("Supabase 관심 분야 저장에 실패했습니다.")
         return False
+
+
+def upsert_setting(setting_key: str, setting_value: object) -> bool:
+    """Supabase에 설정 한 건을 추가하거나 갱신합니다."""
+    try:
+        get_supabase_client().table("settings").upsert(
+            {
+                "setting_key": setting_key,
+                "setting_value": setting_value,
+            }
+        ).execute()
+        return True
+    except Exception:
+        logger.exception(
+            "Supabase 설정 저장에 실패했습니다: %s",
+            setting_key,
+        )
+        return False

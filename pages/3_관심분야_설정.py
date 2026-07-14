@@ -85,14 +85,17 @@ if st.button(
     use_container_width=True,
 ):
     interests_mirrored = save_interests(selected_interests)
-    save_daily_goal_seconds(
+    goal_mirrored = save_daily_goal_seconds(
         GOAL_OPTIONS[selected_goal_label]
     )
 
-    if interests_mirrored:
-        st.success("설정이 저장되었습니다.")
+    mirrored_items = interests_mirrored + goal_mirrored
+
+    if mirrored_items == 2:
+        st.success("관심 분야와 목표 시간이 JSON과 Supabase에 저장되었습니다.")
     else:
         st.warning(
-            "설정은 JSON에 저장됐지만 관심 분야의 Supabase 저장에 "
-            "실패했습니다. 서버 로그를 확인해 주세요."
+            "설정은 JSON에 저장됐지만 Supabase에는 "
+            f"{mirrored_items}/2개 항목만 저장됐습니다. "
+            "서버 로그를 확인해 주세요."
         )
