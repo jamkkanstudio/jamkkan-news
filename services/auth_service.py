@@ -1,4 +1,5 @@
 from collections.abc import Mapping
+import os
 
 import streamlit as st
 
@@ -53,6 +54,19 @@ def admin_emails() -> set[str]:
     return {str(email).strip().lower() for email in raw_emails if str(email).strip()}
 
 
+def _parse_email_allowlist(raw_emails) -> set[str]:
+    """쉼표 문자열이나 목록 형태의 관리자 이메일을 정규화합니다."""
+    if isinstance(raw_emails, str):
+        raw_emails = raw_emails.split(",")
+    if not isinstance(raw_emails, (list, tuple, set)):
+        return set()
+    return {
+        str(email).strip().lower()
+        for email in raw_emails
+        if str(email).strip()
+    }
+
+
 def is_admin() -> bool:
     email = current_user_email()
     return bool(email and email in admin_emails())
@@ -61,6 +75,20 @@ def is_admin() -> bool:
 def require_admin() -> None:
     if not is_admin():
         raise AuthorizationError("관리자 권한이 필요한 작업입니다.")
+
+
+def require_automation_admin() -> None:
+    """예약 작업의 실행 주체가 배포 관리자 목록에 있는지 확인합니다."""
+    automation_email = os.environ.get(
+        "NEWS_AUTOMATION_ADMIN_EMAIL",
+        "",
+    ).strip().lower()
+    allowed_emails = _parse_email_allowlist(
+        os.environ.get("ADMIN_EMAILS", "")
+    )
+
+    if not automation_email or automation_email not in allowed_emails:
+        raise AuthorizationError("자동 수집 관리자 권한이 필요합니다.")
 
 
 def render_auth_sidebar() -> None:

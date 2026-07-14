@@ -36,16 +36,23 @@ def load_news() -> list[dict]:
 
 
 def save_news(news_list: list[dict]) -> None:
-    """뉴스 목록을 news.json에 저장합니다."""
+    """뉴스 목록을 임시 파일을 거쳐 news.json에 원자적으로 저장합니다."""
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
+    temporary_file = DATA_FILE.with_suffix(f"{DATA_FILE.suffix}.tmp")
 
-    with DATA_FILE.open("w", encoding="utf-8") as file:
-        json.dump(
-            news_list,
-            file,
-            ensure_ascii=False,
-            indent=2,
-        )
+    try:
+        with temporary_file.open("w", encoding="utf-8") as file:
+            json.dump(
+                news_list,
+                file,
+                ensure_ascii=False,
+                indent=2,
+            )
+            file.flush()
+
+        temporary_file.replace(DATA_FILE)
+    finally:
+        temporary_file.unlink(missing_ok=True)
 
 
 def add_news(news: dict) -> bool:

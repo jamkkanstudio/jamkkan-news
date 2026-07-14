@@ -51,6 +51,9 @@ def sort_news_by_importance(news_list: list[dict]) -> list[dict]:
 
     return sorted(
         news_list,
-        key=lambda news: news["importance"],
+        key=lambda news: (
+            news["importance"],
+            news.get("created_at", ""),
+        ),
         reverse=True,
     )

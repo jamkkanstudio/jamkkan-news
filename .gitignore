@@ -22,6 +22,7 @@ Thumbs.db
 
 # Logs
 *.log
+.news_collection.lock
 
 # Pytest
 .pytest_cache/

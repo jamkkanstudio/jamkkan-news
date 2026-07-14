@@ -3,6 +3,7 @@ from unittest.mock import MagicMock, patch
 
 from services.supabase_service import (
     delete_news,
+    get_setting,
     replace_interests,
     upsert_growth_daily,
     upsert_setting,
@@ -142,6 +143,24 @@ class UpsertSettingTest(unittest.TestCase):
             }
         )
         self.assertTrue(result)
+
+    def test_get_setting_reads_json_value(self) -> None:
+        client = MagicMock()
+        query = (
+            client.table.return_value.select.return_value.eq.return_value
+            .limit.return_value
+        )
+        query.execute.return_value.data = [
+            {"setting_value": {"status": "success"}}
+        ]
+
+        with patch(
+            "services.supabase_service.get_supabase_client",
+            return_value=client,
+        ):
+            value = get_setting("news_collection_status")
+
+        self.assertEqual(value, {"status": "success"})
 
 
 class UpsertGrowthDailyTest(unittest.TestCase):

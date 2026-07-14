@@ -19,13 +19,20 @@ class FetchRssNewsTest(unittest.TestCase):
             ],
         )
 
-        with patch("services.rss_service.feedparser.parse", return_value=feed):
+        response = unittest.mock.MagicMock()
+        response.__enter__.return_value.read.return_value = b"rss"
+
+        with (
+            patch("services.rss_service.urlopen", return_value=response),
+            patch("services.rss_service.feedparser.parse", return_value=feed),
+        ):
             news_list = fetch_rss_news(category="경제", limit=1)
 
         self.assertEqual(len(news_list), 1)
         self.assertEqual(news_list[0]["title"], "테스트 기사")
         self.assertEqual(news_list[0]["url"], "https://example.com/news")
         self.assertEqual(news_list[0]["category"], "경제")
+        self.assertEqual(news_list[0]["source_id"], "")
 
     def test_fetch_rss_news_rejects_unknown_category(self) -> None:
         with self.assertRaises(ValueError):

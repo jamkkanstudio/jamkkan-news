@@ -1,4 +1,5 @@
 import logging
+import os
 
 import streamlit as st
 from supabase import Client, create_client
@@ -10,8 +11,13 @@ logger = logging.getLogger(__name__)
 @st.cache_resource
 def get_supabase_client() -> Client:
     """Supabase 클라이언트를 생성하고 재사용합니다."""
-    supabase_url = st.secrets["SUPABASE_URL"]
-    supabase_key = st.secrets["SUPABASE_KEY"]
+    supabase_url = os.environ.get("SUPABASE_URL")
+    supabase_key = os.environ.get("SUPABASE_KEY")
+
+    if not supabase_url:
+        supabase_url = st.secrets["SUPABASE_URL"]
+    if not supabase_key:
+        supabase_key = st.secrets["SUPABASE_KEY"]
 
     return create_client(
         supabase_url,
@@ -84,6 +90,29 @@ def upsert_setting(setting_key: str, setting_value: object) -> bool:
             setting_key,
         )
         return False
+
+
+def get_setting(setting_key: str):
+    """Supabase에서 설정 한 건을 읽고, 실패하거나 없으면 None을 반환합니다."""
+    try:
+        response = (
+            get_supabase_client()
+            .table("settings")
+            .select("setting_value")
+            .eq("setting_key", setting_key)
+            .limit(1)
+            .execute()
+        )
+        rows = response.data or []
+        if not rows:
+            return None
+        return rows[0].get("setting_value")
+    except Exception:
+        logger.warning(
+            "Supabase 설정 조회에 실패했습니다: %s",
+            setting_key,
+        )
+        return None
 
 
 def upsert_growth_daily(growth_day: dict) -> bool:

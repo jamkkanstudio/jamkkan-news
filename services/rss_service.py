@@ -1,5 +1,6 @@
 from datetime import datetime
 from email.utils import parsedate_to_datetime
+from urllib.request import Request, urlopen
 
 import feedparser
 
@@ -11,6 +12,9 @@ RSS_FEEDS = {
     "사회": "https://www.yonhapnewstv.co.kr/category/news/society/feed/",
     "국제": "https://www.yonhapnewstv.co.kr/category/news/international/feed/",
 }
+
+RSS_TIMEOUT_SECONDS = 20
+RSS_USER_AGENT = "JamkkanNewsCollector/1.0 (+https://jamkkan-news.streamlit.app/)"
 
 
 def _parse_published_date(entry) -> str:
@@ -33,7 +37,16 @@ def fetch_rss_news(category: str = "최신", limit: int = 20) -> list[dict]:
         raise ValueError(f"지원하지 않는 카테고리입니다: {category}")
 
     feed_url = RSS_FEEDS[category]
-    feed = feedparser.parse(feed_url)
+    request = Request(
+        feed_url,
+        headers={"User-Agent": RSS_USER_AGENT},
+    )
+
+    try:
+        with urlopen(request, timeout=RSS_TIMEOUT_SECONDS) as response:
+            feed = feedparser.parse(response.read())
+    except OSError as error:
+        raise RuntimeError("RSS를 불러오지 못했습니다.") from error
 
     if feed.bozo and not feed.entries:
         raise RuntimeError("RSS를 불러오지 못했습니다.")
@@ -45,6 +58,9 @@ def fetch_rss_news(category: str = "최신", limit: int = 20) -> list[dict]:
             {
                 "title": entry.get("title", "").strip(),
                 "url": entry.get("link", "").strip(),
+                "source_id": str(
+                    entry.get("id", entry.get("guid", ""))
+                ).strip(),
                 "summary": entry.get("summary", "").strip(),
                 "source": "연합뉴스TV",
                 "category": category,

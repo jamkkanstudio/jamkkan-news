@@ -8,6 +8,7 @@ from services.auth_service import (
     is_admin,
     is_auth_configured,
     require_admin,
+    require_automation_admin,
     render_auth_sidebar,
 )
 
@@ -62,6 +63,29 @@ class AuthServiceTest(unittest.TestCase):
     def test_admin_is_allowed(self) -> None:
         with patch("services.auth_service.is_admin", return_value=True):
             require_admin()
+
+    def test_automation_admin_must_be_in_environment_allowlist(self) -> None:
+        with patch.dict(
+            "os.environ",
+            {
+                "ADMIN_EMAILS": "admin@example.com,other@example.com",
+                "NEWS_AUTOMATION_ADMIN_EMAIL": "Admin@Example.com",
+            },
+            clear=True,
+        ):
+            require_automation_admin()
+
+    def test_automation_non_admin_is_rejected(self) -> None:
+        with patch.dict(
+            "os.environ",
+            {
+                "ADMIN_EMAILS": "admin@example.com",
+                "NEWS_AUTOMATION_ADMIN_EMAIL": "other@example.com",
+            },
+            clear=True,
+        ):
+            with self.assertRaises(AuthorizationError):
+                require_automation_admin()
 
     def test_login_button_starts_google_login(self) -> None:
         sidebar = MagicMock()
