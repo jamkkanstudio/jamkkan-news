@@ -1,242 +1,377 @@
-# 📰 Jamkkan News
+<div align="center">
 
-> **잠깐.**
->
-> **오늘 알아야 할 뉴스만.**
+# 🌱 잠깐.
 
----
+### **30초를, 나에게 투자하는 시간으로.**
 
-## About
+![Version](https://img.shields.io/badge/version-v0.1.0-2E8B57)
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-Live-FF4B4B?logo=streamlit&logoColor=white)
+![Status](https://img.shields.io/badge/status-Active-success)
 
-**Jamkkan News**는 매일 아침 가장 중요한 뉴스를 선별하여
-짧고 명확하게 전달하는 뉴스 큐레이션 서비스입니다.
+**사람은 시간이 없어서 성장하지 못하는 것이 아니라,  
+성장을 너무 거창하게 생각해서 시작하지 못한다고 믿습니다.**
 
-우리는 뉴스를 많이 보여주지 않습니다.
+잠깐.은
 
-대신,
+출근 전 30초,
 
-**오늘 꼭 알아야 할 뉴스 5개**를 전달합니다.
+커피를 기다리는 30초,
 
----
+엘리베이터를 기다리는 30초를
 
-## Philosophy
+**나에게 투자하는 시간**으로 바꾸는 성장 플랫폼입니다.
 
-> Less, but Better.
+🌍 **Live Demo**
 
-정보는 넘쳐납니다.
+https://(배포주소).streamlit.app
 
-하지만
-
-정말 중요한 뉴스는 많지 않습니다.
-
-Jamkkan News는
-
-빠르게 소비되는 세상에서
-
-**잠시 멈춰 생각하게 만드는 뉴스**를 만듭니다.
+</div>
 
 ---
 
-# Why?
+# 🌱 Why?
 
-수많은 뉴스 앱은
+우리는 현대인이 바쁘다고 생각하지 않습니다.
 
-- 너무 많은 기사를 보여주고
-- 클릭을 유도하는 제목이 많으며
-- 무엇이 중요한지 알려주지 않습니다.
+우리는
 
-Jamkkan News는
+**성장을 너무 거창하게 생각해서 시작하지 못한다고 생각합니다.**
 
-매일 아침
+사람들은
 
-**"오늘 이것만 보면 된다."**
+- 책은 1시간은 읽어야 하고
+- 운동은 헬스장을 가야 하고
+- 공부는 최소 30분은 해야 한다고 생각합니다.
 
-를 목표로 합니다.
+그러다 결국
 
----
+아무것도 하지 못합니다.
 
-# Features
+잠깐.은 다르게 생각합니다.
 
-### Current
+30초라도 충분합니다.
 
-- 핵심 뉴스 조회
-- 뉴스 관리
-- 뉴스 JSON 저장
+30초가 쌓이면
 
-### In Progress
+3분이 되고,
 
-- 뉴스 수정
-- 뉴스 삭제
-- 카테고리 분류
+3분이 쌓이면
 
-### Planned
+습관이 되고,
 
-- AI 뉴스 요약
-- AI 중요도 평가
-- 뉴스 자동 수집
-- 뉴스 자동 업데이트
-- AI 추천
+습관이 결국
+
+한 사람을 성장시킨다고 믿습니다.
 
 ---
 
-# Tech Stack
+# ✨ Features
 
-## Backend
+## 📰 오늘의 TOP5
 
-- Python
+오늘 가장 중요한 뉴스 5개를 제공합니다.
 
-## Frontend
+---
+
+## 👤 나의 TOP5
+
+관심 분야를 기반으로
+
+나만의 브리핑을 제공합니다.
+
+---
+
+## 📥 RSS 뉴스 수집
+
+RSS를 통해
+
+최신 뉴스를 자동으로 가져옵니다.
+
+---
+
+## ✍ 자동 브리핑
+
+기사를
+
+짧고 읽기 쉬운 브리핑으로 제공합니다.
+
+---
+
+## 🌱 성장 시스템
+
+기사를 읽을 때마다
+
+나에게 투자한 시간이 기록됩니다.
+
+---
+
+## 📈 성장 대시보드
+
+- 오늘 읽은 기사
+- 누적 기사
+- 투자 시간
+- 연속 성장
+- 주간 성장
+
+을 확인할 수 있습니다.
+
+---
+
+## ✅ 브리핑 완료
+
+오늘의 브리핑을 모두 읽으면
+
+오늘은 충분합니다.
+
+라는 메시지와 함께
+
+하루를 마무리합니다.
+
+우리는
+
+사용자를 오래 붙잡지 않습니다.
+
+---
+
+# 📱 Screenshots
+
+## 🏠 Home
+
+(스크린샷)
+
+---
+
+## 🌱 Growth
+
+(스크린샷)
+
+---
+
+## 📰 News
+
+(스크린샷)
+
+---
+
+# 🛠 Tech Stack
+
+### Frontend
 
 - Streamlit
 
-## Version Control
+### Backend
+
+- Python
+
+### Storage
+
+- JSON
+
+(향후 Supabase)
+
+### Version Control
 
 - Git
 - GitHub
 
-## AI
-
-- OpenAI API (Planned)
-
-## Database
-
-- Supabase (Planned)
-
-## Web
-
-- FastAPI (Planned)
-- Next.js (Planned)
-
 ---
 
-# Project Structure
+# 📂 Project Structure
 
 ```text
 jamkkan-news/
 
-├── app.py
-├── README.md
-├── requirements.txt
-├── .gitignore
-│
-├── data/
-│   └── news.json
-│
-├── services/
-│   ├── collector.py
-│   ├── summarizer.py
-│   └── ranking.py
-│
-├── pages/
-│
-├── assets/
-│
-└── utils/
+app.py
+
+pages/
+
+components/
+
+services/
+
+data/
+
+README.md
+
+BRAND.md
+
+PRINCIPLES.md
+
+IDEAS.md
+
+ROADMAP.md
 ```
 
 ---
 
-# Roadmap
-
-## Sprint 1
-
-- [x] Project Setup
-- [x] GitHub Repository
-- [x] Streamlit
-- [x] News Viewer
-- [ ] News Management
-- [ ] News Edit
-- [ ] News Delete
-
----
-
-## Sprint 2
-
-- [ ] Naver News API
-- [ ] News Collection
-- [ ] AI Summary
-- [ ] News Category
-
----
-
-## Sprint 3
-
-- [ ] Importance Ranking
-- [ ] Duplicate Detection
-- [ ] Morning Briefing
-
----
-
-## Sprint 4
-
-- [ ] FastAPI
-- [ ] Supabase
-- [ ] Next.js
-- [ ] Public Deployment
-
----
-
-# Development Principles
-
-Jamkkan News follows a simple rule.
-
-> **Build small. Improve continuously.**
-
-Instead of creating a perfect product,
-
-we create
-
-**a working product.**
-
----
-
-# Run Project
-
-Install dependencies
+# 🚀 Run
 
 ```bash
 pip install -r requirements.txt
-```
 
-Run Streamlit
-
-```bash
 streamlit run app.py
 ```
 
 ---
 
-# Vision
+# 🧭 Roadmap
 
-Jamkkan News is not just a news application.
+## v0.1
 
-It is the first product of
+✅ MVP Release
 
-**Jamkkan Studio.**
-
-Our mission is simple.
-
-> **Pause. Think. Understand.**
-
----
-
-# Developer
-
-**Jamkkan Studio**
-
-2026
+- RSS 뉴스 수집
+- 오늘의 TOP5
+- 나의 TOP5
+- 성장 시스템
+- 모바일 지원
 
 ---
 
-# Status
+## v0.2
 
-🟢 MVP Development
-
-Current Version
-
-> **v0.1**
+- Supabase
+- Google Login
+- Analytics
+- Daily Goal
 
 ---
 
-⭐ If you like this project,
-consider giving it a star.
+## v0.3
+
+- AI Briefing
+- AI Ranking
+- AI Personalization
+
+---
+
+## v0.4
+
+잠깐. Book
+
+잠깐. Movie
+
+잠깐. Fitness
+
+잠깐. Finance
+
+잠깐. Learning
+
+---
+
+## v1.0
+
+Jamkkan Platform
+
+30초 성장 플랫폼
+
+---
+
+# 🌱 Product Principles
+
+우리는
+
+사용자의 시간을 빼앗지 않습니다.
+
+우리는
+
+사용자가
+
+자신에게 시간을 투자하도록 돕습니다.
+
+우리는
+
+무한 스크롤을 만들지 않습니다.
+
+우리는
+
+중독을 설계하지 않습니다.
+
+우리는
+
+사람이
+
+매일 사용하는 기능만 만듭니다.
+
+---
+
+# 🌳 Vision
+
+Jamkkan Studio는
+
+뉴스 회사가 아닙니다.
+
+콘텐츠 회사도 아닙니다.
+
+우리는
+
+사람의 성장을 돕는 회사입니다.
+
+뉴스는
+
+첫 번째 콘텐츠일 뿐입니다.
+
+앞으로
+
+📖 Book
+
+🎬 Movie
+
+💪 Fitness
+
+📈 Finance
+
+🧠 Learning
+
+모든 콘텐츠를
+
+30초 안에 전달하는
+
+성장 플랫폼이 되는 것이 목표입니다.
+
+---
+
+# ❤️ Our Promise
+
+우리는
+
+사용자를 오래 붙잡지 않습니다.
+
+오늘 충분히 성장했다면
+
+기꺼이 보내드립니다.
+
+> **오늘은 충분합니다.**
+
+> **내일 다시 잠깐.**
+
+---
+
+# 🤝 About Jamkkan Studio
+
+Jamkkan Studio는
+
+사람이
+
+어제보다 오늘
+
+1% 더 성장하도록 돕는 회사를 꿈꿉니다.
+
+우리는
+
+콘텐츠를 만드는 회사가 아니라
+
+사람의 성장을 만드는 회사를 지향합니다.
+
+---
+
+<div align="center">
+
+## 🌱
+
+### **잠깐의 시간이, 평생의 성장을 만든다.**
+
+Made with ❤️ by **Jamkkan Studio**
+
+</div>
