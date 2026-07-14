@@ -34,6 +34,8 @@
 - PostgreSQL 데이터베이스 구축
 - Streamlit ↔ Supabase 연결
 - 데이터베이스 연결 테스트 완료
+- 뉴스 JSON · Supabase 병행 저장
+- 기존 JSON 뉴스의 Supabase 전체 동기화 기능
 - 서비스 클라우드 전환 준비
 
 ---
