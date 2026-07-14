@@ -12,6 +12,7 @@ Jamkkan의 Sprint 목표, 결정, 구현 결과와 검증 기록을 보관합니
 | 02 | Supabase 신규 뉴스 병행 저장 | 완료 | [02-supabase-news-mirror.md](02-supabase-news-mirror.md) |
 | 03 | 뉴스 수정·삭제 동기화 | 완료 | [03-news-update-delete-sync.md](03-news-update-delete-sync.md) |
 | 04 | 사용자 상태 Supabase 마이그레이션 | 완료 | [04-user-state-supabase-migration.md](04-user-state-supabase-migration.md) |
+| 05 | KST 날짜 기준 통일 | 구현 완료 | [05-kst-date-standardization.md](05-kst-date-standardization.md) |
 
 ## 운영 원칙
 

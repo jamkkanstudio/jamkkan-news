@@ -113,6 +113,7 @@ RSS를 통해
 - 투자 시간
 - 연속 성장
 - 주간 성장
+- Asia/Seoul 기준의 일관된 오늘·주간 기록
 
 을 확인할 수 있습니다.
 
@@ -207,6 +208,7 @@ streamlit run app.py
 - ✅ 신규 뉴스 Supabase 병행 저장
 - ✅ 뉴스 수정·삭제 Supabase 동기화
 - ✅ 사용자 상태 Supabase 마이그레이션
+- ✅ 성장·분석 날짜 기준 KST 통일
 - Google Login
 - 사용자 데이터 영구 저장
 
