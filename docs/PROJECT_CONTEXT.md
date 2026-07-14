@@ -14,7 +14,7 @@ Jamkkan turns very short idle moments into sustainable growth. The news product 
 - Daily and weekly behavior uses `Asia/Seoul`.
 - Streamlit native OIDC provides Google login. Email is used in memory for the administrator allowlist only.
 - User ownership is derived on demand from the OIDC `(issuer, subject)` pair with a server-only HMAC pepper. Only the resulting opaque owner id may be persisted; raw identity claims are not user-data keys.
-- A default-off `USER_DATA_ENABLED` compatibility layer switches authenticated interests, goals, growth, and analytics together; partial routing is not allowed.
+- A default-off `USER_DATA_ENABLED` compatibility layer switches authenticated interests, goals, growth, and analytics together; partial routing is not allowed. Production routing was enabled only after the empty schema, role boundaries, and two-account isolation passed verification.
 
 ## Data and authorization model
 
@@ -24,7 +24,7 @@ Jamkkan turns very short idle moments into sustainable growth. The news product 
 - Protected writes are checked at both page and service boundaries.
 - With user-data routing disabled, current interests, goals, growth, and analytics records remain the legacy global/anonymous dataset.
 - Empty owner-scoped Supabase tables and server-only access primitives are defined separately from legacy tables. Direct `anon` and `authenticated` table access is denied; the server must constrain every operation by opaque `owner_id`.
-- Authenticated user-data routing is implemented but must remain disabled until the production schema, server-only secrets, and two-account isolation are verified. Existing rows must not be assigned to an owner without an explicit mapping, snapshot, validation, and rollback plan.
+- Authenticated user-data routing is enabled in production after protected legacy snapshots, an empty-schema rollout, server-only secret configuration, and two-account isolation verification. Existing rows remain unmapped and must not be assigned to an owner without an explicit mapping, snapshot, validation, and rollback plan.
 - A server-privileged Supabase key is a backend credential; public UI must never provide an unrestricted indirect write path.
 
 ## Documentation map
@@ -38,4 +38,4 @@ Jamkkan turns very short idle moments into sustainable growth. The news product 
 
 ## Near-term direction
 
-Complete the production rollout in order: capture the protected legacy snapshot, deploy and verify the empty schema, configure server-only secrets, test two real accounts, then enable authenticated routing. Keep the anonymous legacy path and all existing rows until a separately approved migration proves ownership and rollback.
+Keep the activated personal-data path monitored while preserving the anonymous legacy path and all existing rows. The next operational outcome is an automatic news-collection pipeline with duplicate protection and failure visibility; any future legacy ownership migration still requires separately approved mapping and rollback.

@@ -22,7 +22,7 @@
 - Added server-only storage primitives that reject invalid owners, constrain reads by owner, and prevent payloads from overriding trusted ownership.
 - Added one default-off feature flag that routes authenticated interests, goals, growth, and analytics together while failing closed on incomplete configuration.
 - Added two-owner isolation, payload-owner rejection, backend-failure, and logout compatibility regression coverage.
-- Added read-only legacy snapshot and post-schema permission checks; preserved all existing rows and left production activation pending operational verification.
+- Activated owner-scoped production storage only after protected legacy snapshots, empty-schema and role checks, two-account isolation, and real read/refresh verification; all legacy rows remain preserved and unmapped.
 
 ## ✨ Added
 
