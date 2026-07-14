@@ -78,10 +78,10 @@ alter table public.user_settings force row level security;
 alter table public.user_growth_daily force row level security;
 alter table public.user_events force row level security;
 
-revoke all on public.user_interests from anon, authenticated;
-revoke all on public.user_settings from anon, authenticated;
-revoke all on public.user_growth_daily from anon, authenticated;
-revoke all on public.user_events from anon, authenticated;
+revoke all on public.user_interests from public, anon, authenticated;
+revoke all on public.user_settings from public, anon, authenticated;
+revoke all on public.user_growth_daily from public, anon, authenticated;
+revoke all on public.user_events from public, anon, authenticated;
 
 grant select, insert, update, delete on public.user_interests to service_role;
 grant select, insert, update, delete on public.user_settings to service_role;
