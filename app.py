@@ -2,6 +2,9 @@ import streamlit as st
 
 from services.news_service import load_news
 from services.user_service import load_interests
+from services.ranking_service import sort_news_by_importance
+
+from components.news_card import render_news_card
 
 
 st.set_page_config(
@@ -28,44 +31,6 @@ def calculate_personal_score(news: dict, interests: list[str]) -> int:
     return score
 
 
-def render_news_card(
-    news: dict,
-    rank: int,
-    personal_score: int | None = None,
-) -> None:
-    """뉴스 한 개를 카드 형태로 표시합니다."""
-    with st.container(border=True):
-        st.markdown(f"### {rank}. {news['title']}")
-
-        caption_parts = [
-            news.get("source", "출처 없음"),
-            news.get("category", "기타"),
-            f"중요도 {news.get('importance', 50)}",
-        ]
-
-        if personal_score is not None:
-            caption_parts.append(f"관심 점수 {personal_score}")
-
-        st.caption(" · ".join(caption_parts))
-
-        st.write(news.get("summary", ""))
-
-        st.markdown("**왜 중요할까?**")
-        st.write(
-            news.get(
-                "reason",
-                "중요한 이유가 아직 작성되지 않았습니다.",
-            )
-        )
-
-        if news.get("url"):
-            st.link_button(
-                "원문 보기",
-                news["url"],
-                use_container_width=True,
-            )
-
-
 st.title("잠깐.")
 st.markdown(
     """
@@ -83,11 +48,7 @@ if not news_list:
     st.info("등록된 뉴스가 없습니다.")
 
 else:
-    today_top5 = sorted(
-        news_list,
-        key=lambda news: int(news.get("importance", 0)),
-        reverse=True,
-    )[:5]
+    today_top5 = sort_news_by_importance(news_list)[:5]
 
     st.subheader("🌍 오늘의 TOP5")
     st.caption("오늘 모두가 알아야 할 뉴스")
