@@ -8,6 +8,13 @@
 
 > 다음 버전에 포함될 예정입니다.
 
+## Authentication
+
+- Added Streamlit native Google OIDC login and logout controls.
+- Added a deployment-secret administrator email allowlist.
+- Protected global news and settings writes at page and service boundaries.
+- Preserved anonymous read-only operation when authentication is not configured.
+
 ## ✨ Added
 
 ### News Storage

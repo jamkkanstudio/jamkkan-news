@@ -78,3 +78,12 @@ In Progress
 Jamkkan Platform
 
 30초 성장 플랫폼
+
+---
+
+# Sprint 06 security foundation
+
+- ✅ Streamlit native Google login
+- ✅ Administrator allowlist for global writes
+- ✅ Page and service boundary authorization
+- ⬜ User-specific data isolation (new Sprint required)

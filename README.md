@@ -351,3 +351,24 @@ Jamkkan Studio는
 Made with ❤️ by **Jamkkan Studio**
 
 </div>
+
+---
+
+## Google login configuration
+
+Public reading works without authentication secrets. To enable protected management, configure this structure in an untracked `.streamlit/secrets.toml` or Streamlit Cloud app Secrets:
+
+```toml
+ADMIN_EMAILS = ["admin@example.com"]
+
+[auth]
+redirect_uri = "https://YOUR_APP.streamlit.app/oauth2callback"
+cookie_secret = "GENERATE_A_LONG_RANDOM_VALUE"
+
+[auth.google]
+client_id = "GOOGLE_CLIENT_ID"
+client_secret = "GOOGLE_CLIENT_SECRET"
+server_metadata_url = "https://accounts.google.com/.well-known/openid-configuration"
+```
+
+Register the exact same `redirect_uri` on the Google OAuth web client. Never place real IDs, secrets, cookie secrets, or administrator emails in code, Git, or logs.
