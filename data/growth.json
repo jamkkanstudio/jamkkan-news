@@ -1,6 +1,6 @@
 {
-  "total_articles": 8,
-  "total_seconds": 240,
+  "total_articles": 10,
+  "total_seconds": 300,
   "current_streak": 2,
   "last_active_date": "2026-07-15",
   "daily": {
@@ -18,10 +18,12 @@
       ]
     },
     "2026-07-15": {
-      "articles": 1,
-      "seconds": 30,
+      "articles": 3,
+      "seconds": 90,
       "read_news_ids": [
-        "14a187ae-006b-46b6-8ca7-0b68062866bb"
+        "14a187ae-006b-46b6-8ca7-0b68062866bb",
+        "2f7a284b-cc10-4930-a96e-8811aec51013",
+        "ee5695d7-c5ff-4d8d-a658-12bee3be6ccc"
       ]
     }
   }

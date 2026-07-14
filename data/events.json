@@ -7,5 +7,23 @@
     "title": "폭염 지속 서울서 어제 온열질환자 11명 속출",
     "seconds": 30,
     "created_at": "2026-07-15T00:00:31"
+  },
+  {
+    "id": "cda8ad6b-1aea-4940-bd18-276bbfa37779",
+    "event_type": "article_read",
+    "news_id": "2f7a284b-cc10-4930-a96e-8811aec51013",
+    "category": "기타",
+    "title": "서울 호우주의보…중부 강풍·호우특보 '비바람'",
+    "seconds": 30,
+    "created_at": "2026-07-15T00:04:43"
+  },
+  {
+    "id": "d8bec2c6-8da7-4b4f-809f-13ef28115420",
+    "event_type": "article_read",
+    "news_id": "ee5695d7-c5ff-4d8d-a658-12bee3be6ccc",
+    "category": "기타",
+    "title": "줄다리기 협상 끝에…내년도 최저임금 1만 700원",
+    "seconds": 30,
+    "created_at": "2026-07-15T00:04:46"
   }
 ]
