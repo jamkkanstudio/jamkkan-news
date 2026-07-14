@@ -12,6 +12,7 @@ Read `docs/PROJECT_CONTEXT.md` before changing the product. Use `ROADMAP.md` for
 - Do not add paid API calls without explicit approval.
 - Use small commits, run all tests, push `main`, and verify the deployed Streamlit read path for every completed Sprint.
 - Start each new Sprint in a new Codex task.
+- At the start of each Sprint, rename its Codex task to `Sprint NN — concise goal`.
 
 ## Definition of done
 
