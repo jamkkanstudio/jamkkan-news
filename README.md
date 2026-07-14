@@ -167,9 +167,12 @@ jamkkan-news/
 ├── components/     # 공통 UI 컴포넌트
 ├── services/       # 뉴스·RSS·성장·분석·Supabase 로직
 ├── data/           # 현재 JSON 데이터
+├── docs/sprints/   # Sprint 목표·결정·완료 기록
 ├── test_*.py       # 자동 단위 테스트
 └── *.md            # 제품 원칙, 로드맵, 변경 기록
 ```
+
+Sprint별 작업 기록은 [Sprint Archive](docs/sprints/README.md)에서 확인할 수 있습니다.
 
 ---
 
