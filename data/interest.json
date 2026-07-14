@@ -1,3 +1,5 @@
 {
-    "interests": ["경제", "AI", "미국주식", "반도체", "IT"]
+    "interests": ["경제", "AI", "미국주식"],
+
+    "keywords": ["엔비디아", "OpenAI", "비트코인"]
 }
