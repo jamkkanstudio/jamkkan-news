@@ -26,6 +26,12 @@
 
 ## ✨ Added
 
+### News Operations
+
+- Added a 10-minute GitHub Actions RSS collector with workflow and process concurrency guards.
+- Added stable article IDs, canonical URL and seen-article duplicate prevention, atomic JSON publishing, and retry-safe Supabase-first mirroring.
+- Added administrator-visible last-success and safe failure-code status while retaining manual collection for recovery.
+
 ### News Storage
 
 - 신규 뉴스 JSON·Supabase 병행 저장

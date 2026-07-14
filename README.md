@@ -49,7 +49,7 @@ streamlit run app.py
 
 ```bash
 python -m unittest discover -v
-python -m compileall -q app.py components pages services
+python -m compileall -q app.py components pages services scripts
 ```
 
 ## Storage operation
@@ -71,6 +71,21 @@ SUPABASE_KEY = "SERVER_ONLY_KEY"
 ```
 
 `SUPABASE_KEY`는 서버에서만 사용하고 브라우저 코드나 Git에 노출하지 마세요.
+
+## Automatic news collection
+
+`.github/workflows/collect-news.yml`은 매시 3분부터 10분 간격으로 최신 RSS 피드를 한 번 조회합니다. GitHub Actions 예약 실행은 혼잡 시 지연될 수 있으므로 이 주기는 정확한 시각 보장이 아닌 준실시간 운영 목표입니다. 새 기사만 안정적인 RSS 기사 ID와 정규화 URL로 중복을 제거해 Supabase에 먼저 upsert한 뒤 `data/news.json`을 원자 교체하며, 실제 JSON 변경이 있을 때만 `main`에 커밋합니다.
+
+저장소의 **Settings → Secrets and variables → Actions**에서 다음 Repository secrets를 설정합니다. 실제 값은 코드, Git, Actions 로그, 채팅에 남기지 않습니다.
+
+- `ADMIN_EMAILS`: Streamlit 배포와 같은 관리자 허용 목록을 쉼표로 구분
+- `NEWS_AUTOMATION_ADMIN_EMAIL`: 위 허용 목록에 포함된 자동 실행 관리자 한 명
+- `SUPABASE_URL`: 기존 Supabase 프로젝트 URL
+- `SUPABASE_KEY`: 기존 서버 전용 뉴스 미러링 키
+
+워크플로는 `contents: write`만 명시적으로 사용하고, 같은 수집 작업의 동시 실행을 막습니다. 마지막 성공 시각과 제한된 실패 코드는 Supabase `settings`의 `news_collection_status`에 저장되어 관리자 뉴스 수집 화면에 표시됩니다. 실패한 실행은 다음 예약에서 다시 시도하며, RSS 원문 예외나 비밀값은 상태와 CLI 출력에 기록하지 않습니다.
+
+예외 복구가 필요하면 **Actions → Collect RSS news → Run workflow**로 수동 실행합니다. 기존 관리자 뉴스 수집 화면의 수동 등록도 복구용으로 유지됩니다. 공개 저장소의 표준 GitHub-hosted runner를 사용하므로 별도 유료 API는 추가되지 않지만, 예약 실행 지연과 사용량은 Actions 실행 기록에서 계속 관찰합니다.
 
 ## Google login and administrator access
 
@@ -120,6 +135,8 @@ app.py                 Streamlit home
 pages/                 management, settings, growth, analytics
 components/            shared UI
 services/              domain, authorization, storage
+scripts/               independent operational entry points
+.github/workflows/      scheduled operations
 supabase/              reviewed SQL foundations
 data/                  legacy operational JSON
 docs/PROJECT_CONTEXT.md durable architecture context

@@ -16,7 +16,8 @@ Jamkkan의 Sprint 목표, 결정, 구현 결과와 검증 기록을 보관합니
 | 06 | Google 로그인 및 관리자 화면 보호 | 완료 | [06-google-login-admin-protection.md](06-google-login-admin-protection.md) |
 | 07 | 사용자별 데이터 분리 설계 및 기반 구축 | 완료 | [07-user-data-isolation-foundation.md](07-user-data-isolation-foundation.md) |
 | 08 | 사용자별 저장 활성화 및 격리 검증 | 완료 | [08-user-storage-activation.md](08-user-storage-activation.md) |
-| 09 | 운영 개인 저장 활성화 및 실사용 검증 | 진행 중 | [09-production-user-storage-rollout.md](09-production-user-storage-rollout.md) |
+| 09 | 운영 개인 저장 활성화 및 실사용 검증 | 완료 | [09-production-user-storage-rollout.md](09-production-user-storage-rollout.md) |
+| 10 | 자동 뉴스 수집 운영화 | 구현 완료 · 배포 검증 대기 | [10-automatic-news-collection.md](10-automatic-news-collection.md) |
 
 ## 상태
 

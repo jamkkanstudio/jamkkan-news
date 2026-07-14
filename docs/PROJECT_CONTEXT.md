@@ -11,6 +11,7 @@ Jamkkan turns very short idle moments into sustainable growth. The news product 
 - Streamlit multipage UI in `app.py`, `pages/`, and `components/`.
 - Domain logic in `services/`; tests use standard-library `unittest`.
 - Existing JSON files remain the operational baseline. Supabase mirrors news, interests, settings, and growth data.
+- A GitHub Actions job checks one latest RSS feed every 10 minutes, mirrors new articles to Supabase before atomically updating the JSON baseline, and commits only content changes. Schedule timing is best-effort, duplicate state is retry-safe, and manual collection remains an administrator recovery path.
 - Daily and weekly behavior uses `Asia/Seoul`.
 - Streamlit native OIDC provides Google login. Email is used in memory for the administrator allowlist only.
 - User ownership is derived on demand from the OIDC `(issuer, subject)` pair with a server-only HMAC pepper. Only the resulting opaque owner id may be persisted; raw identity claims are not user-data keys.
