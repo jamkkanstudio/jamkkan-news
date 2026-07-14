@@ -1,9 +1,10 @@
 import random
-from datetime import date, timedelta
+from datetime import date
 
 import streamlit as st
 
 from services.growth_service import load_growth
+from services.time_service import current_week_dates, today_kst
 
 
 MESSAGES = [
@@ -28,17 +29,6 @@ def format_seconds(seconds: int) -> str:
     return f"{minutes}분 {remaining_seconds}초"
 
 
-def get_week_dates() -> list[date]:
-    """이번 주 월요일부터 일요일까지 날짜를 반환합니다."""
-    today = date.today()
-    monday = today - timedelta(days=today.weekday())
-
-    return [
-        monday + timedelta(days=offset)
-        for offset in range(7)
-    ]
-
-
 st.set_page_config(
     page_title="나의 성장 | 잠깐.",
     page_icon="🌱",
@@ -49,7 +39,7 @@ st.title("🌱 나의 성장")
 st.caption("매일 잠깐의 투자가 쌓이고 있습니다.")
 
 growth = load_growth()
-today_string = date.today().isoformat()
+today_string = today_kst().isoformat()
 
 daily = growth.get("daily", {})
 today_data = daily.get(
@@ -99,7 +89,7 @@ with total_col:
 st.divider()
 st.subheader("이번 주")
 
-week_dates = get_week_dates()
+week_dates = current_week_dates()
 week_columns = st.columns(7)
 
 day_names = ["월", "화", "수", "목", "금", "토", "일"]

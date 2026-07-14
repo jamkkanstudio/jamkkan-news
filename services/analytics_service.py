@@ -3,11 +3,11 @@ from collections import defaultdict
 from datetime import date, datetime, timedelta
 from pathlib import Path
 from uuid import uuid4
-from zoneinfo import ZoneInfo
+
+from services.time_service import datetime_to_kst_date, now_kst, today_kst
 
 
 EVENTS_FILE = Path("data/events.json")
-KOREA_TIMEZONE = ZoneInfo("Asia/Seoul")
 
 
 def load_events() -> list[dict]:
@@ -57,9 +57,7 @@ def record_article_read_event(
         "category": category or "기타",
         "title": title,
         "seconds": max(int(seconds), 0),
-        "created_at": datetime.now(
-            KOREA_TIMEZONE
-        ).isoformat(timespec="seconds"),
+        "created_at": now_kst().isoformat(timespec="seconds"),
     }
 
     events.append(event)
@@ -76,16 +74,7 @@ def _get_event_date(event: dict) -> date | None:
     try:
         event_datetime = datetime.fromisoformat(created_at)
 
-        if event_datetime.tzinfo is None:
-            event_datetime = event_datetime.replace(
-                tzinfo=KOREA_TIMEZONE
-            )
-        else:
-            event_datetime = event_datetime.astimezone(
-                KOREA_TIMEZONE
-            )
-
-        return event_datetime.date()
+        return datetime_to_kst_date(event_datetime)
 
     except (TypeError, ValueError):
         return None
@@ -140,7 +129,7 @@ def get_category_statistics(
 
 def get_current_week_events() -> list[dict]:
     """이번 주 월요일부터 오늘까지의 이벤트를 반환합니다."""
-    today = datetime.now(KOREA_TIMEZONE).date()
+    today = today_kst()
     monday = today - timedelta(days=today.weekday())
 
     weekly_events = []
@@ -156,7 +145,7 @@ def get_current_week_events() -> list[dict]:
 
 def get_current_week_daily_statistics() -> list[dict]:
     """이번 주 월요일부터 일요일까지 일별 기록을 반환합니다."""
-    today = datetime.now(KOREA_TIMEZONE).date()
+    today = today_kst()
     monday = today - timedelta(days=today.weekday())
 
     daily_data = {

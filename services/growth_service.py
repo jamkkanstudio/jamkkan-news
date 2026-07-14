@@ -2,6 +2,8 @@ import json
 from datetime import date, timedelta
 from pathlib import Path
 
+from services.time_service import today_kst
+
 
 GROWTH_FILE = Path("data/growth.json")
 
@@ -61,7 +63,7 @@ def save_growth(data: dict) -> None:
 def is_read_today(news_id: str) -> bool:
     """해당 기사를 오늘 이미 읽었는지 확인합니다."""
     growth = load_growth()
-    today = date.today().isoformat()
+    today = today_kst().isoformat()
 
     today_data = growth["daily"].get(today, {})
     read_news_ids = today_data.get("read_news_ids", [])
@@ -81,7 +83,7 @@ def record_article_read(
     """
     growth = load_growth()
 
-    today = date.today()
+    today = today_kst()
     today_string = today.isoformat()
 
     today_data = growth["daily"].setdefault(
@@ -140,7 +142,7 @@ def record_article_read(
 def get_growth_summary() -> dict:
     """화면에 표시할 성장 통계를 반환합니다."""
     growth = load_growth()
-    today = date.today().isoformat()
+    today = today_kst().isoformat()
 
     today_data = growth["daily"].get(
         today,
@@ -166,7 +168,7 @@ def is_today_brief_completed(news_list: list[dict]) -> bool:
 
     growth = load_growth()
 
-    today = date.today().isoformat()
+    today = today_kst().isoformat()
 
     today_data = growth["daily"].get(today, {})
 
