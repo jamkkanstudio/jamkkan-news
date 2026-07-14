@@ -1,5 +1,10 @@
 import streamlit as st
 
+from services.growth_service import (
+    is_read_today,
+    record_article_read,
+)
+
 
 CATEGORY_ICONS = {
     "경제": "📈",
@@ -11,6 +16,8 @@ CATEGORY_ICONS = {
     "반도체": "💾",
     "부동산": "🏠",
     "자동차": "🚗",
+    "우주": "🚀",
+    "미국주식": "🇺🇸",
     "기타": "📰",
 }
 
@@ -27,15 +34,20 @@ def render_news_card(
     news: dict,
     rank: int,
     personal_score: int | None = None,
+    section: str = "today",
 ) -> None:
     """뉴스 한 건을 잠깐. 브리핑 카드로 표시합니다."""
 
+    news_id = news.get("id", "")
     category = news.get("category", "기타")
     category_icon = CATEGORY_ICONS.get(category, "📰")
     rank_icon = RANK_ICONS.get(rank, str(rank))
 
     title = news.get("title", "제목 없음")
-    summary = news.get("summary", "브리핑이 아직 작성되지 않았습니다.")
+    summary = news.get(
+        "summary",
+        "브리핑이 아직 작성되지 않았습니다.",
+    )
     reason = news.get(
         "reason",
         "이 기사가 중요한 이유가 아직 작성되지 않았습니다.",
@@ -47,12 +59,7 @@ def render_news_card(
         st.caption(f"{category_icon} {category}")
 
         st.markdown(f"### {rank_icon} {title}")
-
-        st.markdown(
-            f"""
-            **{summary}**
-            """
-        )
+        st.markdown(f"**{summary}**")
 
         if personal_score is not None:
             st.caption("내 관심사를 반영한 기사입니다.")
@@ -69,3 +76,35 @@ def render_news_card(
                     url,
                     use_container_width=True,
                 )
+
+            if news_id:
+                already_read = is_read_today(news_id)
+
+                if already_read:
+                    st.success("🌱 오늘 투자 완료")
+
+                else:
+                    button_key = (
+                        f"invest_{section}_{news_id}_{rank}"
+                    )
+
+                    if st.button(
+                        "🌱 투자 완료",
+                        key=button_key,
+                        use_container_width=True,
+                    ):
+                        recorded = record_article_read(
+                            news_id=news_id,
+                            seconds=30,
+                        )
+
+                        if recorded:
+                            st.success(
+                                "30초를 나에게 투자했습니다."
+                            )
+                            st.rerun()
+
+                        else:
+                            st.info(
+                                "오늘 이미 투자 완료한 기사입니다."
+                            )

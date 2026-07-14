@@ -57,6 +57,7 @@ else:
         render_news_card(
             news=news,
             rank=rank,
+            section="today",
         )
 
     st.divider()
@@ -101,6 +102,7 @@ else:
                 news=news,
                 rank=rank,
                 personal_score=personal_score,
+                section="personal"
             )
 
         if st.button(
