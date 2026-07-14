@@ -11,8 +11,20 @@ __pycache__/
 # Environment Variables
 .env
 
+# Streamlit Secrets
+.streamlit/secrets.toml
+
 # macOS
 .DS_Store
 
 # Windows
 Thumbs.db
+
+# Logs
+*.log
+
+# Pytest
+.pytest_cache/
+
+# Mypy
+.mypy_cache/
