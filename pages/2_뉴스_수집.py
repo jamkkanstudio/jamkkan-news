@@ -5,6 +5,7 @@ import streamlit as st
 
 from services.news_service import add_news, load_news
 from services.rss_service import RSS_FEEDS, fetch_rss_news
+from services.summarizer import create_brief, create_reason
 
 
 st.set_page_config(
@@ -22,8 +23,11 @@ def clean_summary(summary: str) -> str:
     if not summary:
         return ""
 
-    text = re.sub(r"<[^>]+>", "", summary)
-    return html.unescape(text).strip()
+    text = re.sub(r"<[^>]+>", " ", summary)
+    text = html.unescape(text)
+    text = re.sub(r"\s+", " ", text)
+
+    return text.strip()
 
 
 category = st.selectbox(
@@ -90,10 +94,12 @@ if news_list:
                     f"{news['published_at']}"
                 )
 
-                summary = clean_summary(news.get("summary", ""))
+                cleaned_summary = clean_summary(
+                    news.get("summary", "")
+                )
 
-                if summary:
-                    st.write(summary)
+                if cleaned_summary:
+                    st.write(cleaned_summary)
 
                 if already_registered:
                     st.info("이미 등록된 기사입니다.")
@@ -123,19 +129,28 @@ if news_list:
 
             for index in selected_indices:
                 rss_news = news_list[index]
-                summary = clean_summary(
-                    rss_news.get("summary", "")
-                )
+
+                raw_summary = rss_news.get("summary", "")
+                cleaned_summary = clean_summary(raw_summary)
 
                 news_category = rss_news.get("category", "기타")
 
                 if news_category == "최신":
                     news_category = "기타"
 
+                brief = create_brief(
+                    cleaned_summary or rss_news["title"]
+                )
+
+                reason = create_reason(
+                    category=news_category,
+                    title=rss_news["title"],
+                )
+
                 new_news = {
                     "title": rss_news["title"],
-                    "summary": summary or "기사 요약을 작성해 주세요.",
-                    "reason": "이 기사가 중요한 이유를 작성해 주세요.",
+                    "summary": brief,
+                    "reason": reason,
                     "source": rss_news["source"],
                     "url": rss_news["url"],
                     "category": news_category,
