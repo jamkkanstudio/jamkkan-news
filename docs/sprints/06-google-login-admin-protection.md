@@ -27,7 +27,7 @@ Automated coverage includes missing configuration, anonymous identity, logged-in
 - Python compilation: passed.
 - Local Streamlit health endpoint without auth secrets: HTTP 200 `ok`.
 - Existing `data/` files: unchanged.
-- Deployed anonymous read path: recorded after the documentation commit is pushed.
+- Streamlit deployment after `c59f4ea`: anonymous home rendered existing news and growth data; direct news-management access was blocked without auth configuration; browser error log was empty.
 
 ## Deployment-only setup
 
