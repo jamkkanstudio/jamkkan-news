@@ -37,8 +37,9 @@ Released
 - ✅ 뉴스 수정·삭제 Supabase 동기화
 - ✅ 성장·관심 분야·설정 데이터 마이그레이션
 - ✅ 성장·분석 날짜 기준 Asia/Seoul 통일
-- ⏳ Google 로그인
-- ⏳ 사용자별 데이터 분리 및 영구 저장
+- ✅ Google 로그인
+- ✅ 사용자별 데이터 분리 설계·스키마·서버 저장 기반
+- ⏳ 사용자별 데이터 분리 활성화 및 영구 저장
 
 Status
 
@@ -78,12 +79,3 @@ In Progress
 Jamkkan Platform
 
 30초 성장 플랫폼
-
----
-
-# Sprint 06 security foundation
-
-- ✅ Streamlit native Google login
-- ✅ Administrator allowlist for global writes
-- ✅ Page and service boundary authorization
-- ⬜ User-specific data isolation (new Sprint required)

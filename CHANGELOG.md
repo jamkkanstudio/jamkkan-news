@@ -15,6 +15,13 @@
 - Protected global news and settings writes at page and service boundaries.
 - Preserved anonymous read-only operation when authentication is not configured.
 
+## Privacy and data isolation
+
+- Added an opaque HMAC-based owner identifier derived from the OIDC issuer and subject without storing raw identity claims.
+- Added a separate owner-scoped Supabase schema with RLS enabled and direct anonymous/authenticated access revoked.
+- Added server-only storage primitives that reject invalid owners, constrain reads by owner, and prevent payloads from overriding trusted ownership.
+- Preserved all existing JSON and Supabase rows; user-data routing and legacy migration remain intentionally inactive until a separately verified rollout.
+
 ## ✨ Added
 
 ### News Storage

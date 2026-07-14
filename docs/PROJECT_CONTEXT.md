@@ -12,7 +12,8 @@ Jamkkan turns very short idle moments into sustainable growth. The news product 
 - Domain logic in `services/`; tests use standard-library `unittest`.
 - Existing JSON files remain the operational baseline. Supabase mirrors news, interests, settings, and growth data.
 - Daily and weekly behavior uses `Asia/Seoul`.
-- Streamlit native OIDC provides Google login. Identity claims are used only for display and authorization in this phase.
+- Streamlit native OIDC provides Google login. Email is used in memory for the administrator allowlist only.
+- User ownership is derived on demand from the OIDC `(issuer, subject)` pair with a server-only HMAC pepper. Only the resulting opaque owner id may be persisted; raw identity claims are not user-data keys.
 
 ## Data and authorization model
 
@@ -20,7 +21,9 @@ Jamkkan turns very short idle moments into sustainable growth. The news product 
 - Logged-in users not listed in `ADMIN_EMAILS` are read-only.
 - Only allowlisted administrators may mutate news or global interests/goals.
 - Protected writes are checked at both page and service boundaries.
-- Current interests and goals are global, not per-user. User-specific isolation and migration are deferred to a dedicated Sprint.
+- Current interests, goals, growth, and analytics records remain the legacy global/anonymous dataset.
+- Empty owner-scoped Supabase tables and server-only access primitives are defined separately from legacy tables. Direct `anon` and `authenticated` table access is denied; the server must constrain every operation by opaque `owner_id`.
+- User-data routing and legacy-data migration are not active. Existing rows must not be assigned to an owner without an explicit mapping, snapshot, validation, and rollback plan.
 - A server-privileged Supabase key is a backend credential; public UI must never provide an unrestricted indirect write path.
 
 ## Documentation map
@@ -32,16 +35,6 @@ Jamkkan turns very short idle moments into sustainable growth. The news product 
 - `CHANGELOG.md`: user-visible changes.
 - `docs/sprints/`: one decision and verification record per Sprint.
 
-## Development loop
-
-1. Confirm clean `main`; read this file and the latest Sprint record.
-2. State the Sprint scope and preserve existing data.
-3. Implement reviewable units with tests.
-4. Run `python -m unittest discover -v` and a local Streamlit smoke test.
-5. Update only the relevant document roles above.
-6. Commit, push `origin/main`, and verify the deployed anonymous read path.
-7. Report deployment-only secret names and locations, never their values.
-
 ## Near-term direction
 
-After Sprint 06, the next major security boundary is deliberate user-data isolation. Plan it as a new Sprint before persisting identity claims or migrating global data.
+After Sprint 07, activate user-scoped storage in a separate Sprint: deploy and verify the empty schema, configure server-only secrets, test two-user isolation, then switch authenticated personal-data flows without auto-assigning legacy rows. Keep the anonymous legacy path until a separately approved migration proves ownership and rollback.
