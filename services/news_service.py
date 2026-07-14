@@ -76,8 +76,8 @@ def delete_news(news_id: str) -> bool:
     return True
 
 
-def update_news(news_id: str, updated_data: dict) -> bool:
-    """id가 일치하는 뉴스를 수정합니다."""
+def update_news(news_id: str, updated_data: dict) -> bool | None:
+    """뉴스를 JSON에서 수정하고 Supabase 미러링 결과를 반환합니다."""
     news_list = load_news()
 
     for news in news_list:
@@ -95,6 +95,6 @@ def update_news(news_id: str, updated_data: dict) -> bool:
             )
 
             save_news(news_list)
-            return True
+            return save_news_to_supabase(news)
 
-    return False
+    return None

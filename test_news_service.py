@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from services.news_service import add_news
+from services.news_service import add_news, update_news
 
 
 class AddNewsTest(unittest.TestCase):
@@ -36,6 +36,55 @@ class AddNewsTest(unittest.TestCase):
 
             self.assertEqual(len(saved_news_list), 1)
             save_supabase.assert_called_once_with(saved_news_list[0])
+            self.assertIs(mirrored, True)
+
+
+class UpdateNewsTest(unittest.TestCase):
+    def test_update_news_saves_same_news_to_json_and_supabase(self) -> None:
+        original_news = {
+            "id": "news-id",
+            "title": "수정 전 제목",
+            "summary": "수정 전 요약",
+            "reason": "수정 전 이유",
+            "source": "수정 전 출처",
+            "url": "https://example.com/before",
+            "category": "사회",
+            "importance": 50,
+            "created_at": "2026-07-15T00:00:00",
+        }
+        updated_data = {
+            "title": "수정 후 제목",
+            "summary": "수정 후 요약",
+            "reason": "수정 후 이유",
+            "source": "수정 후 출처",
+            "url": "https://example.com/after",
+            "category": "경제",
+            "importance": 80,
+        }
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            data_file = Path(temp_dir) / "news.json"
+            data_file.write_text(
+                json.dumps([original_news], ensure_ascii=False),
+                encoding="utf-8",
+            )
+
+            with (
+                patch("services.news_service.DATA_FILE", data_file),
+                patch(
+                    "services.news_service.save_news_to_supabase",
+                    return_value=True,
+                ) as save_supabase,
+            ):
+                mirrored = update_news("news-id", updated_data)
+
+            with data_file.open("r", encoding="utf-8") as file:
+                saved_news = json.load(file)[0]
+
+            self.assertEqual(saved_news["id"], original_news["id"])
+            self.assertEqual(saved_news["created_at"], original_news["created_at"])
+            self.assertEqual(saved_news["title"], updated_data["title"])
+            save_supabase.assert_called_once_with(saved_news)
             self.assertIs(mirrored, True)
 
 

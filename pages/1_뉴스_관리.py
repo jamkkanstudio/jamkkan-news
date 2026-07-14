@@ -231,9 +231,17 @@ else:
                             updated_data,
                         )
 
-                        if updated:
-                            st.success("뉴스가 수정되었습니다.")
+                        if updated is True:
+                            st.success(
+                                "뉴스가 JSON과 Supabase에서 수정되었습니다."
+                            )
                             st.rerun()
+
+                        elif updated is False:
+                            st.warning(
+                                "뉴스는 JSON에서 수정됐지만 Supabase 저장에 "
+                                "실패했습니다. 서버 로그를 확인해 주세요."
+                            )
 
                         else:
                             st.error("수정할 뉴스를 찾지 못했습니다.")
