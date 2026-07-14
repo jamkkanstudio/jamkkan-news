@@ -27,7 +27,7 @@ Released
 
 # v0.2 (Current)
 
-## Foundation
+## Real User Test
 
 - ✅ Daily Goal
 - ✅ Analytics
@@ -39,7 +39,9 @@ Released
 - ✅ 성장·분석 날짜 기준 Asia/Seoul 통일
 - ✅ Google 로그인
 - ✅ 사용자별 데이터 분리 설계·스키마·서버 저장 기반
-- ⏳ 사용자별 데이터 분리 활성화 및 영구 저장
+- ✅ 사용자별 데이터 라우팅·격리 자동 검증과 안전한 롤아웃 준비
+- ⏳ 운영 스키마·비밀값·두 계정 검증 후 영구 저장 활성화
+- ⏳ 실제 뉴스 읽기·재접속 데이터 유지 하루 사용 테스트
 
 Status
 

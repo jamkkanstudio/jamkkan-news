@@ -20,7 +20,9 @@
 - Added an opaque HMAC-based owner identifier derived from the OIDC issuer and subject without storing raw identity claims.
 - Added a separate owner-scoped Supabase schema with RLS enabled and direct anonymous/authenticated access revoked.
 - Added server-only storage primitives that reject invalid owners, constrain reads by owner, and prevent payloads from overriding trusted ownership.
-- Preserved all existing JSON and Supabase rows; user-data routing and legacy migration remain intentionally inactive until a separately verified rollout.
+- Added one default-off feature flag that routes authenticated interests, goals, growth, and analytics together while failing closed on incomplete configuration.
+- Added two-owner isolation, payload-owner rejection, backend-failure, and logout compatibility regression coverage.
+- Added read-only legacy snapshot and post-schema permission checks; preserved all existing rows and left production activation pending operational verification.
 
 ## ✨ Added
 

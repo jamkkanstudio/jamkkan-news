@@ -14,6 +14,7 @@ Jamkkan turns very short idle moments into sustainable growth. The news product 
 - Daily and weekly behavior uses `Asia/Seoul`.
 - Streamlit native OIDC provides Google login. Email is used in memory for the administrator allowlist only.
 - User ownership is derived on demand from the OIDC `(issuer, subject)` pair with a server-only HMAC pepper. Only the resulting opaque owner id may be persisted; raw identity claims are not user-data keys.
+- A default-off `USER_DATA_ENABLED` compatibility layer switches authenticated interests, goals, growth, and analytics together; partial routing is not allowed.
 
 ## Data and authorization model
 
@@ -21,9 +22,9 @@ Jamkkan turns very short idle moments into sustainable growth. The news product 
 - Logged-in users not listed in `ADMIN_EMAILS` are read-only.
 - Only allowlisted administrators may mutate news or global interests/goals.
 - Protected writes are checked at both page and service boundaries.
-- Current interests, goals, growth, and analytics records remain the legacy global/anonymous dataset.
+- With user-data routing disabled, current interests, goals, growth, and analytics records remain the legacy global/anonymous dataset.
 - Empty owner-scoped Supabase tables and server-only access primitives are defined separately from legacy tables. Direct `anon` and `authenticated` table access is denied; the server must constrain every operation by opaque `owner_id`.
-- User-data routing and legacy-data migration are not active. Existing rows must not be assigned to an owner without an explicit mapping, snapshot, validation, and rollback plan.
+- Authenticated user-data routing is implemented but must remain disabled until the production schema, server-only secrets, and two-account isolation are verified. Existing rows must not be assigned to an owner without an explicit mapping, snapshot, validation, and rollback plan.
 - A server-privileged Supabase key is a backend credential; public UI must never provide an unrestricted indirect write path.
 
 ## Documentation map
@@ -37,4 +38,4 @@ Jamkkan turns very short idle moments into sustainable growth. The news product 
 
 ## Near-term direction
 
-After Sprint 07, activate user-scoped storage in a separate Sprint: deploy and verify the empty schema, configure server-only secrets, test two-user isolation, then switch authenticated personal-data flows without auto-assigning legacy rows. Keep the anonymous legacy path until a separately approved migration proves ownership and rollback.
+Complete the production rollout in order: capture the protected legacy snapshot, deploy and verify the empty schema, configure server-only secrets, test two real accounts, then enable authenticated routing. Keep the anonymous legacy path and all existing rows until a separately approved migration proves ownership and rollback.
