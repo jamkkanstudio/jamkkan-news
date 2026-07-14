@@ -1,7 +1,11 @@
 import unittest
 from unittest.mock import MagicMock, patch
 
-from services.supabase_service import delete_news, upsert_news
+from services.supabase_service import (
+    delete_news,
+    replace_interests,
+    upsert_news,
+)
 
 
 class UpsertNewsTest(unittest.TestCase):
@@ -79,6 +83,40 @@ class DeleteNewsTest(unittest.TestCase):
 
         self.assertFalse(result)
         log_error.assert_called_once()
+
+
+class ReplaceInterestsTest(unittest.TestCase):
+    def test_replace_interests_replaces_all_rows(self) -> None:
+        client = MagicMock()
+        table = client.table.return_value
+
+        with patch(
+            "services.supabase_service.get_supabase_client",
+            return_value=client,
+        ):
+            result = replace_interests(["경제", "AI"])
+
+        client.table.assert_called_once_with("interests")
+        table.delete.assert_called_once_with()
+        table.delete.return_value.neq.assert_called_once_with("id", 0)
+        table.insert.assert_called_once_with(
+            [{"interest": "경제"}, {"interest": "AI"}]
+        )
+        self.assertTrue(result)
+
+    def test_replace_interests_supports_empty_list(self) -> None:
+        client = MagicMock()
+        table = client.table.return_value
+
+        with patch(
+            "services.supabase_service.get_supabase_client",
+            return_value=client,
+        ):
+            result = replace_interests([])
+
+        table.delete.return_value.neq.return_value.execute.assert_called_once_with()
+        table.insert.assert_not_called()
+        self.assertTrue(result)
 
 
 if __name__ == "__main__":

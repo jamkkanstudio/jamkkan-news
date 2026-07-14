@@ -5,6 +5,13 @@ from pathlib import Path
 INTEREST_FILE = Path("data/interest.json")
 
 
+def save_interests_to_supabase(interests: list[str]) -> bool:
+    """관심 분야 목록을 Supabase에 저장합니다."""
+    from services.supabase_service import replace_interests
+
+    return replace_interests(interests)
+
+
 def load_interests() -> list[str]:
     """저장된 관심 분야 목록을 불러옵니다."""
     if not INTEREST_FILE.exists():
@@ -25,8 +32,8 @@ def load_interests() -> list[str]:
         return []
 
 
-def save_interests(interests: list[str]) -> None:
-    """관심 분야 목록을 저장합니다."""
+def save_interests(interests: list[str]) -> bool:
+    """관심 분야를 JSON에 저장하고 Supabase 미러링 결과를 반환합니다."""
     INTEREST_FILE.parent.mkdir(parents=True, exist_ok=True)
 
     data = {
@@ -40,3 +47,5 @@ def save_interests(interests: list[str]) -> None:
             ensure_ascii=False,
             indent=2,
         )
+
+    return save_interests_to_supabase(interests)

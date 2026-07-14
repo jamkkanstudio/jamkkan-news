@@ -49,3 +49,20 @@ def delete_news(news_id: str) -> bool:
             news_id,
         )
         return False
+
+
+def replace_interests(interests: list[str]) -> bool:
+    """Supabase 관심 분야 목록을 새 목록으로 교체합니다."""
+    try:
+        table = get_supabase_client().table("interests")
+        table.delete().neq("id", 0).execute()
+
+        if interests:
+            table.insert(
+                [{"interest": interest} for interest in interests]
+            ).execute()
+
+        return True
+    except Exception:
+        logger.exception("Supabase 관심 분야 저장에 실패했습니다.")
+        return False
