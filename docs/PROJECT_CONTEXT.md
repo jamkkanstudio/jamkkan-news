@@ -26,6 +26,7 @@ Jamkkan turns very short idle moments into sustainable growth. The news product 
 ## Documentation map
 
 - `AGENTS.md`: short execution rules automatically discovered by Codex.
+- `.codex/config.toml`: trusted-project Codex defaults, including high reasoning effort.
 - `README.md`: setup, authentication configuration, and operation.
 - `ROADMAP.md`: ordered future outcomes.
 - `CHANGELOG.md`: user-visible changes.
