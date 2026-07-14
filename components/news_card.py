@@ -102,20 +102,20 @@ def render_news_card(
                         )
 
                         if recorded is not False:
-                            event_mirrored = record_article_read_event(
+                            record_article_read_event(
                                 news_id=news_id,
                                 category=category,
                                 title=title,
                                 seconds=30,
                             )
 
-                            if recorded is True and event_mirrored:
+                            if recorded is True:
                                 st.success(
                                     "30초를 나에게 투자했습니다."
                                 )
                             else:
                                 st.warning(
-                                    "투자 기록은 JSON에 저장됐지만 일부 "
+                                    "성장 기록은 JSON에 저장됐지만 "
                                     "Supabase 저장에 실패했습니다."
                                 )
                             st.rerun()

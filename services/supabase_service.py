@@ -99,16 +99,3 @@ def upsert_growth_daily(growth_day: dict) -> bool:
             growth_day.get("activity_date"),
         )
         return False
-
-
-def insert_event(event: dict) -> bool:
-    """Supabase에 분석 이벤트 한 건을 저장합니다."""
-    try:
-        get_supabase_client().table("events").insert(event).execute()
-        return True
-    except Exception:
-        logger.exception(
-            "Supabase 분석 이벤트 저장에 실패했습니다: %s",
-            event.get("id"),
-        )
-        return False

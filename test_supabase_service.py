@@ -3,7 +3,6 @@ from unittest.mock import MagicMock, patch
 
 from services.supabase_service import (
     delete_news,
-    insert_event,
     replace_interests,
     upsert_growth_daily,
     upsert_setting,
@@ -163,30 +162,6 @@ class UpsertGrowthDailyTest(unittest.TestCase):
 
         client.table.assert_called_once_with("growth_daily")
         client.table.return_value.upsert.assert_called_once_with(growth_day)
-        self.assertTrue(result)
-
-
-class InsertEventTest(unittest.TestCase):
-    def test_insert_event_writes_complete_event(self) -> None:
-        event = {
-            "id": "00000000-0000-0000-0000-000000000001",
-            "event_type": "article_read",
-            "news_id": "00000000-0000-0000-0000-000000000002",
-            "category": "경제",
-            "title": "테스트 뉴스",
-            "seconds": 30,
-            "created_at": "2026-07-15T12:00:00+09:00",
-        }
-        client = MagicMock()
-
-        with patch(
-            "services.supabase_service.get_supabase_client",
-            return_value=client,
-        ):
-            result = insert_event(event)
-
-        client.table.assert_called_once_with("events")
-        client.table.return_value.insert.assert_called_once_with(event)
         self.assertTrue(result)
 
 if __name__ == "__main__":
