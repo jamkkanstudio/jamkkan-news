@@ -30,7 +30,7 @@ Released
 ## Foundation
 
 - Google 로그인
-- 🚧 Supabase Migration
+- Supabase Migration
 - Analytics
 - Daily Goal
 - 읽기 통계

@@ -166,8 +166,9 @@ RSS를 통해
 
 ### Storage
 
-- JSON (Primary)
-- Supabase (Migration Mirror)
+- JSON
+
+(향후 Supabase)
 
 ### Version Control
 

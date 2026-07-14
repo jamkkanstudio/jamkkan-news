@@ -3,12 +3,6 @@ from datetime import datetime
 from pathlib import Path
 from uuid import uuid4
 
-from services.supabase_service import (
-    delete_news as delete_news_from_supabase,
-    sync_news as sync_news_to_supabase,
-    upsert_news as upsert_news_to_supabase,
-)
-
 
 DATA_FILE = Path("data/news.json")
 
@@ -56,7 +50,6 @@ def add_news(news: dict) -> None:
 
     news_list.append(new_news)
     save_news(news_list)
-    upsert_news_to_supabase(new_news)
 
 
 def delete_news(news_id: str) -> bool:
@@ -72,7 +65,6 @@ def delete_news(news_id: str) -> bool:
         return False
 
     save_news(updated_news)
-    delete_news_from_supabase(news_id)
     return True
 
 
@@ -95,12 +87,6 @@ def update_news(news_id: str, updated_data: dict) -> bool:
             )
 
             save_news(news_list)
-            upsert_news_to_supabase(news)
             return True
 
     return False
-
-
-def sync_all_news_to_supabase() -> bool:
-    """현재 JSON 뉴스 전체를 Supabase에 동기화합니다."""
-    return sync_news_to_supabase(load_news())

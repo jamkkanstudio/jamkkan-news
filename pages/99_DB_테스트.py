@@ -1,7 +1,6 @@
 import streamlit as st
 
-from services.news_service import sync_all_news_to_supabase
-from services.supabase_service import get_supabase_client
+from services.supabase_service import supabase
 
 
 st.set_page_config(
@@ -18,7 +17,7 @@ if st.button(
 ):
     try:
         response = (
-            get_supabase_client()
+            supabase
             .table("news")
             .select("id, title")
             .limit(5)
@@ -30,17 +29,3 @@ if st.button(
 
     except Exception as error:
         st.error(f"연결 실패: {error}")
-
-
-st.divider()
-st.subheader("JSON → Supabase 동기화")
-st.caption("news.json의 기존 뉴스를 UUID 기준으로 추가하거나 갱신합니다.")
-
-if st.button(
-    "기존 뉴스 동기화",
-    use_container_width=True,
-):
-    if sync_all_news_to_supabase():
-        st.success("기존 뉴스 동기화가 완료되었습니다.")
-    else:
-        st.error("동기화에 실패했습니다. 서버 로그를 확인해 주세요.")
