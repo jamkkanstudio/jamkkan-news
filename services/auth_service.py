@@ -68,7 +68,7 @@ def render_auth_sidebar() -> None:
         st.subheader("계정")
         if is_logged_in():
             st.caption(current_user_email() or "로그인됨")
-            st.write("관리자" if is_admin() else "읽기 전용 사용자")
+            st.write("관리자" if is_admin() else "로그인 사용자")
             if st.button("로그아웃", key="auth_logout", use_container_width=True):
                 st.logout()
         elif is_auth_configured():

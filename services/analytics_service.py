@@ -4,14 +4,14 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 from uuid import uuid4
 
+from services.data_routing_service import current_storage_scope
 from services.time_service import datetime_to_kst_date, now_kst, today_kst
 
 
 EVENTS_FILE = Path("data/events.json")
 
 
-def load_events() -> list[dict]:
-    """저장된 사용자 행동 기록을 불러옵니다."""
+def _load_legacy_events() -> list[dict]:
     if not EVENTS_FILE.exists():
         return []
 
@@ -28,8 +28,23 @@ def load_events() -> list[dict]:
         return []
 
 
-def save_events(events: list[dict]) -> None:
-    """사용자 행동 기록을 JSON 파일에 저장합니다."""
+def load_events() -> list[dict]:
+    """현재 저장 범위의 사용자 행동 기록을 불러옵니다."""
+    scope = current_storage_scope()
+    if scope.kind == "user":
+        from services.user_data_service import load_user_events
+
+        return [
+            {
+                **event,
+                "created_at": event.get("occurred_at", ""),
+            }
+            for event in load_user_events(scope.owner_id)
+        ]
+    return _load_legacy_events()
+
+
+def _save_legacy_events(events: list[dict]) -> None:
     EVENTS_FILE.parent.mkdir(parents=True, exist_ok=True)
 
     with EVENTS_FILE.open("w", encoding="utf-8") as file:
@@ -48,8 +63,6 @@ def record_article_read_event(
     seconds: int = 30,
 ) -> None:
     """기사 투자 완료 이벤트를 저장합니다."""
-    events = load_events()
-
     event = {
         "id": str(uuid4()),
         "event_type": "article_read",
@@ -60,8 +73,42 @@ def record_article_read_event(
         "created_at": now_kst().isoformat(timespec="seconds"),
     }
 
+    scope = current_storage_scope()
+    if scope.kind == "user":
+        from services.user_data_service import insert_user_event
+
+        insert_user_event(
+            scope.owner_id,
+            {
+                **event,
+                "occurred_at": event["created_at"],
+            },
+        )
+        return
+
+    events = _load_legacy_events()
     events.append(event)
-    save_events(events)
+    _save_legacy_events(events)
+
+
+def save_events(events: list[dict]) -> None:
+    """현재 저장 범위에 사용자 행동 기록을 저장합니다."""
+    scope = current_storage_scope()
+    if scope.kind == "user":
+        from services.user_data_service import insert_user_event
+
+        for event in events:
+            insert_user_event(
+                scope.owner_id,
+                {
+                    **event,
+                    "occurred_at": event.get(
+                        "occurred_at", event.get("created_at", "")
+                    ),
+                },
+            )
+        return
+    _save_legacy_events(events)
 
 
 def _get_event_date(event: dict) -> date | None:

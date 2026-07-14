@@ -1,6 +1,11 @@
 import streamlit as st
 
-from services.auth_service import require_admin_page
+from services.auth_service import (
+    is_logged_in,
+    render_auth_sidebar,
+    require_admin_page,
+)
+from services.data_routing_service import is_user_data_enabled
 
 from services.settings_service import (
     get_daily_goal_seconds,
@@ -42,7 +47,11 @@ st.set_page_config(
     layout="centered",
 )
 
-require_admin_page()
+personal_mode = is_user_data_enabled() and is_logged_in()
+if personal_mode:
+    render_auth_sidebar()
+else:
+    require_admin_page()
 
 st.title("설정")
 st.caption("나에게 맞는 잠깐의 시간을 설정합니다.")
@@ -96,7 +105,10 @@ if st.button(
     mirrored_items = interests_mirrored + goal_mirrored
 
     if mirrored_items == 2:
-        st.success("관심 분야와 목표 시간이 JSON과 Supabase에 저장되었습니다.")
+        if personal_mode:
+            st.success("관심 분야와 목표 시간이 개인 저장소에 저장되었습니다.")
+        else:
+            st.success("관심 분야와 목표 시간이 JSON과 Supabase에 저장되었습니다.")
     else:
         st.warning(
             "설정은 JSON에 저장됐지만 Supabase에는 "

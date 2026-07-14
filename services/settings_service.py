@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 
 from services.auth_service import require_admin
+from services.data_routing_service import current_storage_scope
 
 
 SETTINGS_FILE = Path("data/settings.json")
@@ -18,8 +19,13 @@ def save_setting_to_supabase(
     return upsert_setting(setting_key, setting_value)
 
 
-def load_settings() -> dict:
-    """사용자 설정을 불러옵니다."""
+def _default_settings() -> dict:
+    return {
+        "daily_goal_seconds": DEFAULT_DAILY_GOAL_SECONDS,
+    }
+
+
+def _load_legacy_settings() -> dict:
     default_settings = {
         "daily_goal_seconds": DEFAULT_DAILY_GOAL_SECONDS,
     }
@@ -41,8 +47,33 @@ def load_settings() -> dict:
         return default_settings
 
 
+def load_settings() -> dict:
+    """현재 저장 범위의 설정을 불러옵니다."""
+    scope = current_storage_scope()
+    if scope.kind == "user":
+        from services.user_data_service import load_user_settings
+
+        settings = _default_settings()
+        settings.update(load_user_settings(scope.owner_id))
+        return settings
+    return _load_legacy_settings()
+
+
 def save_settings(settings: dict) -> None:
-    """사용자 설정을 저장합니다."""
+    """현재 저장 범위에 설정을 저장합니다."""
+    scope = current_storage_scope()
+    if scope.kind == "user":
+        from services.user_data_service import upsert_user_setting
+
+        for setting_key, setting_value in settings.items():
+            upsert_user_setting(
+                scope.owner_id,
+                setting_key,
+                setting_value,
+            )
+        return
+
+    require_admin()
     SETTINGS_FILE.parent.mkdir(parents=True, exist_ok=True)
 
     with SETTINGS_FILE.open("w", encoding="utf-8") as file:
@@ -72,11 +103,25 @@ def get_daily_goal_seconds() -> int:
 
 
 def save_daily_goal_seconds(seconds: int) -> bool:
-    """목표 시간을 JSON에 저장하고 Supabase 미러링 결과를 반환합니다."""
+    """현재 저장 범위에 일일 목표를 저장합니다."""
+    scope = current_storage_scope()
+    goal_seconds = max(int(seconds), 30)
+    if scope.kind == "user":
+        from services.user_data_service import upsert_user_setting
+
+        upsert_user_setting(
+            scope.owner_id,
+            "daily_goal_seconds",
+            goal_seconds,
+        )
+        return True
+
     require_admin()
-    settings = load_settings()
-    settings["daily_goal_seconds"] = max(int(seconds), 30)
-    save_settings(settings)
+    settings = _load_legacy_settings()
+    settings["daily_goal_seconds"] = goal_seconds
+    SETTINGS_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with SETTINGS_FILE.open("w", encoding="utf-8") as file:
+        json.dump(settings, file, ensure_ascii=False, indent=2)
     return save_setting_to_supabase(
         "daily_goal_seconds",
         settings["daily_goal_seconds"],

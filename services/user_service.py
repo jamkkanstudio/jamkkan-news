@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 
 from services.auth_service import require_admin
+from services.data_routing_service import current_storage_scope
 
 
 INTEREST_FILE = Path("data/interest.json")
@@ -14,8 +15,7 @@ def save_interests_to_supabase(interests: list[str]) -> bool:
     return replace_interests(interests)
 
 
-def load_interests() -> list[str]:
-    """저장된 관심 분야 목록을 불러옵니다."""
+def _load_legacy_interests() -> list[str]:
     if not INTEREST_FILE.exists():
         return []
 
@@ -34,8 +34,25 @@ def load_interests() -> list[str]:
         return []
 
 
+def load_interests() -> list[str]:
+    """현재 저장 범위의 관심 분야 목록을 불러옵니다."""
+    scope = current_storage_scope()
+    if scope.kind == "user":
+        from services.user_data_service import load_user_interests
+
+        return load_user_interests(scope.owner_id)
+    return _load_legacy_interests()
+
+
 def save_interests(interests: list[str]) -> bool:
-    """관심 분야를 JSON에 저장하고 Supabase 미러링 결과를 반환합니다."""
+    """현재 저장 범위에 관심 분야를 저장합니다."""
+    scope = current_storage_scope()
+    if scope.kind == "user":
+        from services.user_data_service import replace_user_interests
+
+        replace_user_interests(scope.owner_id, interests)
+        return True
+
     require_admin()
     INTEREST_FILE.parent.mkdir(parents=True, exist_ok=True)
 

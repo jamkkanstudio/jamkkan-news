@@ -2,6 +2,7 @@ import json
 from datetime import date, timedelta
 from pathlib import Path
 
+from services.data_routing_service import current_storage_scope
 from services.time_service import today_kst
 
 
@@ -26,8 +27,7 @@ def _default_growth_data() -> dict:
     }
 
 
-def load_growth() -> dict:
-    """저장된 성장 기록을 불러옵니다."""
+def _load_legacy_growth() -> dict:
     if not GROWTH_FILE.exists():
         return _default_growth_data()
 
@@ -47,8 +47,57 @@ def load_growth() -> dict:
         return _default_growth_data()
 
 
-def save_growth(data: dict) -> None:
-    """성장 기록을 JSON 파일에 저장합니다."""
+def _growth_from_daily_rows(rows: list[dict]) -> dict:
+    growth = _default_growth_data()
+    active_dates = []
+
+    for row in rows:
+        activity_date = str(row.get("activity_date", ""))
+        try:
+            parsed_date = date.fromisoformat(activity_date)
+        except (TypeError, ValueError):
+            continue
+
+        articles = max(int(row.get("articles", 0)), 0)
+        seconds = max(int(row.get("seconds", 0)), 0)
+        growth["daily"][activity_date] = {
+            "articles": articles,
+            "seconds": seconds,
+            "read_news_ids": list(row.get("read_news_ids", [])),
+        }
+        growth["total_articles"] += articles
+        growth["total_seconds"] += seconds
+        if articles > 0 or seconds > 0:
+            active_dates.append(parsed_date)
+
+    if active_dates:
+        unique_dates = sorted(set(active_dates))
+        growth["last_active_date"] = unique_dates[-1].isoformat()
+        streak = 1
+        for index in range(len(unique_dates) - 1, 0, -1):
+            if unique_dates[index - 1] == unique_dates[index] - timedelta(days=1):
+                streak += 1
+            else:
+                break
+        growth["current_streak"] = streak
+
+    return growth
+
+
+def _load_growth_for_scope(scope) -> dict:
+    if scope.kind == "user":
+        from services.user_data_service import load_user_growth_daily
+
+        return _growth_from_daily_rows(load_user_growth_daily(scope.owner_id))
+    return _load_legacy_growth()
+
+
+def load_growth() -> dict:
+    """현재 저장 범위의 성장 기록을 불러옵니다."""
+    return _load_growth_for_scope(current_storage_scope())
+
+
+def _save_legacy_growth(data: dict) -> None:
     GROWTH_FILE.parent.mkdir(parents=True, exist_ok=True)
 
     with GROWTH_FILE.open("w", encoding="utf-8") as file:
@@ -58,6 +107,26 @@ def save_growth(data: dict) -> None:
             ensure_ascii=False,
             indent=2,
         )
+
+
+def save_growth(data: dict) -> None:
+    """현재 저장 범위에 성장 기록을 저장합니다."""
+    scope = current_storage_scope()
+    if scope.kind == "user":
+        from services.user_data_service import upsert_user_growth_daily
+
+        for activity_date, day in data.get("daily", {}).items():
+            upsert_user_growth_daily(
+                scope.owner_id,
+                {
+                    "activity_date": activity_date,
+                    "articles": day.get("articles", 0),
+                    "seconds": day.get("seconds", 0),
+                    "read_news_ids": day.get("read_news_ids", []),
+                },
+            )
+        return
+    _save_legacy_growth(data)
 
 
 def is_read_today(news_id: str) -> bool:
@@ -78,10 +147,11 @@ def record_article_read(
     """
     기사 읽기 기록을 저장합니다.
 
-    오늘 이미 기록된 기사라면 False, JSON과 Supabase에 저장하면 True,
-    JSON만 저장하고 Supabase 저장에 실패하면 None을 반환합니다.
+    오늘 이미 기록된 기사라면 False, 선택된 저장 경로에 저장하면 True,
+    legacy JSON만 저장되고 Supabase 미러링이 실패하면 None을 반환합니다.
     """
-    growth = load_growth()
+    scope = current_storage_scope()
+    growth = _load_growth_for_scope(scope)
 
     today = today_kst()
     today_string = today.isoformat()
@@ -126,14 +196,21 @@ def record_article_read(
 
     growth["last_active_date"] = today_string
 
-    save_growth(growth)
+    growth_day = {
+        "activity_date": today_string,
+        "articles": today_data["articles"],
+        "seconds": today_data["seconds"],
+        "read_news_ids": today_data["read_news_ids"],
+    }
+    if scope.kind == "user":
+        from services.user_data_service import upsert_user_growth_daily
+
+        upsert_user_growth_daily(scope.owner_id, growth_day)
+        return True
+
+    _save_legacy_growth(growth)
     mirrored = save_growth_to_supabase(
-        {
-            "activity_date": today_string,
-            "articles": today_data["articles"],
-            "seconds": today_data["seconds"],
-            "read_news_ids": today_data["read_news_ids"],
-        }
+        growth_day
     )
 
     return True if mirrored else None
