@@ -1,15 +1,16 @@
 {
-  "total_articles": 2,
-  "total_seconds": 60,
+  "total_articles": 3,
+  "total_seconds": 90,
   "current_streak": 1,
   "last_active_date": "2026-07-14",
   "daily": {
     "2026-07-14": {
-      "articles": 2,
-      "seconds": 60,
+      "articles": 3,
+      "seconds": 90,
       "read_news_ids": [
         "8fe2b9f3-8ed6-41b4-bfe5-27e418377f8e",
-        "3491cc9d-a16c-4501-9fab-ec31e0e6771a"
+        "3491cc9d-a16c-4501-9fab-ec31e0e6771a",
+        "fbd2f33d-1c01-4104-bf17-c3689a526cd6"
       ]
     }
   }

@@ -5,6 +5,7 @@ from services.user_service import load_interests
 from services.ranking_service import sort_news_by_importance
 
 from components.news_card import render_news_card
+from components.growth_banner import render_growth_banner
 
 
 st.set_page_config(
@@ -38,6 +39,8 @@ st.markdown(
     오늘을 놓치지 않습니다.
     """
 )
+
+render_growth_banner()
 
 st.divider()
 
