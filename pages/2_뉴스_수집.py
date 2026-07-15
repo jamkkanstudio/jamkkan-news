@@ -6,7 +6,11 @@ import streamlit as st
 from services.auth_service import require_admin_page
 
 from services.news_service import add_news, load_news
-from services.news_collection_service import load_collection_status
+from services.news_collection_service import (
+    format_collection_time_kst,
+    is_collection_status_stale,
+    load_collection_status,
+)
 from services.rss_service import RSS_FEEDS, fetch_rss_news
 from services.summarizer import create_brief, create_reason
 
@@ -29,12 +33,19 @@ require_admin_page()
 
 collection_status = load_collection_status()
 if collection_status:
+    last_attempt = format_collection_time_kst(
+        collection_status.get("last_attempt_at")
+    )
+    last_success = format_collection_time_kst(
+        collection_status.get("last_success_at")
+    )
     if collection_status.get("status") == "success":
-        st.success(
-            "자동 수집 정상 · 마지막 성공 "
-            + str(collection_status.get("last_success_at", "확인 불가"))
-        )
+        if is_collection_status_stale(collection_status):
+            st.warning("자동 수집 지연 확인 필요 · 마지막 성공 " + last_success)
+        else:
+            st.success("자동 수집 정상 · 마지막 성공 " + last_success)
         st.caption(
+            f"최근 시도 {last_attempt} · "
             f"최근 추가 {collection_status.get('added_count', 0)}개 · "
             f"중복 제외 {collection_status.get('duplicate_count', 0)}개"
         )
@@ -44,6 +55,7 @@ if collection_status:
             + str(collection_status.get("failure_code", "unknown"))
         )
         st.caption(
+            f"실패 시도 {last_attempt} · 마지막 성공 {last_success}. "
             "다음 예약 실행이 자동으로 재시도합니다. "
             "필요하면 아래 수동 복구를 사용하세요."
         )

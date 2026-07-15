@@ -1,5 +1,6 @@
 import tempfile
 import unittest
+from datetime import datetime, timezone
 from pathlib import Path
 from unittest.mock import patch
 
@@ -9,6 +10,8 @@ from services.news_collection_service import (
     canonicalize_url,
     collect_latest_news,
     collection_lock,
+    format_collection_time_kst,
+    is_collection_status_stale,
 )
 
 
@@ -29,6 +32,28 @@ def rss_candidate(
 
 
 class NewsCollectionServiceTest(unittest.TestCase):
+    def test_collection_status_time_is_shown_in_kst(self) -> None:
+        self.assertEqual(
+            format_collection_time_kst("2026-07-15T07:37:01Z"),
+            "2026-07-15 16:37 KST",
+        )
+        self.assertEqual(format_collection_time_kst("invalid"), "확인 불가")
+
+    def test_collection_status_is_stale_after_thirty_minutes(self) -> None:
+        now = datetime(2026, 7, 15, 8, 7, 1, tzinfo=timezone.utc)
+        self.assertTrue(
+            is_collection_status_stale(
+                {"last_success_at": "2026-07-15T07:37:01Z"},
+                now=now,
+            )
+        )
+        self.assertFalse(
+            is_collection_status_stale(
+                {"last_success_at": "2026-07-15T07:37:02Z"},
+                now=now,
+            )
+        )
+
     def test_canonical_url_removes_tracking_and_fragment(self) -> None:
         self.assertEqual(
             canonicalize_url(

@@ -3,7 +3,7 @@ import json
 import os
 from contextlib import contextmanager
 from dataclasses import asdict, dataclass
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 from uuid import UUID
@@ -13,12 +13,14 @@ from services.news_service import load_news, save_news, save_news_to_supabase
 from services.rss_service import fetch_rss_news
 from services.summarizer import create_brief, create_reason
 from services.supabase_service import get_setting, upsert_setting
+from services.time_service import KST
 
 
 COLLECTION_STATUS_KEY = "news_collection_status"
 COLLECTION_LOCK_FILE = Path(".news_collection.lock")
 LOCK_STALE_SECONDS = 30 * 60
 MAX_SEEN_FINGERPRINTS = 500
+COLLECTION_STALE_AFTER = timedelta(minutes=30)
 TRACKING_QUERY_KEYS = {
     "fbclid",
     "gclid",
@@ -89,6 +91,43 @@ def article_fingerprint(source: str, source_id: str, url: str) -> str:
 
 def _now_iso() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
+def _parse_collection_time(value: object) -> datetime | None:
+    if not isinstance(value, str) or not value.strip():
+        return None
+    try:
+        parsed = datetime.fromisoformat(value.strip().replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=timezone.utc)
+    return parsed
+
+
+def format_collection_time_kst(value: object) -> str:
+    """수집 시각을 관리자에게 일관된 한국 시각으로 표시합니다."""
+    parsed = _parse_collection_time(value)
+    if parsed is None:
+        return "확인 불가"
+    return parsed.astimezone(KST).strftime("%Y-%m-%d %H:%M KST")
+
+
+def is_collection_status_stale(
+    status: dict,
+    *,
+    now: datetime | None = None,
+) -> bool:
+    """마지막 성공 후 30분 이상 지나면 운영 지연으로 봅니다."""
+    last_success = _parse_collection_time(status.get("last_success_at"))
+    if last_success is None:
+        return True
+    current = now or datetime.now(timezone.utc)
+    if current.tzinfo is None:
+        current = current.replace(tzinfo=timezone.utc)
+    return current.astimezone(timezone.utc) - last_success.astimezone(
+        timezone.utc
+    ) >= COLLECTION_STALE_AFTER
 
 
 def _build_news(candidate: dict) -> dict:
