@@ -845,5 +845,16 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-07-15T19:13:13+09:00"
+  },
+  {
+    "id": "780cd8cf-5050-5c63-ad94-66c4a78bbc8b",
+    "title": "'이열치열' 더위 극복…초복 삼계탕집 문전성시",
+    "summary": "[앵커] 오늘(15일)은 삼복더위의 시작을 알리는 초복입니다. 더위를 이겨내기 위해 보양식을 찾는 시민들의 발길이 이어졌는데요.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260715192423v4X",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-07-15T19:24:24+09:00"
   }
 ]
