@@ -74,7 +74,7 @@ SUPABASE_KEY = "SERVER_ONLY_KEY"
 
 ## Automatic news collection
 
-`.github/workflows/collect-news.yml`은 매시 7분부터 10분 간격으로 최신 RSS 피드를 한 번 조회합니다. GitHub Actions 예약 실행은 혼잡 시 지연될 수 있으므로 이 주기는 정확한 시각 보장이 아닌 준실시간 운영 목표입니다. 새 기사만 안정적인 RSS 기사 ID와 정규화 URL로 중복을 제거해 Supabase에 먼저 upsert한 뒤 `data/news.json`을 원자 교체하며, 실제 JSON 변경이 있을 때만 `main`에 커밋합니다.
+Supabase Cron은 매시 7분부터 10분 간격으로 `.github/workflows/collect-news.yml`의 `workflow_dispatch`를 호출해 최신 RSS 피드를 한 번 조회합니다. GitHub의 native `schedule` 이벤트가 생성되지 않는 운영 문제를 우회하며, 정확한 실행 시각이 아닌 준실시간 운영을 목표로 합니다. 새 기사만 안정적인 RSS 기사 ID와 정규화 URL로 중복을 제거해 Supabase에 먼저 upsert한 뒤 `data/news.json`을 원자 교체하며, 실제 JSON 변경이 있을 때만 `main`에 커밋합니다.
 
 저장소의 **Settings → Secrets and variables → Actions**에서 다음 Repository secrets를 설정합니다. 실제 값은 코드, Git, Actions 로그, 채팅에 남기지 않습니다.
 
@@ -84,6 +84,8 @@ SUPABASE_KEY = "SERVER_ONLY_KEY"
 - `SUPABASE_KEY`: 기존 서버 전용 뉴스 미러링 키
 
 워크플로는 `contents: write`만 명시적으로 사용하고, 같은 수집 작업의 동시 실행을 막습니다. 마지막 성공 시각과 제한된 실패 코드는 Supabase `settings`의 `news_collection_status`에 저장되어 관리자 뉴스 수집 화면에 표시됩니다. 실패한 실행은 다음 예약에서 다시 시도하며, RSS 원문 예외나 비밀값은 상태와 CLI 출력에 기록하지 않습니다.
+
+운영 스케줄러는 `supabase/news_collection_scheduler.sql`로 적용하고 `supabase/verify_news_collection_scheduler.sql`로 확인합니다. GitHub fine-grained token은 `jamkkan-news` 저장소의 Actions 실행 권한만 허용하고 Supabase Vault의 `jamkkan_github_actions_token`에 저장합니다. 실제 토큰 값은 SQL 파일이나 SQL history에 직접 입력하지 않습니다. 롤백은 `supabase/rollback_news_collection_scheduler.sql`로 Job만 중지한 뒤 Vault UI에서 토큰을 제거합니다.
 
 예외 복구가 필요하면 **Actions → Collect RSS news → Run workflow**로 수동 실행합니다. 기존 관리자 뉴스 수집 화면의 수동 등록도 복구용으로 유지됩니다. 공개 저장소의 표준 GitHub-hosted runner를 사용하므로 별도 유료 API는 추가되지 않지만, 예약 실행 지연과 사용량은 Actions 실행 기록에서 계속 관찰합니다.
 
