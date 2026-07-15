@@ -20,8 +20,8 @@ def render_completion_banner():
     with st.container(border=True):
         st.markdown(
             '<p class="jm-kicker">DAILY COMPLETE</p>'
-            "<h2>🌱 오늘은 충분합니다.</h2>"
+            "<h2>🌱 오늘은 충분합니다. 내일 다시 잠깐.</h2>"
             f"<p>오늘 <strong>{time_text}</strong>를 나에게 투자했습니다.</p>",
             unsafe_allow_html=True,
         )
-        st.success("브리핑 완료 · 내일 다시 잠깐.")
+        st.success("브리핑 완료")

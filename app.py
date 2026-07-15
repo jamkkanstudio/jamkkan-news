@@ -14,7 +14,14 @@ from components.news_card import render_news_card
 
 from services.growth_service import is_today_brief_completed
 from services.news_service import load_news
-from services.ranking_service import sort_news_by_importance
+from services.ranking_service import (
+    calculate_personal_score,
+    filter_news_for_date,
+    select_personal_top_news,
+    select_today_top_news,
+)
+from services.settings_service import load_global_daily_briefing
+from services.time_service import now_kst, today_kst
 from services.user_service import load_interests
 
 
@@ -26,49 +33,6 @@ st.set_page_config(
 
 apply_design_system()
 render_auth_sidebar()
-
-
-def calculate_personal_score(
-    news: dict,
-    interests: list[str],
-) -> int:
-    """기본 중요도에 관심 분야 일치 점수를 더합니다."""
-
-    score = int(news.get("importance", 50))
-
-    searchable_text = " ".join(
-        [
-            news.get("title", ""),
-            news.get("summary", ""),
-            news.get("reason", ""),
-            news.get("category", ""),
-        ]
-    ).lower()
-
-    for interest in interests:
-        if interest.lower() in searchable_text:
-            score += 30
-
-    return score
-
-
-def get_personal_top5(
-    news_list: list[dict],
-    interests: list[str],
-) -> list[dict]:
-    """관심 분야 점수를 기준으로 나의 TOP5를 반환합니다."""
-
-    if not interests:
-        return []
-
-    return sorted(
-        news_list,
-        key=lambda news: calculate_personal_score(
-            news,
-            interests,
-        ),
-        reverse=True,
-    )[:5]
 
 
 def render_news_grid(
@@ -108,74 +72,81 @@ render_growth_banner()
 # 데이터 불러오기
 news_list = load_news()
 interests = load_interests()
+today = today_kst()
+current_time = now_kst()
+today_candidates = filter_news_for_date(news_list, today)
+daily_snapshot = load_global_daily_briefing(today.isoformat())
+
+if daily_snapshot:
+    today_by_id = {
+        str(news.get("id", "")): news
+        for news in today_candidates
+        if news.get("id")
+    }
+    candidate_pool = [
+        today_by_id[news_id]
+        for news_id in daily_snapshot["candidate_ids"]
+        if news_id in today_by_id
+    ]
+else:
+    candidate_pool = today_candidates
 
 
-if not news_list:
-    st.info("등록된 뉴스가 없습니다.")
+if not candidate_pool:
+    st.info("오늘 발행된 브리핑 기사가 아직 없습니다.")
 
     st.caption(
-        "뉴스 수집 페이지에서 오늘의 브리핑을 등록해 주세요."
+        "오래된 기사를 오늘 기사로 섞지 않고, 새 소식을 기다립니다."
     )
 
 else:
-    # 오늘의 TOP5
-    ranked_news = sort_news_by_importance(news_list)
-    today_top5 = ranked_news[:5]
+    today_top5 = select_today_top_news(
+        candidate_pool,
+        target_date=today,
+        now=current_time,
+    )
+    personal_top5 = select_personal_top_news(
+        candidate_pool,
+        interests,
+        target_date=today,
+        now=current_time,
+    )
 
-    brief_completed = is_today_brief_completed(today_top5)
+    brief_completed = bool(daily_snapshot) and (
+        is_today_brief_completed(today_top5)
+        or (
+            personal_top5
+            and is_today_brief_completed(personal_top5)
+        )
+    )
 
     if brief_completed:
         render_completion_banner()
-        render_section_header(
-            "오늘 읽은 브리핑",
-            "필요한 내용을 빠르게 다시 확인할 수 있습니다.",
-        )
 
-    else:
-        render_section_header(
-            "오늘의 TOP5",
-            "제목과 주제를 훑고, 궁금한 브리핑만 열어보세요.",
-        )
-
-    render_topic_strip(today_top5)
-    render_news_grid(today_top5, section="today")
-
-    # 나의 TOP5
     render_section_header(
-        "나의 TOP5",
-        "관심 분야를 반영해 다시 정렬한 브리핑입니다.",
+        "오늘의 브리핑",
+        "두 관점 중 하나를 골라 최대 5개의 서로 다른 흐름만 확인하세요.",
+    )
+    view = st.segmented_control(
+        "브리핑 관점",
+        options=["모두에게 중요", "나에게 중요"],
+        default="모두에게 중요",
     )
 
-    if not interests:
-        st.info("관심 분야를 먼저 설정해 주세요.")
+    if not daily_snapshot:
+        st.caption("오늘 후보군을 고정하는 중이며, 현재도 오늘 기사만 보여드립니다.")
 
-        if st.button(
-            "관심 분야 설정하기",
-            use_container_width=True,
-            type="primary",
-        ):
-            st.switch_page(
-                "pages/3_관심분야_설정.py"
-            )
-
-    else:
-        personal_top5 = get_personal_top5(
-            news_list,
-            interests,
-        )
-
+    if view == "나에게 중요" and interests:
         st.caption(
             "관심 분야 · "
             + ", ".join(interests)
         )
-
         render_topic_strip(personal_top5)
         render_news_grid(
             personal_top5,
             section="personal",
             interests=interests,
         )
-
         if st.button(
             "관심 분야 변경",
             use_container_width=True,
@@ -183,3 +154,19 @@ else:
             st.switch_page(
                 "pages/3_관심분야_설정.py"
             )
+    elif view == "나에게 중요":
+        st.info("관심 분야를 먼저 설정해 주세요.")
+        if st.button(
+            "관심 분야 설정하기",
+            use_container_width=True,
+            type="primary",
+        ):
+            st.switch_page("pages/3_관심분야_설정.py")
+    else:
+        if len(today_top5) < 5:
+            st.caption(
+                f"오늘 발행 기사 {len(today_top5)}개만 보여드립니다. "
+                "어제 기사는 섞지 않습니다."
+            )
+        render_topic_strip(today_top5)
+        render_news_grid(today_top5, section="today")

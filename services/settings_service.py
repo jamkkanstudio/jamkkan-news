@@ -1,12 +1,13 @@
 import json
 from pathlib import Path
 
-from services.auth_service import require_admin
+from services.auth_service import require_admin, require_automation_admin
 from services.data_routing_service import current_storage_scope
 
 
 SETTINGS_FILE = Path("data/settings.json")
 DEFAULT_DAILY_GOAL_SECONDS = 180
+DAILY_BRIEFING_KEY = "daily_briefing"
 
 
 def save_setting_to_supabase(
@@ -57,6 +58,61 @@ def load_settings() -> dict:
         settings.update(load_user_settings(scope.owner_id))
         return settings
     return _load_legacy_settings()
+
+
+def load_global_daily_briefing(target_date: str) -> dict | None:
+    """익명·로그인 사용자에게 공통인 당일 후보 스냅샷만 읽습니다."""
+    snapshot = _load_legacy_settings().get(DAILY_BRIEFING_KEY)
+    if not isinstance(snapshot, dict) or snapshot.get("date") != target_date:
+        return None
+    candidate_ids = snapshot.get("candidate_ids")
+    if not isinstance(candidate_ids, list) or not candidate_ids:
+        return None
+    if not all(isinstance(news_id, str) and news_id for news_id in candidate_ids):
+        return None
+    return {
+        "date": target_date,
+        "candidate_ids": list(dict.fromkeys(candidate_ids)),
+        "selected_at": str(snapshot.get("selected_at", "")),
+    }
+
+
+def save_global_daily_briefing(snapshot: dict) -> bool:
+    """자동화 관리자만 당일 후보군을 Supabase 우선으로 고정합니다."""
+    require_automation_admin()
+    target_date = str(snapshot.get("date", "")).strip()
+    candidate_ids = [
+        str(news_id).strip()
+        for news_id in snapshot.get("candidate_ids", [])
+        if str(news_id).strip()
+    ]
+    normalized = {
+        "date": target_date,
+        "candidate_ids": list(dict.fromkeys(candidate_ids)),
+        "selected_at": str(snapshot.get("selected_at", "")).strip(),
+    }
+    if not target_date or not normalized["candidate_ids"]:
+        raise ValueError("invalid_daily_briefing")
+
+    settings = _load_legacy_settings()
+    existing = settings.get(DAILY_BRIEFING_KEY)
+    if isinstance(existing, dict) and existing.get("date") == target_date:
+        return True
+
+    if not save_setting_to_supabase(DAILY_BRIEFING_KEY, normalized):
+        return False
+
+    settings[DAILY_BRIEFING_KEY] = normalized
+    SETTINGS_FILE.parent.mkdir(parents=True, exist_ok=True)
+    temporary_file = SETTINGS_FILE.with_suffix(f"{SETTINGS_FILE.suffix}.tmp")
+    try:
+        with temporary_file.open("w", encoding="utf-8") as file:
+            json.dump(settings, file, ensure_ascii=False, indent=2)
+            file.flush()
+        temporary_file.replace(SETTINGS_FILE)
+    finally:
+        temporary_file.unlink(missing_ok=True)
+    return True
 
 
 def save_settings(settings: dict) -> None:

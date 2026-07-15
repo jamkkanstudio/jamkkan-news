@@ -30,6 +30,7 @@ class AddNewsTest(unittest.TestCase):
             "url": "https://example.com/news",
             "category": "경제",
             "importance": 80,
+            "published_at": "2026-07-15T09:00:00+09:00",
         }
 
         with tempfile.TemporaryDirectory() as temp_dir:
@@ -49,6 +50,10 @@ class AddNewsTest(unittest.TestCase):
                 saved_news_list = json.load(file)
 
             self.assertEqual(len(saved_news_list), 1)
+            self.assertEqual(
+                saved_news_list[0]["created_at"],
+                news["published_at"],
+            )
             save_supabase.assert_called_once_with(saved_news_list[0])
             self.assertIs(mirrored, True)
 

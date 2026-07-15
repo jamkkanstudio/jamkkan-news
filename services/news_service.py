@@ -1,9 +1,10 @@
 import json
-from datetime import datetime
 from pathlib import Path
 from uuid import uuid4
 
 from services.auth_service import require_admin
+from services.ranking_service import resolve_article_datetime
+from services.time_service import now_kst
 
 
 DATA_FILE = Path("data/news.json")
@@ -59,6 +60,7 @@ def add_news(news: dict) -> bool:
     """새 뉴스를 JSON에 추가하고 Supabase 미러링 결과를 반환합니다."""
     require_admin()
     news_list = load_news()
+    article_time = resolve_article_datetime(news) or now_kst()
 
     new_news = {
         "id": str(uuid4()),
@@ -69,7 +71,7 @@ def add_news(news: dict) -> bool:
         "url": news["url"],
         "category": news.get("category", "기타"),
         "importance": news.get("importance", 50),
-        "created_at": datetime.now().isoformat(timespec="seconds"),
+        "created_at": article_time.isoformat(timespec="seconds"),
     }
 
     news_list.append(new_news)

@@ -4,6 +4,8 @@ from urllib.request import Request, urlopen
 
 import feedparser
 
+from services.time_service import KST, now_kst
+
 
 RSS_FEEDS = {
     "최신": "https://www.yonhapnewstv.co.kr/browse/feed/",
@@ -12,6 +14,7 @@ RSS_FEEDS = {
     "사회": "https://www.yonhapnewstv.co.kr/category/news/society/feed/",
     "국제": "https://www.yonhapnewstv.co.kr/category/news/international/feed/",
 }
+RSS_CATEGORIES = ("정치", "경제", "사회", "국제")
 
 RSS_TIMEOUT_SECONDS = 20
 RSS_USER_AGENT = "JamkkanNewsCollector/1.0 (+https://jamkkan-news.streamlit.app/)"
@@ -65,8 +68,62 @@ def fetch_rss_news(category: str = "최신", limit: int = 20) -> list[dict]:
                 "source": "연합뉴스TV",
                 "category": category,
                 "published_at": _parse_published_date(entry),
-                "collected_at": datetime.now().isoformat(timespec="seconds"),
+                "collected_at": now_kst().isoformat(timespec="seconds"),
             }
         )
 
     return news_list
+
+
+def _rss_sort_time(candidate: dict) -> datetime:
+    for field in ("published_at", "collected_at"):
+        value = candidate.get(field)
+        if not isinstance(value, str) or not value.strip():
+            continue
+        try:
+            parsed = datetime.fromisoformat(value.strip().replace("Z", "+00:00"))
+        except ValueError:
+            continue
+        if parsed.tzinfo is None:
+            return parsed.replace(tzinfo=KST)
+        return parsed.astimezone(KST)
+    return datetime.min.replace(tzinfo=KST)
+
+
+def fetch_categorized_rss_news(limit: int = 20) -> list[dict]:
+    """광역 카테고리 피드를 합치고 기사 ID·URL 중복을 안정적으로 제거합니다."""
+    if limit <= 0:
+        return []
+
+    merged: list[dict] = []
+    seen: set[str] = set()
+    successful_feeds = 0
+
+    for category in RSS_CATEGORIES:
+        try:
+            category_news = fetch_rss_news(category=category, limit=limit)
+        except RuntimeError:
+            continue
+        successful_feeds += 1
+        for candidate in category_news:
+            identity = (
+                str(candidate.get("source_id", "")).strip()
+                or str(candidate.get("url", "")).strip().rstrip("/")
+            )
+            if not identity or identity in seen:
+                continue
+            seen.add(identity)
+            merged.append(candidate)
+
+    if successful_feeds == 0:
+        raise RuntimeError("분류 RSS를 불러오지 못했습니다.")
+
+    return sorted(
+        merged,
+        key=lambda candidate: (
+            _rss_sort_time(candidate),
+            str(candidate.get("source_id", "")),
+            str(candidate.get("url", "")),
+        ),
+        reverse=True,
+    )[:limit]

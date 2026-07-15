@@ -19,6 +19,7 @@ def rss_candidate(
     *,
     source_id: str = "article-1",
     url: str = "https://example.com/news/1",
+    category: str = "경제",
 ) -> dict:
     return {
         "title": "테스트 기사",
@@ -26,12 +27,22 @@ def rss_candidate(
         "source_id": source_id,
         "summary": "테스트 기사 요약입니다.",
         "source": "테스트 언론사",
-        "category": "최신",
+        "category": category,
         "published_at": "2026-07-15T09:00:00+09:00",
     }
 
 
 class NewsCollectionServiceTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.snapshot_loader = patch(
+            "services.news_collection_service.load_global_daily_briefing",
+            return_value={
+                "date": "2026-07-15",
+                "candidate_ids": ["frozen"],
+            },
+        ).start()
+        self.addCleanup(patch.stopall)
+
     def test_collection_status_time_is_shown_in_kst(self) -> None:
         self.assertEqual(
             format_collection_time_kst("2026-07-15T07:37:01Z"),
@@ -89,7 +100,7 @@ class NewsCollectionServiceTest(unittest.TestCase):
                     return_value=None,
                 ),
                 patch(
-                    "services.news_collection_service.fetch_rss_news",
+                    "services.news_collection_service.fetch_categorized_rss_news",
                     return_value=[rss_candidate()],
                 ),
                 patch(
@@ -113,7 +124,7 @@ class NewsCollectionServiceTest(unittest.TestCase):
 
         self.assertEqual(operations, ["supabase", "json"])
         self.assertEqual(status.added_count, 1)
-        self.assertEqual(save_json.call_args.args[0][0]["category"], "기타")
+        self.assertEqual(save_json.call_args.args[0][0]["category"], "경제")
         save_status.assert_called_once()
 
     def test_collect_deduplicates_canonical_url_and_source_id(self) -> None:
@@ -136,7 +147,7 @@ class NewsCollectionServiceTest(unittest.TestCase):
                     return_value=None,
                 ),
                 patch(
-                    "services.news_collection_service.fetch_rss_news",
+                    "services.news_collection_service.fetch_categorized_rss_news",
                     return_value=[
                         rss_candidate(),
                         rss_candidate(
@@ -183,7 +194,7 @@ class NewsCollectionServiceTest(unittest.TestCase):
                     return_value={"last_success_at": "previous"},
                 ),
                 patch(
-                    "services.news_collection_service.fetch_rss_news",
+                    "services.news_collection_service.fetch_categorized_rss_news",
                     return_value=[rss_candidate()],
                 ),
                 patch(
@@ -231,7 +242,7 @@ class NewsCollectionServiceTest(unittest.TestCase):
                     side_effect=lambda: fingerprint_status or None,
                 ),
                 patch(
-                    "services.news_collection_service.fetch_rss_news",
+                    "services.news_collection_service.fetch_categorized_rss_news",
                     return_value=[candidate],
                 ),
                 patch(
@@ -259,6 +270,58 @@ class NewsCollectionServiceTest(unittest.TestCase):
         self.assertEqual(second.duplicate_count, 1)
         self.assertEqual(save_supabase.call_count, 1)
         self.assertEqual(save_json.call_count, 1)
+
+    def test_daily_snapshot_freezes_only_kst_today_candidates(self) -> None:
+        self.snapshot_loader.return_value = None
+        yesterday = {
+            "id": "yesterday-id",
+            "url": "https://example.com/yesterday",
+            "title": "어제 기사",
+            "created_at": "2026-07-14T23:59:59+09:00",
+        }
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            with (
+                patch(
+                    "services.news_collection_service.require_automation_admin"
+                ),
+                patch(
+                    "services.news_collection_service.load_collection_status",
+                    return_value=None,
+                ),
+                patch(
+                    "services.news_collection_service.fetch_categorized_rss_news",
+                    return_value=[rss_candidate()],
+                ),
+                patch(
+                    "services.news_collection_service.load_news",
+                    return_value=[yesterday],
+                ),
+                patch(
+                    "services.news_collection_service.save_news_to_supabase",
+                    return_value=True,
+                ),
+                patch("services.news_collection_service.save_news"),
+                patch(
+                    "services.news_collection_service.save_global_daily_briefing",
+                    return_value=True,
+                ) as save_briefing,
+                patch(
+                    "services.news_collection_service.upsert_setting",
+                    return_value=True,
+                ),
+            ):
+                collect_latest_news(
+                    lock_file=Path(temp_dir) / "collection.lock",
+                    now=datetime.fromisoformat(
+                        "2026-07-15T09:00:00+09:00"
+                    ),
+                )
+
+        snapshot = save_briefing.call_args.args[0]
+        self.assertEqual(snapshot["date"], "2026-07-15")
+        self.assertEqual(len(snapshot["candidate_ids"]), 1)
+        self.assertNotIn("yesterday-id", snapshot["candidate_ids"])
 
     def test_active_lock_rejects_overlapping_run(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:

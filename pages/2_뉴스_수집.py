@@ -12,7 +12,11 @@ from services.news_collection_service import (
     is_collection_status_stale,
     load_collection_status,
 )
-from services.rss_service import RSS_FEEDS, fetch_rss_news
+from services.rss_service import (
+    RSS_CATEGORIES,
+    fetch_categorized_rss_news,
+    fetch_rss_news,
+)
 from services.summarizer import create_brief, create_reason
 
 
@@ -90,7 +94,7 @@ def clean_summary(summary: str) -> str:
 
 category = st.selectbox(
     "카테고리",
-    options=list(RSS_FEEDS.keys()),
+    options=["분류 통합", *RSS_CATEGORIES],
 )
 
 limit = st.slider(
@@ -107,10 +111,13 @@ if st.button(
 ):
     try:
         with st.spinner("기사를 가져오는 중입니다..."):
-            news_list = fetch_rss_news(
-                category=category,
-                limit=limit,
-            )
+            if category == "분류 통합":
+                news_list = fetch_categorized_rss_news(limit=limit)
+            else:
+                news_list = fetch_rss_news(
+                    category=category,
+                    limit=limit,
+                )
 
         st.session_state["rss_news_list"] = news_list
         st.success(f"{len(news_list)}개의 기사를 가져왔습니다.")
@@ -194,9 +201,6 @@ if news_list:
 
                 news_category = rss_news.get("category", "기타")
 
-                if news_category == "최신":
-                    news_category = "기타"
-
                 brief = create_brief(
                     cleaned_summary or rss_news["title"]
                 )
@@ -214,6 +218,8 @@ if news_list:
                     "url": rss_news["url"],
                     "category": news_category,
                     "importance": 50,
+                    "published_at": rss_news.get("published_at", ""),
+                    "collected_at": rss_news.get("collected_at", ""),
                 }
 
                 if add_news(new_news):

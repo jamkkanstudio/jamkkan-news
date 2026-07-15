@@ -10,10 +10,19 @@ from uuid import UUID
 
 from services.auth_service import require_automation_admin
 from services.news_service import load_news, save_news, save_news_to_supabase
-from services.rss_service import fetch_rss_news
+from services.ranking_service import (
+    BROAD_CATEGORIES,
+    filter_news_for_date,
+    resolve_article_datetime,
+)
+from services.rss_service import fetch_categorized_rss_news
+from services.settings_service import (
+    load_global_daily_briefing,
+    save_global_daily_briefing,
+)
 from services.summarizer import create_brief, create_reason
 from services.supabase_service import get_setting, upsert_setting
-from services.time_service import KST
+from services.time_service import KST, now_kst
 
 
 COLLECTION_STATUS_KEY = "news_collection_status"
@@ -21,6 +30,9 @@ COLLECTION_LOCK_FILE = Path(".news_collection.lock")
 LOCK_STALE_SECONDS = 30 * 60
 MAX_SEEN_FINGERPRINTS = 500
 COLLECTION_STALE_AFTER = timedelta(minutes=30)
+MAX_DAILY_CANDIDATES = 50
+DAILY_BRIEFING_SIZE = 5
+BRIEFING_SEAL_HOUR_KST = 8
 TRACKING_QUERY_KEYS = {
     "fbclid",
     "gclid",
@@ -130,10 +142,19 @@ def is_collection_status_stale(
     ) >= COLLECTION_STALE_AFTER
 
 
-def _build_news(candidate: dict) -> dict:
+def _build_news(
+    candidate: dict,
+    *,
+    fallback_time: datetime | None = None,
+) -> dict:
     category = candidate.get("category", "기타")
-    if category == "최신":
+    if category not in BROAD_CATEGORIES:
         category = "기타"
+    article_time = resolve_article_datetime(candidate)
+    if article_time is None:
+        article_time = fallback_time or now_kst()
+        if article_time.tzinfo is None:
+            article_time = article_time.replace(tzinfo=KST)
     cleaned_summary = candidate.get("summary", "")
     return {
         "id": article_id(
@@ -153,8 +174,28 @@ def _build_news(candidate: dict) -> dict:
         "url": candidate.get("url", "").strip(),
         "category": category,
         "importance": 50,
-        "created_at": candidate.get("published_at") or _now_iso(),
+        "created_at": article_time.isoformat(timespec="seconds"),
     }
+
+
+def _ordered_daily_candidate_ids(
+    news_list: list[dict],
+    target_date,
+) -> list[str]:
+    candidates = filter_news_for_date(news_list, target_date)
+    ordered = sorted(
+        candidates,
+        key=lambda news: (
+            resolve_article_datetime(news),
+            str(news.get("id", "")),
+        ),
+        reverse=True,
+    )
+    return [
+        str(news["id"])
+        for news in ordered
+        if news.get("id")
+    ][:MAX_DAILY_CANDIDATES]
 
 
 @contextmanager
@@ -209,9 +250,15 @@ def collect_latest_news(
     feed_limit: int = 20,
     add_limit: int = 5,
     lock_file: Path = COLLECTION_LOCK_FILE,
+    now: datetime | None = None,
 ) -> CollectionStatus:
-    """최신 RSS를 중복 없이 JSON과 Supabase에 함께 저장합니다."""
+    """분류 RSS를 중복 없이 저장하고 KST 당일 후보군을 한 번 고정합니다."""
     require_automation_admin()
+    collection_now = now or now_kst()
+    if collection_now.tzinfo is None:
+        collection_now = collection_now.replace(tzinfo=KST)
+    else:
+        collection_now = collection_now.astimezone(KST)
     attempted_at = _now_iso()
     previous_status = load_collection_status() or {}
     last_success_at = previous_status.get("last_success_at")
@@ -222,7 +269,7 @@ def collect_latest_news(
 
     with collection_lock(lock_file):
         try:
-            candidates = fetch_rss_news(category="최신", limit=feed_limit)
+            candidates = fetch_categorized_rss_news(limit=feed_limit)
         except Exception as error:
             failure = CollectionStatus(
                 status="failed",
@@ -257,7 +304,7 @@ def collect_latest_news(
         for candidate in candidates:
             if not candidate.get("title") or not candidate.get("url"):
                 continue
-            prepared = _build_news(candidate)
+            prepared = _build_news(candidate, fallback_time=collection_now)
             prepared_url = canonicalize_url(prepared["url"])
             fingerprint = article_fingerprint(
                 prepared["source"],
@@ -322,6 +369,43 @@ def collect_latest_news(
                 )
                 _write_status(failure)
                 raise CollectionError("json_write_failed") from error
+
+        target_date = collection_now.date()
+        target_date_string = target_date.isoformat()
+        existing_briefing = load_global_daily_briefing(target_date_string)
+        daily_candidate_ids = _ordered_daily_candidate_ids(
+            existing_news + additions,
+            target_date,
+        )
+        should_seal_briefing = (
+            len(daily_candidate_ids) >= DAILY_BRIEFING_SIZE
+            or (
+                daily_candidate_ids
+                and collection_now.hour >= BRIEFING_SEAL_HOUR_KST
+            )
+        )
+        if existing_briefing is None and should_seal_briefing:
+            briefing_saved = save_global_daily_briefing(
+                {
+                    "date": target_date_string,
+                    "candidate_ids": daily_candidate_ids,
+                    "selected_at": collection_now.isoformat(timespec="seconds"),
+                }
+            )
+            if not briefing_saved:
+                failure = CollectionStatus(
+                    status="failed",
+                    last_attempt_at=attempted_at,
+                    last_success_at=last_success_at,
+                    added_count=len(additions),
+                    duplicate_count=duplicate_count,
+                    failure_code="briefing_snapshot_failed",
+                    seen_fingerprints=seen_fingerprints[
+                        -MAX_SEEN_FINGERPRINTS:
+                    ],
+                )
+                _write_status(failure)
+                raise CollectionError("briefing_snapshot_failed")
 
         seen_fingerprints.extend(pending_fingerprints)
 
