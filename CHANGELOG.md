@@ -8,6 +8,14 @@
 
 > 다음 버전에 포함될 예정입니다.
 
+---
+
+# v0.2.1
+
+**Release Date**
+
+2026.07.15
+
 ## User experience
 
 - Added a calm, shared visual foundation for page headers, cards, buttons, status messages, spacing, typography, and color.

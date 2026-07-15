@@ -62,7 +62,7 @@ Released
 
 Status
 
-Deployment pending
+Released
 
 ---
 
