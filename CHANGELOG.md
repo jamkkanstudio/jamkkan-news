@@ -8,6 +8,13 @@
 
 > 다음 버전에 포함될 예정입니다.
 
+## Progressive briefing
+
+- Renamed the two briefing views to the shorter `오늘의 TOP | 추천` labels and added clear `NEW | 읽음 | 도움됨` card states.
+- Added an explicit next-batch action that replaces the current cards with at most five unseen and unread articles from the frozen KST daily candidate snapshot.
+- Kept same-event duplicates and older articles out of later batches, with a calm end state when no eligible article remains.
+- Added a minimal `article_helpful` event through the existing owner-scoped or legacy analytics route without a schema migration or automatic interest changes.
+
 ---
 
 # v0.2.2

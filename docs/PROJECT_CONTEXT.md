@@ -14,7 +14,8 @@ Jamkkan turns very short idle moments into sustainable growth. The news product 
 - A GitHub Actions job checks one latest RSS feed every 10 minutes, mirrors new articles to Supabase before atomically updating the JSON baseline, and commits only content changes. Schedule timing is best-effort, duplicate state is retry-safe, and manual collection remains an administrator recovery path.
 - Daily and weekly behavior uses `Asia/Seoul`.
 - Daily briefings only consider articles whose effective timestamp falls on the KST day. The effective timestamp prefers `published_at`, then safe collection/generation fallbacks, while legacy news remains compatible through `created_at`.
-- Automatic collection freezes one global daily candidate snapshot so public and personal ranking do not shift after every collection. Both views select at most five articles from that same snapshot, remove explainable same-event duplicates, and apply broad-category diversity.
+- Automatic collection freezes one global daily candidate snapshot so public and personal ranking do not shift after every collection. Both views start with at most five articles from that same snapshot, remove explainable same-event duplicates, and apply broad-category diversity. Only an explicit user action replaces those cards with the next maximum five after excluding already displayed or read articles; the original first five retain briefing-completion meaning.
+- Article cards expose concise `NEW`, `읽음`, and `도움됨` states. The explicit helpful signal uses the existing owner-scoped or legacy analytics event route and never changes interests automatically.
 - Each news row has one broad category. Specific subjects are a separate, optional concept capped at two per article; they are not persisted until a backward-compatible JSON and Supabase schema rollout is explicitly approved.
 - Streamlit native OIDC provides Google login. Email is used in memory for the administrator allowlist only.
 - User ownership is derived on demand from the OIDC `(issuer, subject)` pair with a server-only HMAC pepper. Only the resulting opaque owner id may be persisted; raw identity claims are not user-data keys.
@@ -42,4 +43,4 @@ Jamkkan turns very short idle moments into sustainable growth. The news product 
 
 ## Near-term direction
 
-Keep the activated personal-data path monitored while preserving the anonymous legacy path and all existing rows. The next operational outcome is an automatic news-collection pipeline with duplicate protection and failure visibility; any future legacy ownership migration still requires separately approved mapping and rollback.
+Keep the activated personal-data path and progressive daily briefing monitored while preserving the anonymous legacy path and all existing rows. Any automatic interest change, inferred growth score, dwell-time signal, or legacy ownership migration requires a separately approved minimum-data, consent, schema, validation, and rollback decision.

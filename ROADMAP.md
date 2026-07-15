@@ -83,6 +83,22 @@ Released
 
 ---
 
+# v0.2.3
+
+## Progressive Briefing
+
+- ✅ `오늘의 TOP | 추천` 관점
+- ✅ 기사 `NEW | 읽음 | 도움됨` 상태
+- ✅ 표시·읽음 제외 다음 최대 5개
+- ✅ 도움 신호 owner-scoped·legacy 호환
+- ✅ 오래된 기사·동일 사건 없는 종료 상태
+
+Status
+
+Release pending
+
+---
+
 # v0.3
 
 ## AI
