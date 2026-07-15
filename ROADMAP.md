@@ -95,7 +95,7 @@ Released
 
 Status
 
-Release pending
+Released
 
 ---
 

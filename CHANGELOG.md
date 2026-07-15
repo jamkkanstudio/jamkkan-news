@@ -8,6 +8,14 @@
 
 > 다음 버전에 포함될 예정입니다.
 
+---
+
+# v0.2.3
+
+**Release Date**
+
+2026.07.15
+
 ## Progressive briefing
 
 - Renamed the two briefing views to the shorter `오늘의 TOP | 추천` labels and added clear `NEW | 읽음 | 도움됨` card states.
