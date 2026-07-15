@@ -8,6 +8,14 @@
 
 > 다음 버전에 포함될 예정입니다.
 
+---
+
+# v0.2.2
+
+**Release Date**
+
+2026.07.15
+
 ## Daily briefing
 
 - Limited both public and personal briefing rankings to articles published on the current KST day, without backfilling older articles when fewer than five are available.
