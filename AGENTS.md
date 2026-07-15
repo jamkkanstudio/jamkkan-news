@@ -27,6 +27,16 @@
 - Prefer small, reviewable commits: behavior and its tests together; schema/storage changes separately when independently reversible; documentation separately.
 - Do not mark a Sprint complete before the final commit is pushed and the deployed anonymous read path is verified.
 
+## Credit-efficient checkpoints
+
+- After the read-only audit, name the affected test modules once. Run them in one consolidated command after the last related behavior change; do not rerun unchanged targeted tests for each small edit.
+- Treat the successful full suite as valid after documentation-only edits and conflict-free rebases of data-only collection commits. Rerun it only when executable code or test code changes.
+- Combine final compilation, configuration parsing, `git diff --check`, credential-pattern scanning, and protected-data comparison into one verification pass. Reuse that evidence in the Sprint record instead of collecting it again.
+- Use one known local Streamlit smoke method. If startup fails, inspect process/port output once before retrying rather than trying multiple launch variants.
+- Use one browser session after push to verify the anonymous home/read path, the changed interaction, the management boundary, and console errors. Avoid repeated screenshots or full DOM reads when a targeted count or state proves the result.
+- Fetch at Sprint start and once immediately before push. If the second fetch adds only reviewed automatic data commits and rebase is conflict-free, preserve them without repeating code verification.
+- Do not reread unchanged baseline documents, repeat broad searches, or recompute evidence already captured in the current Sprint unless new scope or a conflicting change makes it stale.
+
 ## Documentation contract
 
 Update a document only when its role changed, and link instead of repeating detail.
