@@ -1604,5 +1604,16 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-07-16T06:45:41+09:00"
+  },
+  {
+    "id": "5abcccd7-7748-55e9-a1c1-fd4ff0b8a1a1",
+    "title": "[AM-PM] 이 대통령 업무보고 이틀째…과기부·국토부 순 外",
+    "summary": "오늘(16일) 하루 주요 일정을 살펴보는 보도국 AM-PM입니다. ▶ 이 대통령 업무보고 이틀째…과기부·국토부 순 (AM 10:00 청와대)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260716065530g7F",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-07-16T06:55:30+09:00"
   }
 ]
