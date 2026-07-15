@@ -4,6 +4,7 @@ import re
 import streamlit as st
 
 from components.design_system import apply_design_system, render_page_intro
+from services.article_summary_service import create_collected_summary
 from services.auth_service import require_admin_page
 
 from services.news_service import add_news, load_news
@@ -17,7 +18,7 @@ from services.rss_service import (
     fetch_categorized_rss_news,
     fetch_rss_news,
 )
-from services.summarizer import create_brief, create_reason
+from services.summarizer import create_reason
 
 
 st.set_page_config(
@@ -196,14 +197,9 @@ if news_list:
             for index in selected_indices:
                 rss_news = news_list[index]
 
-                raw_summary = rss_news.get("summary", "")
-                cleaned_summary = clean_summary(raw_summary)
-
                 news_category = rss_news.get("category", "기타")
 
-                brief = create_brief(
-                    cleaned_summary or rss_news["title"]
-                )
+                brief = create_collected_summary(rss_news)
 
                 reason = create_reason(
                     category=news_category,

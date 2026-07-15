@@ -8,6 +8,13 @@
 
 > 다음 버전에 포함될 예정입니다.
 
+## Briefing summary quality
+
+- Added a free deterministic summary path that selects one or two source sentences within 140 characters without generative or paid API calls.
+- Removed presenter and reporter labels, credits, photo captions, title repetition, and duplicate text before sentence selection.
+- Limited source reads to new articles at collection time and isolated every timeout, extraction, or quality failure with an RSS-description fallback.
+- Kept full article text out of JSON and Supabase and made automatic and administrator recovery collection use the same summary path.
+
 ---
 
 # v0.2.3

@@ -99,6 +99,21 @@ Released
 
 ---
 
+# v0.2.4
+
+## Free Briefing Summary Quality
+
+- ✅ 신규 기사 수집 시 공개 원문 핵심 문장 추출
+- ✅ 출처 노이즈 제거와 140자 이내 결정적 브리핑
+- ✅ 기사별 RSS fallback과 오류 격리
+- ✅ 자동 수집·관리자 복구 공통 경로
+
+Status
+
+Deployment pending
+
+---
+
 # v0.3
 
 ## AI

@@ -127,6 +127,58 @@ class NewsCollectionServiceTest(unittest.TestCase):
         self.assertEqual(save_json.call_args.args[0][0]["category"], "경제")
         save_status.assert_called_once()
 
+    def test_summary_failure_isolated_and_next_article_still_saves(self) -> None:
+        candidates = [
+            rss_candidate(),
+            rss_candidate(
+                source_id="article-2",
+                url="https://example.com/news/2",
+            ),
+        ]
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            with (
+                patch(
+                    "services.news_collection_service.require_automation_admin"
+                ),
+                patch(
+                    "services.news_collection_service.load_collection_status",
+                    return_value=None,
+                ),
+                patch(
+                    "services.news_collection_service.fetch_categorized_rss_news",
+                    return_value=candidates,
+                ),
+                patch(
+                    "services.news_collection_service.load_news",
+                    return_value=[],
+                ),
+                patch(
+                    "services.news_collection_service.create_collected_summary",
+                    side_effect=[RuntimeError("parser bug"), "원문 핵심 요약"],
+                ),
+                patch(
+                    "services.news_collection_service.save_news_to_supabase",
+                    return_value=True,
+                ),
+                patch(
+                    "services.news_collection_service.save_news"
+                ) as save_json,
+                patch(
+                    "services.news_collection_service.upsert_setting",
+                    return_value=True,
+                ),
+            ):
+                status = collect_latest_news(
+                    add_limit=2,
+                    lock_file=Path(temp_dir) / "collection.lock",
+                )
+
+        saved = save_json.call_args.args[0]
+        self.assertEqual(status.added_count, 2)
+        self.assertEqual(saved[0]["summary"], "테스트 기사 요약입니다.")
+        self.assertEqual(saved[1]["summary"], "원문 핵심 요약")
+
     def test_collect_deduplicates_canonical_url_and_source_id(self) -> None:
         existing = {
             "id": article_id(

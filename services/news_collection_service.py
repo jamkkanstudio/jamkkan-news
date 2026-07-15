@@ -8,6 +8,7 @@ from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 from uuid import UUID
 
+from services.article_summary_service import create_collected_summary
 from services.auth_service import require_automation_admin
 from services.news_service import load_news, save_news, save_news_to_supabase
 from services.ranking_service import (
@@ -155,7 +156,12 @@ def _build_news(
         article_time = fallback_time or now_kst()
         if article_time.tzinfo is None:
             article_time = article_time.replace(tzinfo=KST)
-    cleaned_summary = candidate.get("summary", "")
+    try:
+        summary = create_collected_summary(candidate)
+    except Exception:
+        summary = create_brief(
+            candidate.get("summary", "") or candidate.get("title", "")
+        )
     return {
         "id": article_id(
             candidate.get("source", ""),
@@ -163,9 +169,7 @@ def _build_news(
             candidate.get("url", ""),
         ),
         "title": candidate.get("title", "").strip(),
-        "summary": create_brief(
-            cleaned_summary or candidate.get("title", "")
-        ),
+        "summary": summary,
         "reason": create_reason(
             category=category,
             title=candidate.get("title", ""),
@@ -304,16 +308,19 @@ def collect_latest_news(
         for candidate in candidates:
             if not candidate.get("title") or not candidate.get("url"):
                 continue
-            prepared = _build_news(candidate, fallback_time=collection_now)
-            prepared_url = canonicalize_url(prepared["url"])
+            source = str(candidate.get("source", "")).strip()
+            source_id = str(candidate.get("source_id", "")).strip()
+            candidate_url = str(candidate.get("url", "")).strip()
+            candidate_id = article_id(source, source_id, candidate_url)
+            prepared_url = canonicalize_url(candidate_url)
             fingerprint = article_fingerprint(
-                prepared["source"],
-                candidate.get("source_id", ""),
-                prepared["url"],
+                source,
+                source_id,
+                candidate_url,
             )
             if (
                 fingerprint in seen_set
-                or prepared["id"] in existing_ids
+                or candidate_id in existing_ids
                 or prepared_url in existing_urls
             ):
                 duplicate_count += 1
@@ -323,15 +330,16 @@ def collect_latest_news(
                 continue
             if (
                 fingerprint in batch_fingerprints
-                or prepared["id"] in batch_ids
+                or candidate_id in batch_ids
                 or prepared_url in batch_urls
             ):
                 duplicate_count += 1
                 continue
+            prepared = _build_news(candidate, fallback_time=collection_now)
             additions.append(prepared)
             pending_fingerprints.append(fingerprint)
             batch_fingerprints.add(fingerprint)
-            batch_ids.add(prepared["id"])
+            batch_ids.add(candidate_id)
             batch_urls.add(prepared_url)
             if len(additions) >= add_limit:
                 break
