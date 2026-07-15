@@ -83,9 +83,11 @@ Supabase Cron은 매시 7분부터 10분 간격으로 `.github/workflows/collect
 - `SUPABASE_URL`: 기존 Supabase 프로젝트 URL
 - `SUPABASE_KEY`: 기존 서버 전용 뉴스 미러링 키
 
-워크플로는 `contents: write`만 명시적으로 사용하고, 같은 수집 작업의 동시 실행을 막습니다. 마지막 성공 시각과 제한된 실패 코드는 Supabase `settings`의 `news_collection_status`에 저장되어 관리자 뉴스 수집 화면에 표시됩니다. 실패한 실행은 다음 예약에서 다시 시도하며, RSS 원문 예외나 비밀값은 상태와 CLI 출력에 기록하지 않습니다.
+워크플로는 `contents: write`만 명시적으로 사용하고, 같은 수집 작업의 동시 실행을 막습니다. 마지막 시도·성공 시각과 제한된 실패 코드는 Supabase `settings`의 `news_collection_status`에 저장됩니다. 관리자 뉴스 수집 화면은 시각을 KST로 표시하고 마지막 성공 후 30분이 지나면 지연을 경고합니다. 실패한 실행은 다음 예약에서 다시 시도하며, RSS 원문 예외나 비밀값은 상태와 CLI 출력에 기록하지 않습니다.
 
 운영 스케줄러는 `supabase/news_collection_scheduler.sql`로 적용하고 `supabase/verify_news_collection_scheduler.sql`로 확인합니다. GitHub fine-grained token은 `jamkkan-news` 저장소의 Actions 실행 권한만 허용하고 Supabase Vault의 `jamkkan_github_actions_token`에 저장합니다. 실제 토큰 값은 SQL 파일이나 SQL history에 직접 입력하지 않습니다. 롤백은 `supabase/rollback_news_collection_scheduler.sql`로 Job만 중지한 뒤 Vault UI에서 토큰을 제거합니다.
+
+현재 토큰은 2026-10-13 만료이므로 2026-09-15에 교체를 시작합니다. 같은 저장소와 Actions 읽기·쓰기만 허용한 새 토큰을 만든 뒤 Vault UI에서 항목을 교체하고, 다음 예약 실행과 안전한 상태 기록을 확인한 다음에만 이전 토큰을 폐기합니다. 새 토큰 검증이 실패하면 아직 유효한 이전 토큰으로 Vault 항목을 되돌리고 원인을 확인합니다. 교체 과정에서도 토큰 값은 코드, Git, SQL history, 로그, 채팅에 입력하지 않습니다.
 
 예외 복구가 필요하면 **Actions → Collect RSS news → Run workflow**로 수동 실행합니다. 기존 관리자 뉴스 수집 화면의 수동 등록도 복구용으로 유지됩니다. 공개 저장소의 표준 GitHub-hosted runner를 사용하므로 별도 유료 API는 추가되지 않지만, 예약 실행 지연과 사용량은 Actions 실행 기록에서 계속 관찰합니다.
 

@@ -31,6 +31,7 @@
 - Added a 10-minute GitHub Actions RSS collector with workflow and process concurrency guards.
 - Added stable article IDs, canonical URL and seen-article duplicate prevention, atomic JSON publishing, and retry-safe Supabase-first mirroring.
 - Added administrator-visible last-success and safe failure-code status while retaining manual collection for recovery.
+- Added KST attempt/success timestamps and a 30-minute collection-delay warning to administrator status.
 
 ### News Storage
 
