@@ -66,6 +66,23 @@ Released
 
 ---
 
+# v0.2.2
+
+## Daily Briefing Quality
+
+- ✅ KST 오늘 기사 후보군
+- ✅ 광역 RSS 카테고리 보존
+- ✅ 동일 사건 중복 제거
+- ✅ 영향·시급성·새로움·분야 다양성
+- ✅ 최대 5개 관점 전환
+- ✅ 일일 후보군 고정
+
+Status
+
+Deployment pending
+
+---
+
 # v0.3
 
 ## AI

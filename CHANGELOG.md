@@ -8,6 +8,14 @@
 
 > 다음 버전에 포함될 예정입니다.
 
+## Daily briefing
+
+- Limited both public and personal briefing rankings to articles published on the current KST day, without backfilling older articles when fewer than five are available.
+- Replaced the duplicated ten-card home layout with one `모두에게 중요 | 나에게 중요` view that shows at most five cards at a time.
+- Added explainable same-event deduplication and balanced impact, urgency, freshness, and broad-category diversity.
+- Preserved real politics, economy, society, and international categories from free RSS feeds instead of converting the latest feed to `기타`.
+- Added one mirrored daily candidate snapshot so collection reruns do not change a completed briefing.
+
 ---
 
 # v0.2.1

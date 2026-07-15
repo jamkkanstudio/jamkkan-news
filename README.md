@@ -56,7 +56,7 @@ python -m compileall -q app.py components pages services scripts
 
 - `data/news.json`: 뉴스 운영 기준선
 - `data/interest.json`: legacy 전역 관심 분야
-- `data/settings.json`: legacy 전역 일일 목표
+- `data/settings.json`: legacy 전역 일일 목표와 전역 당일 브리핑 후보 스냅샷
 - `data/growth.json`: legacy 익명 성장 기록
 - `data/events.json`: legacy 익명 분석 이벤트
 - Supabase: 뉴스와 legacy 사용자 상태의 병행 저장소
@@ -74,7 +74,9 @@ SUPABASE_KEY = "SERVER_ONLY_KEY"
 
 ## Automatic news collection
 
-Supabase Cron은 매시 7분부터 10분 간격으로 `.github/workflows/collect-news.yml`의 `workflow_dispatch`를 호출해 최신 RSS 피드를 한 번 조회합니다. GitHub의 native `schedule` 이벤트가 생성되지 않는 운영 문제를 우회하며, 정확한 실행 시각이 아닌 준실시간 운영을 목표로 합니다. 새 기사만 안정적인 RSS 기사 ID와 정규화 URL로 중복을 제거해 Supabase에 먼저 upsert한 뒤 `data/news.json`을 원자 교체하며, 실제 JSON 변경이 있을 때만 `main`에 커밋합니다.
+Supabase Cron은 매시 7분부터 10분 간격으로 `.github/workflows/collect-news.yml`의 `workflow_dispatch`를 호출해 정치·경제·사회·국제 RSS를 통합 조회합니다. 한 분류 피드가 일시 실패해도 나머지 분류를 사용하고, 모든 분류가 실패할 때만 실행을 실패로 기록합니다. GitHub의 native `schedule` 이벤트가 생성되지 않는 운영 문제를 우회하며, 정확한 실행 시각이 아닌 준실시간 운영을 목표로 합니다. 새 기사만 안정적인 RSS 기사 ID와 정규화 URL로 중복을 제거해 실제 광역 카테고리와 유효 발행 시각을 Supabase에 먼저 upsert한 뒤 `data/news.json`을 원자 교체합니다.
+
+KST 당일 기사가 5개 모이면 즉시, 그렇지 않으면 오전 8시 이후 첫 후보군을 전역 `daily_briefing` 설정으로 한 번 고정합니다. 이 후보 ID는 Supabase `settings`와 `data/settings.json`에 같은 값으로 저장되며 기존 일일 목표 키는 유지됩니다. 이후 수집은 그날 후보군을 바꾸지 않고 다음 KST 날짜에만 새 스냅샷을 만듭니다. 워크플로는 `data/news.json` 또는 `data/settings.json`에 실제 변경이 있을 때만 `main`에 커밋합니다.
 
 저장소의 **Settings → Secrets and variables → Actions**에서 다음 Repository secrets를 설정합니다. 실제 값은 코드, Git, Actions 로그, 채팅에 남기지 않습니다.
 
