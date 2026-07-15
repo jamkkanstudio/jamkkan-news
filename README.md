@@ -74,7 +74,7 @@ SUPABASE_KEY = "SERVER_ONLY_KEY"
 
 ## Automatic news collection
 
-`.github/workflows/collect-news.yml`은 매시 3분부터 10분 간격으로 최신 RSS 피드를 한 번 조회합니다. GitHub Actions 예약 실행은 혼잡 시 지연될 수 있으므로 이 주기는 정확한 시각 보장이 아닌 준실시간 운영 목표입니다. 새 기사만 안정적인 RSS 기사 ID와 정규화 URL로 중복을 제거해 Supabase에 먼저 upsert한 뒤 `data/news.json`을 원자 교체하며, 실제 JSON 변경이 있을 때만 `main`에 커밋합니다.
+`.github/workflows/collect-news.yml`은 매시 7분부터 10분 간격으로 최신 RSS 피드를 한 번 조회합니다. GitHub Actions 예약 실행은 혼잡 시 지연될 수 있으므로 이 주기는 정확한 시각 보장이 아닌 준실시간 운영 목표입니다. 새 기사만 안정적인 RSS 기사 ID와 정규화 URL로 중복을 제거해 Supabase에 먼저 upsert한 뒤 `data/news.json`을 원자 교체하며, 실제 JSON 변경이 있을 때만 `main`에 커밋합니다.
 
 저장소의 **Settings → Secrets and variables → Actions**에서 다음 Repository secrets를 설정합니다. 실제 값은 코드, Git, Actions 로그, 채팅에 남기지 않습니다.
 
