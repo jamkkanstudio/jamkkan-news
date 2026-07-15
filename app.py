@@ -12,7 +12,11 @@ from components.design_system import (
 from components.growth_banner import render_growth_banner
 from components.news_card import render_news_card
 
-from services.growth_service import is_today_brief_completed
+from services.analytics_service import get_today_helpful_news_ids
+from services.growth_service import (
+    get_today_read_news_ids,
+    is_today_brief_completed,
+)
 from services.news_service import load_news
 from services.ranking_service import (
     calculate_personal_score,
@@ -39,8 +43,13 @@ def render_news_grid(
     news_items: list[dict],
     section: str,
     interests: list[str] | None = None,
+    read_news_ids: set[str] | None = None,
+    helpful_news_ids: set[str] | None = None,
+    rank_prefix: str = "TOP",
 ) -> None:
     """뉴스를 데스크톱 2열, 모바일 1열 카드로 표시합니다."""
+    read_news_ids = read_news_ids or set()
+    helpful_news_ids = helpful_news_ids or set()
     for row_start in range(0, len(news_items), 2):
         columns = st.columns(2, gap="medium")
         row_items = news_items[row_start : row_start + 2]
@@ -57,13 +66,80 @@ def render_news_grid(
                     rank=rank,
                     personal_score=personal_score,
                     section=section,
+                    already_read=str(news.get("id", "")) in read_news_ids,
+                    already_helpful=(
+                        str(news.get("id", "")) in helpful_news_ids
+                    ),
+                    rank_prefix=rank_prefix,
                 )
+
+
+def get_briefing_batch(
+    target_date: str,
+    section: str,
+    initial_items: list[dict],
+    candidate_by_id: dict[str, dict],
+) -> tuple[str, dict, list[dict]]:
+    """세션 안에서 현재 묶음과 이미 표시한 기사 ID를 관리합니다."""
+    state_key = f"briefing_batch_{target_date}_{section}"
+    initial_ids = [
+        str(news.get("id", ""))
+        for news in initial_items
+        if news.get("id")
+    ]
+    state = st.session_state.get(state_key)
+    if not isinstance(state, dict):
+        state = {
+            "current_ids": initial_ids,
+            "displayed_ids": initial_ids,
+            "batch_number": 0,
+        }
+        st.session_state[state_key] = state
+
+    current_items = [
+        candidate_by_id[news_id]
+        for news_id in state.get("current_ids", [])
+        if news_id in candidate_by_id
+    ]
+    return state_key, state, current_items
+
+
+def render_more_news_control(
+    state_key: str,
+    state: dict,
+    next_items: list[dict],
+) -> None:
+    """사용자가 원할 때만 현재 묶음을 다음 새 기사로 교체합니다."""
+    if not next_items:
+        st.caption(
+            "오늘 새 기사는 여기까지예요. "
+            "오래된 기사·같은 소식은 섞지 않았어요."
+        )
+        return
+
+    count = len(next_items)
+    if st.button(
+        f"새 기사 {count}개",
+        key=f"more_news_{state_key}",
+        use_container_width=True,
+        type="primary",
+    ):
+        next_ids = [str(news["id"]) for news in next_items]
+        displayed_ids = list(
+            dict.fromkeys(state.get("displayed_ids", []) + next_ids)
+        )
+        st.session_state[state_key] = {
+            "current_ids": next_ids,
+            "displayed_ids": displayed_ids,
+            "batch_number": int(state.get("batch_number", 0)) + 1,
+        }
+        st.rerun()
 
 
 render_page_intro(
     "DAILY BRIEF · 30 SEC",
     "잠깐.",
-    "오늘 꼭 알아야 할 흐름을 한눈에 보고, 필요한 기사만 30초로 읽어보세요.",
+    "오늘의 흐름을 30초로.",
 )
 
 render_growth_banner()
@@ -111,6 +187,13 @@ else:
         target_date=today,
         now=current_time,
     )
+    candidate_by_id = {
+        str(news.get("id", "")): news
+        for news in candidate_pool
+        if news.get("id")
+    }
+    read_news_ids = get_today_read_news_ids()
+    helpful_news_ids = get_today_helpful_news_ids()
 
     brief_completed = bool(daily_snapshot) and (
         is_today_brief_completed(today_top5)
@@ -125,48 +208,95 @@ else:
 
     render_section_header(
         "오늘의 브리핑",
-        "두 관점 중 하나를 골라 최대 5개의 서로 다른 흐름만 확인하세요.",
+        "TOP 5부터, 원할 때만 다음 5개.",
     )
     view = st.segmented_control(
         "브리핑 관점",
-        options=["모두에게 중요", "나에게 중요"],
-        default="모두에게 중요",
+        options=["오늘의 TOP", "추천"],
+        default="오늘의 TOP",
     )
 
     if not daily_snapshot:
         st.caption("오늘 후보군을 고정하는 중이며, 현재도 오늘 기사만 보여드립니다.")
 
-    if view == "나에게 중요" and interests:
+    if view == "추천" and interests:
         st.caption(
             "관심 분야 · "
             + ", ".join(interests)
         )
-        render_topic_strip(personal_top5)
-        render_news_grid(
+        state_key, batch_state, visible_news = get_briefing_batch(
+            today.isoformat(),
+            "personal",
             personal_top5,
+            candidate_by_id,
+        )
+        render_topic_strip(visible_news)
+        render_news_grid(
+            visible_news,
             section="personal",
             interests=interests,
+            read_news_ids=read_news_ids,
+            helpful_news_ids=helpful_news_ids,
+            rank_prefix=(
+                "TOP" if batch_state.get("batch_number", 0) == 0 else "NEW"
+            ),
+        )
+        excluded_ids = set(batch_state.get("displayed_ids", []))
+        excluded_ids.update(read_news_ids)
+        next_items = select_personal_top_news(
+            candidate_pool,
+            interests,
+            target_date=today,
+            now=current_time,
+            excluded_ids=excluded_ids,
+        )
+        render_more_news_control(
+            state_key,
+            batch_state,
+            next_items,
         )
         if st.button(
-            "관심 분야 변경",
+            "관심사 변경",
             use_container_width=True,
         ):
             st.switch_page(
                 "pages/3_관심분야_설정.py"
             )
-    elif view == "나에게 중요":
-        st.info("관심 분야를 먼저 설정해 주세요.")
+    elif view == "추천":
+        st.info("관심사를 먼저 설정해 주세요.")
         if st.button(
-            "관심 분야 설정하기",
+            "관심사 설정",
             use_container_width=True,
             type="primary",
         ):
             st.switch_page("pages/3_관심분야_설정.py")
     else:
-        if len(today_top5) < 5:
-            st.caption(
-                f"오늘 발행 기사 {len(today_top5)}개만 보여드립니다. "
-                "어제 기사는 섞지 않습니다."
-            )
-        render_topic_strip(today_top5)
-        render_news_grid(today_top5, section="today")
+        state_key, batch_state, visible_news = get_briefing_batch(
+            today.isoformat(),
+            "today",
+            today_top5,
+            candidate_by_id,
+        )
+        render_topic_strip(visible_news)
+        render_news_grid(
+            visible_news,
+            section="today",
+            read_news_ids=read_news_ids,
+            helpful_news_ids=helpful_news_ids,
+            rank_prefix=(
+                "TOP" if batch_state.get("batch_number", 0) == 0 else "NEW"
+            ),
+        )
+        excluded_ids = set(batch_state.get("displayed_ids", []))
+        excluded_ids.update(read_news_ids)
+        next_items = select_today_top_news(
+            candidate_pool,
+            target_date=today,
+            now=current_time,
+            excluded_ids=excluded_ids,
+        )
+        render_more_news_control(
+            state_key,
+            batch_state,
+            next_items,
+        )

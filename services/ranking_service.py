@@ -1,5 +1,6 @@
 import re
 from collections import Counter
+from collections.abc import Iterable
 from datetime import date, datetime
 from typing import Callable
 
@@ -273,13 +274,20 @@ def select_today_top_news(
     target_date: date,
     limit: int = 5,
     now: datetime | None = None,
+    excluded_ids: Iterable[str] = (),
 ) -> list[dict]:
     candidates = filter_news_for_date(news_list, target_date)
-    return select_diverse_news(
+    ranked = select_diverse_news(
         candidates,
-        limit=limit,
+        limit=len(candidates),
         scorer=lambda news: calculate_importance(news, now=now),
     )
+    excluded = {str(news_id) for news_id in excluded_ids}
+    return [
+        news
+        for news in ranked
+        if str(news.get("id", "")) not in excluded
+    ][: max(limit, 0)]
 
 
 def select_personal_top_news(
@@ -289,19 +297,26 @@ def select_personal_top_news(
     target_date: date,
     limit: int = 5,
     now: datetime | None = None,
+    excluded_ids: Iterable[str] = (),
 ) -> list[dict]:
     if not interests:
         return []
     candidates = filter_news_for_date(news_list, target_date)
-    return select_diverse_news(
+    ranked = select_diverse_news(
         candidates,
-        limit=limit,
+        limit=len(candidates),
         scorer=lambda news: calculate_personal_score(
             news,
             interests,
             now=now,
         ),
     )
+    excluded = {str(news_id) for news_id in excluded_ids}
+    return [
+        news
+        for news in ranked
+        if str(news.get("id", "")) not in excluded
+    ][: max(limit, 0)]
 
 
 def sort_news_by_importance(news_list: list[dict]) -> list[dict]:

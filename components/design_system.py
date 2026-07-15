@@ -184,6 +184,7 @@ def apply_design_system() -> None:
         .jm-news-meta {
             align-items: center;
             display: flex;
+            flex-wrap: wrap;
             gap: 0.55rem;
             margin-bottom: 0.75rem;
         }
@@ -202,6 +203,25 @@ def apply_design_system() -> None:
             font-size: 0.76rem;
             font-weight: 750;
             padding: 0.28rem 0.55rem;
+        }
+
+        .jm-article-state {
+            font-size: 0.72rem;
+            font-weight: 850;
+            letter-spacing: 0.04em;
+            margin-left: auto;
+        }
+
+        .jm-state-new {
+            color: var(--jm-orange);
+        }
+
+        .jm-state-read {
+            color: var(--jm-muted);
+        }
+
+        .jm-state-helpful {
+            color: var(--jm-green);
         }
 
         .jm-news-copy h3 {

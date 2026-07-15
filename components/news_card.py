@@ -5,10 +5,10 @@ import streamlit as st
 from components.design_system import CATEGORY_ICONS
 
 from services.analytics_service import (
+    record_article_helpful_event,
     record_article_read_event,
 )
 from services.growth_service import (
-    is_read_today,
     record_article_read,
 )
 
@@ -18,6 +18,9 @@ def render_news_card(
     rank: int,
     personal_score: int | None = None,
     section: str = "today",
+    already_read: bool = False,
+    already_helpful: bool = False,
+    rank_prefix: str = "TOP",
 ) -> None:
     """뉴스 한 건을 잠깐. 브리핑 카드로 표시합니다."""
 
@@ -35,14 +38,25 @@ def render_news_card(
     )
     source = news.get("source", "출처 없음")
     url = news.get("url", "")
+    if already_helpful:
+        state_label = "도움됨"
+        state_class = "jm-state-helpful"
+    elif already_read:
+        state_label = "읽음"
+        state_class = "jm-state-read"
+    else:
+        state_label = "NEW"
+        state_class = "jm-state-new"
 
     with st.container(border=True):
         st.markdown(
             '<div class="jm-news-copy">'
             '<div class="jm-news-meta">'
-            f'<span class="jm-rank">TOP {rank:02d}</span>'
+            f'<span class="jm-rank">{escape(rank_prefix)} {rank:02d}</span>'
             f'<span class="jm-category">{escape(category_icon)} '
             f'{escape(category)}</span>'
+            f'<span class="jm-article-state {state_class}">'
+            f'{escape(state_label)}</span>'
             "</div>"
             f"<h3>{escape(title)}</h3>"
             f"<p>{escape(summary)}</p>"
@@ -64,13 +78,25 @@ def render_news_card(
 
             if url:
                 st.link_button(
-                    "원문 보기 →",
+                    "기사 읽기",
                     url,
                     use_container_width=True,
                 )
 
             if news_id:
-                already_read = is_read_today(news_id)
+                if already_helpful:
+                    st.success("도움됨")
+                elif st.button(
+                    "도움이 됐어요",
+                    key=f"helpful_{section}_{news_id}_{rank}",
+                    use_container_width=True,
+                ):
+                    record_article_helpful_event(
+                        news_id=news_id,
+                        category=category,
+                        title=title,
+                    )
+                    st.rerun()
 
                 if already_read:
                     st.success("오늘 30초 투자 완료")
@@ -84,6 +110,7 @@ def render_news_card(
                         "30초 투자 완료",
                         key=button_key,
                         use_container_width=True,
+                        type="primary",
                     ):
                         recorded = record_article_read(
                             news_id=news_id,

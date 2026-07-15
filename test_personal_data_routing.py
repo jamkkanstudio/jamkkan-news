@@ -151,12 +151,18 @@ class PersonalDataRoutingTest(unittest.TestCase):
             analytics_service.record_article_read_event(
                 "owner-a-news", "AI", "A"
             )
+            analytics_service.record_article_helpful_event(
+                "owner-a-news", "AI", "A"
+            )
 
             active_scope["value"] = DataScope(kind="user", owner_id=OWNER_B)
             user_service.save_interests(["경제"])
             settings_service.save_daily_goal_seconds(60)
             growth_service.record_article_read("owner-b-news")
             analytics_service.record_article_read_event(
+                "owner-b-news", "경제", "B"
+            )
+            analytics_service.record_article_helpful_event(
                 "owner-b-news", "경제", "B"
             )
 
@@ -166,7 +172,11 @@ class PersonalDataRoutingTest(unittest.TestCase):
             self.assertFalse(growth_service.is_read_today("owner-a-news"))
             self.assertEqual(
                 [event["news_id"] for event in analytics_service.load_events()],
-                ["owner-b-news"],
+                ["owner-b-news", "owner-b-news"],
+            )
+            self.assertEqual(
+                analytics_service.get_today_helpful_news_ids(),
+                {"owner-b-news"},
             )
 
             active_scope["value"] = DataScope(kind="user", owner_id=OWNER_A)
@@ -176,7 +186,11 @@ class PersonalDataRoutingTest(unittest.TestCase):
             self.assertFalse(growth_service.is_read_today("owner-b-news"))
             self.assertEqual(
                 [event["news_id"] for event in analytics_service.load_events()],
-                ["owner-a-news"],
+                ["owner-a-news", "owner-a-news"],
+            )
+            self.assertEqual(
+                analytics_service.get_today_helpful_news_ids(),
+                {"owner-a-news"},
             )
 
             self.assertEqual(list(temp_path.iterdir()), [])

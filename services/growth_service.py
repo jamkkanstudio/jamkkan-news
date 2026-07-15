@@ -129,15 +129,21 @@ def save_growth(data: dict) -> None:
     _save_legacy_growth(data)
 
 
-def is_read_today(news_id: str) -> bool:
-    """해당 기사를 오늘 이미 읽었는지 확인합니다."""
+def get_today_read_news_ids() -> set[str]:
+    """현재 저장 범위에서 오늘 완료한 기사 ID를 반환합니다."""
     growth = load_growth()
     today = today_kst().isoformat()
 
     today_data = growth["daily"].get(today, {})
     read_news_ids = today_data.get("read_news_ids", [])
 
-    return news_id in read_news_ids
+    return {str(news_id) for news_id in read_news_ids}
+
+
+def is_read_today(news_id: str) -> bool:
+    """해당 기사를 오늘 이미 읽었는지 확인합니다."""
+
+    return news_id in get_today_read_news_ids()
 
 
 def record_article_read(

@@ -5,10 +5,33 @@ from datetime import date
 from pathlib import Path
 from unittest.mock import patch
 
-from services.growth_service import record_article_read
+from services.growth_service import get_today_read_news_ids, record_article_read
 
 
 class RecordArticleReadTest(unittest.TestCase):
+    def test_today_read_ids_use_current_legacy_day_only(self) -> None:
+        growth = {
+            "daily": {
+                "2026-07-14": {"read_news_ids": ["old-news"]},
+                "2026-07-15": {
+                    "read_news_ids": ["today-news", "today-news"]
+                },
+            }
+        }
+        with tempfile.TemporaryDirectory() as temp_dir:
+            growth_file = Path(temp_dir) / "growth.json"
+            growth_file.write_text(json.dumps(growth), encoding="utf-8")
+            with (
+                patch("services.growth_service.GROWTH_FILE", growth_file),
+                patch(
+                    "services.growth_service.today_kst",
+                    return_value=date(2026, 7, 15),
+                ),
+            ):
+                read_ids = get_today_read_news_ids()
+
+        self.assertEqual(read_ids, {"today-news"})
+
     def test_record_article_read_writes_json_then_supabase(self) -> None:
         today = "2026-07-15"
 

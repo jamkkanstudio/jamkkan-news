@@ -182,6 +182,75 @@ class RankingServiceTest(unittest.TestCase):
         self.assertEqual([news["id"] for news in ranked], ["newer", "older"])
         self.assertEqual(older["importance"], 50)
 
+    def test_next_batch_excludes_displayed_read_and_same_event_news(self) -> None:
+        candidates = [
+            article("storm-main", "서울 폭우 도로 침수 시민 대피"),
+            article("storm-follow", "서울 폭우 시민 대피 도로 통제"),
+            article("politics", "국회 연금 개혁안 본회의 통과", category="정치"),
+            article("economy", "기준금리 결정과 물가 전망", category="경제"),
+            article("world", "정상회담 공동 성명 발표", category="국제"),
+            article("school", "전국 학교 안전 기준 개정"),
+            article("export", "수출 지표와 산업 전망", category="경제"),
+            article("health", "지역 의료 지원 정책 시행"),
+        ]
+        ranked = select_today_top_news(
+            candidates,
+            target_date=date(2026, 7, 15),
+            limit=20,
+            now=NOW,
+        )
+        displayed_ids = {news["id"] for news in ranked[:5]}
+        read_id = ranked[5]["id"]
+
+        next_batch = select_today_top_news(
+            candidates,
+            target_date=date(2026, 7, 15),
+            now=NOW,
+            excluded_ids=displayed_ids | {read_id},
+        )
+
+        self.assertTrue(
+            displayed_ids.isdisjoint(news["id"] for news in next_batch)
+        )
+        self.assertNotIn(read_id, [news["id"] for news in next_batch])
+        self.assertLessEqual(len(next_batch), 5)
+        self.assertEqual(
+            len({"storm-main", "storm-follow"} & {news["id"] for news in ranked}),
+            1,
+        )
+
+    def test_personal_next_batch_uses_the_same_exclusion_rule(self) -> None:
+        candidates = [
+            article("ai-chip", "AI 반도체 투자 확대", category="경제"),
+            article("ai-school", "AI 교육 과정 개편"),
+            article("ai-health", "AI 의료 진단 승인"),
+            article("ai-defense", "AI 국방 전략 발표", category="정치"),
+            article("ai-rights", "AI 저작권 판결", category="사회"),
+            article("ai-jobs", "AI 고용 영향 조사", category="경제"),
+            article("ai-energy", "AI 에너지 관리 도입", category="국제"),
+        ]
+        first = select_personal_top_news(
+            candidates,
+            ["AI"],
+            target_date=date(2026, 7, 15),
+            now=NOW,
+        )
+        next_batch = select_personal_top_news(
+            candidates,
+            ["AI"],
+            target_date=date(2026, 7, 15),
+            now=NOW,
+            excluded_ids={news["id"] for news in first},
+        )
+
+        self.assertEqual(len(first), 5)
+        self.assertEqual(len(next_batch), 2)
+        self.assertTrue(
+            {news["id"] for news in first}.isdisjoint(
+                news["id"] for news in next_batch
+            )
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -9,6 +9,8 @@ from services.time_service import datetime_to_kst_date, now_kst, today_kst
 
 
 EVENTS_FILE = Path("data/events.json")
+ARTICLE_READ_EVENT = "article_read"
+ARTICLE_HELPFUL_EVENT = "article_helpful"
 
 
 def _load_legacy_events() -> list[dict]:
@@ -56,16 +58,16 @@ def _save_legacy_events(events: list[dict]) -> None:
         )
 
 
-def record_article_read_event(
+def _record_article_event(
+    event_type: str,
     news_id: str,
     category: str,
     title: str,
-    seconds: int = 30,
+    seconds: int,
 ) -> None:
-    """기사 투자 완료 이벤트를 저장합니다."""
     event = {
         "id": str(uuid4()),
-        "event_type": "article_read",
+        "event_type": event_type,
         "news_id": news_id,
         "category": category or "기타",
         "title": title,
@@ -89,6 +91,37 @@ def record_article_read_event(
     events = _load_legacy_events()
     events.append(event)
     _save_legacy_events(events)
+
+
+def record_article_read_event(
+    news_id: str,
+    category: str,
+    title: str,
+    seconds: int = 30,
+) -> None:
+    """기사 투자 완료 이벤트를 저장합니다."""
+    _record_article_event(
+        ARTICLE_READ_EVENT,
+        news_id,
+        category,
+        title,
+        seconds,
+    )
+
+
+def record_article_helpful_event(
+    news_id: str,
+    category: str,
+    title: str,
+) -> None:
+    """사용자가 명시한 기사 도움 신호를 저장합니다."""
+    _record_article_event(
+        ARTICLE_HELPFUL_EVENT,
+        news_id,
+        category,
+        title,
+        0,
+    )
 
 
 def save_events(events: list[dict]) -> None:
@@ -132,8 +165,20 @@ def get_article_read_events() -> list[dict]:
     return [
         event
         for event in load_events()
-        if event.get("event_type") == "article_read"
+        if event.get("event_type") == ARTICLE_READ_EVENT
     ]
+
+
+def get_today_helpful_news_ids() -> set[str]:
+    """오늘 현재 범위에서 도움 신호를 남긴 기사 ID를 반환합니다."""
+    today = today_kst()
+    return {
+        str(event.get("news_id"))
+        for event in load_events()
+        if event.get("event_type") == ARTICLE_HELPFUL_EVENT
+        and event.get("news_id")
+        and _get_event_date(event) == today
+    }
 
 
 def get_category_statistics(
