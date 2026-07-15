@@ -3,6 +3,12 @@ import streamlit as st
 from services.auth_service import render_auth_sidebar
 
 from components.completion_banner import render_completion_banner
+from components.design_system import (
+    apply_design_system,
+    render_page_intro,
+    render_section_header,
+    render_topic_strip,
+)
 from components.growth_banner import render_growth_banner
 from components.news_card import render_news_card
 
@@ -18,6 +24,7 @@ st.set_page_config(
     layout="centered",
 )
 
+apply_design_system()
 render_auth_sidebar()
 
 
@@ -64,19 +71,38 @@ def get_personal_top5(
     )[:5]
 
 
-# 상단 브랜드 영역
-st.title("잠깐.")
+def render_news_grid(
+    news_items: list[dict],
+    section: str,
+    interests: list[str] | None = None,
+) -> None:
+    """뉴스를 데스크톱 2열, 모바일 1열 카드로 표시합니다."""
+    for row_start in range(0, len(news_items), 2):
+        columns = st.columns(2, gap="medium")
+        row_items = news_items[row_start : row_start + 2]
 
-st.markdown(
-    """
-    ### 30초면,  
-    오늘을 놓치지 않습니다.
-    """
+        for offset, news in enumerate(row_items):
+            rank = row_start + offset + 1
+            personal_score = None
+            if interests is not None:
+                personal_score = calculate_personal_score(news, interests)
+
+            with columns[offset]:
+                render_news_card(
+                    news=news,
+                    rank=rank,
+                    personal_score=personal_score,
+                    section=section,
+                )
+
+
+render_page_intro(
+    "DAILY BRIEF · 30 SEC",
+    "잠깐.",
+    "오늘 꼭 알아야 할 흐름을 한눈에 보고, 필요한 기사만 30초로 읽어보세요.",
 )
 
 render_growth_banner()
-
-st.divider()
 
 
 # 데이터 불러오기
@@ -100,30 +126,25 @@ else:
 
     if brief_completed:
         render_completion_banner()
-
-        st.divider()
-        st.subheader("🌍 오늘 읽은 브리핑")
-        st.caption("필요한 내용을 다시 확인할 수 있습니다.")
-
-    else:
-        st.subheader("🌍 오늘의 TOP5")
-        st.caption("오늘 모두가 알아야 할 뉴스")
-
-    for rank, news in enumerate(
-        today_top5,
-        start=1,
-    ):
-        render_news_card(
-            news=news,
-            rank=rank,
-            section="today",
+        render_section_header(
+            "오늘 읽은 브리핑",
+            "필요한 내용을 빠르게 다시 확인할 수 있습니다.",
         )
 
-    st.divider()
+    else:
+        render_section_header(
+            "오늘의 TOP5",
+            "제목과 주제를 훑고, 궁금한 브리핑만 열어보세요.",
+        )
+
+    render_topic_strip(today_top5)
+    render_news_grid(today_top5, section="today")
 
     # 나의 TOP5
-    st.subheader("👤 나의 TOP5")
-    st.caption("내 관심사를 반영한 뉴스")
+    render_section_header(
+        "나의 TOP5",
+        "관심 분야를 반영해 다시 정렬한 브리핑입니다.",
+    )
 
     if not interests:
         st.info("관심 분야를 먼저 설정해 주세요.")
@@ -131,6 +152,7 @@ else:
         if st.button(
             "관심 분야 설정하기",
             use_container_width=True,
+            type="primary",
         ):
             st.switch_page(
                 "pages/3_관심분야_설정.py"
@@ -147,21 +169,12 @@ else:
             + ", ".join(interests)
         )
 
-        for rank, news in enumerate(
+        render_topic_strip(personal_top5)
+        render_news_grid(
             personal_top5,
-            start=1,
-        ):
-            personal_score = calculate_personal_score(
-                news,
-                interests,
-            )
-
-            render_news_card(
-                news=news,
-                rank=rank,
-                personal_score=personal_score,
-                section="personal",
-            )
+            section="personal",
+            interests=interests,
+        )
 
         if st.button(
             "관심 분야 변경",

@@ -19,13 +19,11 @@ def _format_seconds(seconds: int) -> str:
 
 
 def render_growth_banner() -> None:
-    """메인 상단에 오늘의 성장 기록과 목표를 표시합니다."""
+    """메인 상단에 오늘의 진행 상황을 짧게 표시합니다."""
     summary = get_growth_summary()
 
     today_articles = summary["today_articles"]
     today_seconds = summary["today_seconds"]
-    total_articles = summary["total_articles"]
-    total_seconds = summary["total_seconds"]
     current_streak = summary["current_streak"]
 
     daily_goal_seconds = get_daily_goal_seconds()
@@ -41,18 +39,21 @@ def render_growth_banner() -> None:
     )
 
     with st.container(border=True):
-        st.markdown("### 🌱 오늘도 성장 중")
-
-        if current_streak > 0:
-            st.caption(
-                f"{current_streak}일째 이어가고 있습니다."
-            )
-        else:
-            st.caption("오늘 첫 브리핑을 시작해 보세요.")
-
+        streak_text = (
+            f"{current_streak}일째 이어가는 중"
+            if current_streak > 0
+            else "오늘 첫 브리핑을 시작해 보세요"
+        )
         st.markdown(
-            f"**오늘의 목표 · "
-            f"{_format_seconds(daily_goal_seconds)}**"
+            '<div class="jm-growth-head">'
+            "<strong>🌱 오늘의 성장</strong>"
+            f"<span>{streak_text}</span>"
+            "</div>"
+            '<p class="jm-growth-summary">'
+            f"오늘 {today_articles}개 · {_format_seconds(today_seconds)} 투자 · "
+            f"목표 {_format_seconds(daily_goal_seconds)}"
+            "</p>",
+            unsafe_allow_html=True,
         )
 
         st.progress(progress)
@@ -64,29 +65,5 @@ def render_growth_banner() -> None:
             )
         else:
             st.caption(
-                f"앞으로 {_format_seconds(remaining_seconds)}"
-            )
-
-        today_col, total_col = st.columns(2)
-
-        with today_col:
-            st.markdown("**오늘**")
-            st.metric(
-                label="읽은 기사",
-                value=f"{today_articles}개",
-            )
-            st.caption(
-                "나에게 투자한 시간 · "
-                f"{_format_seconds(today_seconds)}"
-            )
-
-        with total_col:
-            st.markdown("**누적**")
-            st.metric(
-                label="읽은 기사",
-                value=f"{total_articles}개",
-            )
-            st.caption(
-                "나에게 투자한 시간 · "
-                f"{_format_seconds(total_seconds)}"
+                f"목표까지 {_format_seconds(remaining_seconds)} 남았습니다."
             )

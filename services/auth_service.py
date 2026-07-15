@@ -93,17 +93,33 @@ def require_automation_admin() -> None:
 
 def render_auth_sidebar() -> None:
     with st.sidebar:
+        st.markdown(
+            '<div class="jm-side-brand">잠깐.</div>',
+            unsafe_allow_html=True,
+        )
+        st.page_link("app.py", label="오늘의 브리핑")
+        st.page_link("pages/3_관심분야_설정.py", label="관심 분야와 목표")
+        st.page_link("pages/4_나의_성장.py", label="나의 성장")
+        st.page_link("pages/5_나의_분석.py", label="나의 분석")
+
+        if is_admin():
+            st.divider()
+            st.caption("관리자")
+            st.page_link("pages/1_뉴스_관리.py", label="뉴스 관리")
+            st.page_link("pages/2_뉴스_수집.py", label="수집 상태")
+
+        st.divider()
         st.subheader("계정")
         if is_logged_in():
-            st.caption(current_user_email() or "로그인됨")
-            st.write("관리자" if is_admin() else "로그인 사용자")
+            st.caption("관리자 계정" if is_admin() else "개인 저장 사용 중")
             if st.button("로그아웃", key="auth_logout", use_container_width=True):
                 st.logout()
         elif is_auth_configured():
+            st.caption("로그인하면 내 관심 분야와 성장 기록을 이어갈 수 있습니다.")
             if st.button("Google로 로그인", key="auth_login", use_container_width=True):
                 st.login("google")
         else:
-            st.caption("로그인 설정이 없어 읽기 전용으로 실행 중입니다.")
+            st.caption("로그인 없이 공개 브리핑을 읽고 성장 기록을 사용할 수 있습니다.")
 
 
 def require_admin_page() -> None:
@@ -111,9 +127,9 @@ def require_admin_page() -> None:
     if is_admin():
         return
     if not is_auth_configured():
-        st.info("관리자 로그인이 설정되지 않아 이 화면을 사용할 수 없습니다.")
+        st.info("관리자 전용 화면입니다. 현재 환경에는 로그인이 설정되지 않았습니다.")
     elif is_logged_in():
-        st.warning("이 계정에는 관리자 권한이 없습니다.")
+        st.warning("로그인은 되었지만 이 계정에는 관리자 권한이 없습니다.")
     else:
-        st.info("관리자만 사용할 수 있습니다. 사이드바에서 로그인해 주세요.")
+        st.info("관리자 전용 화면입니다. 사이드바에서 Google로 로그인해 주세요.")
     st.stop()

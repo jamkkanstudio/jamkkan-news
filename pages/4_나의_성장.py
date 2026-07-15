@@ -3,6 +3,13 @@ from datetime import date
 
 import streamlit as st
 
+from components.design_system import (
+    apply_design_system,
+    render_page_intro,
+    render_section_header,
+    render_stat_grid,
+    render_week_strip,
+)
 from services.auth_service import render_auth_sidebar
 
 from services.growth_service import load_growth
@@ -37,10 +44,13 @@ st.set_page_config(
     layout="centered",
 )
 
+apply_design_system()
 render_auth_sidebar()
-
-st.title("🌱 나의 성장")
-st.caption("매일 잠깐의 투자가 쌓이고 있습니다.")
+render_page_intro(
+    "GROWTH RECORD",
+    "나의 성장",
+    "매일의 30초가 얼마나 쌓였는지 가볍게 확인해 보세요.",
+)
 
 growth = load_growth()
 today_string = today_kst().isoformat()
@@ -64,42 +74,32 @@ with st.container(border=True):
     else:
         st.markdown("### 🌱 오늘 첫 브리핑을 시작해 보세요.")
 
-st.divider()
+render_stat_grid(
+    [
+        {
+            "label": "오늘 읽은 기사",
+            "value": f"{today_data.get('articles', 0)}개",
+            "detail": format_seconds(today_data.get("seconds", 0)),
+        },
+        {
+            "label": "누적 읽은 기사",
+            "value": f"{total_articles}개",
+            "detail": format_seconds(total_seconds),
+        },
+    ]
+)
 
-today_col, total_col = st.columns(2)
-
-with today_col:
-    st.markdown("### 오늘")
-    st.metric(
-        "읽은 기사",
-        f"{today_data.get('articles', 0)}개",
-    )
-    st.caption(
-        "나에게 투자한 시간 · "
-        f"{format_seconds(today_data.get('seconds', 0))}"
-    )
-
-with total_col:
-    st.markdown("### 누적")
-    st.metric(
-        "읽은 기사",
-        f"{total_articles}개",
-    )
-    st.caption(
-        "나에게 투자한 시간 · "
-        f"{format_seconds(total_seconds)}"
-    )
-
-st.divider()
-st.subheader("이번 주")
+render_section_header(
+    "이번 주",
+    "하루 한 번의 작은 투자가 이어진 날을 보여줍니다.",
+)
 
 week_dates = current_week_dates()
-week_columns = st.columns(7)
 
 day_names = ["월", "화", "수", "목", "금", "토", "일"]
+week_days = []
 
-for column, day_name, day_date in zip(
-    week_columns,
+for day_name, day_date in zip(
     day_names,
     week_dates,
 ):
@@ -107,17 +107,15 @@ for column, day_name, day_date in zip(
     day_data = daily.get(day_string, {})
     articles = day_data.get("articles", 0)
 
-    with column:
-        st.caption(day_name)
+    week_days.append(
+        {
+            "label": day_name,
+            "active": articles > 0,
+            "value": f"{articles}개",
+        }
+    )
 
-        if articles > 0:
-            st.markdown("### 🌱")
-        else:
-            st.markdown("### ○")
-
-        st.caption(f"{articles}개")
-
-st.divider()
+render_week_strip(week_days)
 
 message = random.choice(MESSAGES)
 

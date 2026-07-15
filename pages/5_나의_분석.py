@@ -1,5 +1,13 @@
 import streamlit as st
 
+from components.design_system import (
+    CATEGORY_ICONS,
+    apply_design_system,
+    render_page_intro,
+    render_section_header,
+    render_stat_grid,
+    render_week_strip,
+)
 from services.auth_service import render_auth_sidebar
 
 from services.analytics_service import (
@@ -8,22 +16,6 @@ from services.analytics_service import (
     get_current_week_daily_statistics,
     get_current_week_events,
 )
-
-
-CATEGORY_ICONS = {
-    "경제": "📈",
-    "정치": "🏛️",
-    "사회": "👥",
-    "국제": "🌍",
-    "테크": "💻",
-    "AI": "🤖",
-    "반도체": "💾",
-    "부동산": "🏠",
-    "자동차": "🚗",
-    "우주": "🚀",
-    "미국주식": "🇺🇸",
-    "기타": "📰",
-}
 
 
 def format_seconds(seconds: int) -> str:
@@ -66,10 +58,13 @@ st.set_page_config(
     layout="centered",
 )
 
+apply_design_system()
 render_auth_sidebar()
-
-st.title("📊 나의 분석")
-st.caption("내가 어떤 분야에 시간을 투자했는지 확인합니다.")
+render_page_intro(
+    "MY INSIGHT",
+    "나의 분석",
+    "어떤 분야에 시간을 투자했는지 한눈에 돌아보세요.",
+)
 
 all_events = get_article_read_events()
 weekly_events = get_current_week_events()
@@ -104,22 +99,24 @@ else:
         "📰",
     )
 
-    st.divider()
-    st.subheader(f"{period} 투자 기록")
-
-    article_col, time_col = st.columns(2)
-
-    with article_col:
-        st.metric(
-            "읽은 기사",
-            f"{total_articles}개",
-        )
-
-    with time_col:
-        st.metric(
-            "투자 시간",
-            format_seconds(total_seconds),
-        )
+    render_section_header(
+        f"{period} 투자 기록",
+        "읽은 양보다 나에게 투자한 시간을 중심으로 보여줍니다.",
+    )
+    render_stat_grid(
+        [
+            {
+                "label": "읽은 기사",
+                "value": f"{total_articles}개",
+                "detail": period,
+            },
+            {
+                "label": "투자 시간",
+                "value": format_seconds(total_seconds),
+                "detail": period,
+            },
+        ]
+    )
 
     with st.container(border=True):
         st.caption("가장 많이 읽은 분야")
@@ -129,27 +126,22 @@ else:
         st.write(get_personality_message(top_category))
 
     if period == "이번 주":
-        st.divider()
-        st.subheader("이번 주 기록")
+        render_section_header(
+            "이번 주 기록",
+            "투자한 날과 시간을 일주일 흐름으로 확인하세요.",
+        )
 
         daily_statistics = get_current_week_daily_statistics()
-        day_columns = st.columns(7)
-
-        for column, day_data in zip(
-            day_columns,
-            daily_statistics,
-        ):
-            with column:
-                st.caption(day_data["day"])
-
-                if day_data["articles"] > 0:
-                    st.markdown("### 🌱")
-                else:
-                    st.markdown("### ○")
-
-                st.caption(
-                    format_seconds(day_data["seconds"])
-                )
+        render_week_strip(
+            [
+                {
+                    "label": day_data["day"],
+                    "active": day_data["articles"] > 0,
+                    "value": format_seconds(day_data["seconds"]),
+                }
+                for day_data in daily_statistics
+            ]
+        )
 
         chart_data = {
             item["day"]: item["seconds"]
@@ -161,8 +153,10 @@ else:
             horizontal=False,
         )
 
-    st.divider()
-    st.subheader("분야별 투자")
+    render_section_header(
+        "분야별 투자",
+        "내 시간이 어느 주제에 모였는지 비교해 보세요.",
+    )
 
     for item in statistics:
         category = item["category"]
@@ -195,8 +189,6 @@ else:
 
             st.progress(min(percentage / 100, 1.0))
             st.caption(f"전체 투자 시간의 {percentage:.0f}%")
-
-    st.divider()
 
     with st.container(border=True):
         st.markdown("### 오늘의 한마디")

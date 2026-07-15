@@ -114,6 +114,48 @@ class AuthServiceTest(unittest.TestCase):
             render_auth_sidebar()
         logout.assert_called_once_with()
 
+    def test_anonymous_navigation_hides_admin_pages(self) -> None:
+        sidebar = MagicMock()
+        sidebar.__enter__.return_value = sidebar
+        with (
+            patch("services.auth_service.st.sidebar", sidebar),
+            patch("services.auth_service.is_admin", return_value=False),
+            patch("services.auth_service.is_logged_in", return_value=False),
+            patch("services.auth_service.is_auth_configured", return_value=False),
+            patch("services.auth_service.st.markdown"),
+            patch("services.auth_service.st.divider"),
+            patch("services.auth_service.st.subheader"),
+            patch("services.auth_service.st.caption"),
+            patch("services.auth_service.st.page_link") as page_link,
+        ):
+            render_auth_sidebar()
+
+        labels = [call.kwargs["label"] for call in page_link.call_args_list]
+        self.assertEqual(
+            labels,
+            ["오늘의 브리핑", "관심 분야와 목표", "나의 성장", "나의 분석"],
+        )
+
+    def test_admin_navigation_shows_management_pages(self) -> None:
+        sidebar = MagicMock()
+        sidebar.__enter__.return_value = sidebar
+        with (
+            patch("services.auth_service.st.sidebar", sidebar),
+            patch("services.auth_service.is_admin", return_value=True),
+            patch("services.auth_service.is_logged_in", return_value=True),
+            patch("services.auth_service.st.markdown"),
+            patch("services.auth_service.st.divider"),
+            patch("services.auth_service.st.subheader"),
+            patch("services.auth_service.st.caption"),
+            patch("services.auth_service.st.button", return_value=False),
+            patch("services.auth_service.st.page_link") as page_link,
+        ):
+            render_auth_sidebar()
+
+        labels = [call.kwargs["label"] for call in page_link.call_args_list]
+        self.assertIn("뉴스 관리", labels)
+        self.assertIn("수집 상태", labels)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -3,6 +3,7 @@ import re
 
 import streamlit as st
 
+from components.design_system import apply_design_system, render_page_intro
 from services.auth_service import require_admin_page
 
 from services.news_service import add_news, load_news
@@ -21,15 +22,19 @@ st.set_page_config(
     layout="centered",
 )
 
-st.title("뉴스 수집")
-st.caption("자동 수집 상태를 확인하고, 필요할 때만 수동으로 복구합니다.")
+apply_design_system()
+render_page_intro(
+    "ADMIN · COLLECTION",
+    "뉴스 수집",
+    "자동 수집 상태를 확인하고, 필요할 때만 수동으로 복구합니다.",
+)
+
+require_admin_page()
 
 registration_result = st.session_state.pop(
     "registration_result",
     None,
 )
-
-require_admin_page()
 
 collection_status = load_collection_status()
 if collection_status:

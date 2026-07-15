@@ -1,5 +1,6 @@
 import streamlit as st
 
+from components.design_system import apply_design_system, render_page_intro
 from services.auth_service import require_admin_page
 
 from services.news_service import (
@@ -26,10 +27,13 @@ st.set_page_config(
     layout="centered",
 )
 
+apply_design_system()
+render_page_intro(
+    "ADMIN · CONTENT",
+    "뉴스 관리",
+    "오늘의 브리핑에 표시할 기사를 추가하고 수정합니다.",
+)
 require_admin_page()
-
-st.title("뉴스 관리")
-st.caption("잠깐. 아침 브리핑에 표시할 기사를 관리합니다.")
 
 
 # 뉴스 추가

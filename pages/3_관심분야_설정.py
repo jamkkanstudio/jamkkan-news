@@ -1,5 +1,10 @@
 import streamlit as st
 
+from components.design_system import (
+    apply_design_system,
+    render_page_intro,
+    render_section_header,
+)
 from services.auth_service import (
     is_logged_in,
     render_auth_sidebar,
@@ -47,22 +52,33 @@ st.set_page_config(
     layout="centered",
 )
 
-personal_mode = is_user_data_enabled() and is_logged_in()
+apply_design_system()
+render_page_intro(
+    "PERSONAL SETUP",
+    "관심 분야와 하루 목표",
+    "보고 싶은 주제를 고르고, 오늘 나에게 투자할 시간을 정해보세요.",
+)
+
+user_data_enabled = is_user_data_enabled()
+personal_mode = user_data_enabled and is_logged_in()
 if personal_mode:
     render_auth_sidebar()
+elif user_data_enabled:
+    render_auth_sidebar()
+    st.info("개인 설정을 저장하려면 사이드바에서 Google로 로그인해 주세요.")
+    st.stop()
 else:
     require_admin_page()
-
-st.title("설정")
-st.caption("나에게 맞는 잠깐의 시간을 설정합니다.")
-
 current_interests = load_interests()
 current_goal_seconds = get_daily_goal_seconds()
 
-st.subheader("관심 분야")
+render_section_header(
+    "관심 분야",
+    "나의 TOP5에 반영할 분야를 최대 5개까지 선택하세요.",
+)
 
 selected_interests = st.multiselect(
-    "나의 TOP5에 반영할 분야",
+    "분야 선택",
     options=INTEREST_OPTIONS,
     default=[
         interest
@@ -72,9 +88,10 @@ selected_interests = st.multiselect(
     max_selections=5,
 )
 
-st.divider()
-st.subheader("오늘의 목표")
-st.caption("하루에 나에게 투자할 시간을 선택하세요.")
+render_section_header(
+    "오늘의 목표",
+    "부담 없이 매일 이어갈 수 있는 시간을 선택하세요.",
+)
 
 goal_labels = list(GOAL_OPTIONS.keys())
 current_goal_label = next(
@@ -94,8 +111,9 @@ selected_goal_label = st.radio(
 )
 
 if st.button(
-    "설정 저장",
+    "관심 분야와 목표 저장",
     use_container_width=True,
+    type="primary",
 ):
     interests_mirrored = save_interests(selected_interests)
     goal_mirrored = save_daily_goal_seconds(
