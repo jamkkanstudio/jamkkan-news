@@ -18,7 +18,7 @@ Jamkkan의 Sprint 목표, 결정, 구현 결과와 검증 기록을 보관합니
 | 08 | 사용자별 저장 활성화 및 격리 검증 | 완료 | [08-user-storage-activation.md](08-user-storage-activation.md) |
 | 09 | 운영 개인 저장 활성화 및 실사용 검증 | 완료 | [09-production-user-storage-rollout.md](09-production-user-storage-rollout.md) |
 | 10 | 자동 뉴스 수집 운영화 | 완료 | [10-automatic-news-collection.md](10-automatic-news-collection.md) |
-| 11 | 자동 수집 운영 관찰 및 v0.2 마감 | 구현 완료 · 배포 검증 대기 | [11-collection-observation-v0.2-close.md](11-collection-observation-v0.2-close.md) |
+| 11 | 자동 수집 운영 관찰 및 v0.2 마감 | 완료 | [11-collection-observation-v0.2-close.md](11-collection-observation-v0.2-close.md) |
 
 ## 상태
 

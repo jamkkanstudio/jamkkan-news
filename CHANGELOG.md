@@ -8,6 +8,14 @@
 
 > 다음 버전에 포함될 예정입니다.
 
+---
+
+# v0.2.0
+
+**Release Date**
+
+2026.07.15
+
 ## Authentication
 
 - Added Streamlit native Google OIDC login and logout controls.

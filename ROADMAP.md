@@ -25,7 +25,7 @@ Released
 
 ---
 
-# v0.2 (Current)
+# v0.2
 
 ## Real User Test
 
@@ -46,7 +46,7 @@ Released
 
 Status
 
-In Progress
+Released
 
 ---
 
