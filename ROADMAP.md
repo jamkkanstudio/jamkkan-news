@@ -50,6 +50,22 @@ Released
 
 ---
 
+# v0.2.1
+
+## UX Foundation
+
+- ✅ 핵심 화면 UX 점검
+- ✅ 반응형 TOP5 카드 그리드
+- ✅ 공통 타이포·색상·카드·상태 기반
+- ✅ 사용자·관리자 내비게이션 정리
+- ✅ 성장·분석 모바일 주간 기록 정리
+
+Status
+
+Deployment pending
+
+---
+
 # v0.3
 
 ## AI

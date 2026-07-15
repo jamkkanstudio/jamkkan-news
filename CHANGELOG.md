@@ -8,6 +8,15 @@
 
 > 다음 버전에 포함될 예정입니다.
 
+## User experience
+
+- Added a calm, shared visual foundation for page headers, cards, buttons, status messages, spacing, typography, and color.
+- Changed TOP5 news into a responsive two-column desktop grid that safely stacks to one column on mobile.
+- Shortened the home growth summary so the daily briefing appears sooner on mobile.
+- Added compact topic badges from existing categories and seven-day growth strips without changing stored data.
+- Replaced the default sidebar list with user-focused navigation and hid management links from non-administrators.
+- Clarified login and administrator boundary messages while preserving public reading and legacy growth access.
+
 ---
 
 # v0.2.0
