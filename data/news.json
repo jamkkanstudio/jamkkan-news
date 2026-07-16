@@ -4002,5 +4002,49 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-07-16T20:57:44+09:00"
+  },
+  {
+    "id": "2273e9f7-cf86-5af5-bbce-ca3f9979e3c7",
+    "title": "트럼프 내일 대국민 연설…이란 전쟁 언급도?",
+    "summary": "도널드 트럼프 미국 대통령이 우리 시간으로 내일(17일) 오전 대국민 연설을 합니다. 도널드 트럼프 미국 대통령이 현지시간 16일 대국민 연설을 예고했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260716211442idy",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-07-16T21:14:44+09:00"
+  },
+  {
+    "id": "b239b0eb-a752-5c7f-a1fb-c0d08d07ded7",
+    "title": "방미통위원장 \"청소년 SNS 과몰입, 단계적 규제 검토\"",
+    "summary": "방송미디어통신위원회가 청소년의 유튜브와 인터넷 등 SNS 과몰입 문제와 관련해 연령에 따른 단계별 규제를 검토하고 있다고 밝혔습니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH202607162112577sY",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-07-16T21:12:58+09:00"
+  },
+  {
+    "id": "c1786a3a-3166-537e-8b04-ee37db095ce6",
+    "title": "'촉법소년 연령' 추가 공론화, 법무부 전담 가능성…\"중대 범죄 범위 논의\"",
+    "summary": "정부 주도의 촉법소년 연령 하향 추가 공론화 과정은 법무부가 맡을 가능성이 높은 것으로 전해졌습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260716211133oKD",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-07-16T21:11:34+09:00"
+  },
+  {
+    "id": "3fd7db9f-77ad-5a89-8316-29ef218de6aa",
+    "title": "대전 자운대에 4년제 국군사관학교 창설…연내 입법 추진",
+    "summary": "국방부가 육·해·공군 사관학교를 통합한 4년제 국군사관학교를 설립하겠다고 발표했습니다. 사관학교는 대전 자운대에 지을 계획인데요.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260716211037bFa",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-07-16T21:10:38+09:00"
   }
 ]
