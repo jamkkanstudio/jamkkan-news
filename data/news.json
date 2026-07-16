@@ -2176,5 +2176,27 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-07-16T10:29:55+09:00"
+  },
+  {
+    "id": "cb19b823-85ce-53b8-a96d-1a6af1a324ba",
+    "title": "[속보] 이 대통령 \"개인정보유출 제재 강화, 특정기업 고려한 조치 아냐\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 성승환(ssh82@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260716104521xoy",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-07-16T10:45:22+09:00"
+  },
+  {
+    "id": "33b8217b-5518-5afe-8c98-8d30c0d03bb9",
+    "title": "백악관, 전용기 기밀 유출에 '워룸' 설치…\"범인 색출\"",
+    "summary": "도널드 트럼프 미국 대통령의 새 전용기 에어포스원의 보안 관련 정보 유출자를 색출하기 위해 백악관이 '워룸'까지 설치한 것으로 알려졌습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260716101710e8o",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-07-16T10:17:13+09:00"
   }
 ]
