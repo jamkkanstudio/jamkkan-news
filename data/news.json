@@ -4156,5 +4156,27 @@
     "category": "경제",
     "importance": 50,
     "created_at": "2026-07-16T22:53:33+09:00"
+  },
+  {
+    "id": "41dd66ad-ecdd-5d0c-943b-b693b6e439c6",
+    "title": "[속보] '내란 가담·항고 포기' 심우정 전 검찰총장 구속영장 기각",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 최덕재(DJY@yna.co.kr)",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260716230328Yaw",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-07-16T23:03:28+09:00"
+  },
+  {
+    "id": "59ed2b85-b2e5-5ed0-b632-816fc81cfee8",
+    "title": "민주, 홈플러스 청문회 취소…21일 현안질의",
+    "summary": "민주당 박지혜 대변인은 서면 브리핑을 통해 \"당초 예정된 청문회는 취소됐으나 사태의 엄중함을 감안해 오는 21일 정무위 차원의 현안 질의는 흔들림 없이 진행될 예정\"이라고 밝혔습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260716230122RPT",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-07-16T23:01:25+09:00"
   }
 ]
