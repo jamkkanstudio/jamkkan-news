@@ -3221,5 +3221,49 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-07-16T15:57:22+09:00"
+  },
+  {
+    "id": "d36d9438-10cf-555c-91fb-0d516e082bce",
+    "title": "정부, '장윤기 사건' 공식 사과…\"경찰 순환인사 전면 도입\"",
+    "summary": "정부가 경찰의 수사 비위 논란을 일으킨 장윤기 사건에 대해 공식 사과했습니다. 윤호중 행정안전부 장관은 장윤기 사건 수사팀의 고의적인 짬짜미, 봐주기 수사 정황들이 하나둘씩 드러나고 있다며 고개를 숙였습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260716163448LRc",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-07-16T16:34:51+09:00"
+  },
+  {
+    "id": "426c5ecd-baae-5b54-a9a4-7d7e52359b62",
+    "title": "[속보] 靑 \"국익 극대화 방향으로 안보 전략 조율할 것\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 성승환(ssh82@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260716162327u3w",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-07-16T16:30:05+09:00"
+  },
+  {
+    "id": "7d068eb4-7b91-56c9-97d0-488fef29ff5e",
+    "title": "[속보] 靑, 한미 통상·안보 현안 관련 NSC 상임위 개최",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 성승환(ssh82@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260716162315so4",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-07-16T16:30:04+09:00"
+  },
+  {
+    "id": "81f852ae-4f30-54b7-b636-eaac4d9ec9cc",
+    "title": "[속보] 경찰, 개표소 출입 막은 '올다르크' 등 구속영장",
+    "summary": "경찰이 송파 개표소 시위 현장에서 체육단체들의 출입을 끝까지 막은 30대 여성에 대해 업무방해 혐의로 구속영장을 신청했습니다. 경찰은 올림픽공원 개표소 현장 불법행위에 대하여 법과 원칙에 따라 엄정히 수사할 방침이라고 밝혔습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260716162938Fiz",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-07-16T16:29:40+09:00"
   }
 ]
