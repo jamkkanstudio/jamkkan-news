@@ -2440,5 +2440,60 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-07-16T11:41:43+09:00"
+  },
+  {
+    "id": "5c2af7b1-6045-5650-8579-62fca3a53db6",
+    "title": "만장일치로 기준금리 0.25%p 올려…\"향후 인상 기조\"",
+    "summary": "한국은행 금융통화위원회는 \"높은 환율 변동성과 수도권 주택가격 상승세, 가계부채 증가세 확대에 계속 유의해야 하는 상황\"이라면서 \"향후 통화정책은 금리 인상 기조를 이어나갈 필요가 있다고 판단된다\"고 밝혔습니다.",
+    "reason": "금리 변화는 대출 이자와 부동산·주식시장에 직접적인 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260716115612pY4",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-07-16T11:56:13+09:00"
+  },
+  {
+    "id": "8c7ee4e2-5768-53dc-90b2-996cc6c6c9ea",
+    "title": "[속보] 한은 총재 \"반도체 가격 주시…한국 경제 미래에 시사점 많아\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김도헌(dohoney@yna.co.kr)",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260716115553I3f",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-07-16T11:55:53+09:00"
+  },
+  {
+    "id": "b1ff7c7a-833f-5285-84c1-74f72d70d682",
+    "title": "\"이 대통령 국정지지율 55%…2주 전보다 3%p 하락\" [NBS]",
+    "summary": "이재명 대통령의 국정운영을 긍정적으로 평가한 비율이 55%를 기록했다는 여론조사 결과가 나왔습니다. 민주당은 2주 전보다 4%p 하락했고, 국민의힘은 2%p 상승했습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260716115544NJM",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-07-16T11:55:45+09:00"
+  },
+  {
+    "id": "c8d3f7f7-d9f8-5ef5-bd08-ca14e3576bb9",
+    "title": "HS효성 미국법인, '2천만대 차량 분량' 자동차용 카펫 판매",
+    "summary": "HS효성첨단소재는 미국 생산거점인 HS효성USA가 판매한 자동차용 카펫 면적이 지난달 기준으로 누적 1억㎡를 넘어선 것으로 집계됐다고 밝혔습니다. 차량 1대당 5㎡의 카펫이 사용되는 점을 고려하면 자동차 2천만대에 해당하는 분량입니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260716114832zBQ",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-07-16T11:48:34+09:00"
+  },
+  {
+    "id": "4a219e91-b41f-5917-9b63-d1797fc507f3",
+    "title": "[속보] 한은 총재 \"취약차주 어려움은 재정·금융정책으로 덜어줘야\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김도헌(dohoney@yna.co.kr)",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260716114715VIo",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-07-16T11:47:16+09:00"
   }
 ]
