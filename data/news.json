@@ -3881,5 +3881,27 @@
     "category": "경제",
     "importance": 50,
     "created_at": "2026-07-16T20:06:50+09:00"
+  },
+  {
+    "id": "2bbafb17-24ea-5a69-a5d1-e96ad444655d",
+    "title": "[단독] '보이콧' 국민의힘 제헌절 행사는 참석키로",
+    "summary": "국민의힘 원내 핵심관계자에 따르면 당 지도부는 더불어민주당의 '단독 원구성' 등에 반발해 제헌절 행사 '보이콧'을 검토했지만, 참석을 전격 결정했습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260716203423KYA",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-07-16T20:34:23+09:00"
+  },
+  {
+    "id": "58a21516-c61f-5301-8818-a0cfd476bcae",
+    "title": "[이시각헤드라인] 7월 16일 뉴스리뷰",
+    "summary": "■연휴 내내 비…습도 높은 더위 계속■ 비는 연휴 내내 내릴 전망으로, 습도 높은 무더위도 이어지겠습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260716203015MNl",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-07-16T20:30:16+09:00"
   }
 ]
