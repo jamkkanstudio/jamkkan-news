@@ -4585,5 +4585,27 @@
     "category": "경제",
     "importance": 50,
     "created_at": "2026-07-17T09:36:04+09:00"
+  },
+  {
+    "id": "f9a3f758-f554-5c00-90cd-a2cfb04d7b0d",
+    "title": "[속보] 민주 최고위, 송영길·김용 후보 자격 인정…\"예외 적용\"",
+    "summary": "민주 최고위서 표결…\"당무위원회서 최종 판단\" 연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 팽재용(paengman@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260717094621NST",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-07-17T09:46:23+09:00"
+  },
+  {
+    "id": "51c48a1b-e429-538b-bc95-d20fd74c21f0",
+    "title": "삼성전자 감사페스티발 '대박'에 배송 지연 우려…\"환급 차질 없어\"",
+    "summary": "삼성전자 감사 페스티벌 5일 종료삼성전자 감사 페스티벌 5일 종료 삼성전자 디바이스경험(DX·완제품) 부문은 '감사 페스티벌' 효과로 올해 2분기 실적이 일부 개선될 수 있다는 전망도 나온다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260717094044yoe",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-07-17T09:40:47+09:00"
   }
 ]
