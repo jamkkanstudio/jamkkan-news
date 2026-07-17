@@ -5971,5 +5971,38 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-07-18T05:57:03+09:00"
+  },
+  {
+    "id": "3ec57fab-7095-5acb-84ad-3f301224705a",
+    "title": "[속보] 서울 도봉구 산사태 경보...이번 장마철 전국 처음",
+    "summary": "연합뉴스 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 윤석이(seokyee@yna.co.kr)",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260718070157uf4",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-07-18T07:01:58+09:00"
+  },
+  {
+    "id": "99087953-ec7d-52bf-8e9d-07089f8e7fa5",
+    "title": "[속보] 서울 동부간선도로, 집중호우로 양방향 전면 통제",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 차승은(chaletuno@yna.co.kr)",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260718070101t12",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-07-18T07:01:03+09:00"
+  },
+  {
+    "id": "85baa871-b39e-5c2e-b237-88725f60eaa0",
+    "title": "간밤 수도권에 '물벼락'…곳곳 1시간 50㎜ 이상 집중호우",
+    "summary": "밤사이 수도권에 물벼락이 떨어졌습니다. 오늘(18일) 오전 6시 현재 수도권과 강원, 충남을 중심으로 시간당 20∼40㎜씩 비가 매우 강하게 쏟아지고 있습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260718065927WMp",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-07-18T06:59:30+09:00"
   }
 ]
