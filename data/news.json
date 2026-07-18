@@ -6290,5 +6290,16 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-07-18T10:51:16+09:00"
+  },
+  {
+    "id": "95eff9cb-c388-5d27-8392-bde86e618e7e",
+    "title": "[이시각헤드라인] 7월 18일 토요와이드 (11시)",
+    "summary": "■서울 전역 호우경보 해제…강서·은평·마포 침수경보■ 오늘 새벽 서울 전역에 내려졌던 호우 경보는 모두 해제됐습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260718110533Esw",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-07-18T11:05:33+09:00"
   }
 ]
