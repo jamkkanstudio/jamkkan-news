@@ -9326,5 +9326,27 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-07-20T06:58:20+09:00"
+  },
+  {
+    "id": "3ad53750-8407-5892-93fd-8ee73e0db826",
+    "title": "쿠팡 물류센터 붕괴 가능성에 대피령…밤샘 진화작업",
+    "summary": "인천 쿠팡 물류센터 화재 진화 작업이 사흘째 이어지고 있습니다. 네, 쿠팡 물류센터 화재 현장입니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260720072524y06",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-07-20T07:25:26+09:00"
+  },
+  {
+    "id": "3312ad2f-68cd-58a4-9db2-c9ee9eed5b70",
+    "title": "[이시각헤드라인] 7월 20일 라이브투데이",
+    "summary": "■쿠팡 물류센터 화재 사흘째…붕괴 위험 '대피령'■ 인천 쿠팡 물류센터 화재가 발생 사흘째에도 진화에 난항을 겪고 있습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260720071922MqG",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-07-20T07:19:23+09:00"
   }
 ]
