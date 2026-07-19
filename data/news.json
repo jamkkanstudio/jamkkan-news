@@ -8776,5 +8776,27 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-07-19T18:00:43+09:00"
+  },
+  {
+    "id": "2c1ea19e-4af9-5f2b-9686-f7d3e52b20dc",
+    "title": "[현장연결] 이 대통령, 유네스코 세계유산위 개회식 축사",
+    "summary": "\"유네스코 사무총장 및 각국 대표단 환영\" \"유네스코 세계유산위 부산 개최는 운명 같은 일\"",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH202607191833264rq",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-07-19T18:33:27+09:00"
+  },
+  {
+    "id": "57e9bc77-059c-5c5f-b046-fdc146907c90",
+    "title": "中, 美 맞서 'AI 신질서' 구축…독자 노선 추진",
+    "summary": "중국이 미국 중심의 인공지능 질서에 맞서 별도의 ‘AI 신질서’ 구축에 나섰습니다. 미국 중심 질서에 맞서 기술과 규범 모두에서 독자 노선을 구축하겠다는 뜻으로 풀이됩니다.",
+    "reason": "AI 기술 변화는 산업 경쟁력과 일하는 방식에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260719183056uFW",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-07-19T18:30:58+09:00"
   }
 ]
