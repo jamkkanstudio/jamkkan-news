@@ -12417,5 +12417,27 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-07-22T06:52:00+09:00"
+  },
+  {
+    "id": "cd79d8ce-4b06-5c82-b0d2-9d0e98550362",
+    "title": "연천 임진강 임진교 홍수경보 해제…필승교 수위도↓",
+    "summary": "어제(21일) 11m까지 올라갔던 임진교 수위는 오전 6시 기준 7.72m로 내려갔습니다. 임진강 최북단 필승교 수위도 내려가고 있습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260722072545025",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-07-22T07:25:46+09:00"
+  },
+  {
+    "id": "ae42ef4e-7edc-5fbf-be89-a5fbe6a874d8",
+    "title": "[이시각헤드라인] 7월 22일 라이브투데이",
+    "summary": "■중부 또 많은 비…임진교 홍수특보 해제■ 오늘 오전 5시 30분부터 경기 연천군 임진교와 비룡대교의 홍수특보는 모두 해제됐습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260722072327x3L",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-07-22T07:23:27+09:00"
   }
 ]
