@@ -13825,5 +13825,27 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-07-22T14:47:18+09:00"
+  },
+  {
+    "id": "5773b1e2-2768-5ca8-ab5a-1c8fc9ce2621",
+    "title": "[속보] 법원 \"오세훈, 명태균에 공표용 여론조사도 의뢰 인정\"",
+    "summary": "서울중앙지법[촬영 이성민, 장지현][촬영 이성민, 장지현] 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 윤석이(seokyee@yna.co.kr)",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260722150159sp7",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-07-22T15:01:59+09:00"
+  },
+  {
+    "id": "b4be5438-8c8e-546a-9a53-e07839ec9393",
+    "title": "[속보] 법원 \"오세훈, 명태균에 여론조사 의뢰하고 후원자가 비용 대납\"",
+    "summary": "연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 윤석이(seokyee@yna.co.kr)",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202607221500207Is",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-07-22T15:00:23+09:00"
   }
 ]
