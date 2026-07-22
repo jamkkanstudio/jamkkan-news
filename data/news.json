@@ -12857,5 +12857,38 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-07-22T09:59:54+09:00"
+  },
+  {
+    "id": "5ecf4a06-9da4-57b2-b936-067b77d69ba4",
+    "title": "한국GM, 서비스품질 자동차 AS 부문 8년 연속 1위",
+    "summary": "한국GM, 서비스품질지수 자동차 AS 부문 8년 연속 1위 제너럴모터스 한국사업장(한국GM)이 한국산업 서비스품질지수(KSQI) 조사에서 자동차 애프터서비스(AS) 부문 8년 연속 1위에 올랐습니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260722101202bzs",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-07-22T10:12:03+09:00"
+  },
+  {
+    "id": "ae930b5a-0af6-5f6a-9be4-e4ec28c0619f",
+    "title": "이통3사, AI 안경 '레이밴 메타' 오늘부터 판매",
+    "summary": "AI 안경 '레이밴 메타' 출시[자료 연합뉴스][자료 연합뉴스] 이동통신 3사는 오늘(22일) 인공지능 스마트안경, '레이밴 메타'를 출시했습니다.",
+    "reason": "AI 기술 변화는 산업 경쟁력과 일하는 방식에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260722101156Bfy",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-07-22T10:11:57+09:00"
+  },
+  {
+    "id": "5ea9a721-f930-53e6-bff3-0aec86d7f313",
+    "title": "KB국민은행, 예·적금 금리 최대 0.3%p 인상",
+    "summary": "국민은행, 주담대 한도 최대 6억에서 3억으로 축소국민은행, 주담대 한도 최대 6억에서 3억으로 축소 규제 지역 외 지역의 주택구입자금 대출에도 최대 3억원 한도가 적용된다.",
+    "reason": "금리 변화는 대출 이자와 부동산·주식시장에 직접적인 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260722101116Lpa",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-07-22T10:11:18+09:00"
   }
 ]
