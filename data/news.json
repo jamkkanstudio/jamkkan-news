@@ -14914,5 +14914,27 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-07-22T21:47:59+09:00"
+  },
+  {
+    "id": "33c731b4-5124-510f-ba0d-5c2edf353fc5",
+    "title": "[속보] 트럼프 \"이란, 호르무즈 상선 공격땐 교량 또는 발전소 폭격\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 박준혁(baktoyou@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260722221046Y5f",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-07-22T22:10:47+09:00"
+  },
+  {
+    "id": "df337501-800d-57e9-81b4-8e64aa7063cd",
+    "title": "경선 흔드는 신천지 개입설…김민석·정청래 연일 충돌",
+    "summary": "의혹을 제기한 김민석 후보는 정청래 후보를 겨냥했는데요. 김민석 후보는 이번 전당대회에서 '반명, 분열주의, 신천지'의 3자 연합을 깨야 한다고 목소리를 높이고 있습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH202607222207499GF",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-07-22T22:07:50+09:00"
   }
 ]
