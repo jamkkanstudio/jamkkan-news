@@ -20722,5 +20722,16 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-07-25T00:57:41+09:00"
+  },
+  {
+    "id": "a231ec97-d5a0-5362-9bc0-4c487e4bd5ec",
+    "title": "[속보] 트럼프, EU 구글 과징금에 '무역법 301조 관세' 위협",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김준하(jjuna@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202607250213050Vy",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-07-25T02:13:06+09:00"
   }
 ]
