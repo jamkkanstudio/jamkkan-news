@@ -20579,5 +20579,27 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-07-24T23:24:50+09:00"
+  },
+  {
+    "id": "23e37c62-fdc8-5719-89a2-1433bf8a234e",
+    "title": "[속보] 후티 반군 \"바브엘만데브 해협 폐쇄 의도 없어\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김채영(chaechae@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260724233204hCg",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-07-24T23:32:05+09:00"
+  },
+  {
+    "id": "af049c5c-efe1-5078-8468-1ce1325d4e4d",
+    "title": "김용범 \"한미 빅테크 기업 '골든 브리지' 회동\"",
+    "summary": "한국과 미국 빅테크 기업들이 미국 샌프란시스코에서 제2의 '깐부 회동'격인 일명 '골든 브리지' 회동을 합니다. 로이터 등 외신에 따르면, 김용범 청와대 정책실장은 이재명 대통령의 미국·남미 순방 전 어제(23일) 외신간담회를 열고 이같이 밝혔습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260724232845iGo",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-07-24T23:28:47+09:00"
   }
 ]
