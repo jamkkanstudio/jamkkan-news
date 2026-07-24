@@ -18610,5 +18610,38 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-07-24T08:49:10+09:00"
+  },
+  {
+    "id": "7c80a2a8-3a73-5d1c-b64c-f3f9920dfc97",
+    "title": "코스피, 1.35% 하락 출발…코스닥도 1.62%↓",
+    "summary": "[코스피] 96.11p(1.35%) 내린 7,000.78(개장) - 2026년 7월 24일 코스피가 1.35% 하락 출발했습니다.",
+    "reason": "국내 증시 흐름은 투자심리와 기업 자금 조달 환경을 보여주는 지표입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202607240905260bs",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-07-24T09:05:27+09:00"
+  },
+  {
+    "id": "af6d4b15-608f-50fb-b572-f64ee653a4f7",
+    "title": "[속보] 유류세 인하 9월말까지 연장…휘발유 15%·경유 25%·부탄 25%↓",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김주영(ju0@yna.co.kr)",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260724090334izF",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-07-24T09:03:36+09:00"
+  },
+  {
+    "id": "f8aec2c4-dbeb-5ba4-ba02-3cfefae30d08",
+    "title": "'영원한 전쟁' 빠지나…\"미, 공습으로 이란 못바꾼다고 판단\"",
+    "summary": "이란 공습을 위해 출격하는 미군 전투기 CNN은 이란과 끝없는 주고받기식 타격은 추가적인 미국인의 인명피해를 낳고, 호르무즈 해협을 '영원한 전쟁'과 유사한 지속적 위기 상태에 빠뜨릴 가능성이 크다고 지적했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260724090142Vqk",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-07-24T09:01:44+09:00"
   }
 ]
