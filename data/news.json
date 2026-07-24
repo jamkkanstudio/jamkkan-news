@@ -19468,5 +19468,27 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-07-24T13:57:34+09:00"
+  },
+  {
+    "id": "a82b4cd7-4365-53c8-8614-51d8eab96726",
+    "title": "[속보] 법원 \"최태원, 노소영에 9,440억 원 재산분할\"",
+    "summary": "최태원-노소영[연합뉴스 자료사진][연합뉴스 자료사진] 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 이준흠(humi@yna.co.kr)",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260724141247UVd",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-07-24T14:12:49+09:00"
+  },
+  {
+    "id": "6d95dcb4-7729-52b4-babd-3ac6669c0752",
+    "title": "[속보] 법원 \"최태원, 노소영에 9,440억 재산분할\"",
+    "summary": "법원 \"최태원, 노소영에 9,440억 재산분할\" 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 엄샛별(usb0630@yna.co.kr)",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260724141201mxR",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-07-24T14:12:04+09:00"
   }
 ]
