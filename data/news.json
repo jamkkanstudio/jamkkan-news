@@ -19534,5 +19534,16 @@
     "category": "경제",
     "importance": 50,
     "created_at": "2026-07-24T14:32:57+09:00"
+  },
+  {
+    "id": "626d94c2-bd86-5cfc-9f5d-e95a7e560c0d",
+    "title": "태국 남부서 총기·폭탄테러…보안요원 5명 사망",
+    "summary": "태국 남부 총기·폭탄테러 사건 CCTV 화면 태국 남부에서 총기와 폭탄을 동원한 테러로 11명의 사상자가 발생해 당국이 추적에 나섰습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR2026072414370009q",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-07-24T14:37:01+09:00"
   }
 ]
