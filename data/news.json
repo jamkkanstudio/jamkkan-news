@@ -25826,5 +25826,38 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-07-27T17:21:42+09:00"
+  },
+  {
+    "id": "7a9a3b7d-c8a3-5730-b9d7-a479d60d0009",
+    "title": "[속보] 국힘 윤리위, 권영진·조경태·진종오 징계 개시키로",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 강은나래(rae@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260727173448z7q",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-07-27T17:34:48+09:00"
+  },
+  {
+    "id": "cdad18a9-76bb-5af3-9bac-585d2c95fbda",
+    "title": "중국 \"남중국해 침몰 베트남 화물선서 47명 구조\"",
+    "summary": "중국 정부가 남중국해에서 침몰한 베트남 화물선에서 실종자 수색·구조 작업을 계속하고 있다고 밝혔습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202607271732444yQ",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-07-27T17:32:45+09:00"
+  },
+  {
+    "id": "8d701bc6-5ff2-5cb7-9d35-58e25e6202df",
+    "title": "日 유명 추리소설 작가 히가시노 게이고 별세…향년 68세",
+    "summary": "히가시노 게이고, 대장암으로 사망…향년 68세 '나미야 잡화점의 기적' 등을 쓴 일본의 대표적 추리소설 작가 히가시노 게이고가 68세를 일기로 별세했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260727172927a3U",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-07-27T17:29:29+09:00"
   }
 ]
