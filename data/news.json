@@ -25122,5 +25122,27 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-07-27T14:15:47+09:00"
+  },
+  {
+    "id": "b9c0cbee-910f-582b-881d-b3385a2cb42c",
+    "title": "[속보] 법원 \"尹, 윤우진에게 변호사 소개했다고 봐야\"",
+    "summary": "윤석열 전 대통령[연합뉴스 자료사진][연합뉴스 자료사진] #윤석열 #중앙지법 #공직선거법 #건진법사 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 홍정원(zizou@yna.co.kr)",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260727142507aRU",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-07-27T14:25:09+09:00"
+  },
+  {
+    "id": "3da89920-298c-53bc-acad-ed8d1c313fad",
+    "title": "현대차그룹 청년 직무역량 강화 프로그램 'HINT' 1기 첫 발",
+    "summary": "현대차그룹이 청년 직무역량 강화프로그램 의 일환으로 만든 'HINT' 1기가 오늘(27일) 경북 경주 인재개발원 캠퍼스에서 합동 입교식을 가졌습니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202607271423059Tg",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-07-27T14:23:06+09:00"
   }
 ]
