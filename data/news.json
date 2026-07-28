@@ -29192,5 +29192,49 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-07-28T18:49:21+09:00"
+  },
+  {
+    "id": "90b879e6-f05b-5657-aba8-a6e1c67b65b1",
+    "title": "中 칭하이서 규모 5 이상 지진 세 차례…주택·도로 등 피해",
+    "summary": "중국 칭하이 규모 5급 지진 발생(중국신문망) 중국 칭하이성에서 오늘(28일) 규모 5 이상의 지진이 세 차례 잇따라 발생했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260728184828klc",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-07-28T18:48:29+09:00"
+  },
+  {
+    "id": "ec1c346f-21a3-582a-8054-a4097f640666",
+    "title": "[속보] 후쿠오카총영사관 \"현재까지 한국인 피해 없어…상황 확인 중\"",
+    "summary": "#일본 #지진 #자연재해 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 장효인(hijang@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260728183957U9k",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-07-28T18:39:57+09:00"
+  },
+  {
+    "id": "94fa820e-feb5-54c9-af52-e9b30d5b68e4",
+    "title": "'극단적 더위'에 온열질환 사망자 1명 추가 발생",
+    "summary": "장마가 끝난 뒤 극단적 더위가 기승을 부리면서 온열질환으로 인한 사망자가 1명 추가로 발생했습니다. 전날 사망자는 강원 강릉시 거주 65세 여성으로 전해졌습니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH202607281838106yo",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-07-28T18:38:12+09:00"
+  },
+  {
+    "id": "e1305535-77bd-5398-a45e-95c0c99c5003",
+    "title": "[속보] \"규슈강진에 최소 50명 병원 이송…대형쇼핑몰서 폭발음\" <NHK>",
+    "summary": "#일본 #지진 #규슈 #자연재해 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 장효인(hijang@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202607281838067Zr",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-07-28T18:38:08+09:00"
   }
 ]
