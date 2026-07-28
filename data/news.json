@@ -29423,5 +29423,16 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-07-28T20:24:01+09:00"
+  },
+  {
+    "id": "5af09479-c6ea-5e46-bf65-94240a9f8fb3",
+    "title": "[이시각헤드라인] 7월 28일 뉴스리뷰",
+    "summary": "■전국 열대야 지속…남부 '최고 37도' 극한더위■ 오늘 밤에도 전국 대부분 지역에서 열대야가 이어지겠습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260728202800X53",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-07-28T20:28:02+09:00"
   }
 ]
