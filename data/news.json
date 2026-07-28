@@ -30193,5 +30193,38 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-07-29T07:19:45+09:00"
+  },
+  {
+    "id": "803e1fa8-bb73-5b20-8b3b-9513ea6d62a8",
+    "title": "[속보] 미군 \"이란, 중동 미군에 다수 탄도미사일 발사…모두 요격\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김예린(yey@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260729073303gkq",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-07-29T07:33:04+09:00"
+  },
+  {
+    "id": "c72de264-afb2-5206-83bb-b8f6a86e2db3",
+    "title": "日 구마모토 강진에 쇼핑몰 붕괴…\"최소 2명 사망\"",
+    "summary": "어제(28일) 오후 일본 규슈 구마모토현을 덮친 강진에 인명피해가 잇따르고 있습니다. 대형 쇼핑몰이 무너지면서 최소 2명의 사망자가 나온 것으로 전해졌는데요.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260729072817V1i",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-07-29T07:28:19+09:00"
+  },
+  {
+    "id": "b8c92840-aaf6-542b-84f1-df50524149b7",
+    "title": "[이시각헤드라인] 7월 29일 라이브투데이",
+    "summary": "■日구마모토 7.1 강진…\"일주일 내 추가 가능성\"■ 어제 오후 일본 남서부 구마모토현에서 규모 7.1의 강진이 발생했습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260729072720bOA",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-07-29T07:27:21+09:00"
   }
 ]
