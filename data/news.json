@@ -34164,5 +34164,27 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-07-30T11:37:27+09:00"
+  },
+  {
+    "id": "4ed8812d-be2b-5300-96d1-7c8a6b27ba0a",
+    "title": "[속보] 여야, '투표용지 부족 사태' 국조특위 '30일 연장' 합의",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 정주희(gee@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202607301221211Yz",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-07-30T12:21:22+09:00"
+  },
+  {
+    "id": "5156ada1-2869-5b58-a97b-80494d8de74d",
+    "title": "[속보] 여야, '선관위 특검법' 세부쟁점 합의…오늘 본회의 처리",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 정주희(gee@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260730122034HIS",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-07-30T12:20:36+09:00"
   }
 ]
