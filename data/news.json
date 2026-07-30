@@ -33614,5 +33614,27 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-07-30T08:46:59+09:00"
+  },
+  {
+    "id": "970d0499-8371-52df-8b42-30943cb503a2",
+    "title": "[사건사고] 판교 아비뉴프랑 식당서 불…1명 경상·대피소동 外",
+    "summary": "▶ 판교 아비뉴프랑 식당서 불…1명 경상·대피소동 어제 오후 6시쯤 경기 성남시 판교 아비뉴프랑 내부의 한 식당에서 불이 났습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260730090638CKr",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-07-30T09:06:38+09:00"
+  },
+  {
+    "id": "8d8566fb-6d58-5fce-9e60-733df5632fcd",
+    "title": "[속보] 삼성전자 2분기 매출 171.5조…역대 분기 최대",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 정다예(yeye@yna.co.kr)",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202607300857070lZ",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-07-30T08:57:07+09:00"
   }
 ]
