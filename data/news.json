@@ -36353,5 +36353,27 @@
     "category": "경제",
     "importance": 50,
     "created_at": "2026-07-31T08:50:29+09:00"
+  },
+  {
+    "id": "9cf60489-5f4e-59e2-9ec9-faac4ce34c8c",
+    "title": "[월드앤이슈] 미·이란, 교전 재개…일본 강진 사망 34명",
+    "summary": "다양한 국제뉴스를 깊이있게 전해드리는 <월드앤이슈>입니다. 오늘은 조윤주 외신캐스터와 함께합니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260731090855Ci3",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-07-31T09:08:56+09:00"
+  },
+  {
+    "id": "c3092d46-b8dd-50fc-894e-2100e240e9dd",
+    "title": "[사건사고] 양평 음식점 천장 무너져…14명 부상 外",
+    "summary": "▶ 양평 음식점 천장 무너져…14명 부상 식당 천장이 무너져 내리면서 내부 구조물이 그대로 드러났습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260731090711j8X",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-07-31T09:07:13+09:00"
   }
 ]
