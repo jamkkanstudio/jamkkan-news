@@ -44625,5 +44625,16 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-08-04T07:13:22+09:00"
+  },
+  {
+    "id": "98f782a4-741f-5dbf-a77f-ca1cf71b594b",
+    "title": "[이시각헤드라인] 8월 4일 라이브투데이",
+    "summary": "■수도권 첫 폭염중대경보…온열질환 2천명 돌파■ 계속되는 극한 더위에 온열질환자도 늘어 누적 2천명을 돌파했습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH202608040720272uJ",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-08-04T07:20:28+09:00"
   }
 ]
