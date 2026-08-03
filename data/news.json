@@ -42865,5 +42865,49 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-08-03T14:27:42+09:00"
+  },
+  {
+    "id": "99eb2cba-3d92-5f1a-9c14-5da382fc28be",
+    "title": "그리스 소방헬기 공중충돌 2명 사망…강풍 속 대형산불과 사투",
+    "summary": "지난주 본격적으로 번진 그리스 대형 산불이 좀처럼 잡히지 않고 있습니다. 그리스 소방헬기(자료사진)[AFP 연합뉴스][AFP 연합뉴스]",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260803144547dzg",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-03T14:45:48+09:00"
+  },
+  {
+    "id": "9a579615-6c47-538c-a8ec-7fafb07ffa07",
+    "title": "신림동 화재 틈타 편의점 절도…CCTV 살피며 가방에 ‘쏙’",
+    "summary": "[출처=인스타그램 No mute][출처=인스타그램 No mute] 서울 신림동의 한 상가 건물에서 화재가 발생해 130여 명이 긴급 대피한 가운데, 혼란을 틈타 건물 안 편의점에서 물건을 훔친 것으로 보이는 여성의 모습이 CCTV에 포착됐습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260803144541QLY",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-08-03T14:45:41+09:00"
+  },
+  {
+    "id": "dd45d958-906f-5629-8d89-cdb3272ea922",
+    "title": "군, '실탄 미장착'·'무인기 소동' 논란 1군단장 직무배제",
+    "summary": "국방부가 최근 최전방 실탄 미장착, 미군 무인기 오인 소동 등 논란과 관련, 한기성 육군 1군단장(중장)을 오늘(3일)부로 직무배제 조치했습니다. 군내 요직인 1군단장을 비육사 출신이 맡은 첫 사례로 주목받았습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202608031442221eW",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-03T14:42:24+09:00"
+  },
+  {
+    "id": "e4740720-0bea-55ec-81d9-be4caf20c6fb",
+    "title": "[속보] 합참 \"美무인기 오인 소동, 한미 실무자간 소통 오류로 발생\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 팽재용(paengman@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260803144122ys5",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-03T14:41:23+09:00"
   }
 ]
