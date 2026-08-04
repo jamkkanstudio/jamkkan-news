@@ -1,14 +1,14 @@
 {
   "daily_goal_seconds": 300,
   "daily_briefing": {
-    "date": "2026-08-04",
+    "date": "2026-08-05",
     "candidate_ids": [
-      "dad2a6ed-0cd0-573a-9c2c-03d392f0172c",
-      "d51e72d4-222b-5ae4-ab52-c2cf7c93c9f5",
-      "2dc5247e-e229-5328-b526-a5b57892d256",
-      "f9957f4b-c39e-51fd-972a-0df32c5b03c8",
-      "09b4943c-a2c1-5d5b-b30d-a3b2fd2788ce"
+      "f393c620-1966-5095-96bb-35e54d0e7eb8",
+      "558e9205-8703-585a-bc20-4c64a82b4ec3",
+      "a53e2214-13f3-590d-b06b-96adc734d56f",
+      "02f2edbf-290f-5d5c-8a48-8b215a3d2310",
+      "77680fba-69fe-511a-a208-f39e14732b35"
     ],
-    "selected_at": "2026-08-04T00:37:47+09:00"
+    "selected_at": "2026-08-05T00:37:45+09:00"
   }
 }
