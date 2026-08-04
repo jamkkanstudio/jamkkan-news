@@ -47386,5 +47386,16 @@
     "category": "경제",
     "importance": 50,
     "created_at": "2026-08-05T07:15:07+09:00"
+  },
+  {
+    "id": "5c0ba2fb-3283-53ce-8f7e-3eeabf86f485",
+    "title": "[이시각헤드라인] 8월 5일 라이브투데이",
+    "summary": "■서울 전역 '폭염중대경보'…한낮 38도 극한 더위■ 한낮엔 서울이 38도, 경기 하남과 오산은 39도까지 치솟을 것으로 전망됩니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260805072758i2x",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-08-05T07:27:59+09:00"
   }
 ]
