@@ -46660,5 +46660,16 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-08-04T21:07:06+09:00"
+  },
+  {
+    "id": "cd716632-acfa-5a42-91f7-bb4d26c24078",
+    "title": "[이시각헤드라인] 8월 4일 뉴스투나잇",
+    "summary": "■수도권 첫 '폭염중대경보'…내일 서울 38도 예보■ 목요일까지 서울은 기온이 38도까지 오르며 극한 더위가 이어지겠습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260804214305bSe",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-08-04T21:43:06+09:00"
   }
 ]
