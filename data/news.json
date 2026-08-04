@@ -47364,5 +47364,16 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-08-05T06:39:46+09:00"
+  },
+  {
+    "id": "bbc8e255-535f-5ec9-9c14-2a6d31a6aa6c",
+    "title": "[AM-PM] 이 대통령, 외교·안보 등 2차 업무보고 마무리 外",
+    "summary": "오늘(5일) 하루 주요 일정을 살펴보는 보도국 AM-PM입니다. ▶ 이 대통령, 외교·안보 등 2차 업무보고 마무리 (AM 10:00 청와대)",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH202608050654231kx",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-08-05T06:54:23+09:00"
   }
 ]
