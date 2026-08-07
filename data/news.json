@@ -52809,5 +52809,38 @@
     "category": "경제",
     "importance": 50,
     "created_at": "2026-08-07T08:57:55+09:00"
+  },
+  {
+    "id": "bad06c69-09e3-5af5-a9dd-c20274340012",
+    "title": "[현장의재구성] 푹푹 찌는 날씨에 '안구 테러'…\"공공예절\" vs \"표현의 자유 침해\"",
+    "summary": "푹푹 찌는 날씨, 이것이 바로 '안구테러'? 갑론을박 펼쳐지는 다양한 사건들.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260807090917ODu",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-08-07T09:09:19+09:00"
+  },
+  {
+    "id": "0a3e1ab8-9106-5890-b702-20a1ec611937",
+    "title": "[속보] 합수본, '투표율 허위 입력' 서울·경기·충북 선관위 등 압수수색",
+    "summary": "지난달 23일 중앙선관위 압수수색 마친 합수본[연합뉴스][연합뉴스] 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 이준흠(humi@yna.co.kr)",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260807090848gOv",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-08-07T09:08:49+09:00"
+  },
+  {
+    "id": "8cdbcfcf-5b9a-56a9-ab4d-aee1a67e6728",
+    "title": "해운단체 \"호르무즈 통행료, 위험한 선례될 것\"",
+    "summary": "주요 선주·해운 단체들이 호르무즈 해협 통행료 부과 움직임에 강하게 반발하며 유엔과 국제해사기구(IMO)의 개입을 촉구했다고 현지시간 6일 미국 CNN 방송이 보도했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260807085715iAK",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-07T08:57:16+09:00"
   }
 ]
