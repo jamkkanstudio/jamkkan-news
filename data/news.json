@@ -56164,5 +56164,27 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-08-08T22:46:01+09:00"
+  },
+  {
+    "id": "3db7f40c-1d84-50fb-bcde-f8b79ee3ed3b",
+    "title": "[속보] 서울지역 어제 온열질환 사망자 2명…올해 최다",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 배윤주(boat@yna.co.kr)",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260808225458yO3",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-08-08T22:54:59+09:00"
+  },
+  {
+    "id": "e36bdeb5-0430-5c87-8a06-a3ab4fb25f8d",
+    "title": "이란 \"호르무즈 재개방 합의 근접…미, MOU 위반 배상해야\"",
+    "summary": "현지시간 8일 마수드 페제시키안 이란 대통령의 기자회견에 배석한 아라그치 장관은 별도 발언을 통해 \"호르무즈 해협 개방은 미국이 이슬라마바드 양해각서(MOU)를 위반한 데 대한 배상을 포함한 다른 요건들이 충족돼야만 한다\"며 이같이 밝혔습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260808225124HK7",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-08T22:51:25+09:00"
   }
 ]
