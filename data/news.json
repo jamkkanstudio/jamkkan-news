@@ -58584,5 +58584,38 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-08-10T09:07:52+09:00"
+  },
+  {
+    "id": "2fca966f-ed4e-5a2d-89cf-5aa85aeaa7ea",
+    "title": "종량제 봉투까지…일본 관광지에 '한글 적힌 쓰레기' 한가득",
+    "summary": "현지 산장 ‘도쿠사와엔’은 최근 SNS를 통해 여름 등산철을 맞아 관광객이 늘면서 쓰레기 무단투기도 눈에 띄게 증가했다고 밝혔습니다. 공개된 사진에는 경기도 안산시에서 사용하는 20ℓ 종량제 봉투가 담겼습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260810094211iFq",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-08-10T09:42:13+09:00"
+  },
+  {
+    "id": "972da7f7-ab20-5fc8-9b4f-d1a4834cac9e",
+    "title": "김민석, 강원·TK 승리…호남·수도권서 결판",
+    "summary": "더불어민주당 강원, 대구경북 경선에서 김민석 후보가 승리를 거뒀습니다. 강원, 대구 경북 권리당원 투표 결과는 김민석 후보의 승리.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260810093907kjg",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-10T09:39:10+09:00"
+  },
+  {
+    "id": "d59c988e-fee2-5908-9b08-1f3bdfba45fc",
+    "title": "'임신중단 결정 전 태아 심장소리 들어야' 법안, 칠레서 논란 치열",
+    "summary": "임신중단 전 '태아 심장소리 들어라' 칠레 법안 반대 시위 아르헨티나 채널26은 현지시간 9일 칠레의 이른바 '태아의 심장 소리를 들어라'(Escucha su corazon) 법안을 둘러싼 정치권과 여성단체 등의 반발을 보도했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260810093744jHm",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-10T09:37:45+09:00"
   }
 ]
