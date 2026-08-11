@@ -61158,5 +61158,27 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-08-11T09:08:28+09:00"
+  },
+  {
+    "id": "86b7689e-a79f-5f67-adde-65f7ef086a09",
+    "title": "[속보] 여객기 참사 특별수사단, 한국공항공사·국토부 등 압수수색",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 이준흠(humi@yna.co.kr)",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202608110926292eA",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-08-11T09:26:30+09:00"
+  },
+  {
+    "id": "d901eaa2-aaf7-559a-8a46-27fccb09b140",
+    "title": "中, 공역 통제 강화…관광 명물 드론쇼 11개 지역서 잇단 취소",
+    "summary": "중국이 공역 통제를 강화하면서 관광 명물로 자리 잡은 대형 드론쇼가 최소 11개 성·자치구에서 잇따라 중단된 것으로 나타났습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260811091825r4e",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-11T09:18:26+09:00"
   }
 ]
