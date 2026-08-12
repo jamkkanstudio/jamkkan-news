@@ -66130,5 +66130,38 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-08-12T19:07:45+09:00"
+  },
+  {
+    "id": "fa1244d3-64ae-59bb-a579-120cdcc86e60",
+    "title": "'1천원을 1천주로' 삼성증권 배당사고…18억 배상 확정",
+    "summary": "8년전 삼성증권 직원의 실수로 주당 천 원이었어야 할 배당금이 1천 주로 잘못 배당된 사고가 있었습니다. 국민연금이 삼성증권에 손해배상소송을 냈는데 대법원에서 18억 원이 넘는 배상액을 인정받았습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260812192335qSW",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-08-12T19:23:37+09:00"
+  },
+  {
+    "id": "bba44c40-87d8-5f3a-8c25-2f3f67f62004",
+    "title": "[속보] 선관위, 국민의힘이 제기한 서울시장 선거 소청 기각",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김채영(chaechae@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202608121921515uR",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-12T19:21:52+09:00"
+  },
+  {
+    "id": "6c639cf5-92c2-58fb-aa94-a50f9b847c15",
+    "title": "[속보] 주룽지 중국 전 총리 사망…향년 98세",
+    "summary": "#중국 #주룽지 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 장효인(hijang@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260812192021vtv",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-12T19:20:21+09:00"
   }
 ]
