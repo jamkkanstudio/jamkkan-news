@@ -75436,5 +75436,27 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-08-17T05:30:05+09:00"
+  },
+  {
+    "id": "cafe5098-df0b-5cb1-9ed6-d8ad81700cbf",
+    "title": "[속보] 트럼프 \"이 대통령에 이란 비핵화 노력 동참 물었으나 사양\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김민아(goldmina@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260817073521mKP",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-17T07:35:23+09:00"
+  },
+  {
+    "id": "c09791cd-f8cb-5a95-b053-4a24f01ffaf3",
+    "title": "[속보] 트럼프 \"나와 김정은 매우 관계 좋아…한미합동훈련 축소 지시\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김민아(goldmina@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260817073449upg",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-17T07:34:52+09:00"
   }
 ]
