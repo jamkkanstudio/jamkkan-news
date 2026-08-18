@@ -80155,5 +80155,27 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-08-19T06:34:33+09:00"
+  },
+  {
+    "id": "6c1e3f3c-e4f3-5688-be1a-0bdcaa46e60a",
+    "title": "[AM-PM] 이 대통령, 김민석·정청래·송영길과 만찬 外",
+    "summary": "오늘(19일) 하루 주요 일정을 살펴보는 보도국 AM-PM입니다. ▶ 이 대통령, 김민석·정청래·송영길과 만찬 (PM 6:30 청와대)",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260819065630Qeh",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-08-19T06:56:32+09:00"
+  },
+  {
+    "id": "998d1ced-9372-5fe8-adee-cad9ef3d8b06",
+    "title": "트럼프 훈련 축소 지시에도…北 \"명백한 행동으로 자위권 행사\"",
+    "summary": "도널드 트럼프 미국 대통령이 한미연합훈련 대폭 축소를 지시한 가운데, 북한은 \"적들의 군사적 위협을 철저히 무력화하기 위한 우리의 자위적 권리 행사는 더욱 명백한 행동으로 표현될 것\"이라고 위협했습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202608190650275RN",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-19T06:50:28+09:00"
   }
 ]
