@@ -80309,5 +80309,27 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-08-19T08:42:39+09:00"
+  },
+  {
+    "id": "9b38fd2b-d2bc-5961-ab71-defeb2641ba8",
+    "title": "4대 금융지주 회장 성과급 잣대도 제각각…수익성 넘어 건전성·AI까지",
+    "summary": "주요 금융지주 회장의 성과급을 결정하는 기준이 단순한 수익성을 넘어 건전성과 주주가치, 디지털 경쟁력 등으로 다양해지고 있습니다. 하나금융은 건전성 관리에 상대적으로 높은 비중을 뒀습니다.",
+    "reason": "AI 기술 변화는 산업 경쟁력과 일하는 방식에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260819085243GCl",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-08-19T08:52:44+09:00"
+  },
+  {
+    "id": "aaa1f96c-1947-5794-a0c1-28714887fd22",
+    "title": "\"다이애나빈 진실 들려주겠다\"…남동생 회고록 '나의 누나' 출간",
+    "summary": "현지시간 18일 AFP, 로이터 통신에 따르면 출판사 펭귄랜덤하우스는 다음 달 22일 '스완 송: 나의 누나 다이애나'(Swan Song:Diana, My Sister)를 영국 등지에서 출간한다고 밝혔습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260819084917JBQ",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-19T08:49:20+09:00"
   }
 ]
