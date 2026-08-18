@@ -80243,5 +80243,16 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-08-19T07:41:40+09:00"
+  },
+  {
+    "id": "44facba9-080c-565e-b29c-add333d1a4c7",
+    "title": "[출근길인터뷰] 올여름 막바지 휴가는 '기차 안에서'",
+    "summary": "올여름, 다양한 여행을 계획하는 분들 많으실 겁니다. 고민하는 분들이 있다면, 출근길 인터뷰를 주목해 주세요.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260819080429nNJ",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-08-19T08:04:30+09:00"
   }
 ]
