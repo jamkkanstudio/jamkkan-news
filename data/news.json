@@ -82773,5 +82773,27 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-08-20T00:09:24+09:00"
+  },
+  {
+    "id": "7348b4cc-c60c-554b-a0d6-a2efcfafe894",
+    "title": "[속보] 트럼프, '김정은과 연내 회담 예상하나' 질문에 \"그럴 것\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 차승은(chaletuno@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260820004149Oha",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-20T00:41:51+09:00"
+  },
+  {
+    "id": "b3108d75-3967-5802-9d71-08db6cd0fbc5",
+    "title": "이 대통령 \"'한미 훈련 축소해 대화 여건 조성' 트럼프 노력 경의\"",
+    "summary": "이재명 대통령, 을지 국가안전보장회의 주재 이재명 대통령이 \"한미 연합 연습과 야외 기동훈련 축소를 통해서라도 한반도 평화체제 구축하려는 도널드 트럼프 미국 대통령의 의지와 노력에 공감한다\"고 밝혔습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260820003851A9g",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-20T00:38:53+09:00"
   }
 ]
