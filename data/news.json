@@ -80375,5 +80375,60 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-08-19T09:16:15+09:00"
+  },
+  {
+    "id": "7ee656d7-1bd4-5c9a-9cbd-46954276d305",
+    "title": "[속보] 한미 UFS 연습, 21일에 조기종료…야외기동훈련 일부 축소",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 지성림(yoonik@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202608190936526yc",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-19T09:36:54+09:00"
+  },
+  {
+    "id": "bbb161da-fa64-5744-9848-72df66d33606",
+    "title": "[속보] 軍 \"미측 제안으로 UFS 연습 기간·규모 일부 조정\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 지성림(yoonik@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260819093600Zf9",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-19T09:36:03+09:00"
+  },
+  {
+    "id": "864e3c1e-c18f-5b33-bd9d-67df8e56f6e0",
+    "title": "성인 4명 중 1명 '대사이상 지방간'…\"건강한 생활습관 땐 32% 낮아\"",
+    "summary": "우리나라 성인 4명 중 1명꼴로 '대사이상 지방간질환'을 앓는 것으로 나타났습니다. 건강한 생활 습관을 실천하는 사람은 그렇지 않은 사람보다 대사이상 지방간질환을 가지고 있을 가능성이 최대 32% 낮은 것으로 나타났습니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202608190930550zE",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-08-19T09:30:56+09:00"
+  },
+  {
+    "id": "39258a6f-dd7f-5cc9-a8b7-314d4fb4daeb",
+    "title": "靑 \"국토부, '용산공원 활용' 사회적 논의...여론조사 미정\"",
+    "summary": "앞서 한 언론은 '정부가 용산어린이정원을 포함한 용산공원 전체를 대상으로 주택 공급이 가능한 부지를 살펴보고 있다'며 '청와대가 직접 여론조사 등 국민 의견수렴 방안을 논의 중'이라고 보도했습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260819092903fFH",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-19T09:29:05+09:00"
+  },
+  {
+    "id": "0fffacd2-c896-57c2-ae35-2e42736b658d",
+    "title": "靑, 국민통합 유튜브 방송 시작…\"서로 다른 생각 듣는다\"",
+    "summary": "청와대[연합뉴스 자료][연합뉴스 자료] 청와대가 서로 다른 생각과 입장을 가진 국민들의 목소리를 직접 듣는 유튜브 라이브 방송 '국민통합, 대화가 필요해!'를 시작합니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260819092822sK4",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-19T09:28:22+09:00"
   }
 ]
