@@ -80617,5 +80617,38 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-08-19T10:08:10+09:00"
+  },
+  {
+    "id": "2b80202c-d180-5d21-8407-ce34c15da41a",
+    "title": "[속보] 미 국방부 \"한미연합훈련 대폭 축소…필수 대비태세 유지\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 최진경(highjean@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260819103634KNf",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-19T10:36:36+09:00"
+  },
+  {
+    "id": "d6063cfe-7c12-5e9f-b69d-abdf77b88e96",
+    "title": "7월 호우 피해액 309억 원…복구에 713억 원 투입",
+    "summary": "정부가 지난달(7월) 발생한 호우 피해 복구에 713억 원을 투입합니다. 중앙재난안전대책본부는 지난달 호우 피해액을 309억 원으로 확정하고 재난 지원금 64억 원과 공공시설 복구비 649억 원을 투입하기로 결정했다고 밝혔습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260819103458mtL",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-08-19T10:34:59+09:00"
+  },
+  {
+    "id": "fbde947d-222e-5adf-b673-e58ff2f7226f",
+    "title": "김민석, 부산서 전재수 만나 \"당내 유엔해양총회 특위 설치\"",
+    "summary": "김 대표는 오늘(19일) 오전 전재수 부산시장을 만난 자리에서 \"오늘 최고위원회에서 2028 유엔해양총회 성공을 위한 특위 설치를 의결하겠다\"며 이같이 밝혔습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260819103249m6R",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-19T10:32:50+09:00"
   }
 ]
