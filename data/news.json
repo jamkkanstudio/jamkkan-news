@@ -80793,5 +80793,16 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-08-19T11:10:15+09:00"
+  },
+  {
+    "id": "90071f31-ce01-5da4-8919-6ec6e50e2ba8",
+    "title": "[속보] 트럼프 \"캐나다 '50% 관세' 사흘간 유예\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 최진경(highjean@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260819112652KM6",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-19T11:26:55+09:00"
   }
 ]
