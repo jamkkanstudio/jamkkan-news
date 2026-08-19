@@ -81266,5 +81266,38 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-08-19T13:58:55+09:00"
+  },
+  {
+    "id": "fb7247c1-644f-5fa3-b4ad-e802edb819eb",
+    "title": "[속보] 국회 과방위 파행…이진숙 이석 거부에 결국 산회",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 강은나래(rae@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260819141226gE2",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-19T14:12:27+09:00"
+  },
+  {
+    "id": "59efa6d2-1eaa-5359-924d-e64084f9c25a",
+    "title": "정점식, 박 前 대통령 만나 의원 연찬회 초청…朴 \"검토\"",
+    "summary": "6·3 지방선거 투표하는 박근혜 전 대통령 국민의힘 정점식 원내대표가 박근혜 전 대통령을 예방해 6·3 지방선거 과정에서 선거 유세 지원에 감사의 뜻을 표했습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202608191411483sc",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-19T14:11:50+09:00"
+  },
+  {
+    "id": "67ff028e-de80-52e5-8fbd-8d8b75e47950",
+    "title": "단일종목 레버리지 신규 투자자, 오늘부터 '모의 거래 5시간' 필수",
+    "summary": "단일종목 레버리지 ETF (PG)[김선영 제작] 일러스트[김선영 제작] 일러스트 한국거래소에 따르면 오늘부터 단일종목 레버리지·인버스 ETF(상장지수펀드)·ETN(상장지수증권)을 처음 거래하는 일반 개인투자자는 모의 거래 이수가 의무화됩니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260819141049SSl",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-08-19T14:10:50+09:00"
   }
 ]
