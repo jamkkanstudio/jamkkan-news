@@ -84610,5 +84610,49 @@
     "category": "경제",
     "importance": 50,
     "created_at": "2026-08-20T15:37:24+09:00"
+  },
+  {
+    "id": "b151678b-45e2-5d65-9dbc-beea7883b867",
+    "title": "\"미군, 이란전쟁 이후 757명 부상·18명 전사\"",
+    "summary": "미국이 지난 2월28일 이란 공격을 개시한 이후 전쟁 과정에서 부상한 미군이 757명에 달하는 것으로 나타났습니다. CNN은 국방부 통계를 분석한 결과 이란 전쟁 발발 이래 미군 18명이 전사하고 757명이 부상했다고 보도했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260820160627soW",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-20T16:06:29+09:00"
+  },
+  {
+    "id": "697a0349-5c51-5db6-b9e9-9892648264e9",
+    "title": "금융 자격시험에서 '스마트안경 소지' 적발…응시자격 5년 제한",
+    "summary": "금융투자협회[촬영 임은진][촬영 임은진] 금융투자협회는 금융투자분석사 자격시험 중 스마트 글라스(스마트 안경)를 소지했다가 적발된 응시생에 대해 협회가 주관하는 모든 자격시험의 응시 자격을 5년간 제한하기로 했다고 오늘(20일) 밝혔습니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202608201603158bT",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-08-20T16:03:16+09:00"
+  },
+  {
+    "id": "c69f28a5-f170-5b1f-a9b2-9b67b6685c12",
+    "title": "[속보] 국회, 패스트트랙 심사 단축법안 가결…최장 330일→90일",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 팽재용(paengman@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202608201559269Po",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-20T15:59:28+09:00"
+  },
+  {
+    "id": "2de0ae30-b3fc-518c-ad1a-1409774a247e",
+    "title": "[속보] 국회, 특별감찰관 후보 추천안 의결…최용훈·최길수·강지식",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 팽재용(paengman@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202608201558071FG",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-20T15:58:09+09:00"
   }
 ]
