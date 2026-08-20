@@ -83928,5 +83928,49 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-08-20T11:29:38+09:00"
+  },
+  {
+    "id": "b7579994-520b-5fd2-a31d-556b1b91ba02",
+    "title": "[속보] 안규백 \"北핵무기, 보통 80∼120개로 봐…정확한 수치언급 제한\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 팽재용(paengman@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260820114031u2r",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-20T11:40:31+09:00"
+  },
+  {
+    "id": "8aa75d0d-1dfc-596d-8d5d-8202f6a2c096",
+    "title": "맥도날드, '해피스낵' 불고기버거 2,500원·커피 1천원으로 인하",
+    "summary": "맥도날드 '해피 스낵'에 추가된 불고기 버거 오늘(20일) 한국맥도날드는 해피 스낵에 대표 메뉴인 '불고기버거'를 추가하고, 단품 기준 기존 3,800원에서 1,300원 할인된 2,500원에 판매한다고 밝혔습니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260820114009oh0",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-08-20T11:40:09+09:00"
+  },
+  {
+    "id": "eab48e1e-d53f-5e2b-af49-e7a3dbbadb50",
+    "title": "[이시각헤드라인] 8월 20일 뉴스센터",
+    "summary": "■김윤덕·오세훈 회동…'용산공원 주택공급' 논의■ 김윤덕 국토교통부 장관과 오세훈 서울시장이 회동했습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260820113744rKX",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-08-20T11:37:45+09:00"
+  },
+  {
+    "id": "cda1f519-da34-5d7b-8bdd-723c74fa2be4",
+    "title": "시진핑 방미 앞두고 미중 AI 대화 조율 난항",
+    "summary": "트럼프 미국 대통령과 시진핑 중국 국가주석 시진핑 중국 국가주석의 다음 달 미국 방문을 앞두고 추진 중인 미중 인공지능 대화가 주관 부처조차 정하지 못한 채 난항을 겪고 있습니다.",
+    "reason": "AI 기술 변화는 산업 경쟁력과 일하는 방식에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260820112732wjq",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-20T11:27:32+09:00"
   }
 ]
