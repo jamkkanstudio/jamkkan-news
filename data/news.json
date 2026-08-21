@@ -86832,5 +86832,60 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-08-21T10:16:59+09:00"
+  },
+  {
+    "id": "2a98adb1-4244-553b-8a53-ce568a0a3bb5",
+    "title": "연구용 시신을 암시장에…하버드 의대, 유족 집단소송에 737억원 배상",
+    "summary": "앞서 시신 기증자 유족 47명은 하버드대 영안실 관리자로 일했던 세드릭 로지가 기증된 시신의 일부 부위를 암시장에 팔았다며 소송을 제기했습니다. 그는 연구나 교육에 사용된 시신을 화장하기 전, 일부 부위를 빼돌려 판매한 것으로 조사됐습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260821103644m4B",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-21T10:36:45+09:00"
+  },
+  {
+    "id": "18f793c1-04ca-5664-9ccf-dc82dd313ac7",
+    "title": "[속보] '노태우 비자금 의혹' 김옥숙 여사 자택 압수수색",
+    "summary": "노태우 전 대통령 일가의 비자금 은닉 의혹을 수사 중인 검찰이 노 전 대통령의 부인 김옥숙 여사 자택 등에 대한 강제수사에 착수했습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260821102927WX0",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-08-21T10:29:28+09:00"
+  },
+  {
+    "id": "8314650f-7c91-5414-b782-1eac2e728c9a",
+    "title": "[속보] 카카오AI는 AI·메신저·커머스…카카오 X, 테크핀·모빌리티 담당",
+    "summary": "연합뉴스TV 속보(CG) #카카오 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 윤솔(solemio@yna.co.kr)",
+    "reason": "AI 기술 변화는 산업 경쟁력과 일하는 방식에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260821102923y2t",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-08-21T10:29:24+09:00"
+  },
+  {
+    "id": "f394b76d-3ed7-544b-9672-52bc223d4284",
+    "title": "코스닥 급락에 매도 사이드카 발동…장중 800선 붕괴",
+    "summary": "코스닥 매도 사이드카 (PG)[김선영 제작] 일러스트[김선영 제작] 일러스트 한국거래소는 오늘 오전 10시 5분 코스닥 시장에 매도 사이드카가 발동돼 프로그램 매도 호가 효력이 일시 정지됐다고 밝혔습니다.",
+    "reason": "국내 증시 흐름은 투자심리와 기업 자금 조달 환경을 보여주는 지표입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260821102857pz1",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-08-21T10:28:57+09:00"
+  },
+  {
+    "id": "daef6254-3973-5877-8ad5-606dd2a49bee",
+    "title": "[속보] 카카오AI 대표에 정신아…카카오X 대표에 인베스트먼트 대표",
+    "summary": "연합뉴스TV 속보(CG) #카카오 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 윤솔(solemio@yna.co.kr)",
+    "reason": "AI 기술 변화는 산업 경쟁력과 일하는 방식에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260821102807HZi",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-08-21T10:28:09+09:00"
   }
 ]
