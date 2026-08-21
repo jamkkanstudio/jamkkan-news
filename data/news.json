@@ -87217,5 +87217,27 @@
     "category": "경제",
     "importance": 50,
     "created_at": "2026-08-21T12:01:07+09:00"
+  },
+  {
+    "id": "64438a70-862d-5c73-9d9e-8ccf7143e007",
+    "title": "대화 제안 후 북 미사일 도발…미 \"동맹 방어 전념할 것\"",
+    "summary": "북미 대화의 재개 가능성이 제기된 상황에서 북한은 미사일 발사로 답했는데요. 북한의 도발에 미국은 동맹국 방어에 계속 전념할 거라고 강조했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH2026082112430430Y",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-21T12:43:04+09:00"
+  },
+  {
+    "id": "98ab321a-b3ad-56f6-94a2-f650066defaa",
+    "title": "[속보] 법사위, 조희대·노경필 증인 출석요구 범여권 주도 의결…국힘 반발",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 강은나래(rae@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260821124110UEa",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-21T12:41:13+09:00"
   }
 ]
