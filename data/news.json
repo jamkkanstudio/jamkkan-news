@@ -89406,5 +89406,27 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-08-22T13:08:10+09:00"
+  },
+  {
+    "id": "65f284c0-dd67-51a9-9b06-42048b3358d5",
+    "title": "[속보] 이 대통령, 28일 與 의원들 청와대 초청해 오찬",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 성승환(ssh82@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260822131812Pnk",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-22T13:18:13+09:00"
+  },
+  {
+    "id": "d6b31c4c-f3b6-5b64-b90a-700514a79972",
+    "title": "[토요와이드] 임명권 vs 제청권…서면 제청 '충돌'",
+    "summary": "조희대 대법원장의 대법관 서면 제청을 둘러싼 후폭풍이 이어지고 있습니다. 청와대가 대법관 후보 서면 제청을 두고 헌정사에서 전례 없는 일방적인 통보였다며, 사안을 엄중하게 보고 있다고 재차 밝혔습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260822130710w9i",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-22T13:07:14+09:00"
   }
 ]
