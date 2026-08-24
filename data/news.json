@@ -92717,5 +92717,27 @@
     "category": "경제",
     "importance": 50,
     "created_at": "2026-08-24T15:36:33+09:00"
+  },
+  {
+    "id": "a6f6f1f6-bb1c-5e76-bc48-4a432d68f124",
+    "title": "[속보] 靑 \"이 대통령, 정성호 법무장관 사의 수리...후속 인선 신속히\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김민아(goldmina@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260824160642uQl",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-24T16:06:43+09:00"
+  },
+  {
+    "id": "cb56408f-5af2-5ac9-950f-a43219249f40",
+    "title": "일본, 곰 잡으려고 출국세 3배 올렸나…\"관광 외 용도에 사용\"",
+    "summary": "오늘(24일) 아사히신문에 따르면 방일 외국인의 관광 환경 정비를 위한 재원을 마련하려고 도입한 출국세가 곰 대책이나 벚나무 해충 방제 사업 등에 쓰이고 있는 것으로 나타났습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202608241605006jW",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-24T16:05:01+09:00"
   }
 ]
