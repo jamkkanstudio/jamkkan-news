@@ -91782,5 +91782,38 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-08-24T09:49:12+09:00"
+  },
+  {
+    "id": "9aa37986-0d05-58ef-aad2-bc328f124a6f",
+    "title": "[속보] 국힘 최고위, '당협 직선제' 안건 결론 못 내",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 강은나래(rae@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260824100449jom",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-24T10:04:49+09:00"
+  },
+  {
+    "id": "66ea58c4-6b23-5814-80a5-884d2c9c71e3",
+    "title": "전장연, 지하철 시위 입장 발표…서울시의회 민주당과 '대타협 선언'",
+    "summary": "전국장애인차별철폐연대(전장연)와 서울시의회 더불어민주당이 오늘(24일) 오전 '장애인 권리보장을 위한 사회적 대타협 선언 기자회견'을 개최합니다. 이 자리에서 전장연의 '휠체어 지하철 탑승 시위'를 종결한다는 내용이 발표될지 주목됩니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260824100419ynP",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-08-24T10:04:19+09:00"
+  },
+  {
+    "id": "77c9f7f3-175a-5979-bfb0-0c9a356828bc",
+    "title": "국립경주박물관 주차장 첫 유료화…9월부터 '하루 최대 1만원'",
+    "summary": "국립경주박물관 주차장이 9월부터 유료로 바뀝니다. 하루 최대 부과되는 요금은 1만 원입니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260824100035rnm",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-08-24T10:00:37+09:00"
   }
 ]
