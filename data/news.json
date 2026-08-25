@@ -94543,5 +94543,60 @@
     "category": "경제",
     "importance": 50,
     "created_at": "2026-08-25T09:18:57+09:00"
+  },
+  {
+    "id": "1d6104b0-ddcf-58c9-82af-34a63ce450ef",
+    "title": "'성남 보복살인' 피의자 신상 공개…52살 김상수",
+    "summary": "네, 헤어진 연인의 스토킹 신고에 앙심을 품고 '보복 살인'을 벌인 50대 남성의 신상정보가 공개됐습니다. 경찰은 지난 18일 피의자 신상정보 공개 심의위원회를 열고 김상수의 신상정보를 공개하기로 의결했습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260825093549wbX",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-08-25T09:35:50+09:00"
+  },
+  {
+    "id": "34be5835-5f1b-54ab-818b-a437d06742f7",
+    "title": "日 의원단 베이징 방문…10개월 만에 중·일 대화 채널 복원 시도",
+    "summary": "2025년 일중의원연맹 방중단 사진(자료) 일본 의원단의 베이징 방문은 다카이치 사나에 총리의 지난해 대만 유사시 개입 가능성 발언 이후 중·일 관계가 급격히 냉각된 지 약 10개월 만입니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260825093332rte",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-25T09:33:33+09:00"
+  },
+  {
+    "id": "004b56cc-53ec-5086-ae3b-e1bb65fdcb1f",
+    "title": "[속보] 당정 \"지방국립대 등록금 전액 지원…전기차 보조금 역대 최대\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 강은나래(rae@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260825093306jjW",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-25T09:33:08+09:00"
+  },
+  {
+    "id": "7c0f96b0-d9ed-5aee-b1ca-90ea71aa567b",
+    "title": "[속보] 당정 \"내년 예산, 3대 메가·AI·미래성장·청년·양극화 대응\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 강은나래(rae@yna.co.kr)",
+    "reason": "AI 기술 변화는 산업 경쟁력과 일하는 방식에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR2026082509330196R",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-25T09:33:01+09:00"
+  },
+  {
+    "id": "7415af3a-1605-5d4e-aa47-1f3912dc7669",
+    "title": "\"美, 정상회담 전 중국에 '과잉생산 관세 7.5%' 부과 예정\"",
+    "summary": "오는 9월 24일 미중 정상회담을 앞두고 미국이 중국에 '과잉생산 관세' 7.5%를 부과할 예정이라고 블룸버그 통신이 익명의 소식통들을 인용해 현지시간 25일 보도했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260825092931U9h",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-25T09:29:33+09:00"
   }
 ]
