@@ -97865,5 +97865,60 @@
     "category": "경제",
     "importance": 50,
     "created_at": "2026-08-26T09:57:50+09:00"
+  },
+  {
+    "id": "309723b4-03b0-52bb-a3a2-0af2dcff10a2",
+    "title": "트럼프, 캐나다에 도발…\"온타리오호, 아메리카호로 변경 검토\"",
+    "summary": "트럼프 대통령은 현지시간 25일 소셜미디어 트루스소셜에 \"온타리오주와 더는 사업을 많이 할 것 같지 않아 온타리오호의 이름을 아메리카호로 변경하는 방안을 진지하게 검토하고 있다\"고 말했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH202608261014526Fi",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-26T10:14:54+09:00"
+  },
+  {
+    "id": "92cfa7ae-a5b0-52b0-92d1-a471ca851a0d",
+    "title": "[현장연결] 주택 공급 접점 찾나…김윤덕·오세훈 '2차 회동'",
+    "summary": "김윤덕·오세훈 면담 시작…용산공원 주택 공급 논의 지난주 이어 오늘 2차 회동…엿새 만에 마주 앉아",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260826101400wPH",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-08-26T10:14:02+09:00"
+  },
+  {
+    "id": "b63dbaba-7254-5db2-a559-77499b7c14fd",
+    "title": "호르무즈 임시 항로 개설…러 매체 \"휴전 합의\"",
+    "summary": "호르무즈 해협 연안국인 이란과 오만이 안전한 항행을 재개하기 위해 '임시 항로'를 공동 개설하고 기뢰를 제거해 나가기로 했습니다. 일각에서는 미국과 이란의 휴전 합의 발표가 임박했다는 주장도 나왔습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260826101246AFP",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-26T10:12:47+09:00"
+  },
+  {
+    "id": "e6ec0a02-ecbd-524e-a5ad-b4b533abb328",
+    "title": "[속보] 장동혁 \"남은 임기 1년 새출발…제대로 싸울 인재들로 채울 것\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 강은나래(rae@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202608261009146m5",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-26T10:09:17+09:00"
+  },
+  {
+    "id": "c2e79742-03fa-52af-90bb-7b7b23040d98",
+    "title": "러시아 군용기 또 KADIZ 무단진입…공군 전투기 출격해 대응",
+    "summary": "한국방공식별구역(KADIZ) 침범 (PG) 러시아 군용기가 한국 방공식별구역(KADIZ·카디즈)에 또다시 무단 진입해 우리 공군 전투기가 출격해 대응했던 것으로 오늘(26일) 알려졌습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260826100910ex4",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-26T10:09:13+09:00"
   }
 ]
