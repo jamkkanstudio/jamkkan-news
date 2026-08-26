@@ -99856,5 +99856,16 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-08-26T21:47:52+09:00"
+  },
+  {
+    "id": "0211aa1d-27f3-56fb-8933-e6325f7938fc",
+    "title": "[뉴스특보] 네팔 홍수로 한국인 8명 실종·10명 고립",
+    "summary": "네팔 홍수로 한국인 8명 실종·10명 고립 로이터 \"네팔 홍수로 여행객 384명 실종\"",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260826222654TiY",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-26T22:26:56+09:00"
   }
 ]
