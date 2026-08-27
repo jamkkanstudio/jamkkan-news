@@ -100846,5 +100846,60 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-08-27T09:39:26+09:00"
+  },
+  {
+    "id": "fac7309e-b430-5453-8098-dea4b8996efa",
+    "title": "[속보] 한은, 올해 성장률 전망치 2.6%→3.3%로 상향",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김주영(ju0@yna.co.kr)",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260827095353OGo",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-08-27T09:53:53+09:00"
+  },
+  {
+    "id": "2fd7bd33-49aa-5ff4-8bff-ea1216602cd6",
+    "title": "'트럼프 관세'에 베트남 웃었다…중국·멕시코 제치고 대미 흑자국 1위",
+    "summary": "베트남 경제 중심지인 남부 호찌민시 앞바다를 오가는 컨테이너선 베트남이 올해 상반기 중국과 멕시코 등을 제치고 미국을 상대로 한 상품 무역흑자 순위 1위 국가로 올라섰습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260827095231zEN",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-27T09:52:32+09:00"
+  },
+  {
+    "id": "0c7d20cc-3af4-5fe9-b25d-f1bca0fdd42c",
+    "title": "[속보] 한국은행, 기준금리 0.25%p 인상…2연속 인상해 3.0%로",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 이다현(ok@yna.co.kr)",
+    "reason": "금리 변화는 대출 이자와 부동산·주식시장에 직접적인 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260827095229lrg",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-08-27T09:52:29+09:00"
+  },
+  {
+    "id": "2629e796-3d03-5711-b79f-4c3b2880adcb",
+    "title": "두산·남동발전 현지대응팀 급파…\"구조 총력\"",
+    "summary": "임직원들이 실종된 기업들도 비상 대응 체계를 가동하고 현지에 대응팀을 급파합니다. 지금까지 연락이 두절된 한국인은 총 9명으로 두산에너빌리티 관련 인물은 6명, 남동발전 직원은 3명입니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260827094916uV7",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-08-27T09:49:17+09:00"
+  },
+  {
+    "id": "02efaf33-4adb-5adf-b504-d99c09849d82",
+    "title": "유럽 폭염에 탁구공만한 감자…'감자튀김 종주국' 벨기에 울상",
+    "summary": "자잘한 크기의 벨기에 감자[AFP 연합뉴스][AFP 연합뉴스] 현지시간 26일 유로뉴스에 따르면 벨기에 감자 농가들은 올해 감자 작황이 부진해 자국 명물인 감자튀김을 만들 감자가 부족할 수 있다고 경고했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260827094912ypd",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-27T09:49:13+09:00"
   }
 ]
