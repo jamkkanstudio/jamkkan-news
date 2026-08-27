@@ -101088,5 +101088,38 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-08-27T10:28:31+09:00"
+  },
+  {
+    "id": "3d9c1177-3229-58d8-b6a0-71d47b294f43",
+    "title": "차량 뒤덮은 립스틱 자국...SNS 조회수 올리려다 벌금형",
+    "summary": "립스틱 입술 자국으로 뒤덮인 차량[출처=NDTV][출처=NDTV] 흰색 차량을 여성 립스틱 입술 자국으로 뒤덮은 채 도로를 달린 인도의 한 남성이 경찰에 적발돼 벌금을 물고 경찰서 마당에서 차를 닦는 망신까지 당했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202608271041573Ci",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-08-27T10:42:00+09:00"
+  },
+  {
+    "id": "962c7fc6-188c-5aef-b2bf-9ca6cdca6375",
+    "title": "[속보] 금통위 \"향후 물가·경기 등 점검하며 추가 인상 속도 결정\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 이다현(ok@yna.co.kr)",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260827103938XFw",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-08-27T10:39:38+09:00"
+  },
+  {
+    "id": "8e95cbc5-310b-5637-80d0-13f48d9ac3f0",
+    "title": "[속보] 금통위원 6명 '기준금리 인상' 찬성…1명 동결 의견",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 이다현(ok@yna.co.kr)",
+    "reason": "금리 변화는 대출 이자와 부동산·주식시장에 직접적인 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260827103809ERj",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-08-27T10:38:11+09:00"
   }
 ]
