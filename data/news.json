@@ -104234,5 +104234,27 @@
     "category": "경제",
     "importance": 50,
     "created_at": "2026-08-28T08:58:46+09:00"
+  },
+  {
+    "id": "cea36c84-9ece-529e-b890-5b73e46365e7",
+    "title": "[속보] 한미일, 내달 7~11일 '프리덤 에지' 군사훈련",
+    "summary": "합참이 다음 달 7일(월)부터 11일(금)까지 한미일 3국이 제주 동·남방 공해상에서 '26년 프리덤 에지' 훈련을 시행한다고 밝혔습니다. 자세한 내용은 이어지는 뉴스에서 전해드리겠습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH2026082809095180K",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-28T09:09:51+09:00"
+  },
+  {
+    "id": "1bff40f7-7258-5c8c-b417-d52ec077a92a",
+    "title": "[속보] 한미일, 내달 7~11일 다영역 훈련 '프리덤 에지' 실시",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 지성림(yoonik@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260828090706TZu",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-28T09:07:06+09:00"
   }
 ]
