@@ -107072,5 +107072,27 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-08-29T13:48:34+09:00"
+  },
+  {
+    "id": "941f5fcc-91dd-53e4-8dd6-966f2cf73a9d",
+    "title": "안양스마T움축제…온가족 즐기는 미래 기술",
+    "summary": "경기 안양에서는 로봇과 드론 등 미래 기술을 한자리에서 즐길 수 있는 축제가 한창인데요. 지난 2002년 안양사이버축제로 시작한 안양스마T움축제는 올해로 23회를 맞은 시민 참여형 미래 기술 축제입니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260829145615MVj",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-08-29T14:56:16+09:00"
+  },
+  {
+    "id": "889e0f78-4aee-5528-8602-7c80e35e7bee",
+    "title": "[속보] 정부 \"네팔 구호대 수용 새 소식 없어…동의 시 즉시 투입\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 강은나래(rae@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260829144721bkx",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-08-29T14:47:22+09:00"
   }
 ]
