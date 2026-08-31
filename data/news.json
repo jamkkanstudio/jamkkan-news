@@ -112616,5 +112616,38 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-09-01T08:27:53+09:00"
+  },
+  {
+    "id": "c71ab278-9f86-51b1-b749-ea1e8915c7de",
+    "title": "[뉴스초점] 한국인 근무 발전소서 시신 발견…드론·헬기 수색",
+    "summary": "네팔 대홍수로 연락이 끊긴 한국인 9명을 찾기 위해 수색 작업이 진행되고 있지만 안타깝게도 아직 기대했던 소식은 없습니다. 이런 가운데 네팔군은 한국인 실종자 9명이 근무했던 발전소 터널에서 시신 한 구를 수습했다고 밝혔는데요.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260901085532OJX",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-01T08:55:34+09:00"
+  },
+  {
+    "id": "a230072a-39c6-5899-906a-00292c2f6b1a",
+    "title": "[속보] 김용범 청와대 정책실장 사퇴…靑 \"어제 사의 표명\"",
+    "summary": "\"김용범 정책실장 어제 사의 표명\" \"이 대통령, 오늘 김용범 사표 수리\" 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 이용은(NEWthing@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260901085410NgI",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-01T08:54:11+09:00"
+  },
+  {
+    "id": "5c6daf50-a48d-5983-ae2e-6e9da2f7e89d",
+    "title": "[속보] 김용범 청와대 정책실장 사퇴…靑 \"어제 사의 표명\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 팽재용(paengman@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260901085019CmV",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-01T08:50:22+09:00"
   }
 ]
