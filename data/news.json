@@ -112649,5 +112649,49 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-09-01T08:50:22+09:00"
+  },
+  {
+    "id": "43298ae3-48ba-5a57-ab0d-d40812cae985",
+    "title": "[속보] 8월 무역수지 347.5억달러 흑자…3달 연속 300억달러 ↑",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 정다예(yeye@yna.co.kr)",
+    "reason": "환율 변화는 수입 물가와 해외 투자, 기업 실적에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260901090300Vw7",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-09-01T09:03:02+09:00"
+  },
+  {
+    "id": "a388e773-d0b5-5707-b121-d1bd7f14975d",
+    "title": "[속보] 반도체 8월 수출 466.5억달러…역대 최대",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 정다예(yeye@yna.co.kr)",
+    "reason": "환율 변화는 수입 물가와 해외 투자, 기업 실적에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260901090127rdS",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-09-01T09:01:28+09:00"
+  },
+  {
+    "id": "e8e2febd-a28e-5bb9-8791-d1c96487ed4a",
+    "title": "8월 수출 982.5억달러…68.7%↑·역대 3위 실적",
+    "summary": "산업통상부는 8월 수출액이 982억 5천만달러로 지난해 같은 달보다 68.7% 증가했다고 밝혔습니다. 8월 전체 수출은 7월에 비해 소폭 감소했지만 반도체 수출은 466억 5천만달러로 역대 최대 실적을 경신했습니다.",
+    "reason": "환율 변화는 수입 물가와 해외 투자, 기업 실적에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260901090047s2J",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-09-01T09:00:48+09:00"
+  },
+  {
+    "id": "5df45652-819f-5f1c-be1d-1304fb9c9555",
+    "title": "'증조부 친일 논란' 하영, '중증외상센터' 후속편 하차",
+    "summary": "하영은 '중증외상센터' 시즌1에서 천장미 간호사 역을 맡아 주목받았으며, 최근 '이런 엿같은 사랑' 홍보를 위해 여러 방송에서 4대째 의사 집안임을 밝혔다가 증조부 안상호의 친일 행적이 드러나며 논란이 일었습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260901090023ecM",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-09-01T09:00:23+09:00"
   }
 ]
