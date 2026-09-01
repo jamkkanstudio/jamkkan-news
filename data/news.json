@@ -113936,5 +113936,60 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-09-01T14:42:31+09:00"
+  },
+  {
+    "id": "72d61218-8f3b-5b93-be73-5bf03a2a3303",
+    "title": "[속보] 靑 \"비서실장·각 수석 역할중…정책실장 공백 없을 것\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 성승환(ssh82@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260901145607zxu",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-01T14:56:07+09:00"
+  },
+  {
+    "id": "6bab5d2e-1518-5599-a899-f44e8820e1af",
+    "title": "[속보] 靑, 김용범 사퇴에 \"원활한 국정동력 확보 차원\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 성승환(ssh82@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260901145553h2b",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-01T14:55:55+09:00"
+  },
+  {
+    "id": "92b36e3a-6c8d-58e5-93b7-02631b2e6e9f",
+    "title": "관람객 위장해 '637개 다이아 목걸이' 훔쳐…용의자 추적",
+    "summary": "도난 당한 다이아몬드 목걸이.[출처=CNN][출처=CNN] 오스트리아 경찰은 보석 전시회 관람객으로 위장해 목걸이를 훔친 두 남성을 추적하고 있다고 밝혔습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260901145151MIP",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-01T14:51:51+09:00"
+  },
+  {
+    "id": "dd667652-5ebf-5b6f-8ba9-9bb296ddd19a",
+    "title": "외국인 국민연금 심사 강화…국내 실거주 기간만 추납 가능",
+    "summary": "국민연금공단 서울북부지역본부 종합상담실 복지부는 우선 외국인 추납 요건 중 하나인 '국내 거주기간'을 외국인 등록 및 체류자격유지 기간이 아닌 '국내 실거주 기간'으로 강화하도록 국민연금공단 지침을 개정해 시행합니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260901144715F1C",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-09-01T14:47:17+09:00"
+  },
+  {
+    "id": "6cd5fce1-9773-5a39-a39e-4c5e39a720f7",
+    "title": "비거주 1주택 종부세 결국 원복…기본공제 9억→12억",
+    "summary": "정부가 비거주 1세대 1주택자의 종합부동산세 기본공제를 현행 12억원으로 유지하기로 했습니다. ◇ 비거주 1주택 공제 축소 철회…현행 12억 유지",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260901142134wGw",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-09-01T14:21:36+09:00"
   }
 ]
