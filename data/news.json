@@ -114970,5 +114970,27 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-09-01T19:53:00+09:00"
+  },
+  {
+    "id": "5b8edc74-d9cd-5ab6-bd6a-c5f7d591fbc8",
+    "title": "국정원 \"북미 간 대화 징후…김주애, 후계자 내정 단계\"",
+    "summary": "국가정보원이 북미 정상회담은 어느 때라도 가능하다고 분석했습니다. 북미 간 접촉이 구체적으로 확인된 건 아니지만, 대화의 징후는 있다는 설명인데요.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260901200535FAB",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-01T20:05:37+09:00"
+  },
+  {
+    "id": "a13e026e-9e29-5a72-a7bf-5efdff77f55b",
+    "title": "[초대석] 821조 '슈퍼 예산'…미래대응기금 162조 신설",
+    "summary": "정부가 내년도 예산안을 발표했습니다. 820조 9천억 원, 역대급 규모입니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH202609012004056PE",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-09-01T20:04:07+09:00"
   }
 ]
