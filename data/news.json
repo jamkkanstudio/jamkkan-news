@@ -112693,5 +112693,38 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-09-01T09:00:23+09:00"
+  },
+  {
+    "id": "1386eeef-0dd5-5d2b-81c9-0cc9e59173c1",
+    "title": "김용범 청와대 정책실장 사의…이 대통령 수리",
+    "summary": "김용범 청와대 정책실장이 사퇴했습니다. 청와대 강유정 수석대변인은 오늘(1일) \"김 실장이 어제 사의를 표명했으며, 이재명 대통령은 오늘 사표를 수리했다\"고 밝혔습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260901091500AS9",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-01T09:15:01+09:00"
+  },
+  {
+    "id": "bee2205f-22eb-5359-9a6d-83a79b20921e",
+    "title": "김용범 청와대 정책실장 사의…이 대통령 사표 수리",
+    "summary": "김용범 정책실장 사퇴김용범 정책실장 사퇴 사진은 지난 4월 춘추관에서 브리핑하는 김용범 정책실장 모습.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260901090913ywM",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-01T09:09:14+09:00"
+  },
+  {
+    "id": "19092c4f-d3a7-5b59-9365-4181ae160f13",
+    "title": "[속보] 8월 수출 982.5억달러…68.7% 증가",
+    "summary": "8월 수출 역대 3위 실적...반도체 역대 최대 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 이용은(NEWthing@yna.co.kr)",
+    "reason": "환율 변화는 수입 물가와 해외 투자, 기업 실적에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH202609010907323qJ",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-09-01T09:07:33+09:00"
   }
 ]
