@@ -117973,5 +117973,27 @@
     "category": "경제",
     "importance": 50,
     "created_at": "2026-09-02T20:09:22+09:00"
+  },
+  {
+    "id": "a641064a-f00d-57ec-a76f-e5240036b30e",
+    "title": "[영상구성] 두 달 아기 무사히 구조…한국 구조대는 걸어서 현장으로",
+    "summary": "두 달 된 아기와 어머니 홍수 현장에서 무사히 구조 구조견과 함께 현지 도착한 한국 구조팀",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260902203140RYe",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-02T20:31:41+09:00"
+  },
+  {
+    "id": "03fe958b-f9ca-5560-b175-dac30a8441e9",
+    "title": "[이시각헤드라인] 9월 2일 뉴스리뷰",
+    "summary": "■네팔 긴급구호대 \"오늘 현장으로\"…첨단장비 투입■ 베이스캠프는 사고 지점으로부터 약 70km 떨어진 바타르 지역에 마련했습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260902203043dJT",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-09-02T20:30:46+09:00"
   }
 ]
