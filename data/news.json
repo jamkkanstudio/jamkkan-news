@@ -119436,5 +119436,27 @@
     "category": "경제",
     "importance": 50,
     "created_at": "2026-09-03T11:17:17+09:00"
+  },
+  {
+    "id": "bd9c2eff-951e-5369-9dce-65d1621cba93",
+    "title": "[속보] '사기적 부정거래' 방시혁 하이브 의장 송치",
+    "summary": "경찰이 자본시장법상 사기적 부정거래 혐의를 받는 방시혁 하이브 의장과 경영진 등 5명을 검찰에 송치했습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260903120335SNt",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-09-03T12:03:36+09:00"
+  },
+  {
+    "id": "4b4bf49a-55ec-55f8-94f6-c632eb2ae039",
+    "title": "\"공홈인 줄 알았다가 수수료 폭탄\"…ESTA 사설 대행 사이트 주의보",
+    "summary": "미국 ESTA 공식 홈페이지가 아닌 가입 대행 사이트 미국, 캐나다, 호주 등 비자 면제 국가 방문 시 필수인 전자여행허가(ETA·ESTA)를 사설 대행 사이트에서 신청했다가 과도한 수수료를 내는 피해가 잇따르고 있어 주의가 요구됩니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260902165829beC",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-09-03T12:00:03+09:00"
   }
 ]
