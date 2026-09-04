@@ -123990,5 +123990,38 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-09-05T04:06:30+09:00"
+  },
+  {
+    "id": "3fc10030-b9a9-56b3-8211-7bc1dcd69bfc",
+    "title": "[속보] 트럼프 \"특사단, 우크라 전쟁 끝낼 제안 가져갈 것\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 최영범(ybchoi@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260905041343SQF",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-05T04:13:44+09:00"
+  },
+  {
+    "id": "bd22ba69-f6ef-5e9a-bc54-5f5b07668bf7",
+    "title": "[속보] 트럼프 \"시진핑 부부, 이달 24일 美도착…국빈만찬 열 것\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 최영범(ybchoi@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202609050411590XZ",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-05T04:12:00+09:00"
+  },
+  {
+    "id": "e3d6c2fb-4a37-5654-9c76-5a15d01892f4",
+    "title": "[속보] 트럼프 \"이란 '곡괭이산' 곧 공격할 수도 있다\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 최영범(ybchoi@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260905041028STp",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-05T04:10:29+09:00"
   }
 ]
