@@ -125266,5 +125266,27 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-09-05T18:06:55+09:00"
+  },
+  {
+    "id": "680bf3bd-8eb0-59db-b973-91660e9b7b87",
+    "title": "\"윷놀이를 세계 문화유산으로\"…경기전통놀이한마당 개최",
+    "summary": "우리나라 고유의 놀이문화인 '윷놀이'를 알리기 위한 행사가 경기도 수원에서 열렸습니다. \"유네스코 등재를 위해 오랫동안 윷놀이를 해왔습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260905181747QbQ",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-09-05T18:17:47+09:00"
+  },
+  {
+    "id": "df098154-0793-5488-8040-caffc9c2693e",
+    "title": "[속보]  긴급구호대 \"위어댐 인근 터널서 국적 불명 사체 1구 추가 수습\"",
+    "summary": "연합뉴스TV 속보(CG) #네팔 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 신새롬(romi@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260905181001EmL",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-05T18:10:02+09:00"
   }
 ]
