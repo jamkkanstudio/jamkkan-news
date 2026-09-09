@@ -136288,5 +136288,27 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-09-10T03:12:51+09:00"
+  },
+  {
+    "id": "8e14a003-45e1-50dc-9fdb-a8ffcc77c356",
+    "title": "[속보] 트럼프 \"이란전쟁, 중간선거 직후 끝날 것\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김민아(goldmina@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260910033649ak8",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-10T03:36:50+09:00"
+  },
+  {
+    "id": "db6fb5b1-85e4-59b1-998b-7d3d0350a0c9",
+    "title": "美 CSIS \"트럼프 핵시설 공격 언급 이란 '곡괭이산' 건설 활동 급증\"",
+    "summary": "이란의 지하 핵시설로 추정되는 '곡괭이산'에서 올해 들어 건설 활동이 급증했다는 미국 싱크탱크의 분석이 나왔습니다. 해당 산은 도널드 트럼프 미국 대통령이 여러 차례 '핵시설' 타격 가능성을 언급한 곳입니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260910033610WZH",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-10T03:36:13+09:00"
   }
 ]
