@@ -143889,5 +143889,60 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-09-13T10:30:08+09:00"
+  },
+  {
+    "id": "18636ab8-6dc1-5117-a216-4ca3b4ee9503",
+    "title": "KB발 금융권 '세대교체 바람' 번지나…임기 만료 앞둔 5대 금융 CEO만 54명",
+    "summary": "양종희 KB금융지주 회장의 연임이 불발되면서 임기 만료를 앞둔 금융권 최고경영자(CEO)들의 거취에도 관심이 쏠립니다. 작년 2월 3일 취임해 첫 2년 임기 만료를 앞두고 있습니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260913104609DTs",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-09-13T10:46:10+09:00"
+  },
+  {
+    "id": "1e7b0270-496f-5929-a28b-99f6b0a6a366",
+    "title": "환율 급락에 반도체 이익 전망도 하락…두달 새 21조 증발",
+    "summary": "1,500원 넘던 환율이 두 달 만에 1,340원대로 급락하면서 수출 비중이 절대적인 반도체 기업들의 이익 전망이 꺾이고 있습니다. 3분기 영업익 전망치도 당초 기대됐던 양사 합산 200조 달성이 쉽지 않을 것으로 예상됩니다.",
+    "reason": "환율 변화는 수입 물가와 해외 투자, 기업 실적에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260913104419D53",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-09-13T10:44:19+09:00"
+  },
+  {
+    "id": "dc995ff4-5472-5ba8-87f6-dbc1f8bc678b",
+    "title": "[속보] 용혜인, 11시 반 국회 소통관서 기자회견 예고",
+    "summary": "용혜인, 사흘 만에 다시 기자회견…거취 언급 주목 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 이용은(NEWthing@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260913104408aIB",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-13T10:44:10+09:00"
+  },
+  {
+    "id": "30cab738-643a-5150-b8ee-1f31072a873d",
+    "title": "[속보] 용혜인 후보자, 오전 11시30분 국회 기자회견…메시지 주목",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 팽재용(paengman@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260913104158dL3",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-13T10:42:00+09:00"
+  },
+  {
+    "id": "77c31d9d-a95d-54ca-85f5-91731eb6006c",
+    "title": "韓 OECD 선행지수 75개월 만에 세계 1위…상승폭은 축소",
+    "summary": "경제협력개발기구(OECD)가 발표하는 한국의 경기선행지수(CLI)가 19개월 연속 상승해 지난달 세계에서 가장 높은 수준을 기록했습니다. 데이터처 선행지수 순환변동치의 전월차도 6월 0.9p에서 7월 0.4p로 줄었습니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260913102703Ghd",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-09-13T10:27:04+09:00"
   }
 ]
