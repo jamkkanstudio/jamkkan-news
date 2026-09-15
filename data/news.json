@@ -148685,5 +148685,16 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-09-16T00:42:53+09:00"
+  },
+  {
+    "id": "45fe856e-f9ef-5c3d-9c67-eac1c9a1eb86",
+    "title": "리비아 국영석유회사 \"3개 유전 가동 중단…불가항력 선언 가능성도\"",
+    "summary": "NOC에 따르면 하마다, 타하라, NC5 유전 가동이 중단됐는데, 해당 밸브가 계속 닫혀 있거나 다른 유전에서도 이와 유사한 강제 가동 중단이 발생할 경우 불가항력(force majeure)을 선언할 수 있다고 전했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260916010807YfZ",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-16T01:08:09+09:00"
   }
 ]
