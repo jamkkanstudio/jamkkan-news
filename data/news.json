@@ -152216,5 +152216,27 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-09-17T08:30:31+09:00"
+  },
+  {
+    "id": "fc4e43f8-b74a-5c2a-a1c0-9bc2bfef480a",
+    "title": "북 김여정, 비핵화 촉구에 \"핵보유 지위 절대적\"",
+    "summary": "북한 김여정 노동당 총무부장이 국제원자력기구(IAEA) 총회의 북한 비핵화 촉구에 \"핵보유국 지위는 그 무엇으로도 되돌릴 수 없다\"며 핵보유 정당성을 거듭 강조했습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260917084401uuX",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-17T08:44:01+09:00"
+  },
+  {
+    "id": "529fe4f6-58ea-59e4-b838-2e780344d4a7",
+    "title": "미국 워싱턴DC 대표 경기장에 LG전자 차세대 디스플레이",
+    "summary": "'캐피털 원 아레나'에 LG전자 디스플레이 솔루션이 적용된 이미지 LG전자는 미국 워싱턴DC의 대표 경기장인 캐피털 원 아레나에 차세대 디스플레이를 공급합니다",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260917083701LOH",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-09-17T08:37:04+09:00"
   }
 ]
