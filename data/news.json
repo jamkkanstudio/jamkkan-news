@@ -152469,5 +152469,27 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-09-17T09:18:15+09:00"
+  },
+  {
+    "id": "6c63ae19-17f9-5349-83b3-cad1ca327625",
+    "title": "[현장연결] 조현, 미 워싱턴DC 출국…내일 한미외교장관 회담",
+    "summary": "\"한반도 문제·지역 문제 한미 간에 협의\" \"대미투자 논의는 절차적 문제 확인 중\"",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260917100144UCA",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-17T10:01:45+09:00"
+  },
+  {
+    "id": "92bc7840-b420-561a-8eac-b0ec9d48915f",
+    "title": "SK하이닉스, 협력사 구성원·가족 감사 초청행사…3만명 초청",
+    "summary": "SK하이닉스, 협력사 구성원·가족 초청행사 'ThanksFULL Day' 개최[출처 = SK하이닉스][출처 = SK하이닉스] SK하이닉스는 다음달 15일 과천 서울랜드에서 협력사 구성원·가족과 함께 'ThanksFULL Day'를 연다고 밝혔습니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260917090737SJT",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-09-17T10:00:03+09:00"
   }
 ]
