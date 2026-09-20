@@ -160125,5 +160125,27 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-09-20T14:19:33+09:00"
+  },
+  {
+    "id": "3f892165-b15e-50d7-8d02-b00ebbc4bf2c",
+    "title": "'뺑소니 후 술타기' 이재룡 첫 공판 연기…11월 13일 열려",
+    "summary": "서울 강남에서 뺑소니 사고를 낸 혐의를 받는 배우 이재룡(62) 씨의 첫 공판이 오는 11월로 연기됐습니다. 이씨는 지난 3월 6일 밤 서울 강남구 청담역 인근에서 차를 몰다가 중앙분리대를 들이받고 달아난 혐의로 지난달 불구속 기소됐습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260920151625TtQ",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-09-20T15:16:26+09:00"
+  },
+  {
+    "id": "45a887fd-9a7b-5fdc-89ea-25c9884b41aa",
+    "title": "[속보] 합참 \"북한, 동해상으로 미상 발사체 발사\"…8일 만에 도발",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 지성림(yoonik@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260920151221VjK",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-20T15:12:22+09:00"
   }
 ]
