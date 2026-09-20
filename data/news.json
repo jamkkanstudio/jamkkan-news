@@ -160334,5 +160334,38 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-09-20T16:18:14+09:00"
+  },
+  {
+    "id": "84ce41c2-e432-5051-82eb-9040b4b75c88",
+    "title": "中·北 신압록강대교 대형 화물차 첫 포착…개통 임박 관측",
+    "summary": "신압록강대교를 건너는 대형 트럭(中 SNS) 대북 소식통은 오늘(20일) 오전 덮개를 씌운 대형 트럭들이 단둥에서 신의주 쪽으로 건너갔다고 전했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202609201637432Sy",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-20T16:37:43+09:00"
+  },
+  {
+    "id": "8e54626f-1bf9-55d4-b042-6c80b63f3462",
+    "title": "靑, 北 탄도미사일에 긴급회의…\"안보리 결의 위반, 즉각 중단\"",
+    "summary": "청와대[촬영 이정훈] 2025.12.8[촬영 이정훈] 2025.12.8 청와대가 오늘(20일) 북한의 단거리 탄도미사일 발사와 관련해 긴급안보상황점검회의를 열었습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260920163331Y9H",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-20T16:33:33+09:00"
+  },
+  {
+    "id": "51d6a2c0-5cc2-5c75-ac6d-10dd38f5966a",
+    "title": "[속보] 이준석, 아시안게임 테크볼 초대 '금메달'",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 조한대(onepunch@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260920162813Pvz",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-20T16:28:15+09:00"
   }
 ]
