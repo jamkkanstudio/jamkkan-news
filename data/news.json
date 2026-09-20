@@ -161203,5 +161203,60 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-09-21T08:45:56+09:00"
+  },
+  {
+    "id": "09883110-4a23-5318-8f16-10c5b94acf67",
+    "title": "리얼미터 \"이 대통령 국정 지지도 34.8%…10주 만에 반등\"",
+    "summary": "\"대국민 기자회견 통해 국정 쇄신 의지 강조하며 상승 전환\" 이재명 대통령에 대한 국정 운영 지지도가 10주 만에 반등에 성공햇습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260921085741x90",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-21T08:57:41+09:00"
+  },
+  {
+    "id": "d99e166a-ff44-5343-894b-4cd1969d6f32",
+    "title": "[현장연결] 당정, 농지 전수조사 관련 보완 대책 논의",
+    "summary": "\"당정, 농지조사 현장 우려 해소 필요성 공감\" \"농지 전수조사 관련 정확한 정보 신속 전달\"",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260921085640whn",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-21T08:56:40+09:00"
+  },
+  {
+    "id": "e3b368e4-0a8a-54ce-9845-1fbd51ca4886",
+    "title": "김민석 \"답은 국힘이 해야\"…'대통령 연임 정리'로 개헌 압박",
+    "summary": "민주당 개헌추진단 출범 간담회에서 발언하는 김민석 대표 더불어민주당 김민석 대표가 이재명 대통령이 사흘 전 기자회견에서 연임 생각이 없다고 밝힌 직후 개헌 추진에 다시 힘을 싣는 점과 관련해 \"국민의힘이 답해야 한다\"고 말했습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260921085221wSU",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-21T08:52:21+09:00"
+  },
+  {
+    "id": "95e9dbf2-a7e9-5f98-a659-19be4d4204b7",
+    "title": "[속보] 당정 \"'치유가능 불법전용 농지 양성화' 특별법 제정 추진\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 강은나래(rae@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260921085139LTv",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-21T08:51:39+09:00"
+  },
+  {
+    "id": "b923db04-0895-57a3-ad2d-d3ea2296b20d",
+    "title": "[속보] 당정 \"경미한 농지법 위반은 정상적 이용…명백한 투기는 조치\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 강은나래(rae@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260921085007gFP",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-21T08:50:09+09:00"
   }
 ]
