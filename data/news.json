@@ -163480,5 +163480,27 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-09-21T20:48:34+09:00"
+  },
+  {
+    "id": "f2ecbd14-e2d8-521c-a104-066077b11955",
+    "title": "[속보] '곽빈 6이닝 10K 괴력투' 야구 대표팀 대만 5-0 격파",
+    "summary": "연합뉴스TV 속보(CG) #대한민국 #야구 #곽빈 #괴력투 #김도영 #아시안게임 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김종성(goldbell@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260921210432BrA",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-21T21:04:34+09:00"
+  },
+  {
+    "id": "f1153fbf-3a48-57fe-9a64-c7e2097be1b8",
+    "title": "고양·의왕에 2만3천호 공급…역세권 주택 속도전",
+    "summary": "정부가 경기 고양시와 의왕시에 신규 공공주택 지구를 지정했습니다. 초역세권에 총 2만 3천 호 규모의 주택 공급을 신속히 추진한다는 계획입니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260921210130SyZ",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-09-21T21:01:31+09:00"
   }
 ]
