@@ -163854,5 +163854,27 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-09-22T04:36:34+09:00"
+  },
+  {
+    "id": "7d08bfd7-a979-5f9d-9198-c9c687469b0f",
+    "title": "4만원에 산 조개 그림…알고보니 3억 5천만원 명화",
+    "summary": "단돈 30달러(한화 약 4만 2,000원)에 판매된 시카고 초현실주의 화가 거트루드 애버크롬비의 그림 ‘시의원 메리엄의 조개껍데기’[Freeman's][Freeman's]",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260921171136oyb",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-22T05:06:03+09:00"
+  },
+  {
+    "id": "afb8b473-ca6b-5279-b290-9c937dacdc9b",
+    "title": "쓰레기 수북한 독립운동가 집터 표지석…\"속상하다\" 씁쓸",
+    "summary": "쓰레기로 수북한 김가진 집터 표지석. 오늘(22일) SNS에는 서울 종로구 일대에서 촬영된 독립운동가 표지석 사진이 올라와 퍼지고 있습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260921161152g4m",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-09-22T05:02:02+09:00"
   }
 ]
