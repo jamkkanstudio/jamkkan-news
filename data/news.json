@@ -166472,5 +166472,49 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-09-22T23:02:41+09:00"
+  },
+  {
+    "id": "db511d6f-a8c1-586c-84e9-e4bb18d9c34f",
+    "title": "조현, UAE 외교장관과 회담…\"중동 지역 안정 희망\"",
+    "summary": "조현 외교부 장관, UAE 외교장관과 회담 조현 외교부 장관은 현지시간 21일 미국 뉴욕에서 압둘라 빈 자이드 알나흐얀 아랍에미리트(UAE) 외교장관과 회담하고, 중동 정세와 양국 관계 등을 논의했습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202609222315516WF",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-22T23:15:51+09:00"
+  },
+  {
+    "id": "7881c834-aa4e-5e1a-afb7-d067b7087fdc",
+    "title": "[포인트뉴스] 급등하는 외국인 마약사범…동남아 '집중' 外",
+    "summary": "▶ 급등하는 외국인 마약사범…동남아 '집중' 국내에 체류하는 외국인이 늘면서 마약 사범도 꾸준히 증가하고 있는 것으로 나타났습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260922231445JI2",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-09-22T23:14:48+09:00"
+  },
+  {
+    "id": "c5ab51f7-0fcd-5648-a04f-ffa4ea62cbe3",
+    "title": "[속보] 이 대통령, 이정현 대검찰청 차장 임명안 재가",
+    "summary": "연합뉴스TV 속보(CG) #이재명 #대통령 #이정현 #대검찰청 #차장 #임명안 #재가 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 소재형(sojay@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260922231445RtT",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-22T23:14:47+09:00"
+  },
+  {
+    "id": "d2b5880e-3f88-5adf-ad24-8d18f813ccb0",
+    "title": "[속보] 이 대통령, 이소영 중기벤처부 장관 임명안 재가",
+    "summary": "연합뉴스TV 속보(CG) #이재명 #대통령 #이소영 #중소벤처기업부 #장관 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 소재형(sojay@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260922231353c2A",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-22T23:13:53+09:00"
   }
 ]
