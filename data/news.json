@@ -166802,5 +166802,49 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-09-23T04:49:43+09:00"
+  },
+  {
+    "id": "eb9b54ba-dc44-535a-9f1f-2fe49bb15277",
+    "title": "\"귀여우면 드릴게요\"...아기 건네고 사라진 18세 여성",
+    "summary": "이바라가 처음 본 여성에게 아기를 건넨 샌안토니오 시내버스 정류장. 18세 여성이 자신이 낳은 생후 1개월 된 아기를 키우고 싶지 않다는 이유로 낯선 사람에게 아기를 맡긴 뒤 달아난 사건이 알려져 논란이 일었습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260922150954mlQ",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-23T05:02:04+09:00"
+  },
+  {
+    "id": "012be3f3-92e8-5d8f-9333-08f7864fc15a",
+    "title": "\"아기 울음 불편 걱정\"…초보 부모 안내문에 응원 물결",
+    "summary": "한 아파트 단지에 붙은 초보 부모의 안내문. 아기의 울음소리가 이웃들에게 불편을 끼칠까 걱정한 초보 부모에게 아파트 주민들이 축하와 응원의 메시지를 전해 훈훈함을 자아내고 있습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR2026092214372007n",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-09-23T05:01:03+09:00"
+  },
+  {
+    "id": "3bb5b26a-12bb-5002-8564-8aaabcdf7f6d",
+    "title": "[속보] 이 대통령 \"북핵, 고도화 중단·축소 거쳐 핵 없는 한반도로\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 소재형(sojay@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260923050006tYc",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-23T05:00:06+09:00"
+  },
+  {
+    "id": "68c3b540-e0d9-54a7-8adb-607f522793b8",
+    "title": "[속보] 이 대통령 '포용·안정·세계기여 평화공존'…한반도 청사진 소개",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 소재형(sojay@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260923045940Xmk",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-23T04:59:42+09:00"
   }
 ]
