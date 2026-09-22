@@ -166747,5 +166747,60 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-09-23T04:45:30+09:00"
+  },
+  {
+    "id": "f1d22598-a547-5b30-97b6-1315ccbeadee",
+    "title": "[속보] 이 대통령 \"시대 변화에 맞춰 유엔도 변해야…안보리 개혁 지지\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 소재형(sojay@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260923045713pVQ",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-23T04:57:14+09:00"
+  },
+  {
+    "id": "e9654df8-595d-5c4f-948c-7ae522add619",
+    "title": "[속보] 이 대통령 \"호르무즈 봉쇄 큰 충격\"…'건설적 기여국 연대' 제안",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 소재형(sojay@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260923045507mcJ",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-23T04:55:08+09:00"
+  },
+  {
+    "id": "65dfc980-f72e-5c4a-8c1b-6c83686938ff",
+    "title": "성큼 다가온 추석…고물가에 전통시장 '발길'",
+    "summary": "이제 하루 뒤면 추석 연휴가 시작됩니다. 전통시장 골목골목이 미리 추석 장을 보러 나온 시민들로 북적입니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260923045441Wtz",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-09-23T04:54:43+09:00"
+  },
+  {
+    "id": "9fe13aa4-2903-5993-9408-dd5280f46d75",
+    "title": "[속보] 이 대통령 \"글로벌AI 기본사회 만들어야…기후위기 등 공통난제 해결\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 소재형(sojay@yna.co.kr)",
+    "reason": "AI 기술 변화는 산업 경쟁력과 일하는 방식에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260923045310weZ",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-23T04:53:13+09:00"
+  },
+  {
+    "id": "cdfc87e9-7a73-5648-8c0d-0561dcc2b36d",
+    "title": "유시민 \"이 대통령 말한 검찰개혁 틀린 말…지금껏 국민 속여\"",
+    "summary": "범여권 논객 유시민 작가는 이재명 정부의 검찰개혁과 관련해 \"이 대통령이 생각한 검찰개혁은 우리가 생각한 검찰개혁, 더불어민주당 입장, 대통령의 공약이라고 얘기했던 것과는 완전히 다른 것이었다\"고 말했습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260923044940KTm",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-23T04:49:43+09:00"
   }
 ]
