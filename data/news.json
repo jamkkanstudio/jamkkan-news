@@ -166626,5 +166626,16 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-09-23T00:49:34+09:00"
+  },
+  {
+    "id": "683cf623-d862-5295-8cd6-09af06ff3363",
+    "title": "트럼프 \"AI 대신 '슈퍼지능' 명칭 사용\"",
+    "summary": "도널드 트럼프 미국 대통령이 인공지능(AI)을 통제하려는 국제적 시도를 거부한다며 앞으로 미국 정부 문서에서 AI 대신 '슈퍼지능(SI, Super Intelligence)'이라는 명칭을 사용하겠다고 밝혔습니다.",
+    "reason": "AI 기술 변화는 산업 경쟁력과 일하는 방식에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260923010816kvs",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-23T01:08:17+09:00"
   }
 ]
