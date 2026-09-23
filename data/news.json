@@ -169695,5 +169695,38 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-09-24T06:33:11+09:00"
+  },
+  {
+    "id": "a31d6ae1-56d2-54a0-be88-1a1d339f9eeb",
+    "title": "[속보] 시진핑, 트럼프와 회담 위해 미국 도착…2박3일 국빈 방미 시작",
+    "summary": "US China TrumpThe plane carrying China's President Xi Jinping and his wife Peng Liyuan lands at Joint Base Andrews, Md., Wednesday, Sept.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260924064718qN4",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-24T06:47:19+09:00"
+  },
+  {
+    "id": "84dc13fd-e72a-5270-9570-6a2b454a4cd4",
+    "title": "젤렌스키 \"러 전쟁 생포 북한군 포로, 한국으로\"",
+    "summary": "볼로디미르 젤렌스키 우크라이나 대통령이 \"최근 북한군 전쟁포로 2명을 대한민국으로 보냈다\"고 말했습니다. 북한군 포로 2명은 지난 2025년 1월 우크라이나군에 생포됐습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH202609240643551B3",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-24T06:43:58+09:00"
+  },
+  {
+    "id": "daf67b5a-f8c0-52a1-ab0d-9d3ec01810ed",
+    "title": "이 대통령, 뉴욕 일정 마무리…멕시코로 출국",
+    "summary": "이재명 대통령은 현지시간 23일 유엔 총회 참석을 계기로 한 미국 뉴욕 방문을 마치고 멕시코 국빈 방문길에 올랐습니다. 이 대통령은 이후 25일 비즈니스포럼에 참석하고 K-엑스포 행사장을 방문한 뒤 26일 귀국길에 오릅니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260924064322R2g",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-24T06:43:24+09:00"
   }
 ]
