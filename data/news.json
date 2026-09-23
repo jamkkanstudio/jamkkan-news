@@ -168661,5 +168661,60 @@
     "category": "경제",
     "importance": 50,
     "created_at": "2026-09-23T16:38:45+09:00"
+  },
+  {
+    "id": "3dff4646-8361-574f-a0c9-ccf553026b7f",
+    "title": "曺 '재제청 거부' 공방 격화…여야, 민생 행보도",
+    "summary": "국회에선 조희대 대법원장의 '재제청 거부'를 둘러싼 공방이 이어졌습니다. 김민석 대표는 조 대법원장의 '재제청 거부'를 \"희대의 내란\"으로 규정했습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260923165728I9t",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-23T16:57:31+09:00"
+  },
+  {
+    "id": "eaecd3d5-9e71-5ae5-9a36-5da26974be4f",
+    "title": "딥시크, IPO 채비 본격화…90년대생 투자전문가 CFO 영입",
+    "summary": "중국 AI '딥시크 ' 이미지(자료) 중국 매체들에 따르면 전 힐하우스벤처스 파트너인 90년대생 옌원타오가 최근 딥시크 CFO로 합류했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260923165307kFT",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-23T16:53:08+09:00"
+  },
+  {
+    "id": "7171f379-0bd8-5887-82a2-bae702ff7008",
+    "title": "[영상구성] 추석 연휴 귀성길 시작...마음은 벌써 고향에",
+    "summary": "추석 연휴 귀성길 시작 그리운 가족 만나러 가는 길 양손에 선물 가득 마음은 벌써 고향에 조상을 기리고 가족의 정 나누는 시간 올해도 풍성한 한가위 보내세요 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김찬(bothtape@yna.co.k…",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260923165245M76",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-09-23T16:52:46+09:00"
+  },
+  {
+    "id": "7d2cf0fe-8d72-560a-9bd9-9afb4ed726ae",
+    "title": "이 대통령·트럼프 세번째 회담…북미대화·핵잠 논의",
+    "summary": "이재명 대통령이 미국에서 열린 유엔총회를 계기로 도널드 트럼프 미국 대통령과 마주 앉았습니다. 이 대통령 취임 후 세번째로 대좌한 두 정상은 대미투자 협상의 진전을 확인하고, 북한과의 대화 물꼬를 트기 위해 긴밀히 소통하기로 했습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260923165139KoK",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-23T16:51:39+09:00"
+  },
+  {
+    "id": "28ca5f14-3c7e-503f-9a9d-9d9a1ffe4dc6",
+    "title": "IPTV 단독상품 가입 거부한 SK브로드밴드 등에 과징금 4,900만원",
+    "summary": "SK브로드밴드 \"B tv서 에이닷 누적 이용 1억건 돌파\" 온라인 가입 시 인터넷TV(IPTV) 단독상품 가입을 거부한 SK브로드밴드 등 IPTV 3사가 과징금을 부과받았습니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260923165110S5J",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-09-23T16:51:12+09:00"
   }
 ]
