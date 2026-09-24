@@ -171477,5 +171477,49 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-09-24T23:30:14+09:00"
+  },
+  {
+    "id": "af86c807-9606-55ed-bcb7-d24c521481f9",
+    "title": "이 대통령 \"北포로 송환, 우크라가 비공개 합의 어기고 공개\"",
+    "summary": "이 대통령은 오늘(24일) 엑스(X·옛 트위터)에 올린 글에서 \"비공개 합의를 어기고 공개했다\"면서 이같이 밝혔습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260924234751fSt",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-24T23:47:52+09:00"
+  },
+  {
+    "id": "a8201d67-725d-527d-a08a-61181748b20a",
+    "title": "[속보] 시진핑 \"중화민족 부흥과 MAGA 함께 갈 수 있어\"",
+    "summary": "#미중관계 #미중회담 #트럼프 #시진핑 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 장효인(hijang@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260924234641DPK",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-24T23:46:42+09:00"
+  },
+  {
+    "id": "b63ca3f1-8939-57cc-8597-921f367683c7",
+    "title": "[속보] 시진핑 \"미중, 평화롭게 공존해야\"",
+    "summary": "#미중관계 #미중회담 #트럼프 #시진핑 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 장효인(hijang@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260924234335MKF",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-24T23:43:36+09:00"
+  },
+  {
+    "id": "7ac13f48-25e5-53db-9775-274049837130",
+    "title": "[속보] 시진핑, 백악관서 연설…\"미중 모두 AI 강국\"",
+    "summary": "#미중관계 #미중회담 #시진핑 #트럼프 #AI 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 장효인(hijang@yna.co.kr)",
+    "reason": "AI 기술 변화는 산업 경쟁력과 일하는 방식에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260924234250fHS",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-24T23:42:50+09:00"
   }
 ]
