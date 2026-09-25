@@ -173270,5 +173270,27 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-09-25T22:46:56+09:00"
+  },
+  {
+    "id": "33ebc033-0b6b-5e09-a437-1da83c87e79c",
+    "title": "[속보] 시진핑 \"미중, 존중·공정·상호주의의 전략적 안정관계 될 것\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 한채희(1ch@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260926001525pWT",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-26T00:15:28+09:00"
+  },
+  {
+    "id": "5f19f05c-ee78-5e25-a908-61ff5b35cb02",
+    "title": "[속보] 트럼프 \"시진핑과 엄청난 진전…미중 모두에 긍정적\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 한채희(1ch@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260926001243WMt",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-26T00:12:45+09:00"
   }
 ]
