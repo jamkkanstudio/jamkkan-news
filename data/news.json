@@ -174436,5 +174436,38 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-09-26T18:11:39+09:00"
+  },
+  {
+    "id": "e391e2ee-9098-515c-b492-d8d9eddd476e",
+    "title": "[속보] 한국 펜싱, 남자 사브르 단체전 금메달…AG 4연패 달성",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 조한대(onepunch@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260926192313BHF",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-26T19:23:14+09:00"
+  },
+  {
+    "id": "6eed1b01-fb37-5c0c-a79c-1f9d3e20680e",
+    "title": "합참·유엔사, DMZ 지뢰 추정 폭발 사고 조사 착수",
+    "summary": "DMZ 인근에서 이동 중인 수리온 헬기 우리 군과 유엔군사령부가 서부전선 비무장지대, DMZ에서 발생한 지뢰 추정 폭발 사고의 현장 조사를 위한 준비 절차에 들어갔습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202609261919412iC",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-26T19:19:43+09:00"
+  },
+  {
+    "id": "a58ec50a-2371-5da2-815a-bd5b725c1d57",
+    "title": "[속보] 'DMZ 사고' 현장 환경조사…\"향후 현장 점검 진행\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 이지현(ji@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260926191911g4F",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-26T19:19:12+09:00"
   }
 ]
