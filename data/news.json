@@ -174634,5 +174634,27 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-09-26T20:47:27+09:00"
+  },
+  {
+    "id": "d0ef7584-ddf1-5237-90a0-dbd9be491b26",
+    "title": "[속보] 여자 농구, 일본 꺾고 AG 금메달…12년 만의 정상",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 조한대(onepunch@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260926211344FvW",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-26T21:13:45+09:00"
+  },
+  {
+    "id": "dc8ab24a-c6f5-5941-b35e-c2657e9cae15",
+    "title": "군, DMZ 지뢰 추정 폭발 현장조사 준비…유엔사와 기동로 확보",
+    "summary": "비무장지대, DMZ에서 발생한 지뢰 추정 폭발 사고와 관련한 현장조사를 위해 우리 군이 본격적인 준비 작업을 진행했습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260926211002OiQ",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-26T21:10:02+09:00"
   }
 ]
