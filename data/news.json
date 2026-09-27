@@ -176416,5 +176416,49 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-09-27T23:00:03+09:00"
+  },
+  {
+    "id": "c5b9d1d5-2e06-524e-8745-ccb125b5186d",
+    "title": "[속보] 靑 \"국내 일부인사, 우크라 행위 두둔하며 국익훼손…깊은 유감\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 소재형(sojay@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260927233620Bny",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-27T23:36:21+09:00"
+  },
+  {
+    "id": "de73a5d9-c45a-57f1-8e68-bd5ec414dd03",
+    "title": "[속보] 靑 \"우크라 정부에 공식 해명·사과 요구…추가조치 검토\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 소재형(sojay@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260927233509uZi",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-27T23:35:12+09:00"
+  },
+  {
+    "id": "b069f9b6-17a0-548f-84c8-bbedb3ccbe5b",
+    "title": "[속보] 靑 \"우크라 '포로송환 비공개 합의 없었다'는 허위공보…강력유감\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 소재형(sojay@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260927233045dGb",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-27T23:30:47+09:00"
+  },
+  {
+    "id": "e771da28-5157-58b2-b186-f69119464d2f",
+    "title": "넉달 전과 달리 미중정상회담 백악관 발표에 '北비핵화' 빠져",
+    "summary": "미중정상회담 결과를 정리한 백악관 설명자료에서 넉 달 전 도널드 트럼프 미 대통령의 방중 때는 있었던 '북한 비핵화'가 빠졌습니다. 이번 백악관 설명자료에는 미국과 중국이 2차 세계대전 당시 동맹이었다는 내용도 적시됐습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202609272330390Vw",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-27T23:30:41+09:00"
   }
 ]
