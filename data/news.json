@@ -175415,5 +175415,16 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-09-27T12:02:26+09:00"
+  },
+  {
+    "id": "8a66edef-d1ff-516f-89a0-ef20b01d5062",
+    "title": "[속보] 남동헌, 아시안게임 승마 마장마술 금메달",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 조한대(onepunch@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260927123307bxh",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-27T12:33:10+09:00"
   }
 ]
