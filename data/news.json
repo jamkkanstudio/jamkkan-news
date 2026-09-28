@@ -178957,5 +178957,60 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-09-28T20:22:29+09:00"
+  },
+  {
+    "id": "790c8957-33e2-517f-9945-b4c3be8f6c89",
+    "title": "[속보] 軍 \"폭발 원인, 북한군 지뢰일 가능성 매우 높아\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 지성림(yoonik@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260928203751O77",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-28T20:37:52+09:00"
+  },
+  {
+    "id": "795da170-c140-52e5-bb5b-14fd5be0a283",
+    "title": "[속보] 軍 \"DMZ 폭발원인, 아군의 지뢰는 아닌 것으로 추정\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 지성림(yoonik@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260928203703fH5",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-28T20:37:04+09:00"
+  },
+  {
+    "id": "8c9b99da-2443-5b37-80ff-8d1a9a755433",
+    "title": "합참, 국방위에 \"北지뢰로 추정하는 부분…결과 종합해 말할 것\"",
+    "summary": "강동구 합동참모본부 전략기획본부장은 오늘 DMZ를 방문한 국회 국방위원 대상 브리핑에서, '북한 지뢰 추정' 여부에 대한 질문에 \"북의 지뢰로 추정하는 부분\"이라고 답했습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260928203444lIL",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-28T20:34:45+09:00"
+  },
+  {
+    "id": "e36d4226-b4e2-51d2-be59-fd7d8307e153",
+    "title": "[이시각헤드라인] 9월 28일 뉴스리뷰",
+    "summary": "■조희대 국감증인 채택…野 \"대통령 증인으로\"■ 범여권이 대법관 재제청을 놓고 청와대와 충돌을 빚은 조희대 대법원장을 국회 국정감사 증인으로 채택했습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260928203258NNA",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-09-28T20:33:00+09:00"
+  },
+  {
+    "id": "0f24bc1a-94d3-5c7e-9563-3ffa65dfc0b8",
+    "title": "이란 최고지도자 \"과거로 안돌아가…美 아라비아해 밖 몰아낼 것\"",
+    "summary": "모즈타바 하메네이 이란 최고지도자 사진이 내걸린 테헤란 시내 현수막. 그러면서 \"적들이 위험을 무릅쓰고 들어올 때마다 스스로 화를 자초했다\"며 \"머지않아 아라비아해 역시 그들로부터 완전히 해방될 것\"이라고 강조했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260928202928KIO",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-28T20:29:29+09:00"
   }
 ]
