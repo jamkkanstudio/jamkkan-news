@@ -179936,5 +179936,27 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-09-29T07:04:27+09:00"
+  },
+  {
+    "id": "d527ab7d-8ddd-5cfc-a877-a833c9860b63",
+    "title": "짧은 추석 연휴에…백화점·아웃렛 매출 20%대 껑충",
+    "summary": "신세계사이먼 프리미엄 아울렛, 한가위 전통문화 콘텐츠 선봬 올해 추석 연휴가 지난해보다 짧아지면서 해외여행 대신 주거지 인근에서 쇼핑과 나들이를 즐긴 소비자들이 늘면서 백화점과 아웃렛 매출이 20% 안팎의 높은 증가세를 보였습니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260929071319DLg",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-09-29T07:13:20+09:00"
+  },
+  {
+    "id": "e407304e-6de0-576e-8be3-ade838a6ea76",
+    "title": "\"똑똑, 도와주세요\"…연구소 직접 찾은 '펠리컨 환자'",
+    "summary": "미국 플로리다주 해양대기청 수산연구소 문 앞에 나타난 펠리컨[Albert Gabel/NOAA Fisheries][Albert Gabel/NOAA Fisheries] 연구원들이 문을 열어보니 갈색 펠리컨 한 마리가 부리로 유리문을 두드리고 있었습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260921165943nL7",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-29T07:10:04+09:00"
   }
 ]
