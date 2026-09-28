@@ -179012,5 +179012,38 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-09-28T20:29:29+09:00"
+  },
+  {
+    "id": "76b0c7f6-88ae-5732-8cde-2e532194d20c",
+    "title": "영국 내 미군기지 테러 모의 정황에…\"미군, 경계태세 강화\"",
+    "summary": "영국 페어퍼드 공군기지 외곽을 지키는 무장 경찰 미국 공군의 전략폭격기가 배치된 영국 공군 페어퍼드 기지 인근 폭탄 공격 모의 정황과 관련해 미군이 경계 태세를 높이고 있다고 미국 폭스뉴스 등이 전했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260928204537b0c",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-28T20:45:38+09:00"
+  },
+  {
+    "id": "3aa86219-608d-55ab-8593-a04d02a8d7c6",
+    "title": "[속보] 軍 \"北목함지뢰와 유사한 반보병지뢰 추정…진술 근거\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 지성림(yoonik@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260928204338eZK",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-28T20:43:40+09:00"
+  },
+  {
+    "id": "f6e64d37-c27e-5dc7-bfcd-e95aac30b05c",
+    "title": "[속보] 軍 \"北 매설지뢰 최종 판정시 상응조치…모든책임 北에\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 지성림(yoonik@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260928203950Bbq",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-28T20:39:50+09:00"
   }
 ]
