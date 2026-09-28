@@ -178231,5 +178231,16 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-09-28T15:08:21+09:00"
+  },
+  {
+    "id": "386a1c4b-b27c-5680-abb1-293c202edd54",
+    "title": "SK하이닉스, TSMC 기술 행사서 차세대 AI 메모리 공개",
+    "summary": "SK하이닉스 'TSMC 오픈 이노베이션 플랫폼 콘퍼런스' 전시 부스 SK하이닉스가 세계 최대 파운드리(반도체 위탁생산) 업체 TSMC의 기술 행사에서 고대역폭메모리(HBM)를 비롯한 차세대 인공지능(AI) 메모리 포트폴리오를 선보였습니다.",
+    "reason": "AI 기술 변화는 산업 경쟁력과 일하는 방식에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202609281537307o4",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-09-28T15:37:32+09:00"
   }
 ]
