@@ -182697,5 +182697,60 @@
     "category": "경제",
     "importance": 50,
     "created_at": "2026-09-30T05:50:20+09:00"
+  },
+  {
+    "id": "f9835e47-ed7a-5b08-8c74-3eb1bb34e662",
+    "title": "[속보] 김여정 \"총알 한발이라도 탄착되면 가차없는 보복\"",
+    "summary": "연합뉴스TV 속보(CG) [속보] 김여정 \"총알 한발이라도 탄착되면 가차없는 보복\" 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김수빈(soup@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260930061352DIH",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-30T06:13:52+09:00"
+  },
+  {
+    "id": "0a3940e6-8571-5906-bdec-c3e39a3de39f",
+    "title": "트럼프 \"김정은 내 친구…상당한 핵능력 보유\"",
+    "summary": "도널드 트럼프 미국 대통령이 북한 김정은 국무위원장을 친구라고 부르며 재차 친근감을 표시했습니다. 트럼프 대통령은 이어 \"김정은 위원장이 자신의 친구\"라며 \"김 위원장은 자신을 좋아하고 자신도 김 위원장을 좋아한다\"고 말했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260930061338nBk",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-30T06:13:40+09:00"
+  },
+  {
+    "id": "189f2ea9-df61-540b-b0d7-5358a60aa68f",
+    "title": "[속보] 김여정 \"南3군단 비무장지대 방향 전술적 반격수단 증강\"",
+    "summary": "연합뉴스TV 속보(CG) [속보] 김여정 \"南3군단 비무장지대 방향 전술적 반격수단 증강\" 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김수빈(soup@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260930061325wIX",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-30T06:13:27+09:00"
+  },
+  {
+    "id": "45ae7e57-7315-58e8-b3fa-c6986fb9668b",
+    "title": "[속보] 김여정, 'DMZ 北지뢰' 軍 발표에 \"서울의 자작광대극\" 부인",
+    "summary": "연합뉴스TV 속보(CG) [속보] 김여정, 'DMZ 北지뢰' 軍 발표에 \"서울의 자작광대극\" 부인 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김수빈(soup@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260930061244IHA",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-30T06:12:45+09:00"
+  },
+  {
+    "id": "f9d43ea0-bd82-5e8f-a8a0-842b4fadee38",
+    "title": "미, '이란 무기조달 지원' 중국 소재 기업·개인 제재",
+    "summary": "미 재무부 해외자산통제국은 현지 시간 29일 이란 국방·군수부(MODAFL)를 위해무기와 부품을 조달한 개인과 단체 10곳을 제재 대상으로 지정했습니다. 재무부는 이들과 특정 거래를 하는 외국 금융기관도 2차 제재 대상이 될 수 있다고 경고했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260930060844AFN",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-30T06:08:45+09:00"
   }
 ]
