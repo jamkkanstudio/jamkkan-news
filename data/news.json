@@ -181212,5 +181212,60 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-09-29T15:10:23+09:00"
+  },
+  {
+    "id": "4d93b985-ba9d-5bb1-819b-49e3541e66ac",
+    "title": "에스파 윈터 악성 게시물…\"선처·합의 없다\" 법적 대응",
+    "summary": "그룹 에스파 멤버 윈터를 향한 악성 게시물이 잇따르자 소속사 SM엔터테인먼트가 법적 대응을 예고했습니다. 그러면서 \"적발되는 가해자에 대해서는 어떠한 선처나 합의 없이 무관용 원칙에 따라 강력한 법적 책임을 물을 것\"이라고 강조했습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260929152640vch",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-09-29T15:26:41+09:00"
+  },
+  {
+    "id": "a7022a98-1359-5bf0-913b-2021a1027b8f",
+    "title": "장동혁, 백령도 해병대 격려 \"장병 안전은 대한민국 책무\"",
+    "summary": "국민의힘 장동혁 대표가 인천 백령도를 찾아 최전방 대비 태세를 점검하고 장병들을 격려했습니다. 해병대는 대한민국 전략 자산\"이라고 강조했습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260929152519Bdz",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-29T15:25:20+09:00"
+  },
+  {
+    "id": "58207e76-be7d-564e-be8f-d5bd5caf6a56",
+    "title": "[속보] 軍 \"폭발현장 근처서 발견…작전참가 장병 진술과 다른 지뢰\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 강은나래(rae@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260929152413wKa",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-29T15:24:16+09:00"
+  },
+  {
+    "id": "c07bb9f2-5ce6-5b09-9f59-14d7aef69e7c",
+    "title": "[속보] 軍 \"DMZ 3일차 현장조사서 北 수지 반보병지뢰 1발 발견\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 강은나래(rae@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260929152320pJ9",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-29T15:23:22+09:00"
+  },
+  {
+    "id": "abf6c0c3-37f8-5889-8682-728763e4cd1e",
+    "title": "농림어가 절반이 65세 이상…농가 61%는 전업농가",
+    "summary": "한국 농림어가 인구 절반이 65세 이상 고령자인 것으로 집계됐습니다. 농림어가의 65세 이상 고령인구 비중은 51.0%로, 5년 전(41.9%)보다 9.0%포인트(p) 높아졌습니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260929151006i00",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-09-29T15:10:07+09:00"
   }
 ]
