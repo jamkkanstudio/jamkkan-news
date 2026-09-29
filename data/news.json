@@ -182752,5 +182752,38 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-09-30T06:08:45+09:00"
+  },
+  {
+    "id": "07ba1cfd-1c22-55b3-be1f-c7c8c6ede556",
+    "title": "[속보] \"트럼프, 알래스카 LNG 사업에 韓540억불 투자 발표 가능성\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김예린(yey@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260930062127q57",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-30T06:21:27+09:00"
+  },
+  {
+    "id": "3cbea753-80f1-5df1-8581-91a94f798425",
+    "title": "[속보] \"트럼프, 이르면 30일 한국 대미투자 발표 예상\" <로이터>",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김예린(yey@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202609300620445hm",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-30T06:20:45+09:00"
+  },
+  {
+    "id": "04b560ed-4c43-58b3-abf0-ad4e306639cc",
+    "title": "수도권 준공 물량 22% 감소…올해 인허가·착공은 증가",
+    "summary": "서울 집값이 85주 연속 상승하고 있는 가운데 당장의 공급 여건을 보여주는 준공 물량이 올해 20% 넘게 줄어든 것으로 나타났습니다. 정부는 이같은 증가세가 이어지면 2028년부터는 준공 물량 역시 정상화될 것으로 내다봤습니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260930061959ZIZ",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-09-30T06:19:59+09:00"
   }
 ]
