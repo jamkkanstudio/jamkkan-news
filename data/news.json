@@ -182422,5 +182422,27 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-09-30T04:38:41+09:00"
+  },
+  {
+    "id": "41d0bc1b-0501-566e-900d-40e1bd2747de",
+    "title": "'명절 과로' 밥솥…수리 기다리는 보자기 포장들 [SNS 와글]",
+    "summary": "추석 연휴 다음 날인 지난 29일 서비스 센터에서 수리를 기다리며 줄지어 놓인 밥솥들. 형형색색의 보자기에 싸여있는 밥솥 모습들에서 명절의 여운을 느낀다는 반응이 쏟아졌습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260929163055lVR",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-09-30T05:02:03+09:00"
+  },
+  {
+    "id": "065e4bcd-a690-51f1-82c3-5d804b98196a",
+    "title": "[속보] 트럼프 \"내가 있는 한 北김정은은 괜찮을 것\"<로이터>",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 최진경(highjean@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260930050132exJ",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-30T05:01:33+09:00"
   }
 ]
