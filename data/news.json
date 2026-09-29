@@ -181377,5 +181377,49 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-09-29T15:59:07+09:00"
+  },
+  {
+    "id": "130afd8b-c76d-57c4-b430-f87bf5764b83",
+    "title": "美, 캐나다 상품 수입금지 발효…주류가 87% 차지",
+    "summary": "도널드 트럼프 미국 대통령과 마크 카니 캐나다 총리 이 중 87%는 주류가 차지했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260929161511ADM",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-29T16:15:12+09:00"
+  },
+  {
+    "id": "40ed26ff-fe44-5da6-822d-a57d6c88ab7e",
+    "title": "[속보] '배드민턴 여제' 안세영, 단식 금메달…AG 2연패 달성",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 조한대(onepunch@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260929161430hVh",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-09-29T16:14:32+09:00"
+  },
+  {
+    "id": "4cfb5fbc-ea79-56a3-a364-6d95334954da",
+    "title": "[여의도1번지] 'DMZ 사고' 일파만파…국방위 현안질의 격돌",
+    "summary": "비무장지대 폭발 사고 원인이 북한군 지뢰일 가능성이 높다는 우리 군의 중간 조사 결과가 나오면서, 관련한 여야 공방도 격화하고 있습니다. 이런 가운데, 이재명 대통령은 신속하고 철저한 진상 조사를 당부했는데요.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260929161255Dde",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-29T16:12:56+09:00"
+  },
+  {
+    "id": "b065e7a4-781e-52db-89f4-a9b1f11d9d4f",
+    "title": "박성재 내란 2심 25년 구형…尹 선거법 결심은 미뤄져",
+    "summary": "특검이 박성재 전 법무부 장관의 내란중요임무종사 등 혐의 항소심 공판에서 징역 25년을 구형했습니다. 네, 박 전 법무부 장관의 2심 결심은 오후 2시부터 시작됐습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH2026092916091069Q",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-09-29T16:09:13+09:00"
   }
 ]
