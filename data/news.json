@@ -183478,5 +183478,60 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-09-30T11:00:46+09:00"
+  },
+  {
+    "id": "e1f70137-c402-5a2b-bd9e-2e1c31faa266",
+    "title": "[속보] 국정원 \"국내송환 포로들 9월 중순 입국…건강 큰 문제 없어\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 팽재용(paengman@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260930111421r8Q",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-30T11:14:23+09:00"
+  },
+  {
+    "id": "7a0acd10-a5a0-5f65-b331-7563d6bc431d",
+    "title": "[속보] 국정원 \"우크라가 '비공개' 선제요청…우리 정부도 입장 존중\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 팽재용(paengman@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260930111332IeN",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-30T11:13:34+09:00"
+  },
+  {
+    "id": "8848ed39-6ecb-5585-a167-5ac42b927788",
+    "title": "[속보] 국정원 \"포로송환 시작부터 비공개 공감대…정상간 협의는 없어\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 팽재용(paengman@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202609301112163gQ",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-30T11:12:16+09:00"
+  },
+  {
+    "id": "7d9ada7e-1e66-5a70-b3c1-baa1f30fb641",
+    "title": "도심복합사업 후보지로 서초·용산·마포 등 11곳 선정…1.8만호 공급",
+    "summary": "오늘(30일) 국토교통부가 도심 공공주택 복합사업 신규 후보지로 서울 용산구와 마포구, 서초구 등 총 11곳을 선정했습니다. 총 공급 규모는 약 1만8천 가구입니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260930104537WHz",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-09-30T11:00:03+09:00"
+  },
+  {
+    "id": "789caec2-b39e-52a9-90c3-739d67c0f794",
+    "title": "햄버거, 증권사에 무슨 일? '암살자' 논란에 광고업계 불똥 [뉴스더보기]",
+    "summary": "고(故) 육영수 여사 피격 사건을 소재로 한 영화 '암살자'의 역사 왜곡 논란이 커지면서 주연 배우의 광고 영상 댓글이 차단되거나 영화 리뷰 게시글이 비공개 전환되는 등 여파가 이어지고 있습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260930105954MQE",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-09-30T10:59:54+09:00"
   }
 ]
