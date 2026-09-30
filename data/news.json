@@ -185645,5 +185645,60 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-10-01T05:20:50+09:00"
+  },
+  {
+    "id": "db3d3fd3-c2c8-5033-9ea5-3419dd293ef2",
+    "title": "[속보] 트럼프 \"한국 대미투자…텍사스 가스발전·대형 원전 8기\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김예린(yey@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261001053313Una",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-01T05:33:14+09:00"
+  },
+  {
+    "id": "ea719c0e-6131-5155-8a8e-87fdf87ebf14",
+    "title": "[속보] 트럼프, 韓대미투자 발표…'알래스카 LNG 개발' 포함",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김예린(yey@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261001053155pTF",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-01T05:31:55+09:00"
+  },
+  {
+    "id": "8d208ae5-3b6c-51fd-91a3-9f3f50d6ae4b",
+    "title": "'尹 체포방해' 박종준 2심서 징역 7년 구형…\"사적 보디가드처럼 대항\"",
+    "summary": "공수처의 윤석열 전 대통령 체포영장 집행을 방해한 혐의로 기소돼 1심에서 징역 5년을 선고받은 박종준 전 경호처장이 2심에서 징역 7년을 구형받았습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20261001053020rvQ",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-10-01T05:30:22+09:00"
+  },
+  {
+    "id": "9bf7af5b-82ea-562b-b659-e9c6fb1fb923",
+    "title": "술 냉장고에 스크린 골프까지…불시 점검에 '초호화 감방' 발칵",
+    "summary": "인도네시아 찌비농 교도소에서 발견된 아파트 형태의 호화 시설[출처=BBC][출처=BBC] 인도네시아의 한 교도소에서 소파와 에어컨, 주류가 들어 있는 냉장고에 스크린 골프 시설까지 갖춘 호화 시설이 발견돼 논란이 일고 있습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20260930171209ttJ",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-01T05:30:04+09:00"
+  },
+  {
+    "id": "26efdc60-c2f6-507c-962a-75b2e3a94a94",
+    "title": "네타냐후 \"여객기 조종사, 동료 찌르고 추락 시도\"",
+    "summary": "베냐민 네타냐후 이스라엘 총리는 현지시간 30일 영상 성명을 통해 \"조종사 중 한 명이 다른 조종사를 찌르고 비행기를 고의로 추락시키려 한 것으로 보인다\"고 밝혔습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20261001052849leL",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-01T05:28:51+09:00"
   }
 ]
