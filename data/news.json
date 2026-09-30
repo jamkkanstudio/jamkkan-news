@@ -183764,5 +183764,49 @@
     "category": "경제",
     "importance": 50,
     "created_at": "2026-09-30T13:09:13+09:00"
+  },
+  {
+    "id": "be6ea14d-61c5-5f6f-a190-b669856c7ab8",
+    "title": "[속보] 이 대통령, 국군수도병원 위문차 방문…\"부상 장병과 가족들 위로\"",
+    "summary": "이재명 대통령이 오늘 오전 DMZ 지뢰 사고 피해 장병들이 입원해 있는 국군수도병원을 방문했습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH202609301334597WA",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-30T13:35:00+09:00"
+  },
+  {
+    "id": "b6462c09-d5c6-5506-99f8-ba4aaa0ad0cf",
+    "title": "[이시각헤드라인] 9월 30일 뉴스현장",
+    "summary": "■김여정 \"서울의 자작광대극…실사격시 보복\"■ 트럼프 대통령이 한국의 대미투자 계획을 현지시간 30일 발표할 것으로 보인다는 외신 보도가 나왔습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20260930133200zOE",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-09-30T13:32:02+09:00"
+  },
+  {
+    "id": "802e6a5e-d3e7-55e0-8a08-25be233ad4af",
+    "title": "[속보] 靑 \"부상 장병들에 회복 전념 당부…가족 고충사항 경청\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 성승환(ssh82@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202609301330372qf",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-30T13:30:37+09:00"
+  },
+  {
+    "id": "7114795b-bbe4-55da-9b70-86723b0594db",
+    "title": "[속보] 이 대통령, 국군수도병원 방문해 부상 장병 위로",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 성승환(ssh82@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202609301330258zS",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-09-30T13:30:25+09:00"
   }
 ]
