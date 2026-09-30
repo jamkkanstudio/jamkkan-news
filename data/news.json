@@ -185799,5 +185799,49 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-10-01T05:49:29+09:00"
+  },
+  {
+    "id": "805c44cc-00e5-53da-8db9-412fbec40a5a",
+    "title": "폭풍 때문에 하객 못 오자…'섬 모두 초대' 더 특별한 결혼식",
+    "summary": "싱크가 이에 동의하자 싱크의 친구가 지역 페이스북 그룹에 결혼식 초대 글을 올렸고, 갑작스러운 초대에도 수백 명의 섬 주민들이 참석 의사를 밝혔습니다. 주례를 맡은 스테이시 손더스는 “24시간 전만 해도 우리는 모두 낯선 사람들이었다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202609301634596nN",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-01T06:07:02+09:00"
+  },
+  {
+    "id": "8e2202fa-d858-5a71-9cb9-2b765cfc7501",
+    "title": "경기 성남 수정구 주택 화재…주민 1명 중상",
+    "summary": "어젯밤(30일) 10시 40분쯤 경기 성남시 수정구 수진동의 다가구주택에서 불이 났습니다. 건물에 있던 다른 주민 3명은 스스로 대피했습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH202610010559260OG",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-10-01T05:59:28+09:00"
+  },
+  {
+    "id": "1e4e440b-90d2-5d1b-ac19-34d5fead80c8",
+    "title": "[속보] 美상무 \"韓, 1,200억불 투자해 미 전역에 8개 초대형 원전건설\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 최진경(highjean@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261001054844sWP",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-01T05:48:45+09:00"
+  },
+  {
+    "id": "9f76274f-e8ae-5161-b743-796307565b47",
+    "title": "'내란 관여' 심우정 첫 재판서 혐의 전면 부인",
+    "summary": "내란에 관여한 혐의로 기소된 심우정 전 검찰총장 측이 첫 재판에서 혐의를 전면 부인했습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20261001054834jLS",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-10-01T05:48:35+09:00"
   }
 ]
