@@ -185975,5 +185975,27 @@
     "category": "경제",
     "importance": 50,
     "created_at": "2026-10-01T07:48:49+09:00"
+  },
+  {
+    "id": "5ba9b1c6-baf7-5cec-9b14-fc0de0804aeb",
+    "title": "[출근길인터뷰] 계단 운동 좋다는데…내 무릎으로도 가능할까?",
+    "summary": "계단 오르기는 훌륭한 유산소·근력 운동입니다. 건강을 위해 시작한 계단 오르기가 연골을 갉아 먹을 수 있는데요.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20261001080410oXS",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-10-01T08:04:13+09:00"
+  },
+  {
+    "id": "2f3d5ee0-3b73-533d-b8bc-ec3c290c6a58",
+    "title": "[사건사고] 한밤중 화재로 남성 1명 중상…고속도로 화물차서 불",
+    "summary": "어젯(30일)밤 경기 성남의 한 주택에서 불이 나 안에 있던 남성이 중상을 입은 채로 병원에 옮겨졌습니다. 밤사이 사건사고 소식, 한채희 기자입니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20261001080020Hvq",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-10-01T08:00:21+09:00"
   }
 ]
