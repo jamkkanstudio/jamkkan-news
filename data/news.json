@@ -187449,5 +187449,60 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-10-01T16:05:45+09:00"
+  },
+  {
+    "id": "abaa3953-7569-5709-ba0a-8fb051fa82fe",
+    "title": "인니 여객선 침몰 사망자 78명…\"미적합 선박 운항\"",
+    "summary": "지난달 인도네시아 자바해에서 발생한 여객선 침몰 사고의 사망자 수가 78명으로 늘었습니다. 인도네시아 경찰은 해운법 위반 혐의로 선장을 체포한 뒤 구금했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261001162826SNZ",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-01T16:28:27+09:00"
+  },
+  {
+    "id": "e99ed1ee-2620-5a44-bca9-3d142db4cb48",
+    "title": "[속보] 정하은, AG 태권도 품새 여자 개인전 '금메달'",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 조한대(onepunch@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261001162813VpR",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-01T16:28:14+09:00"
+  },
+  {
+    "id": "d45b8e42-c349-5b67-a060-8cf6cfa8b642",
+    "title": "외교부, 대미투자 공식발표에 \"안보협의 등 진전 기대\"",
+    "summary": "정례브리핑하는 박두순 외교부 대변인정례브리핑하는 박두순 외교부 대변인 외교부가 도널드 트럼프 미국 대통령이 한국의 대미투자 계획을 발표한 것을 계기로 다른 한미 관계 현안들에 진전이 있기를 바란다고 밝혔습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261001162301Q3g",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-10-01T16:23:04+09:00"
+  },
+  {
+    "id": "df7b3ee6-4f06-5f6a-8625-2d3b2a5b5fef",
+    "title": "[속보] 산업안전법안 본회의 통과…연 3명 이상 사고 기업에 과징금",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 강은나래(rae@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261001160328F1R",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-10-01T16:03:29+09:00"
+  },
+  {
+    "id": "296c2d4a-d7e7-5f28-ac44-1b9f7cb85d07",
+    "title": "'144cm 이하' 돼야 병역 면제…연예인 병역기피에 칼 빼든 대만",
+    "summary": "유명 연예인의 병역 기피 논란이 잇따른 대만이 병역 면제 기준 강화에 나섰습니다. 종전 면제 기준은 키 '196cm 이상 또는 154cm 이하', BMI '35 초과 또는 15 미만'이었습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261001154934OyN",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-01T15:49:35+09:00"
   }
 ]
