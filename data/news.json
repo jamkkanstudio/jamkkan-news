@@ -187757,5 +187757,38 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-10-01T17:16:03+09:00"
+  },
+  {
+    "id": "989d9557-242e-5247-b103-d62ebdc3bf33",
+    "title": "[속보] 독립운동가 후손 허미미, AG 여자 유도 57㎏급 '금메달'",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 조한대(onepunch@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261001173741LvW",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-01T17:37:42+09:00"
+  },
+  {
+    "id": "1b8be3d5-8727-5ae8-95a6-0a3b7c42ecc5",
+    "title": "힌두교도 요구에 여직원 업무 배제?…에펠탑 관리사 대표 사임",
+    "summary": "에펠탑 앞에서 행사하는 힌두교 종파 BAPS 일간 르몽드에 따르면 에펠탑 관리·운영사 SETE의 파트리크 브랑코 루이보 대표는 현지시간 지난달 29일 올 연말에 사임하겠다는 뜻을 밝혔습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261001173200KBT",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-01T17:32:02+09:00"
+  },
+  {
+    "id": "877ecb6b-130a-5833-b278-2e3a25593d62",
+    "title": "빌 게이츠 \"AI 자율규제는 미친짓…안전띠 없는 셈\"",
+    "summary": "그러면서 \"AI는 인류가 지금까지 접해온 것 중 가장 위험한 것\"이라고 지적하고 \"식품의약국도 없고 항공안전위원회도 없으며 자동차에 안전띠를 설치하라는 의무가 없는 셈\"이라고 비판했습니다.",
+    "reason": "AI 기술 변화는 산업 경쟁력과 일하는 방식에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20261001171507LQs",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-01T17:15:08+09:00"
   }
 ]
