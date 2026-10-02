@@ -189407,5 +189407,27 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-10-02T10:29:32+09:00"
+  },
+  {
+    "id": "adf00859-a39b-5f19-b4f7-cc040e479a97",
+    "title": "\"알래스카 LNG 사업비, 멕시코만 연안 2배\"",
+    "summary": "도널드 트럼프 미국 대통령이 한국의 투자 참여를 발표한 알래스카 액화천연가스(LNG) 사업의 비용이 미국 멕시코만 연안 LNG 사업의 2배를 넘는다고 현지시간 1일 로이터 통신이 보도했습니다. 100만t당 약 7억 6천만달러입니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261002104653P0k",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-02T10:46:53+09:00"
+  },
+  {
+    "id": "094de07e-3b9d-595c-b0ed-87069b331f24",
+    "title": "[속보] 이 대통령 \"우크라, 공개사과 거부하면 추가조치…묵과 못 해\"",
+    "summary": "이재명 대통령[연합뉴스 자료사진][연합뉴스 자료사진] 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 팽재용(paengman@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261002104436dSi",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-10-02T10:44:37+09:00"
   }
 ]
