@@ -189627,5 +189627,16 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-10-02T10:49:52+09:00"
+  },
+  {
+    "id": "8aac8bce-e7b1-591f-bc52-0d6570efffed",
+    "title": "[이시각헤드라인] 10월 2일 뉴스센터",
+    "summary": "오세훈 서울시장의 '여론조사 대납 의혹' 항소심 결심공판이 오늘(2일) 오후 열립니다. 10월 시작부터 가을 추위가 찾아왔습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20261002113503pZZ",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-10-02T11:35:04+09:00"
   }
 ]
