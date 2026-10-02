@@ -191332,5 +191332,27 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-10-02T21:46:37+09:00"
+  },
+  {
+    "id": "21300963-5dc7-584a-9acf-e87c8fb3eed7",
+    "title": "미국 9월 고용 2만 9천명 증가…예상치 크게 밑돌아",
+    "summary": "미국 9월 비농업 부문 고용이 전월보다 2만 9000명 증가했다고 미 노동부 노동통계국이 현지시간 2일 밝혔습니다. 이는 다우존스가 집계한 전문가 예상치인 8만 4천명에 크게 못 미치는 수준입니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261002215121T0U",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-02T21:51:22+09:00"
+  },
+  {
+    "id": "31745dfc-2968-58df-ad4d-b2d8dbfe86fd",
+    "title": "[속보] 트럼프 \"한국과 협상 좋아져…석유 증산 프로젝트에 84억불 투입\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 송채은(chaeun@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261002214831LGw",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-02T21:48:34+09:00"
   }
 ]
