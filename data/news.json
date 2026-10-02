@@ -190925,5 +190925,16 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-10-02T18:17:27+09:00"
+  },
+  {
+    "id": "0cc6a17c-f06c-5fe9-9e7b-b8941dd35301",
+    "title": "[속보] 우리·농협은행도 해킹 공격 당해…정보유출은 없어",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김동욱(DK1@yna.co.kr)",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261002181829EhB",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-10-02T18:18:31+09:00"
   }
 ]
