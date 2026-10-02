@@ -191618,5 +191618,27 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-10-03T05:05:09+09:00"
+  },
+  {
+    "id": "b2c46d80-d3d1-573f-9461-d4f9865c4e2f",
+    "title": "[속보] 트럼프, 알래스카 LNG 일방발표에 \"성급한 행동 아냐\"",
+    "summary": "연합뉴스TV 속보(CG) [속보] 트럼프, 알래스카 LNG 일방발표에 \"성급한 행동 아냐\" 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김수빈(soup@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261003051642dOB",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-03T05:16:43+09:00"
+  },
+  {
+    "id": "13687308-b73c-5767-a9d0-2666be4fd32d",
+    "title": "[속보] 트럼프 \"韓 알래스카 투자 안한대도 괜찮다…돈 더 청구하면 돼\"",
+    "summary": "연합뉴스TV 속보(CG) [속보] 트럼프 \"韓 알래스카 투자 안한대도 괜찮다…돈 더 청구하면 돼\" 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김수빈(soup@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261003051122Ifc",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-03T05:11:25+09:00"
   }
 ]
