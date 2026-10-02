@@ -189858,5 +189858,27 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-10-02T11:58:50+09:00"
+  },
+  {
+    "id": "4a8bdca8-9381-5145-99d2-ccbeb9aac307",
+    "title": "[속보] 국회 운영위, 김태규 제명 촉구 결의안 與 주도 가결",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 강은나래(rae@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261002121903SAo",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-10-02T12:19:04+09:00"
+  },
+  {
+    "id": "5e2878e4-5230-5e5e-94e6-864ca41bf98e",
+    "title": "우크라 외무 \"한국 중요해…외교적 오해 해결바라\"",
+    "summary": "시비하 장관은 한 행사장에서 취재진의 질문에 \"이 사안을 '사건'이라 부르고 싶지 않다\"면서 '외교적 오해' 정도로 해두자\"고 말했습니다. 또 시비하 장관은 최근 며칠간 한국 외교장관과 매일 직접 연락한 것으로 전해졌습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH202610021158027nR",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-02T11:58:02+09:00"
   }
 ]
