@@ -198636,5 +198636,16 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-10-06T18:42:55+09:00"
+  },
+  {
+    "id": "b6f3396c-7fa8-52de-9f80-3835839cf5b9",
+    "title": "[속보] 노벨물리학상에 '뉴트리노 관측' 프랜시스 할선",
+    "summary": "연합뉴스TV 속보(CG) #노벨상 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 최진경(highjean@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261006185110QBl",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-06T18:51:11+09:00"
   }
 ]
