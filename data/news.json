@@ -201617,5 +201617,16 @@
     "category": "경제",
     "importance": 50,
     "created_at": "2026-10-07T18:27:55+09:00"
+  },
+  {
+    "id": "a2580eda-6350-5247-aec8-4b3495f0572c",
+    "title": "[속보] 노벨화학상에 앙리 카강·소아이 겐소",
+    "summary": "노벨화학상 수상자[연합뉴스 제공][연합뉴스 제공] #노벨상 #화학 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 최진경(highjean@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261007185210Dzf",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-07T18:52:11+09:00"
   }
 ]
