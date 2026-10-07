@@ -202882,5 +202882,16 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-10-08T08:03:54+09:00"
+  },
+  {
+    "id": "038b0fa0-92c9-5025-8f80-aaa8c09c78c9",
+    "title": "[속보] 8월 경상수지 461.1억달러 흑자, 역대 2위…반도체 수출 호조",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김주영(ju0@yna.co.kr)",
+    "reason": "환율 변화는 수입 물가와 해외 투자, 기업 실적에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261008080838PL1",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-10-08T08:08:40+09:00"
   }
 ]
