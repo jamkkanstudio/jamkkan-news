@@ -202750,5 +202750,27 @@
     "category": "경제",
     "importance": 50,
     "created_at": "2026-10-08T06:47:09+09:00"
+  },
+  {
+    "id": "4ed2f8f3-abcc-512f-88f0-cdde918129a4",
+    "title": "[AM-PM] 李, 이집트 대통령과 정상회담…공급망 협력 논의 外",
+    "summary": "▶ 李, 이집트 대통령과 정상회담…공급망 협력 논의 (AM 10:00 청와대) 이재명 대통령이 국빈 방한한 압델 파타 알시시 이집트 대통령과 청와대에서 정상회담을 갖습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20261008065241Vby",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-10-08T06:52:44+09:00"
+  },
+  {
+    "id": "bbb5a5c4-0412-5dbc-85ff-a2cc4d95f94e",
+    "title": "임윤찬, '클래식계 오스카' 그라모폰 어워즈 수상 불발",
+    "summary": "피아니스트 임윤찬이 2년 만에 세계적인 클래식 음반 시상식인 영국 그라모폰 클래식 뮤직 어워즈 최종 후보에 올랐지만, 수상은 불발됐습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20261008064958Tei",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-08T06:49:58+09:00"
   }
 ]
