@@ -206556,5 +206556,38 @@
     "category": "정치",
     "importance": 50,
     "created_at": "2026-10-09T18:16:27+09:00"
+  },
+  {
+    "id": "ee8a0dfb-4882-567b-beeb-2b2a3789029f",
+    "title": "[속보] 노벨평화상에 나비 필레이 전 유엔 최고인권대표",
+    "summary": "노벨평화상에 나비 필레이 전 유엔 인권최고대표 남아공 출신…헤이그 국제형사재판소 판사 지내 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 최진경(highjean@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20261009183154COJ",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-09T18:31:54+09:00"
+  },
+  {
+    "id": "0fa8412d-ed05-5a09-901d-1efce6bd0004",
+    "title": "[뉴스와이드] 'DMZ지뢰' 사과 요구…잠시 후, 노벨평화상 발표",
+    "summary": "잠시 후에는 전 세계의 시선이 집중된 노벨평화상 수상자가 발표됩니다. 잠시 후 노벨평화상 수상자가 발표됩니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20261009183137eEK",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-10-09T18:31:40+09:00"
+  },
+  {
+    "id": "4da8316e-aaa2-57ed-96aa-65fc812f4aa3",
+    "title": "추돌 사고 난 사다리차가 고가도로 아래로 추락…3명 사상",
+    "summary": "경기 고양에서는 추돌 사고로 사다리차가 고가도로 아래로 떨어지며 한 명이 숨지고 두 명이 다쳤습니다. 사고 충격으로 견인차에 실려 있던 사다리차와 함께, 운전석 밖으로 나와 있던 견인차 운전자가 5미터 아래로 떨어졌습니다.",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH202610091831139Cl",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-10-09T18:31:14+09:00"
   }
 ]
