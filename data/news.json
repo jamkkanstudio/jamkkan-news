@@ -207656,5 +207656,16 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-10-10T16:05:40+09:00"
+  },
+  {
+    "id": "aec75885-c9b7-5eeb-8ad5-8999fd7ea51a",
+    "title": "트럼프 대변인 발표 전 '내부자 베팅' 의혹",
+    "summary": "미국 유명 예측 베팅 플랫폼 칼시가 도널드 트럼프 대통령의 새 백악관 대변인 선정과 관련한 수상한 베팅 거래에 대해 조사에 착수했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20261010161356LfV",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-10T16:13:59+09:00"
   }
 ]
