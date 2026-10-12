@@ -211627,5 +211627,38 @@
     "category": "국제",
     "importance": 50,
     "created_at": "2026-10-12T17:10:25+09:00"
+  },
+  {
+    "id": "0f2f1829-a606-5fed-8eb6-79a5b1a2d047",
+    "title": "[속보] 인권위, '윤석열 방어권 보장 권고' 의결 대국민 사과하기로",
+    "summary": "윤 대통령 방어권 보장 의결 관련 호소문 발표 나선 인권위 직원들[연합뉴스][연합뉴스] 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 이준흠(humi@yna.co.kr)",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261012172713q5w",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-10-12T17:27:13+09:00"
+  },
+  {
+    "id": "d20dba65-3eed-52f7-a9fa-b649dea670bf",
+    "title": "네팔서 한국인 24명 체포…관광비자로 종교 프로그램 참여",
+    "summary": "관광비자로 네팔에 입국한 우리 국민들이 종교 프로그램에 참여했다가 현지 경찰에 붙잡혔습니다. 현지시간 12일 네팔 온라인 매체 라토파티에 따르면 최근 네팔경찰은 한국인 24명을 체포했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261012172516p89",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-12T17:25:19+09:00"
+  },
+  {
+    "id": "10093033-7a16-5529-9ece-a64e55501e79",
+    "title": "[속보] 경찰, 장모 살해·아내 납치 20대 구속영장 신청",
+    "summary": "이혼소송 중 장모 살해·아내 납치 20대 송파서로 송치[연합뉴스][연합뉴스] 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 이준흠(humi@yna.co.kr)",
+    "reason": "많은 사람의 안전과 일상생활에 관련된 소식입니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261012172511Weq",
+    "category": "사회",
+    "importance": 50,
+    "created_at": "2026-10-12T17:25:13+09:00"
   }
 ]
