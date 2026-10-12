@@ -210230,5 +210230,38 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-10-12T09:49:07+09:00"
+  },
+  {
+    "id": "2a2e2595-5bbd-5977-9546-7ba17ecbbbdd",
+    "title": "[속보] 日 \"北, 탄도미사일 추정체 재차 발사…모두 日EEZ 밖 낙하 추정\"",
+    "summary": "#북한 #미사일 #탄도미사일 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 장효인(hijang@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261012100526YWr",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-12T10:05:27+09:00"
+  },
+  {
+    "id": "a79e76c4-baca-550c-a0fb-439f22c1a53f",
+    "title": "팀 쿡 \"광둥성 사업 확대\"…애플, 스마트·녹색 제조 협력 추진",
+    "summary": "팀 쿡 애플 회장이 공급망 협력과 스마트 제조, 판매망 확장을 통해 중국 광둥성 내 사업을 확대하겠다고 밝혔습니다. 양측은 공급망 협력과 혁신 생태계, 스마트 제조·녹색 제조, 판매망 확대 방안을 논의했습니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261012100207bh6",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-12T10:02:09+09:00"
+  },
+  {
+    "id": "fb7ad7e0-c8a0-5260-9cac-09b3723316e3",
+    "title": "中 수학자 1천 명 뭉쳤다…AI 활용 美 추격 나서",
+    "summary": "중국 수학자 AI 연구회 창립식(SCMP) 연합에는 수학자 1천 명 이상이 참여해 수학 전용 AI 모델을 개발하고, AI로 수학적 추측을 찾고 증명을 형식화할 계획입니다.",
+    "reason": "AI 기술 변화는 산업 경쟁력과 일하는 방식에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261012095937VYp",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-12T09:59:38+09:00"
   }
 ]
