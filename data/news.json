@@ -210120,5 +210120,49 @@
     "category": "사회",
     "importance": 50,
     "created_at": "2026-10-12T09:09:42+09:00"
+  },
+  {
+    "id": "3a6ee094-6972-56ba-8096-222523b2011a",
+    "title": "[속보] 日방위성 \"北, 탄도미사일 추정체 발사…낙하한 듯\"",
+    "summary": "북한 미사일 발사[연합뉴스 자료사진 제공][연합뉴스 자료사진 제공] #일본 #북한 #미사일 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 최진경(highjean@yna.co.kr)",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202610120936474k1",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-12T09:36:50+09:00"
+  },
+  {
+    "id": "80a0cb0e-5012-5d09-a373-d3f78ffca429",
+    "title": "[속보] 군 \"북한, 동해상으로 미상 발사체 발사\"",
+    "summary": "군 \"북한, 동해상으로 미상 발사체 발사\" 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김태호(klaudho@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20261012093144pas",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-10-12T09:31:45+09:00"
+  },
+  {
+    "id": "1c35b42b-ea60-5d28-9d8e-6f2eac84bf0c",
+    "title": "합참 \"북한, 동해상으로 미상 발사체 발사\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 지성림(yoonik@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261012093055OCM",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-10-12T09:30:55+09:00"
+  },
+  {
+    "id": "20732856-de75-50c3-aeb7-e048fc339dfb",
+    "title": "김민석 \"논리·타깃 바꿔 대통령 공격…비판도 할일 하며 해야\"",
+    "summary": "임은정 감찰 지시에 \"내게도 '왜 가만히 두냐' 이야기…공직자는 다른 방식으로 해야\" 이는 검찰개혁 과정에 강하게 반발한 추미애 경기지사와 민주당 김용민 의원, 임은정 광주지방중수청장 등을 겨냥한 것이라는 해석이 나왔습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR202610120929420WO",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-10-12T09:29:43+09:00"
   }
 ]
