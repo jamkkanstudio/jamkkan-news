@@ -210329,5 +210329,60 @@
     "category": "경제",
     "importance": 50,
     "created_at": "2026-10-12T10:26:27+09:00"
+  },
+  {
+    "id": "c651ad55-245e-5bed-beca-01c2569a8e20",
+    "title": "사우디 공항에 또 후티 미사일 '쾅'…미국인 사망에 '美 참전' 주목",
+    "summary": "이슬람 성지만 빼고 다 때리겠다던 친이란 후티 반군이 사우디아라비아 수도의 국제공항을 또 공격했습니다. 최근 후티 공격으로 사망한 이들 중 미국인이 포함된 걸로 알려지면서, 미국의 참전 여부에 관심이 쏠립니다.",
+    "reason": "해외 정세 변화가 국내 경제와 외교 환경에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20261012103718zWz",
+    "category": "국제",
+    "importance": 50,
+    "created_at": "2026-10-12T10:37:19+09:00"
+  },
+  {
+    "id": "c18ad914-4ae8-5c35-b913-b5e7589e0e07",
+    "title": "[속보] 군 \"北 평양일대서 동해상으로 탄도미사일 수발\"",
+    "summary": "군 \"北 평양일대서 동해상으로 탄도미사일 수발\" 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김태호(klaudho@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20261012103551gdR",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-10-12T10:35:52+09:00"
+  },
+  {
+    "id": "2ac181df-5d3f-544b-9d62-0ccee83b66c9",
+    "title": "[속보] 軍 \"北미사일, 900km 이상 비행…제원 정밀 분석중\"",
+    "summary": "연합뉴스TV 속보(CG) 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 강은나래(rae@yna.co.kr)",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261012103534wbp",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-10-12T10:35:36+09:00"
+  },
+  {
+    "id": "5d0f49c7-b13c-54e6-81e3-8b81e320e30a",
+    "title": "[뉴스포커스] 행안장관, 임은정 감찰 지시…與 김지용 내홍 지속",
+    "summary": "임은정 광주중수청장에 대한 감찰 지시를 계기로 김지용 후보자 인선을 둘러싼 여권 내부 갈등이 다시 확산하고 있습니다. 윤호중 행안부장관이 김지용 후보자를 공개 비판해온 임은정 광주지방중수청장에 대한 감찰을 지시했습니다.",
+    "reason": "정부 정책과 제도 변화가 국민 생활에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/MYH20261012103508vlw",
+    "category": "정치",
+    "importance": 50,
+    "created_at": "2026-10-12T10:35:10+09:00"
+  },
+  {
+    "id": "64a9d6a5-f2f1-59e7-9d17-280c4619d9bd",
+    "title": "현대제철, H형강 통합브랜드 'H ONE' 론칭…건축 시장 공략",
+    "summary": "현대제철, H형강 통합브랜드 'H ONE' 론칭 현대제철이 압연 H형강(RH)과 용접 H형강(BH)을 아우르는 통합브랜드를 만들어 고부가 건축 시장 공략에 나섭니다.",
+    "reason": "금리·환율·증시 등 개인의 자산과 생활비에 영향을 줄 수 있습니다.",
+    "source": "연합뉴스TV",
+    "url": "https://www.yonhapnewstv.co.kr/news/AKR20261012103505x1U",
+    "category": "경제",
+    "importance": 50,
+    "created_at": "2026-10-12T10:35:06+09:00"
   }
 ]
